@@ -5,9 +5,9 @@ instructions.
 
 The PORI Platform is composed of 5 main servers
 
-- [IPR server](./WEB.md)
-- [GraphKB server](./WEB.md)
-- [Keycloak/Authentication server](./AUTH.md)
+- [IPR server](./docs/WEB.md)
+- [GraphKB server](./docs/WEB.md)
+- [Keycloak/Authentication server](./docs/AUTH.md)
 - OrientDB server (v3.0.*)
 - PostgresSQL server (v9.6.*)
 
@@ -74,7 +74,8 @@ at run time (See volumes section of docker compose file).
 
 You will also want to add a couple of users to make things simpler to test. If you use the non-default
 demo passwords (RECCOMMENDED!) you will need to change the corresponding fields in the docker compose
-file. The names of these users can also be changed.
+file. The names of these users can also be changed but it will require also adding them to the
+application databases.
 
 | Name             | Default in DB | Purpose                                                                                                                                              |
 | ---------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -86,3 +87,19 @@ file. The names of these users can also be changed.
 Add the above users to keycloak with the IPR and GraphKB roles.
 
 ![adding users](./docs/images/keycloak-add-users.png)
+
+Now you are ready to start the other services. This will use the `docker-compose.yml` file to
+configure the network.
+
+```bash
+docker-compose up
+```
+
+This will start the following services
+
+- Postgres db server for IPR with a default db dump
+- OrientDB server for GraphKB with an empty default db
+- GraphKB API server (nodejs)
+- IPR API server (nodejs)
+- GraphKB client server (nginx)
+- IPR client server (nginx)
