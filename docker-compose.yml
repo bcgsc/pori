@@ -1,0 +1,109 @@
+version: '3'
+services:
+  graphkb_db:
+    image: orientdb:3.0
+    environment:
+      ORIENTDB_ROOT_PASSWORD: root
+    ports:
+      - 2424:2424
+      - 2480:2480
+    networks:
+      - app-network
+  graphkb_api:
+    build:
+      context: ./../pori_graphkb_api
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      GKB_DB_HOST: graphkb_db
+      GKB_DB_NAME: graphkb
+      GKB_DBS_PASS: root
+      GKB_KEYCLOAK_KEY_FILE: /keys/keycloak.key
+      GKB_KEYCLOAK_URI: 'http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token'
+      KEY_PASSPHRASE: ''
+    depends_on:
+      - graphkb_db
+    networks:
+      - app-network
+    restart: always
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
+        read_only: true
+  graphkb_client:
+    build:
+      context: ./../pori_graphkb_client
+      dockerfile: Dockerfile
+    environment:
+      API_BASE_URL: 'http://localhost:8080'
+      KEYCLOAK_REALM: PORI
+      KEYCLOAK_URL: 'http://localhost:8888/auth'
+    ports:
+      - 5000:80
+    depends_on:
+      - graphkb_api
+    networks:
+      - app-network
+    restart: always
+  ipr_db:
+    build:
+      context: ./../pori_ipr_api
+      dockerfile: Dockerfile.db
+    restart: always
+    environment:
+      DATABASE_NAME: ipr_demo
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: postgres
+      SERVICE_PASSWORD: root
+      SERVICE_USER: ipr_service
+    ports:
+      - 5432:5432
+    networks:
+      - app-network
+  ipr_api:
+    build:
+      context: ./../pori_ipr_api
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8080
+    environment:
+      IPR_DATABASE_HOSTNAME: ipr_db
+      IPR_DATABASE_NAME: ipr_demo
+      IPR_DATABASE_PASSWORD: root
+      IPR_DATABASE_USERNAME: ipr_service
+      IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
+      IPR_GRAPHKB_USERNAME: ipr_graphkb_link
+      IPR_GRAPHKB_URI: http://localhost:8080/api
+      IPR_KEYCLOAK_KEYFILE: /keys/keycloak.key
+      IPR_KEYCLOAK_URI: 'http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token'
+    depends_on:
+      - ipr_db
+    networks:
+      - app-network
+    restart: always
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
+        read_only: true
+  ipr_client:
+    build:
+      context: ./../pori_ipr_client
+      dockerfile: Dockerfile
+      args:
+        API_BASE_URL: 'http://localhost:8081/api'
+        GRAPHKB_URL: 'http://localhost:8080/api'
+        KEYCLOAK_REALM: PORI
+        KEYCLOAK_URL: 'http://localhost:8888/auth'
+    ports:
+      - 3000:80
+    depends_on:
+      - ipr_api
+    networks:
+      - app-network
+    restart: always
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,5 @@
+FROM jboss/keycloak:12.0.2
+RUN mkdir -p /tmp/realm_data/
+COPY demo/kc_realm_export.json /tmp/realm_data/kc_realm_export.json
+COPY demo/kc_key_export.sh /bin/kc_key_export.sh
+ENV KEYCLOAK_IMPORT=/tmp/realm_data/kc_realm_export.json
