@@ -555,12 +555,13 @@
             "secret": "**********",
             "redirectUris": [
                 "http://0.0.0.0:3000/*",
+                "http://0.0.0.0:5000/*",
                 "http://localhost:3000/*",
-                "http://localhost:3001/*",
-                "http://localhost:5000/*"
+                "http://localhost:5000/*",
+                "https://pori-demo.bcgsc.ca/*"
             ],
             "webOrigins": [
-                "*"
+                "+"
             ],
             "notBefore": 0,
             "bearerOnly": false,
@@ -664,17 +665,11 @@
             "clientAuthenticatorType": "client-secret",
             "secret": "**********",
             "redirectUris": [
-                "http://creisle04.phage.bcPORI.ca:3000/*",
-                "http://jacli01.phage.bcPORI.ca:3000/*",
-                "https://iprdev.bcPORI.ca/*",
-                "http://adavies02.phage.bcPORI.ca:3000/*",
+                "http://0.0.0.0:3000/*",
+                "http://0.0.0.0:5000/*",
                 "http://localhost:3000/*",
-                "https://ipr-tracking.bcPORI.ca/*",
-                "https://iprtrackingdev.bcPORI.ca/*",
-                "https://dev-ipr.bcPORI.ca*",
-                "https://ipr.bcPORI.ca/*",
-                "http://bpellegrini01.phage.bcPORI.ca:3000/*",
-                "https://iprstaging.bcPORI.ca/*"
+                "http://localhost:5000/*",
+                "https://pori-demo.bcgsc.ca/*"
             ],
             "webOrigins": [
                 "+"
