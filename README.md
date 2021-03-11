@@ -1,6 +1,6 @@
 # Platform for Oncogenomic Reporting and Interpretation (PORI)
 
-This repository contains central documentation for the platform as well as setup and installation instructions.
+This repository contains central documentation for the platform as well as setup and installation instructions. A live demo of this is found at: [pori-demo.bcgsc.ca](https://pori-demo.bcgsc.ca).
 
 - [About](#about)
 - [Install with Docker](#install-with-docker)
@@ -129,3 +129,5 @@ This will start the following services
 - IPR API server (nodejs)
 - GraphKB client server (nginx)
 - IPR client server (nginx)
+
+Once the platform is live you can populate GraphKB with external content using the [loaders](https://github.com/bcgsc/pori_graphkb_loader).
