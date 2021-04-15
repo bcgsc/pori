@@ -2,6 +2,8 @@
 
 This repository contains central documentation for the platform as well as setup and installation instructions. A live demo of this is found at: [pori-demo.bcgsc.ca](https://pori-demo.bcgsc.ca).
 
+A pre-print of the related manuscript can be found at [biorxiv](https://www.biorxiv.org/content/10.1101/2021.04.13.439667v1).
+
 - [About](#about)
 - [Install with Docker](#install-with-docker)
   - [Build the Authentication Server](#build-the-authentication-server)
@@ -17,6 +19,7 @@ The PORI Platform is composed of 7 servers and 2 python adaptors. All related re
 - [GraphKB DB and API servers](https://github.com/bcgsc/pori_graphkb_api)
 - [IPR web client](https://github.com/bcgsc/pori_ipr_client)
 - [GraphKB web client](https://github.com/bcgsc/pori_graphkb_client)
+- [GraphKB Data Loaders](https://github.com/bcgsc/pori_graphkb_loader)
 - Authentication Server (this repository)
 
 ## Install with Docker
@@ -130,4 +133,4 @@ This will start the following services
 - GraphKB client server (nginx)
 - IPR client server (nginx)
 
-Once the platform is live you can populate GraphKB with external content using the [loaders](https://github.com/bcgsc/pori_graphkb_loader).
+Once the platform is live you can populate the new GraphKB instance with external content using the [loaders](https://github.com/bcgsc/pori_graphkb_loader).
