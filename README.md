@@ -13,14 +13,60 @@ A pre-print of the related manuscript can be found at [biorxiv](https://www.bior
 
 The PORI Platform is composed of 7 servers and 2 python adaptors. All related repositories can be shown with the [PORI topic](https://github.com/search?q=topic%3Apori+org%3Abcgsc+fork%3Atrue).
 
+<div class='projects' markdown='1'>
+
 - [IPR python adaptor](https://github.com/bcgsc/pori_ipr_python)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [GraphKB python adaptor](https://github.com/bcgsc/pori_graphkb_python)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [IPR DB and API servers](https://github.com/bcgsc/pori_ipr_api)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [GraphKB DB and API servers](https://github.com/bcgsc/pori_graphkb_api)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [IPR web client](https://github.com/bcgsc/pori_ipr_client)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [GraphKB web client](https://github.com/bcgsc/pori_graphkb_client)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - [GraphKB Data Loaders](https://github.com/bcgsc/pori_graphkb_loader)
+
+    ![alt text](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png "Logo Title Text 1")
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, eius a exercitationem debitis officia aut repellendus ut excepturi asperiores ratione explicabo distinctio tenetur doloremque!
+    Eaque adipisci totam omnis inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem unde tenetur quis qui dignissimos ea odio molestiae omnis fugit! Ipsa nihil ea eligendi eius vel tempore natus molestias similique cupiditate.
+
 - Authentication Server (this repository)
+
+</div>
 
 ## Install with Docker
 
