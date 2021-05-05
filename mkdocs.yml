@@ -1,0 +1,19 @@
+site_name: PORI
+theme:
+  name: material
+repo_url: https://github.com/bcgsc/pori
+repo_name: github
+site_dir: dist
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.extra
+  - attr_list
+  - markdown_include.include:
+      base_path: docs
+extra_css: [styles.css]
+plugins:
+  - exclude:
+      glob:
+        - auth.md

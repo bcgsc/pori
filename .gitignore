@@ -1,3 +1,7 @@
 keys
 log.txt
 databases
+venv/
+dist/
+build-docs
+.vscode

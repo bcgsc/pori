@@ -1,0 +1,30 @@
+.projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects ul li {
+    display: grid;
+    margin: 0;
+    gap: 8px;
+    grid-template-areas: "title title" "image description";
+    margin-bottom: 30px;
+}
+
+.projects ul li > * {
+    margin: 0 !important;
+}
+
+/* title */
+.projects ul li > :first-child {
+    grid-area: title;
+    padding: 0 8px;
+    font-size: large;
+}
+
+/* image */
+.projects ul li > :nth-child(2) {
+    padding: 8px;
+    max-width: 200px;
+}
