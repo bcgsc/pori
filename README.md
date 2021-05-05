@@ -2,10 +2,11 @@
 
 The Platform for Oncogenomic Reporting and Interpretation (PORI) is an open source collection of
 software designed to support scaleable precision oncology. The platform has two main components:
-a graph knowledgebase (GraphKB) and an integrated pipeline reporting application (IPR). This site
-contains central documentation for the platform as well as setup and installation instructions.
+a graph knowledgebase (GraphKB) and an integrated pipeline reporting application (IPR).
 
 ![pori server stack](./docs/images/pori-server-stack.png)
+
+For more information see the related [user manual](https://bcgsc.github.io/pori)
 
 ## Demo
 
