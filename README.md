@@ -5,7 +5,7 @@ software designed to support scaleable precision oncology. The platform has two 
 a graph knowledgebase (GraphKB) and an integrated pipeline reporting application (IPR). This site
 contains central documentation for the platform as well as setup and installation instructions.
 
-![pori server stack](./images/pori-server-stack.png)
+![pori server stack](./docs/images/pori-server-stack.png)
 
 ## Demo
 
