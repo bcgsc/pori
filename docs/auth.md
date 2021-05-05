@@ -1,4 +1,4 @@
-# Keycloak Server Setup
+# Keycloak Server Setup (Legacy)
 
 - [Server Requirements](#server-requirements)
 - [Installation](#installation)

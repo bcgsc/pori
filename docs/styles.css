@@ -9,6 +9,7 @@
     margin: 0;
     gap: 8px;
     grid-template-areas: "title title" "image description";
+    margin-bottom: 30px;
 }
 
 .projects ul li > * {
@@ -19,9 +20,11 @@
 .projects ul li > :first-child {
     grid-area: title;
     padding: 0 8px;
+    font-size: large;
 }
 
 /* image */
 .projects ul li > :nth-child(2) {
     padding: 8px;
+    max-width: 200px;
 }

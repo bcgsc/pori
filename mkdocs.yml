@@ -13,3 +13,7 @@ markdown_extensions:
   - markdown_include.include:
       base_path: docs
 extra_css: [styles.css]
+plugins:
+  - exclude:
+      glob:
+        - auth.md

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="288px" height="242px" viewBox="-0.5 -0.5 144 121" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2021-05-04T17:02:49.308Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36&quot; version=&quot;14.6.9&quot; etag=&quot;6bmVZ85zGElWSNoNE8rc&quot; type=&quot;google&quot;&gt;&lt;diagram id=&quot;ifZLSRkOlDWEwI2w8Zff&quot;&gt;5ZhNc5swEIZ/Dcd2EEIYHxs3aQ/tyYeeNUYGWpllhPzVX18BKwwWzqSJx2QcLkavViA9u7zCeHSxOXxTvMx+QiKkF/jJwaNfvSAISBiYn1o5tgqhMWmVVOUJaidhmf8VKPqobvNEVINADSB1Xg7FFRSFWOmBxpWC/TBsDXJ415KnwhGWKy5d9Vee6KxVY+af9O8iTzN7Z+Jjz4bbYBSqjCew70n00aMLBaDbs81hIWRNz3Jpxz1d6O0mpkShXzIAM1Hpo12bgm2RiLrb9+gDKJ1BCgWXPwBKIxIj/hZaHzErfKvBSJneSOxdQ6GxM/CxvQAJqrk+jZrD6KKwmaWmVWkFfzqarFG40r0IE/+lzp1pFlCIVnnKpcSptisRyVnqKtiqFUoh1gpXqUA8c5cY6fJgKljARmh1NCFKSK7z3fDqHCsp7eJOsM0J8h5nTx329eSX2MQ1frB0xNOlA2ez43KLF3XzI6WxmHqt+yzXYlnyZil7Y3Ovg86rsvWndX6ok/ywNgB7gX5zdDR3QmlxuPioXyCFA2jIZp9ZOwqN99M8jFphf7IxitaU9RzMam/hy95VuQ8LnPjOE3CF+p659R1OV9/Rzfk/7zbP0nX953W8iT8d8Nm9GwqzdDs7Ycw6TM9Q2IihsCsYSnzvfMPonO/MtetghG5wBbrzu6cbuNthFN6Mr312rg74vfBl7Lx6fXo7usSFOd1ud4uXDULd3W823eZHRqr5zl43xoiTCV/w7Hzu2LLjM0uJ58SxFMpcS7Ham/B+gD+I7Bxv7OAlI3jJ/+M1zdNXrqav97GQPv4D&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+    <defs/>
+    <g>
+        <path d="M 31.95 36.79 L 17.86 27.49" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 43.64 30.02 L 42.68 19.98" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="44.5" cy="45" rx="15" ry="15" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <path d="M 82 45.5 L 59.5 45.11" fill="none" stroke="#000000" stroke-width="10" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 120.71 66.41 L 126.45 74.68" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="107" cy="45.5" rx="25" ry="25" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <ellipse cx="42" cy="10" rx="10" ry="10" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <ellipse cx="9.5" cy="22" rx="10" ry="10" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <ellipse cx="132" cy="83" rx="10" ry="10" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <path d="M 79.07 87.85 L 93.3 66.41" fill="none" stroke="#000000" stroke-width="10" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 53.69 95 L 41.26 88.74" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="69.5" cy="102.5" rx="17.5" ry="17.5" fill="#000000" stroke="#000000" pointer-events="all"/>
+        <ellipse cx="34.5" cy="85.5" rx="7.5" ry="7.5" fill="#000000" stroke="#000000" pointer-events="all"/>
+    </g>
+</svg>
