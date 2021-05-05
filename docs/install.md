@@ -3,6 +3,13 @@
 
 The simplest way to get the entire platform up an running from scratch is using docker. Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTP and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initialling setting up and testing.
 
+Start by cloning this repository which contains the default docker compose config (docker-compose.yml)
+
+```bash
+git clone https://github.com/bcgsc/pori.git
+cd pori
+```
+
 ## Build the Authentication Server
 
 The following command builds the basic keycloak container for PORI. This contains a base realm
