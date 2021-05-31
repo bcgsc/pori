@@ -1,7 +1,7 @@
 
 # Install with Docker
 
-The simplest way to get the entire platform up an running from scratch is using docker. Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTP and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initialling setting up and testing.
+Since PORI is a production-ready, instituion-level, scaleable platform, the simplest way to get the entire platform up an running from scratch is using docker. Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initialling setting up and testing.
 
 Start by cloning this repository which contains the default docker compose config (docker-compose.yml)
 
@@ -10,19 +10,14 @@ git clone https://github.com/bcgsc/pori.git
 cd pori
 ```
 
-## Build the Authentication Server
+## Start the Authentication Server
 
-The following command builds the basic keycloak container for PORI. This contains a base realm
-configuration
-
-```bash
-docker build \
-    -t bcgsc/pori-auth \
-    -f Dockerfile.auth \
-    .
-```
-
-Then you will run the container (change the password and username as desired)
+Before any of the other systems can be set up you will need to start the authenication server. By
+default, PORI authenticates against an instance of KeyCloak. For convenience we have provided a
+docker container with a default configuration of keycloak. This is the authentication server used
+by our [demo instance](https://pori-demo.bcgsc.ca/). If your institution already has a keycloak
+server then we have more [detailed instuctions on setting up through the GUI][https://github.com/bcgsc/pori/blob/master/docs/auth.md]
+in this repository.
 
 ```bash
 docker run \
@@ -99,7 +94,7 @@ Now you are ready to start the other services. This will use the `docker-compose
 First create empty directories to mount the database data, this will ensure the databases are not lost when you stop/restart the container
 
 ```bash
-databases/{postgres,orientdb}/{backup,data} -p
+mkdir -p databases/{postgres,orientdb}/{backup,data}
 ```
 
 Next, use docker-compose to start the DB, API, and client servers. The paths/URLs in the docker-compose.yml file should be adjusted to match your deployment. In our demo deployment we have a proxy pass set up from the configured ports to handle the https layer
@@ -117,4 +112,5 @@ This will start the following services
 - GraphKB client server (nginx)
 - IPR client server (nginx)
 
-Once the platform is live you can populate the new GraphKB instance with external content using the [loaders](https://github.com/bcgsc/pori_graphkb_loader).
+Once the platform is live you can [populate the new GraphKB instance](./graphkb/loading_data.md)
+with external content using the loaders.

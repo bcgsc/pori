@@ -5,3 +5,7 @@ venv/
 dist/
 build-docs
 .vscode
+docs/_pori*
+docs/*/python_adaptor
+docs/developer_reference/ipr
+docs/developer_reference/graphkb

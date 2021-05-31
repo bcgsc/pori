@@ -1,8 +1,8 @@
 
-# Repositories
+# All PORI Repositories
 
-The platform has two main components: a graph knowledge base (GraphKB), and a reporting
-application (IPR). However these are modularized across several repositories listed below.
+The platform has two main components: a graph knowledge base ([GraphKB](../graphkb)), and a reporting
+application ([IPR](../ipr)). However these are modularized across several repositories listed below.
 
 <div class='projects' markdown='1'>
 
@@ -23,12 +23,12 @@ application (IPR). However these are modularized across several repositories lis
     The GraphKB client is the front-end web client for the GraphKB project. It is built using
     React.js and webpack. The client is used to explore and manage content within GraphKB.
 
-- ## [GraphKB python adaptor](https://github.com/bcgsc/pori_graphkb_python)
+- ## [GraphKB Python Adaptor](https://github.com/bcgsc/pori_graphkb_python)
 
     ![graphkb python](./images/graph-icon_outline.svg)
 
     Python adapter package for querying the GraphKB API. See the related
-    [user manual](https://bcgsc.github.io/pori_graphkb_python) for instructions on incorporating
+    [user manual](../graphkb/python/docs) for instructions on incorporating
     this into custom scripts.
 
 - ## [IPR API](https://github.com/bcgsc/pori_ipr_api)
@@ -45,7 +45,7 @@ application (IPR). However these are modularized across several repositories lis
     The IPR client is front-end web application which consumes data from the IPR API.
     The primary function is the production and management of genomic reports.
 
-- ## [IPR python adaptor](https://github.com/bcgsc/pori_ipr_python)
+- ## [IPR Python Adaptor](https://github.com/bcgsc/pori_ipr_python)
 
     ![ipr python](./images/wrench.svg)
 
@@ -53,7 +53,7 @@ application (IPR). However these are modularized across several repositories lis
     takes in variant inputs as tab-delimited files and annotates them using GraphKB. The resulting
     output is uploaded to IPR as a report. Additional report content such as images and metadata
     can be passed to be included in the report upload. See the related
-    [user manual](https://bcgsc.github.io/pori_ipr_python/) for additional information.
+    [user manual](../ipr/python/docs) for additional information.
 
 - ## [GraphKB Data Loaders](https://github.com/bcgsc/pori_graphkb_loader)
 
@@ -65,7 +65,7 @@ application (IPR). However these are modularized across several repositories lis
 
 - ## [GraphKB Parser](https://github.com/bcgsc/pori_graphkb_parser)
 
-    ![graphkb parsser](./images/graph-icon_outline.svg)
+    ![graphkb parser](./images/graph-icon_outline.svg)
 
     A package for parsing and recreating HGVS-like variant notation used in GraphKB. This is used
     by both the API and Client applications. Try it out online with [RunKit](https://runkit.com/creisle/6083062ff39ff0001b93ea6f)
