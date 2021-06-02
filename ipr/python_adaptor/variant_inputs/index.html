@@ -1,0 +1,1945 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>Variant Input Files - PORI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#variant-input-files" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PORI" class="md-header__button md-logo" aria-label="PORI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PORI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Variant Input Files
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/bcgsc/pori/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PORI" class="md-nav__button md-logo" aria-label="PORI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    PORI
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/bcgsc/pori/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/" class="md-nav__link">
+        Install with Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../repos/" class="md-nav__link">
+        All PORI Repositories
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        GraphKB
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GraphKB" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          GraphKB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/loading_data/" class="md-nav__link">
+        Loading Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3">
+        Python adaptor
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python adaptor" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Python adaptor
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/" class="md-nav__link">
+        User Manual
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_2" type="checkbox" id="__nav_5_3_2" >
+      
+      <label class="md-nav__link" for="__nav_5_3_2">
+        Matching
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Matching" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Matching
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/matching/" class="md-nav__link">
+        Ontology Algorithm
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/matching/gene/" class="md-nav__link">
+        Gene Example
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3_3" type="checkbox" id="__nav_5_3_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3_3">
+        Usage examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Usage examples" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Usage examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/usage_examples/intro_tutorial/" class="md-nav__link">
+        Matching Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/usage_examples/snpsift/" class="md-nav__link">
+        Annotate SNPSift Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/python_adaptor/usage_examples/variant_strings/" class="md-nav__link">
+        Annotate Variant List
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        IPR
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="IPR" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          IPR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" checked>
+      
+      <label class="md-nav__link" for="__nav_6_2">
+        Python adaptor
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python adaptor" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python adaptor
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        User Manual
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Variant Input Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Variant Input Files
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#expression-variant-data" class="md-nav__link">
+    Expression Variant Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Expression Variant Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-mutation-data" class="md-nav__link">
+    Small Mutation Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Small Mutation Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_1" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_1" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-variant-data" class="md-nav__link">
+    Copy Variant Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Copy Variant Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_2" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_2" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-variant-fusion-data" class="md-nav__link">
+    Structural Variant (Fusion) Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Structural Variant (Fusion) Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_3" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_3" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2_3" type="checkbox" id="__nav_6_2_3" >
+      
+      <label class="md-nav__link" for="__nav_6_2_3">
+        Optional content
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Optional content" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Optional content
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/" class="md-nav__link">
+        Additional Metadata
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/comparators/" class="md-nav__link">
+        Comparators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/images/" class="md-nav__link">
+        Images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/immune/" class="md-nav__link">
+        Immune Related Content
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/mutation_burden/" class="md-nav__link">
+        Mutation Burden
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/pairwise_expression/" class="md-nav__link">
+        Pairwise RNA Expression Correlation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/patient/" class="md-nav__link">
+        Patient Metadata
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional_content/signature/" class="md-nav__link">
+        Mutation Signatures
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Variant Notation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Variant Notation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Variant Notation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variant_notation/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variant_notation/continuous/" class="md-nav__link">
+        Continuous Notation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variant_notation/split/" class="md-nav__link">
+        Multi-Feature (Split) Notation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      <label class="md-nav__link" for="__nav_7_4">
+        Coordinate Systems
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Coordinate Systems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Coordinate Systems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variant_notation/coordinate_systems/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../variant_notation/coordinate_systems/cytoband/" class="md-nav__link">
+        CytoBand Coordinates
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        Developer Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developer Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Developer Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" >
+      
+      <label class="md-nav__link" for="__nav_8_1">
+        Graphkb
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Graphkb" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_1">
+          <span class="md-nav__icon md-icon"></span>
+          Graphkb
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/__init__/" class="md-nav__link">
+        graphkb
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/genes/" class="md-nav__link">
+        graphkb.genes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/match/" class="md-nav__link">
+        graphkb.match
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/statement/" class="md-nav__link">
+        graphkb.statement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/types/" class="md-nav__link">
+        graphkb.types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/util/" class="md-nav__link">
+        graphkb.util
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/graphkb/vocab/" class="md-nav__link">
+        graphkb.vocab
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
+      
+      <label class="md-nav__link" for="__nav_8_2">
+        Ipr
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Ipr" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ipr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/annotate/" class="md-nav__link">
+        ipr.annotate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/connection/" class="md-nav__link">
+        ipr.connection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/inputs/" class="md-nav__link">
+        ipr.inputs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/ipr/" class="md-nav__link">
+        ipr.ipr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/main/" class="md-nav__link">
+        ipr.main
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/summary/" class="md-nav__link">
+        ipr.summary
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/therapeutic_options/" class="md-nav__link">
+        ipr.therapeutic_options
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/types/" class="md-nav__link">
+        ipr.types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developer_reference/ipr/util/" class="md-nav__link">
+        ipr.util
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#expression-variant-data" class="md-nav__link">
+    Expression Variant Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Expression Variant Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-mutation-data" class="md-nav__link">
+    Small Mutation Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Small Mutation Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_1" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_1" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-variant-data" class="md-nav__link">
+    Copy Variant Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Copy Variant Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_2" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_2" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-variant-fusion-data" class="md-nav__link">
+    Structural Variant (Fusion) Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Structural Variant (Fusion) Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-columns_3" class="md-nav__link">
+    Required Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-columns_3" class="md-nav__link">
+    Optional Columns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/bcgsc/pori/edit/master/docs/ipr/python_adaptor/variant_inputs.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="variant-input-files">Variant Input Files</h1>
+<p>The reference documentation for <code>genomic_report.inputs</code> contains the function signatures. This
+document is focused on users building the files. All variant files for the genomic report
+use a tab delimited format. The column names, types and example inputs are shown below.</p>
+<h2 id="expression-variant-data">Expression Variant Data</h2>
+<h3 id="required-columns">Required Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gene</td>
+<td>string</td>
+<td>KRAS</td>
+<td>the gene name (or source identifier)</td>
+</tr>
+<tr>
+<td>kbCategory</td>
+<td>string</td>
+<td>increased expression</td>
+<td>the graphkb expression variant vocabulary term this variant belongs to. One of: increased expression, reduced expression</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-columns">Optional Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expressionState</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>rnaReads</td>
+<td>float</td>
+<td></td>
+</tr>
+<tr>
+<td>rpkm</td>
+<td>float</td>
+<td>reads per kilobase of transcript, per million mapped reads</td>
+</tr>
+<tr>
+<td>tpm</td>
+<td>float</td>
+<td>transcript per million</td>
+</tr>
+<tr>
+<td>diseasePercentile</td>
+<td>float</td>
+<td>the percentile with respect to the disease expression comparator cohort</td>
+</tr>
+<tr>
+<td>diseasekIQR</td>
+<td>float</td>
+<td>the kIQR with respect to the disease expression comparator cohort</td>
+</tr>
+<tr>
+<td>diseaseZScore</td>
+<td>float</td>
+<td>the zscore with respect to the disease expression comparator cohort</td>
+</tr>
+<tr>
+<td>diseaseFoldChange</td>
+<td>float</td>
+<td>the fold change with respect to the median of the disease expression comparator cohort</td>
+</tr>
+<tr>
+<td>diseaseQC</td>
+<td>float</td>
+<td></td>
+</tr>
+<tr>
+<td>primarySitePercentile</td>
+<td>float</td>
+<td>the percentile with respect to the normal primary site expression comparator cohort</td>
+</tr>
+<tr>
+<td>primarySitekIQR</td>
+<td>float</td>
+<td>the kIQR with respect to the normal primary site expression comparator cohort</td>
+</tr>
+<tr>
+<td>primarySiteZScore</td>
+<td>float</td>
+<td>the zscore with respect to the normal primary site expression comparator cohort</td>
+</tr>
+<tr>
+<td>primarySiteFoldChange</td>
+<td>float</td>
+<td>the fold change with respect to the median of the normal primary site expression comparator cohort</td>
+</tr>
+<tr>
+<td>primarySiteQC</td>
+<td>float</td>
+<td></td>
+</tr>
+<tr>
+<td>biopsySitePercentile</td>
+<td>float</td>
+<td>the percentile with respect to the normal biopsy site expression comparator cohort</td>
+</tr>
+<tr>
+<td>biopsySitekIQR</td>
+<td>float</td>
+<td>the kIQR with respect to the normal biopsy site expression comparator cohort</td>
+</tr>
+<tr>
+<td>biopsySiteZScore</td>
+<td>float</td>
+<td>the zscore with respect to the normal biopsy site expression comparator cohort</td>
+</tr>
+<tr>
+<td>biopsySiteFoldChange</td>
+<td>float</td>
+<td>the fold change with respect to the median of the normal biopsy site expression comparator cohort</td>
+</tr>
+<tr>
+<td>biopsySiteQC</td>
+<td>float</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="small-mutation-data">Small Mutation Data</h2>
+<p>Small mutations are composed of indels and single nucleotide variants.</p>
+<h3 id="required-columns_1">Required Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chromosome</td>
+<td>string</td>
+<td>X</td>
+<td>the chromosome</td>
+</tr>
+<tr>
+<td>startPostion</td>
+<td>integer</td>
+<td>1234</td>
+<td>the genomic start position of this variant</td>
+</tr>
+<tr>
+<td>endPosition</td>
+<td>integer</td>
+<td>1234</td>
+<td>the genomic end position of this variant</td>
+</tr>
+<tr>
+<td>refSeq</td>
+<td>string</td>
+<td>A</td>
+<td>the reference sequence</td>
+</tr>
+<tr>
+<td>altSeq</td>
+<td>string</td>
+<td>C</td>
+<td>the alternate/new sequence</td>
+</tr>
+<tr>
+<td>gene</td>
+<td>string</td>
+<td>KRAS</td>
+<td>the gene name</td>
+</tr>
+<tr>
+<td>proteinChange</td>
+<td>string</td>
+<td>p.G12D</td>
+<td>the HGVS protein notation</td>
+</tr>
+<tr>
+<td>transcript</td>
+<td>string</td>
+<td>ENST00001.2</td>
+<td>the transcript name</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-columns_1">Optional Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zygosity</td>
+<td>string</td>
+<td>het</td>
+<td></td>
+</tr>
+<tr>
+<td>tumourRefCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of reference reads in the tumour genome</td>
+</tr>
+<tr>
+<td>tumourAltCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of alternate reads in the tumour genome supporting the mutation</td>
+</tr>
+<tr>
+<td>tumourDepth</td>
+<td>integer</td>
+<td>1</td>
+<td>the total number of reads at this position in the tumour genome</td>
+</tr>
+<tr>
+<td>rnaRefCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of reference reads in the rna</td>
+</tr>
+<tr>
+<td>rnaAltCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of alternate reads in the rna  supporting the mutation</td>
+</tr>
+<tr>
+<td>rnaDepth</td>
+<td>integer</td>
+<td>1</td>
+<td>the total number of reads at this position in the rna</td>
+</tr>
+<tr>
+<td>normalRefCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of reference reads in the normal genome</td>
+</tr>
+<tr>
+<td>normalAltCount</td>
+<td>integer</td>
+<td>1</td>
+<td>the number of alternate reads in the normal genome supporting the mutation</td>
+</tr>
+<tr>
+<td>normalDepth</td>
+<td>integer</td>
+<td>1</td>
+<td>the total number of reads at this position in the normal genome</td>
+</tr>
+<tr>
+<td>detectedIn</td>
+<td>string</td>
+<td>DNA/RNA</td>
+<td>the sample types this variant was detected in</td>
+</tr>
+<tr>
+<td>hgvsCds</td>
+<td>string</td>
+<td><code>ENST0001:c.1234+3A&gt;G</code></td>
+<td>HGVS coding sequence notation for this variant</td>
+</tr>
+<tr>
+<td>hgvsGenomic</td>
+<td>string</td>
+<td><code>1:g.1234A&gt;G</code></td>
+<td>HGVS genomic notation for this variant</td>
+</tr>
+<tr>
+<td>hgvsProtein</td>
+<td>string</td>
+<td><code>KRAS:p.G12D</code></td>
+<td>HGVS protein notation for this variant</td>
+</tr>
+<tr>
+<td>ncbiBuild</td>
+<td>string</td>
+<td>GRCh37</td>
+<td>the genome reference assembly build version</td>
+</tr>
+</tbody>
+</table>
+<h2 id="copy-variant-data">Copy Variant Data</h2>
+<h3 id="required-columns_2">Required Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gene</td>
+<td>string</td>
+<td>KRAS</td>
+<td>the gene name</td>
+</tr>
+<tr>
+<td>kbCategory</td>
+<td>string</td>
+<td>deep deletion</td>
+<td>the graphkb copy variant vocabulary term this variant belongs to. One of: amplification, deep deletion, low level copy gain, and shallow deletion. By default only amplifications and deep deletions are matched</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-columns_2">Optional Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>copyChange</td>
+<td>integer</td>
+<td>-2</td>
+<td>the ploidy corrected copy change</td>
+</tr>
+<tr>
+<td>lohState</td>
+<td>string</td>
+<td>HET</td>
+<td>the loss-of-heterozygosity category for this gene region</td>
+</tr>
+<tr>
+<td>chromosomeBand</td>
+<td>string</td>
+<td>X:p12.2</td>
+<td></td>
+</tr>
+<tr>
+<td>start</td>
+<td>integer</td>
+<td></td>
+<td>the genomic start position of the copy segment this gene copy number was called from</td>
+</tr>
+<tr>
+<td>end</td>
+<td>integer</td>
+<td></td>
+<td>the genomic end position of the copy segment this gene copy number was called from</td>
+</tr>
+<tr>
+<td>cna</td>
+<td>float</td>
+<td>1.22</td>
+<td>The copy number alteration (CNA) ratio</td>
+</tr>
+<tr>
+<td>log2Cna</td>
+<td>float</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="structural-variant-fusion-data">Structural Variant (Fusion) Data</h2>
+<h3 id="required-columns_3">Required Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eventType</td>
+<td>string</td>
+<td>deletion</td>
+<td>the type of underlying structural variant</td>
+</tr>
+<tr>
+<td>breakpoint</td>
+<td>string</td>
+<td>12:123456|14:1244662</td>
+<td>description of the breakpoints involved in this structural variant</td>
+</tr>
+<tr>
+<td>gene1</td>
+<td>string</td>
+<td>EWSR1</td>
+<td>the 5' (n-terminal) gene name</td>
+</tr>
+<tr>
+<td>gene2</td>
+<td>string</td>
+<td>FLI1</td>
+<td>the 3' (c-terminal) gene name</td>
+</tr>
+<tr>
+<td>exon1</td>
+<td>integer</td>
+<td>1</td>
+<td>the 5' (n-terminal) exon</td>
+</tr>
+<tr>
+<td>exon2</td>
+<td>integer</td>
+<td>2</td>
+<td>the 3' (c-terminal) exon</td>
+</tr>
+<tr>
+<td>nTermTranscript</td>
+<td>string</td>
+<td>ENST0001.2</td>
+<td>the 3' transcript name</td>
+</tr>
+<tr>
+<td>ctermTranscript</td>
+<td>string</td>
+<td>ENST004.5</td>
+<td>the 5' transcript name</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-columns_3">Optional Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detectedIn</td>
+<td>string</td>
+<td>DNA</td>
+<td>the sample type(s) this SV was detected in</td>
+</tr>
+<tr>
+<td>conventionalName</td>
+<td>string</td>
+<td></td>
+<td>cytogenic descriptor</td>
+</tr>
+<tr>
+<td>svg</td>
+<td>string</td>
+<td></td>
+<td>svg image file for this SV</td>
+</tr>
+<tr>
+<td>svgTitle</td>
+<td>string</td>
+<td></td>
+<td>title for the svg</td>
+</tr>
+<tr>
+<td>omicSupport</td>
+<td>boolean</td>
+<td></td>
+<td>flag to indicate this SV has support from both genome and transcriptome</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              User Manual
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../optional_content/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Additional Metadata
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "navigation.sections", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../../js/mathjax.config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
