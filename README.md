@@ -16,3 +16,34 @@ deployed via docker-compose
 ## Citation
 
 A pre-print of the related manuscript can be found at [biorxiv](https://www.biorxiv.org/content/10.1101/2021.04.13.439667v1).
+
+## Building the Docs (Developers)
+
+The main PORI site is built from this repo and pull documentation files from the python adaptor repos. The documentation is built using mkdocs. The main website
+will be updated on merge to the master branch of this repository.
+
+First, set up a virtual environment (Optional but recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -U setuptools pip
+```
+
+Install the python dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the script to pull the other respository files
+
+```bash
+bash docs/build_external.sh
+```
+
+And finally serve the docuemntation for viewing locally with
+
+```bash
+mkdocs serve
+```
