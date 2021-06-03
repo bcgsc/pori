@@ -75,7 +75,7 @@ services:
       - 5432:5432
     networks:
       - app-network
-  ipr_cache:
+  redis:
     image: redis:6.2-alpine
     # Set health checks to wait until redis has started
     healthcheck:
@@ -104,11 +104,11 @@ services:
       IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
       IPR_GRAPHKB_URI: https://pori-demo.bcgsc.ca/graphkb-api/api # http://graphkb_api:8080/api
       IPR_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token # http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
-      IPR_REDIS_HOST: ipr_cache
+      IPR_REDIS_HOST: redis
       IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
-      - ipr_cache
+      - redis
     networks:
       - app-network
     restart: always
