@@ -18,7 +18,7 @@ services:
         target: /orientdb/backup
         type: bind
   graphkb_api:
-    image: bcgsc/pori-graphkb-api:v3.12.1-beta
+    image: bcgsc/pori-graphkb-api:v3.13.2
     ports:
       - 8080:8080
     environment:
@@ -42,9 +42,7 @@ services:
         type: bind
         read_only: true
   graphkb_client:
-    build:
-      context: ./../pori_graphkb_client # TODO: REPLACE WITH PUBLISHED IMAGE
-      dockerfile: Dockerfile
+    image: bcgsc/pori-graphkb-client:v4.2.2
     environment:
       KEYCLOAK_REALM: PORI
       KEYCLOAK_CLIENT_ID: GraphKB
@@ -61,9 +59,7 @@ services:
       - app-network
     restart: always
   ipr_db:
-    build:
-      context: ./../pori_ipr_api # TODO: REPLACE WITH PUBLISHED IMAGE
-      dockerfile: Dockerfile.db
+    image: bcgsc/pori-ipr-demodb:v6.2.3
     restart: always
     environment:
       DATABASE_NAME: ipr_demo
@@ -79,10 +75,22 @@ services:
       - 5432:5432
     networks:
       - app-network
+  redis:
+    image: redis:6.2-alpine
+    # Set health checks to wait until redis has started
+    healthcheck:
+      test: redis-cli ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      # Maps port 6379 on service container to the host
+      - 6379:6379
+    networks:
+      - app-network
+    restart: always
   ipr_api:
-    build:
-      context: ./../pori_ipr_api # TODO: REPLACE WITH PUBLISHED IMAGE
-      dockerfile: Dockerfile
+    image: bcgsc/pori-ipr-api:v6.2.3
     ports:
       - 8081:8080
     environment:
@@ -96,8 +104,11 @@ services:
       IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
       IPR_GRAPHKB_URI: https://pori-demo.bcgsc.ca/graphkb-api/api # http://graphkb_api:8080/api
       IPR_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token # http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
+      IPR_REDIS_HOST: redis
+      IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
+      - redis
     networks:
       - app-network
     restart: always
@@ -107,9 +118,7 @@ services:
         type: bind
         read_only: true
   ipr_client:
-    build:
-      context: ./../pori_ipr_client # TODO: REPLACE WITH PUBLISHED IMAGE
-      dockerfile: Dockerfile
+    image: bcgsc/pori-ipr-client:v6.2.1
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
