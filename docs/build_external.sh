@@ -21,10 +21,6 @@ else
     cd ../..
 fi
 
-# copy docs for graphkb python
-mkdir -p docs/graphkb/python_adaptor
-cp -r docs/_pori_graphkb_python/docs/* docs/graphkb/python_adaptor
-
 # now build the reference python module API files
 markdown_refdocs \
     docs/_pori_graphkb_python/graphkb \
