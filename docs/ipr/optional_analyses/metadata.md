@@ -1,13 +1,7 @@
-# Metadata
+# Patient Metadata
 
 ```json
 {
-    "alternateIdentifier": "string",
-    "biopsyName": "string",
-    "project": "string",
-    "tumourContent": 45,
-    "ploidy": "diploid",
-    "subtyping": "Luminal A",
     "patientInformation": {
         "age": "",
         "biopsySite": "Description of biopsy site",
@@ -23,7 +17,7 @@
 }
 ```
 
-The patient information fields are given in detail below
+The patient information fields are listed in detail below
 
 {%
    include-markdown "../includes/patientInformation.md"

@@ -22,7 +22,7 @@ def get_type(obj):
         return str(obj)
 
 
-def spec_to_md(spec, optional_only=False):
+def spec_to_md(spec, optional_only=False, ignore_nested=False):
 
     has_example = False
 
@@ -42,6 +42,8 @@ def spec_to_md(spec, optional_only=False):
         prop_defn = spec['properties'][prop_name]
         is_req = prop_name in required_props
         if optional_only and prop_name in required_props:
+            continue
+        if ('properties' in prop_defn or 'items' in prop_defn) and ignore_nested:
             continue
         desc = prop_defn.get('description', '')
         examples = (
@@ -81,22 +83,24 @@ specfile = os.path.join(os.path.dirname(__file__), '_pori_ipr_python/ipr/content
 with open(specfile, 'r') as fh:
     spec = json.load(fh)
 
-for defn, filename, optional_only in [
-    (spec['properties']['expressionVariants']['items'], 'expressionVariants', True),
+for defn, filename, optional_only, ignore_nested in [
+    (spec['properties']['expressionVariants']['items'], 'expressionVariants', True, False),
     (
         spec['properties']['pairwiseExpressionCorrelation']['items'],
         'pairwiseExpressionCorrelation',
         False,
+        False,
     ),
-    (spec['properties']['hlaTypes']['items'], 'hlaTypes', False),
-    (spec['properties']['immuneCellTypes']['items'], 'immuneCellTypes', False),
-    (spec['properties']['mutationSignature']['items'], 'mutationSignature', False),
-    (spec['properties']['mutationBurden']['items'], 'mutationBurden', False),
-    (spec['properties']['comparators']['items'], 'comparators', False),
-    (spec['properties']['smallMutations']['items'], 'smallMutations', False),
-    (spec['properties']['structuralVariants']['items'], 'structuralVariants', False),
-    (spec['properties']['copyVariants']['items'], 'copyVariants', False),
-    (spec['properties']['patientInformation'], 'patientInformation', False),
+    (spec['properties']['hlaTypes']['items'], 'hlaTypes', False, False),
+    (spec['properties']['immuneCellTypes']['items'], 'immuneCellTypes', False, False),
+    (spec['properties']['mutationSignature']['items'], 'mutationSignature', False, False),
+    (spec['properties']['mutationBurden']['items'], 'mutationBurden', False, False),
+    (spec['properties']['comparators']['items'], 'comparators', False, False),
+    (spec['properties']['smallMutations']['items'], 'smallMutations', False, False),
+    (spec['properties']['structuralVariants']['items'], 'structuralVariants', False, False),
+    (spec['properties']['copyVariants']['items'], 'copyVariants', False, False),
+    (spec['properties']['patientInformation'], 'patientInformation', False, False),
+    (spec, 'general', False, True),
 ]:
     with open(os.path.join(os.path.dirname(__file__), 'ipr/includes', filename + '.md'), 'w') as fh:
-        fh.write(spec_to_md(defn, optional_only=optional_only))
+        fh.write(spec_to_md(defn, optional_only=optional_only, ignore_nested=ignore_nested))
