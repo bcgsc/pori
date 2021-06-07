@@ -18,7 +18,7 @@ In the graph above the relationship types shown are: `GeneralizationOf` (G), `El
 
 ## Match by Name
 
-Like before, the first thing done is to match the input name
+As before, the first thing done is to match the input name
 
 ![match by name](../images/pori-gene-matching-2.png)
 
