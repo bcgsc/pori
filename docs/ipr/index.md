@@ -9,3 +9,5 @@ This project is modularized across 3 repositories: [web client](https://github.c
 [REST API](https://github.com/bcgsc/pori_ipr_api), and a [python adaptor](https://github.com/bcgsc/pori_ipr_python).
 The API and web client are servers and are provided as docker containers. The python adaptor is
 used to build reports and upload them into IPR.
+
+Reports in IPR are divided into a series of sections. These are either create by the IPR python adaptor (ex. knowledgebase matches section), manually curated post-report creation (ex. analyst comments); or generated beforehand and included in the content passed to IPR via the python adaptor (ex. optional analyses).
