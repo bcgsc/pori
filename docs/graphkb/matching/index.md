@@ -17,7 +17,7 @@ GeneralizationOf, AliasOf, CrossReferenceOf, DeprecatedBy, and Infers. Whereas t
 inheritance-like edges are: SubClassOf, and ElementOf.
 
 !!! Note "Edge Groups are Configurable"
-    These are the default division of Edges. However, classes used the edge sets
+    These are the default division of Edges. However, classes used for the edge sets
     can be configured in the query body of similarTo type
     queries sent to GraphKB
 
