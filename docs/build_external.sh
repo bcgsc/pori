@@ -29,4 +29,5 @@ markdown_refdocs \
     --link
 
 # build the spec tables
+mkdir -p docs/ipr/includes
 python docs/ipr_spec_tables.py
