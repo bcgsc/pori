@@ -26,7 +26,7 @@ create_report(...)
 
 The pre-generated content (ex. variant calls) of the report is passed to this function via a JSON object. The various sections of this object are desribed in the core variants and optional analyses sections.
 
-The [full specification](https://raw.githubusercontent.com/bcgsc/pori_ipr_python/feature/json-only/ipr/content.spec.json) for the upload can be viewed/explored via the JSON schema explorer [here](https://json-schema.app/view?url=https://raw.githubusercontent.com/bcgsc/pori_ipr_python/feature/json-only/ipr/content.spec.json)
+The [full specification](https://raw.githubusercontent.com/bcgsc/pori_ipr_python/feature/json-only/ipr/content.spec.json) for the upload can be viewed/explored via the JSON schema explorer [here](https://json-schema.app/view?url=https://raw.githubusercontent.com/bcgsc/pori_ipr_python/master/ipr/content.spec.json)
 
 Most content is optional with a few top-level elements required
 
