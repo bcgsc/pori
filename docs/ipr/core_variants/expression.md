@@ -54,7 +54,7 @@ The [percentile rank](https://en.wikipedia.org/wiki/Percentile_rank) is a non-pa
 
 ## Comparators
 
-All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the [comparators section](../optional_content/comparators.md) of the user manual.
+All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the [comparators section](../optional_analyses/comparators.md) of the user manual.
 
 Expression comparators fall into three main groups: disease, primary site, and biopsy site.
 
