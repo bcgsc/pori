@@ -22,7 +22,7 @@ As with the other variants, these should be passed to the IPR python adaptor in 
 }
 ```
 
-Each variant is an object which may contain any of the following fields (in addition to the required fields)
+Each variant is an object which may contain any of the following fields (in addition to the required fields). Examples of how these fields are calculated can be found in the [scripting examples section](../../scripting/RNA_Expression_Metrics).
 
 {%
    include-markdown "../includes/expressionVariants.md"
