@@ -1,5 +1,5 @@
 
-# About
+# About IPR
 
 Integrated Pipeline Reports (IPR) is the main reporting application of IPR. It is a web application
 that is used to review and curate reports which summarize the interpretation of molecular data from
