@@ -48,7 +48,7 @@ We welcome and encourage community contributions! If you have a feature request,
 If you are a developer and would like to directly add and work on features, please submit a ticket
 for any new features and indicate that you would like to complete it or comment on an existing ticket.
 Following discussion with the main developers you should fork the repository and then submit a pull request
-from your forked version to the main repository.
+from your forked version to the main repository. Please see the developer contributing guidelines [here](./developer_reference/contributing.md)
 
 ## How Can I Try This Out?
 
