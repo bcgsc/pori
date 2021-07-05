@@ -1,6 +1,6 @@
 # Expression Variants
 
-In an effort to be extensible and quick to use there are only 2 required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).
+In an effort to be extensible and quick to use there are only two required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).
 
 | Field      | Type   | Example              | Description                                                                                                              |
 | ---------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
