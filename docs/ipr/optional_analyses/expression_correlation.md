@@ -12,7 +12,7 @@ This plot represents the pairwise correlation of the RNA expression of the curre
 
 ![expression correlation plot](../images/expression_correlation.png)
 
-An example of how this type of plot is created can be found in the scripting examples [here](../../scripting/RNA_Expression_Correlation).
+An example of how this type of plot is created can be found in the scripting examples [here](../../scripting/RNA_Expression_Similarity).
 
 ## Subtyping Plots
 
