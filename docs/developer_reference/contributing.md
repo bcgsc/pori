@@ -133,6 +133,8 @@ pattern where
 | MINOR          | New Features or Significant Improvements | when you add functionality in a backwards-compatible manner                                                           |
 | PATCH          | BugFixes or Minor/Trivial Improvements   | when you make backwards-compatible bug fixes (or other TRIVIAL changes. ex. fixing a spelling error in documentation) |
 
+The tag (release) in github itself should begin with a v followed by the current version (ex.`v5.2.0`)
+
 ### Release Notes
 
 Try to group changes with Major or Breaking changes at the top, followed by new features and then bugfixes and improvements. This way the content the users are likely most interested in is at the top. Release notes should be added when the release is created via the github interface and look something like this
