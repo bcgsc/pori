@@ -18,7 +18,7 @@ services:
         target: /orientdb/backup
         type: bind
   graphkb_api:
-    image: bcgsc/pori-graphkb-api:v3.13.2
+    image: bcgsc/pori-graphkb-api:v3.13.3
     ports:
       - 8080:8080
     environment:
@@ -31,6 +31,7 @@ services:
       GKB_CORS_ORIGIN: '^https://pori-demo\.bcgsc\.ca.*$$'
       GKB_DBS_PASS: root
       GKB_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token
+      GKB_BASE_PATH: /graphkb-api
     depends_on:
       - graphkb_db
     networks:
