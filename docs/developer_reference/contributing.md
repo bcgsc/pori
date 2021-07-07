@@ -101,6 +101,27 @@ Following a release, the master branch is merged back into the development branc
 
 ## Releases
 
+### General Release Process
+
+In the following running example we are making the release v5.2.0
+
+1. Make a release branch off develop
+
+    ```bash
+    git checkout develop
+    git pull
+    git checkout -b release/v5.2.0
+    git push --set-upstream origin release/v5.2.0
+    ```
+
+2. Edit the version files (see [Versioning](#versioning) below)
+3. Set up a pull request (PR) from the Release Branch to the Master Branch
+
+    The PR description should match what the upcoming release notes will be. This gives the reviewers a chance to review the release notes as part of the PR review
+
+4. Once Approved and Merged, Tag a Release on Master (See [Release Notes](#release-notes))
+5. Finally, Make a PR from master to develop. This should just be called something like "master back to dev" and does not require a description
+
 ### Versioning
 
 Each project in PORI uses [semantic versioning](https://semver.org/). For python projects this should be written in the setup.py script
