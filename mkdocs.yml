@@ -40,6 +40,7 @@ plugins:
           graphkb/scripting/intro_tutorial.md: graphkb/scripting/Intro_Tutorial.ipynb
 nav:
   - Home: index.md
+  - demo.md
   - install.md
   - repos.md
   - faq.md
