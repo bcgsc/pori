@@ -1,4 +1,4 @@
-# About
+# About GraphKB
 
 GraphKB is a graph-based implementation of a cancer knowledge base. GraphKB is unique among other knowledge base projects in its inclusion of ontology relations and subsquent real-time leveraging of their inherent graph structure.
 

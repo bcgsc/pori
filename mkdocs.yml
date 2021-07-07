@@ -18,6 +18,8 @@ markdown_extensions:
       base_path: docs
   - pymdownx.arithmatex:
       generic: true
+  - toc:
+      permalink: true
 extra_javascript:
   - js/mathjax.config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -32,6 +34,10 @@ plugins:
   - awesome-pages
   - search
   - include-markdown
+  - mknotebooks
+  - redirects:
+      redirect_maps:
+          graphkb/scripting/intro_tutorial.md: graphkb/scripting/Intro_Tutorial.ipynb
 nav:
   - Home: index.md
   - install.md

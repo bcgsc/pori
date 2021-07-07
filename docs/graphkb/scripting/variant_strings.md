@@ -1,7 +1,6 @@
 # Annotate Variant List
 
-The script [annotate_variant_list.py](./annotate_variant_list.py) can be used to match variants from input '=
-files to an instance of GraphKB. Copy the script locally and install the package dependencies.
+The script [annotate_variant_list.py](./annotate_variant_list.py) can be used to match variants from input files to an instance of GraphKB. Copy the script locally and install the package dependencies.
 
 This example script expects a file with a single field (variant) and no header. Each line should
 be a separate HGVS-like variant notation. For example

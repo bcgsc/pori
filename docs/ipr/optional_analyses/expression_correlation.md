@@ -12,6 +12,8 @@ This plot represents the pairwise correlation of the RNA expression of the curre
 
 ![expression correlation plot](../images/expression_correlation.png)
 
+An example of how this type of plot is created can be found in the scripting examples [here](../../scripting/RNA_Expression_Similarity).
+
 ## Subtyping Plots
 
 These plots are similar to the main comparator based plots but are generally smaller and include only a set of subtypes of a specific cancer type (ex. BRCA).

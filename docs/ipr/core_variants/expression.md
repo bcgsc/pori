@@ -1,6 +1,6 @@
 # Expression Variants
 
-In an effort to be extensible and quick to use there are only 2 required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).
+In an effort to be extensible and quick to use there are only two required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).
 
 | Field      | Type   | Example              | Description                                                                                                              |
 | ---------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -22,7 +22,7 @@ As with the other variants, these should be passed to the IPR python adaptor in 
 }
 ```
 
-Each variant is an object which may contain any of the following fields (in addition to the required fields)
+Each variant is an object which may contain any of the following fields (in addition to the required fields). Examples of how these fields are calculated can be found in the [scripting examples section](../../scripting/RNA_Expression_Metrics).
 
 {%
    include-markdown "../includes/expressionVariants.md"
@@ -54,7 +54,7 @@ The [percentile rank](https://en.wikipedia.org/wiki/Percentile_rank) is a non-pa
 
 ## Comparators
 
-All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the [comparators section](../optional_content/comparators.md) of the user manual.
+All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the [comparators section](../optional_analyses/comparators.md) of the user manual.
 
 Expression comparators fall into three main groups: disease, primary site, and biopsy site.
 

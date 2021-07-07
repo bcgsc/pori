@@ -1,4 +1,4 @@
-# About
+# About Variant Notation
 
 The variant notation is a shorthand to make it faster to enter/display variants. It is made up of two forms: [continuous](./continuous.md), and [multi-feature](./split.md). Most people will be more familiar with the continuous notation. It is based on [HGVS v15.11](http://varnomen.hgvs.org/) and can be used to describe any variant that has only a single reference feature (i.e. KRAS). [Multi-feature notation](./split.md) is required when one needs to describe any variant involving multiple reference features. This could be something like a gene fusion where the reference features might be EWSR1, and FLI1.
 
