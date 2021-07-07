@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../styles.css">
     
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
     
       
     
@@ -283,7 +289,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -439,8 +445,20 @@
   
   
     <li class="md-nav__item">
-      <a href="intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -514,7 +532,19 @@
   
     <li class="md-nav__item">
       <a href="../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -540,14 +570,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -627,14 +657,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -742,6 +772,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -780,7 +861,7 @@
   
     <li class="md-nav__item">
       <a href="../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1201,13 +1282,13 @@
                   </a>
                 
                 
-                <h1 id="user-manual">User Manual</h1>
+                <h1 id="user-manual">User Manual<a class="headerlink" href="#user-manual" title="Permanent link">&para;</a></h1>
 <p>The GraphKB python adapter is a python package to facilitate interacting with the GraphKB API.
 The GraphKB API is a REST API <a href="https://graphkb.bcgsc.ca/api">https://graphkb.bcgsc.ca/api)</a>. The openapi specification
 is hosted here: <a href="https://graphkb-api.bcgsc.ca/api/spec">https://graphkb-api.bcgsc.ca/api/spec</a>.
 The <a href="https://graphkb.bcgsc.ca/about">client</a> also contains documentation on the background and features of GraphKB</p>
 <p>This adapter adds functions for common queries as well as for paginating and authenticating</p>
-<h2 id="getting-started">Getting Started</h2>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>Install the python adapter with pip</p>
 <div class="highlight"><pre><span></span><code>pip install graphkb
 </code></pre></div>
@@ -1227,7 +1308,7 @@ information from graphkb</p>
 <p>Querying GraphKB uses the <code>/query</code> endpoint which takes the query arguments in the request body.
 See the <a href="https://graphkb-api.bcgsc.ca/api/spec">openapi specification</a> for more details on how to
 build this object.</p>
-<h2 id="matching-variants">Matching Variants</h2>
+<h2 id="matching-variants">Matching Variants<a class="headerlink" href="#matching-variants" title="Permanent link">&para;</a></h2>
 <p>There are 2 main matching functions, one of positional variants and one for category variants. Let's
 take a look at a couple of examples</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb</span> <span class="kn">import</span> <span class="n">GraphKBConnection</span>
@@ -1289,13 +1370,13 @@ statement</p>
         </a>
       
       
-        <a href="intro_tutorial/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="Annotate_a_VCF_with_GraphKB/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Matching Tutorial
+              Annotate a VCF with GraphKB
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -283,7 +289,7 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -392,8 +398,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -477,7 +495,19 @@
   
     <li class="md-nav__item">
       <a href="../../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -503,14 +533,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -590,14 +620,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -705,6 +735,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -743,7 +824,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1142,7 +1223,7 @@
                   </a>
                 
                 
-                <h1 id="annotate-snpsift-files">Annotate SNPSift Files</h1>
+                <h1 id="annotate-snpsift-files">Annotate SNPSift Files<a class="headerlink" href="#annotate-snpsift-files" title="Permanent link">&para;</a></h1>
 <p>The script <a href="../annotate_snpsift.py">annotate_snpsift.py</a> can be used to match variants from input files to an instance of GraphKB. Copy the script locally and install the package dependencies.</p>
 <div class="admonition note">
 <p class="admonition-title">Must use Python3.6 or higher</p>
@@ -1181,7 +1262,7 @@ list of arguments.</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../intro_tutorial/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Intro_Tutorial/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1190,7 +1271,7 @@ list of arguments.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Matching Tutorial
+              Intro Tutorial
             </div>
           </div>
         </a>

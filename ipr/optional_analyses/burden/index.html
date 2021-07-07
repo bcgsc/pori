@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -465,7 +483,19 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -491,14 +521,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -580,14 +610,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" checked>
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -783,6 +813,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -821,7 +902,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1283,8 +1364,8 @@
                   </a>
                 
                 
-                <h1 id="mutation-burden">Mutation Burden</h1>
-<h2 id="data">Data</h2>
+                <h1 id="mutation-burden">Mutation Burden<a class="headerlink" href="#mutation-burden" title="Permanent link">&para;</a></h1>
+<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <p>Measure of the relative counts of various types of mutations compared to those from a given cohort
 of samples. The "role" determines with comparator these values are calculated in reference to</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1379,7 +1460,7 @@ of samples. The "role" determines with comparator these values are calculated in
 </table>
 <!-- END INCLUDE -->
 
-<h2 id="comparators-and-roles">Comparators and Roles</h2>
+<h2 id="comparators-and-roles">Comparators and Roles<a class="headerlink" href="#comparators-and-roles" title="Permanent link">&para;</a></h2>
 <p>The role used by the mutation burden data is linked to the mutation burden images in the report
 that is created by the <a href="../comparators">comparators input</a>.</p>
 <p>The images use the following key: <code>mutationBurden\.(barplot|density|legend)_(sv|snv|indel)\.(primary|secondary|tertiary|quaternary)</code></p>
@@ -1430,23 +1511,23 @@ that is created by the <a href="../comparators">comparators input</a>.</p>
 </code></pre></div>
 <p>Note that the above only loaded images for the SNVs but similar images would be expected for SVs and
 indels.</p>
-<h2 id="images">Images</h2>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
 <p>A number of images can optionally be included and will be displayed in the mutation burden section of the report. These are summary images which represent the count of a variant type in the current report relative to the counts of samples in the reference distribution (based on the comparators listed above). These images are generated by the user prior to creating the report.</p>
 <p>full pattern: <code>mutationBurden\.(barplot|density|legend)_(sv|snv|indel)\.(primary|secondary|tertiary|quaternary)</code></p>
-<h3 id="snvs">SNVs</h3>
+<h3 id="snvs">SNVs<a class="headerlink" href="#snvs" title="Permanent link">&para;</a></h3>
 <p>key: <code>mutationBurden\.density_snv\.(primary|secondary|tertiary|quaternary)</code></p>
 <p><img alt="snv density plot" src="../../images/mutationBurden.density_snv.primary.png" /></p>
 <p>key: <code>mutationBurden\.barplot_snv\.(primary|secondary|tertiary|quaternary)</code></p>
 <p><img alt="snv bar plot" src="../../images/mutationBurden.barplot_snv.primary.png" /></p>
 <p>key: <code>mutationBurden\.density_indel\.(primary|secondary|tertiary|quaternary)</code></p>
-<h3 id="indels">Indels</h3>
+<h3 id="indels">Indels<a class="headerlink" href="#indels" title="Permanent link">&para;</a></h3>
 <p><img alt="indel density plot" src="../../images/mutationBurden.density_indel.primary.png" /></p>
 <p>key: <code>mutationBurden\.barplot_indel\.(primary|secondary|tertiary|quaternary)</code></p>
 <p><img alt="indel bar plot" src="../../images/mutationBurden.barplot_indel.primary.png" /></p>
-<h3 id="structural-variants">Structural Variants</h3>
+<h3 id="structural-variants">Structural Variants<a class="headerlink" href="#structural-variants" title="Permanent link">&para;</a></h3>
 <p>key: <code>mutationBurden\.density_sv\.(primary|secondary|tertiary|quaternary)</code></p>
 <p><img alt="sv density plot" src="../../images/mutationBurden.density_sv.primary.png" /></p>
-<h2 id="sv-specific-comparator-overloading">SV-specific Comparator Overloading</h2>
+<h2 id="sv-specific-comparator-overloading">SV-specific Comparator Overloading<a class="headerlink" href="#sv-specific-comparator-overloading" title="Permanent link">&para;</a></h2>
 <p>There are special overload comparators for stuctural variants since they often have a different
 comparator dataset from the SNV and Indels. Specifying an SV specific comparator will overload the
 more general comparator for the SV types</p>

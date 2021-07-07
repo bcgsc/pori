@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../styles.css">
     
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
     
       
     
@@ -283,7 +289,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -467,8 +473,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -542,7 +560,19 @@
   
     <li class="md-nav__item">
       <a href="../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -568,14 +598,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -655,14 +685,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -770,6 +800,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -808,7 +889,7 @@
   
     <li class="md-nav__item">
       <a href="../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1257,12 +1338,12 @@
                   </a>
                 
                 
-                <h1 id="ontology-algorithm">Ontology Algorithm</h1>
+                <h1 id="ontology-algorithm">Ontology Algorithm<a class="headerlink" href="#ontology-algorithm" title="Permanent link">&para;</a></h1>
 <p>The matching algorithm implemented by this adaptor heavily uses the Graph Structure of GraphKB
 to resolve aliases, generalisms, etc. The default behaviour of this algorithm is described below
 and shown in the related examples. This is primarily accomplished via the <code>similarTo</code> query type
 provided by the GraphKB API.</p>
-<h2 id="definitions">Definitions</h2>
+<h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
 <p>The entire knowledge base is defined as the graph, <span class="arithmatex">\(G = (V, E)\)</span>. For any given query let the
 subgraph of <span class="arithmatex">\(G\)</span> containing only vertices of the class type specified in the query (ex. Disease)
 be, <span class="arithmatex">\(V_t\)</span>.</p>
@@ -1285,11 +1366,11 @@ the following steps can be written</p>
 \]</div>
 <p>Disease matching on the following graph will be used as a running example</p>
 <p><img alt="disease matching" src="../images/pori-disease-matching-1.png" /></p>
-<h2 id="match-by-name">Match by Name</h2>
+<h2 id="match-by-name">Match by Name<a class="headerlink" href="#match-by-name" title="Permanent link">&para;</a></h2>
 <p>Let the set of vertices (from <span class="arithmatex">\(V_t\)</span>) where the name attribute is an exact match to the input query
 name be <span class="arithmatex">\(V_m\)</span>.</p>
 <p><img alt="disease matching" src="../images/pori-disease-matching-2.png" /></p>
-<h2 id="resolve-aliases">Resolve Aliases</h2>
+<h2 id="resolve-aliases">Resolve Aliases<a class="headerlink" href="#resolve-aliases" title="Permanent link">&para;</a></h2>
 <p>Follow synonym-like edges from the set of name-matched vertices</p>
 <p>Let <span class="arithmatex">\(P(v_0,v,E)\)</span> be the set of vertices that forms a path from vertex <span class="arithmatex">\(v_0\)</span> to
 <span class="arithmatex">\(v\)</span> along the edges in <span class="arithmatex">\(E\)</span> and in their direction. If no such path exists, then <span class="arithmatex">\(P = \emptyset\)</span>.</p>
@@ -1302,7 +1383,7 @@ name be <span class="arithmatex">\(V_m\)</span>.</p>
 \end{equation}
 \]</div>
 <p><img alt="disease matching" src="../images/pori-disease-matching-3.png" /></p>
-<h2 id="follow-the-inheritance-like-edges">Follow the Inheritance-like Edges</h2>
+<h2 id="follow-the-inheritance-like-edges">Follow the Inheritance-like Edges<a class="headerlink" href="#follow-the-inheritance-like-edges" title="Permanent link">&para;</a></h2>
 <p>The inheritance-like edges are followed next. Unlike the synonym-like edges, directionality is important here.
 By following the inheritence-like edges in <span class="arithmatex">\(E_\text{inh}\)</span> from and to all vertices <span class="arithmatex">\(V_\text{syn}\)</span> we create
 the set of inheritence vertices. This is the set of vertics involved in paths which originate or
@@ -1314,7 +1395,7 @@ terminate in a vertex perviously matched.</p>
 \end{equation}
 \]</div>
 <p><img alt="disease matching" src="../images/pori-disease-matching-4.png" /></p>
-<h2 id="resolve-final-aliases">Resolve Final Aliases</h2>
+<h2 id="resolve-final-aliases">Resolve Final Aliases<a class="headerlink" href="#resolve-final-aliases" title="Permanent link">&para;</a></h2>
 <p>Finally, we repeat the synonym-like expansion</p>
 <div class="arithmatex">\[
 \begin{equation}
@@ -1323,7 +1404,7 @@ terminate in a vertex perviously matched.</p>
 \end{equation}
 \]</div>
 <p><img alt="disease matching" src="../images/pori-disease-matching-5.png" /></p>
-<h2 id="bounding">Bounding</h2>
+<h2 id="bounding">Bounding<a class="headerlink" href="#bounding" title="Permanent link">&para;</a></h2>
 <p>Note that the above Graph Traversals are bounded by input parameters to specify a maximum depth.</p>
                 
               

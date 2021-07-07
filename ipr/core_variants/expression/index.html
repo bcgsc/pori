@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -465,7 +483,19 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -493,14 +523,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" checked>
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -688,14 +718,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -803,6 +833,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -841,7 +922,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1323,8 +1404,8 @@
                   </a>
                 
                 
-                <h1 id="expression-variants">Expression Variants</h1>
-<p>In an effort to be extensible and quick to use there are only 2 required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).</p>
+                <h1 id="expression-variants">Expression Variants<a class="headerlink" href="#expression-variants" title="Permanent link">&para;</a></h1>
+<p>In an effort to be extensible and quick to use there are only two required fields for expression variants: the name of the gene (gene) and whether the expression of that gene is up-regulated or down-regulated (kbCategory).</p>
 <table>
 <thead>
 <tr>
@@ -1359,7 +1440,7 @@
 
 <span class="p">}</span>
 </code></pre></div>
-<p>Each variant is an object which may contain any of the following fields (in addition to the required fields)</p>
+<p>Each variant is an object which may contain any of the following fields (in addition to the required fields). Examples of how these fields are calculated can be found in the <a href="../../scripting/RNA_Expression_Metrics">scripting examples section</a>.</p>
 <!-- BEGIN INCLUDE ../includes/expressionVariants.md   -->
 <table>
 <thead>
@@ -1474,30 +1555,30 @@
 </table>
 <!-- END INCLUDE -->
 
-<h2 id="metrics">Metrics</h2>
-<h3 id="z-score">Z-Score</h3>
+<h2 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h2>
+<h3 id="z-score">Z-Score<a class="headerlink" href="#z-score" title="Permanent link">&para;</a></h3>
 <p>The z-score (A.K.A. <a href="https://en.wikipedia.org/wiki/Standard_score">standard score</a>) is a metric used to describe a data point relative to a distribution with respect to the variance within that distribution. Formally it is defined as</p>
 <div class="arithmatex">\[
 z = \frac{\mu - x}{\sigma}
 \]</div>
-<h3 id="k-iqr">k-IQR</h3>
+<h3 id="k-iqr">k-IQR<a class="headerlink" href="#k-iqr" title="Permanent link">&para;</a></h3>
 <p>The k interquartile range is a used to compare a point against a distribution. It is defined as the distance of a given point from the median scaled by the interquartile range</p>
 <div class="arithmatex">\[
 k = \frac{Q_2 - x}{Q_3 - Q_1}
 \]</div>
 <p>This metric is similar to the z-score but more robust to outliers.</p>
-<h3 id="percentile">Percentile</h3>
+<h3 id="percentile">Percentile<a class="headerlink" href="#percentile" title="Permanent link">&para;</a></h3>
 <p>The <a href="https://en.wikipedia.org/wiki/Percentile_rank">percentile rank</a> is a non-parametric way of measuring a given data point relative to the distribution.</p>
-<h2 id="comparators">Comparators</h2>
-<p>All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the <a href="../optional_content/comparators.md">comparators section</a> of the user manual.</p>
+<h2 id="comparators">Comparators<a class="headerlink" href="#comparators" title="Permanent link">&para;</a></h2>
+<p>All of the standard expression metrics in IPR are expected to be calculated against a reference distribution of expression samples. To this end, IPR provides a number of fields to record which distributions were used. This ensures that the final result is interperable and reproducible. A complete list of comparators can be found in the <a href="../../optional_analyses/comparators/">comparators section</a> of the user manual.</p>
 <p>Expression comparators fall into three main groups: disease, primary site, and biopsy site.</p>
-<h3 id="disease">Disease</h3>
+<h3 id="disease">Disease<a class="headerlink" href="#disease" title="Permanent link">&para;</a></h3>
 <p>The reference distribution that most closely matches the diagnosis of the current sample</p>
-<h3 id="primary-site">Primary Site</h3>
+<h3 id="primary-site">Primary Site<a class="headerlink" href="#primary-site" title="Permanent link">&para;</a></h3>
 <p>The reference distribution that most closely matches the non-diseased/normal expression of the primary site tissue</p>
-<h3 id="biopsy-site">Biopsy Site</h3>
+<h3 id="biopsy-site">Biopsy Site<a class="headerlink" href="#biopsy-site" title="Permanent link">&para;</a></h3>
 <p>The reference distribution that most closely matches the non-diseased/normal expression of the biopsy site tissue. This is important for metastatic samples where the biopsy site and primary site differ.</p>
-<h2 id="images">Images</h2>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
 <p>The use can optionally include expression density plots to allow the user to view the relative expression of the current sample compared to a specific distribution.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>

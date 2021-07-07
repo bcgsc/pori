@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -463,7 +481,19 @@
   
     <li class="md-nav__item">
       <a href="../../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -489,14 +519,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -576,14 +606,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -691,6 +721,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -729,7 +810,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1355,9 +1436,9 @@
                   </a>
                 
                 
-                <h1 id="graphkbmatch">graphkb.match</h1>
+                <h1 id="graphkbmatch">graphkb.match<a class="headerlink" href="#graphkbmatch" title="Permanent link">&para;</a></h1>
 <p>Functions which return Variants from GraphKB which match some input variant definition</p>
-<h2 id="input_copy_categories">INPUT_COPY_CATEGORIES</h2>
+<h2 id="input_copy_categories">INPUT_COPY_CATEGORIES<a class="headerlink" href="#input_copy_categories" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">INPUT_COPY_CATEGORIES</span> <span class="o">=</span> <span class="n">IterableNamespace</span><span class="p">(</span>
     <span class="n">AMP</span><span class="o">=</span><span class="s1">&#39;amplification&#39;</span><span class="p">,</span>
     <span class="n">ANY_GAIN</span><span class="o">=</span><span class="s1">&#39;copy gain&#39;</span><span class="p">,</span>
@@ -1367,15 +1448,15 @@
     <span class="n">LOSS</span><span class="o">=</span><span class="s1">&#39;shallow deletion&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
-<h2 id="input_expression_categories">INPUT_EXPRESSION_CATEGORIES</h2>
+<h2 id="input_expression_categories">INPUT_EXPRESSION_CATEGORIES<a class="headerlink" href="#input_expression_categories" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">INPUT_EXPRESSION_CATEGORIES</span> <span class="o">=</span> <span class="n">IterableNamespace</span><span class="p">(</span>
     <span class="n">UP</span><span class="o">=</span><span class="s1">&#39;increased expression&#39;</span><span class="p">,</span> <span class="n">DOWN</span><span class="o">=</span><span class="s1">&#39;reduced expression&#39;</span>
 <span class="p">)</span>
 </code></pre></div>
-<h2 id="ambiguous_aa">AMBIGUOUS_AA</h2>
+<h2 id="ambiguous_aa">AMBIGUOUS_AA<a class="headerlink" href="#ambiguous_aa" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">AMBIGUOUS_AA</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="variant_return_properties">VARIANT_RETURN_PROPERTIES</h2>
+<h2 id="variant_return_properties">VARIANT_RETURN_PROPERTIES<a class="headerlink" href="#variant_return_properties" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">VARIANT_RETURN_PROPERTIES</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">BASE_RETURN_PROPERTIES</span>
     <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;type.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
@@ -1383,7 +1464,7 @@
     <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;reference2.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENE_RETURN_PROPERTIES</span><span class="p">]</span>
     <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;zygosity&#39;</span><span class="p">,</span> <span class="s1">&#39;germline&#39;</span><span class="p">,</span> <span class="s1">&#39;displayName&#39;</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="pos_variant_return_properties">POS_VARIANT_RETURN_PROPERTIES</h2>
+<h2 id="pos_variant_return_properties">POS_VARIANT_RETURN_PROPERTIES<a class="headerlink" href="#pos_variant_return_properties" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">POS_VARIANT_RETURN_PROPERTIES</span> <span class="o">=</span> <span class="n">VARIANT_RETURN_PROPERTIES</span> <span class="o">+</span> <span class="p">[</span>
     <span class="s1">&#39;break1Start&#39;</span><span class="p">,</span>
     <span class="s1">&#39;break1End&#39;</span><span class="p">,</span>
@@ -1397,10 +1478,10 @@
     <span class="s1">&#39;truncation&#39;</span><span class="p">,</span>
     <span class="s1">&#39;assembly&#39;</span><span class="p">,</span>
 </code></pre></div>
-<h2 id="features_cache">FEATURES_CACHE</h2>
+<h2 id="features_cache">FEATURES_CACHE<a class="headerlink" href="#features_cache" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">FEATURES_CACHE</span><span class="p">:</span> <span class="n">Set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </code></pre></div>
-<h2 id="get_equivalent_features">get_equivalent_features()</h2>
+<h2 id="get_equivalent_features">get_equivalent_features()<a class="headerlink" href="#get_equivalent_features" title="Permanent link">&para;</a></h2>
 <p>Match an equivalent list of features given some input feature name (or ID)</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_equivalent_features</span><span class="p">(</span>
     <span class="n">conn</span><span class="p">:</span> <span class="n">GraphKBConnection</span><span class="p">,</span>
@@ -1433,7 +1514,7 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">get_equivalent_features</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s1">&#39;#3:44&#39;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="cache_missing_features">cache_missing_features()</h2>
+<h2 id="cache_missing_features">cache_missing_features()<a class="headerlink" href="#cache_missing_features" title="Permanent link">&para;</a></h2>
 <p>Create a cache of features that exist to avoid repeatedly querying
 for missing features</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cache_missing_features</span><span class="p">(</span><span class="n">conn</span><span class="p">:</span> <span class="n">GraphKBConnection</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
@@ -1442,7 +1523,7 @@ for missing features</p>
 <ul>
 <li>conn (<a href="../__init__/#class-graphkbconnection">GraphKBConnection</a>)</li>
 </ul>
-<h2 id="match_category_variant">match_category_variant()</h2>
+<h2 id="match_category_variant">match_category_variant()<a class="headerlink" href="#match_category_variant" title="Permanent link">&para;</a></h2>
 <p>Returns a list of variants matching the input variant</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">match_category_variant</span><span class="p">(</span>
     <span class="n">conn</span><span class="p">:</span> <span class="n">GraphKBConnection</span><span class="p">,</span>
@@ -1472,7 +1553,7 @@ for missing features</p>
 <ul>
 <li><a href="../util/#class-featurenotfounderror">FeatureNotFoundError</a>: The gene could not be found in GraphKB</li>
 </ul>
-<h2 id="match_copy_variant">match_copy_variant()</h2>
+<h2 id="match_copy_variant">match_copy_variant()<a class="headerlink" href="#match_copy_variant" title="Permanent link">&para;</a></h2>
 <p>Returns a list of variants matching the input variant</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">match_copy_variant</span><span class="p">(</span>
     <span class="n">conn</span><span class="p">:</span> <span class="n">GraphKBConnection</span><span class="p">,</span> <span class="n">gene_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">category</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">drop_homozygous</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
@@ -1493,7 +1574,7 @@ for missing features</p>
 <ul>
 <li><code>ValueError</code>: The input copy category is not recognized</li>
 </ul>
-<h2 id="positions_overlap">positions_overlap()</h2>
+<h2 id="positions_overlap">positions_overlap()<a class="headerlink" href="#positions_overlap" title="Permanent link">&para;</a></h2>
 <p>Check if 2 Position records from GraphKB indicate an overlap</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">positions_overlap</span><span class="p">(</span>
     <span class="n">pos_record</span><span class="p">:</span> <span class="n">BasicPosition</span><span class="p">,</span> <span class="n">range_start</span><span class="p">:</span> <span class="n">BasicPosition</span><span class="p">,</span> <span class="n">range_end</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BasicPosition</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1517,7 +1598,7 @@ for missing features</p>
 <p class="admonition-title">Note</p>
 <p>null values indicate not-specified or any</p>
 </div>
-<h2 id="compare_positional_variants">compare_positional_variants()</h2>
+<h2 id="compare_positional_variants">compare_positional_variants()<a class="headerlink" href="#compare_positional_variants" title="Permanent link">&para;</a></h2>
 <p>Compare 2 variant records from GraphKB to determine if they are equivalent</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">compare_positional_variants</span><span class="p">(</span>
     <span class="n">variant</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">PositionalVariant</span><span class="p">,</span> <span class="n">ParsedVariant</span><span class="p">],</span>
@@ -1533,7 +1614,7 @@ for missing features</p>
 <ul>
 <li><code>bool</code>: True if the records are equivalent</li>
 </ul>
-<h2 id="match_positional_variant">match_positional_variant()</h2>
+<h2 id="match_positional_variant">match_positional_variant()<a class="headerlink" href="#match_positional_variant" title="Permanent link">&para;</a></h2>
 <p>Given the HGVS+ representation of some positional variant, parse it and match it to
 annotations in GraphKB</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">match_positional_variant</span><span class="p">(</span>

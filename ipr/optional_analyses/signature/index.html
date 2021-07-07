@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -465,7 +483,19 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -491,14 +521,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -580,14 +610,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" checked>
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -735,6 +765,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -773,7 +854,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1187,7 +1268,7 @@
                   </a>
                 
                 
-                <h1 id="mutation-signatures">Mutation Signatures</h1>
+                <h1 id="mutation-signatures">Mutation Signatures<a class="headerlink" href="#mutation-signatures" title="Permanent link">&para;</a></h1>
 <p>These are the scores of individual <a href="https://www.nature.com/articles/s41586-020-1943-3">mutation signatures</a>. These can include cosmic and/or custom signatures. The nnls field is the non-negative least squares contribution of the given signature</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;mutationSignature&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1269,7 +1350,7 @@
 
 <p>The <code>selected</code> field indicates if this signature should be shown on the front page of the report or not. This field can be toggled via the client interface following upload.</p>
 <p><img alt="include" src="../../images/ipr_client.mutation_signature.include.png" /></p>
-<h2 id="images">Images</h2>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>These will be passed to the report upload function via the <a href="../images">images section</a> of the JSON input</p>
@@ -1317,13 +1398,13 @@
         </a>
       
       
-        <a href="../../../variant_notation/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../scripting/RNA_Expression_Metrics/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              About
+              RNA Expression Metrics
             </div>
           </div>
           <div class="md-footer__button md-icon">

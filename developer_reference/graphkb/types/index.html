@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -463,7 +481,19 @@
   
     <li class="md-nav__item">
       <a href="../../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -489,14 +519,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -576,14 +606,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -691,6 +721,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -729,7 +810,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1355,9 +1436,9 @@
                   </a>
                 
                 
-                <h1 id="graphkbtypes">graphkb.types</h1>
+                <h1 id="graphkbtypes">graphkb.types<a class="headerlink" href="#graphkbtypes" title="Permanent link">&para;</a></h1>
 <p>Type annotations used for static type checking in this module</p>
-<h2 id="record">Record</h2>
+<h2 id="record">Record<a class="headerlink" href="#record" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Record</span><span class="p">:</span> <span class="n">TypedDict</span> <span class="o">=</span> <span class="n">TypedDict</span><span class="p">(</span><span class="s1">&#39;Record&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;@rid&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;@class&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">})</span>
 </code></pre></div>
 <p><strong>Attributes</strong></p>
@@ -1365,26 +1446,26 @@
 <li>@rid (<code>str</code>)</li>
 <li>@class (<code>str</code>)</li>
 </ul>
-<h2 id="embeddedrecord">EmbeddedRecord</h2>
+<h2 id="embeddedrecord">EmbeddedRecord<a class="headerlink" href="#embeddedrecord" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">EmbeddedRecord</span><span class="p">:</span> <span class="n">TypedDict</span> <span class="o">=</span> <span class="n">TypedDict</span><span class="p">(</span><span class="s1">&#39;EmbeddedRecord&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;@class&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">})</span>
 </code></pre></div>
 <p><strong>Attributes</strong></p>
 <ul>
 <li>@class (<code>str</code>)</li>
 </ul>
-<h2 id="recordlink">RecordLink</h2>
+<h2 id="recordlink">RecordLink<a class="headerlink" href="#recordlink" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">RecordLink</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Record</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="ontologylink">OntologyLink</h2>
+<h2 id="ontologylink">OntologyLink<a class="headerlink" href="#ontologylink" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">OntologyLink</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Ontology</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="position">Position</h2>
+<h2 id="position">Position<a class="headerlink" href="#position" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">Position</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">BasicPosition</span><span class="p">,</span> <span class="n">CytobandPosition</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="categorybasetermmapping">CategoryBaseTermMapping</h2>
+<h2 id="categorybasetermmapping">CategoryBaseTermMapping<a class="headerlink" href="#categorybasetermmapping" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">CategoryBaseTermMapping</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span>
 </code></pre></div>
-<h2 id="class-ontology">class Ontology</h2>
+<h2 id="class-ontology">class Ontology<a class="headerlink" href="#class-ontology" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#record">Record</a></p>
 <p><strong>Attributes</strong></p>
 <ul>
@@ -1393,13 +1474,13 @@
 <li>source (<a href="#recordlink">RecordLink</a>)</li>
 <li>displayName (<code>str</code>)</li>
 </ul>
-<h2 id="class-basicposition">class BasicPosition</h2>
+<h2 id="class-basicposition">class BasicPosition<a class="headerlink" href="#class-basicposition" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#embeddedrecord">EmbeddedRecord</a></p>
 <p><strong>Attributes</strong></p>
 <ul>
 <li>pos (<code>int</code>)</li>
 </ul>
-<h2 id="class-cytobandposition">class CytobandPosition</h2>
+<h2 id="class-cytobandposition">class CytobandPosition<a class="headerlink" href="#class-cytobandposition" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#embeddedrecord">EmbeddedRecord</a></p>
 <p><strong>Attributes</strong></p>
 <ul>
@@ -1407,7 +1488,7 @@
 <li>majorBand (<code>str</code>)</li>
 <li>minorBand (<code>str</code>)</li>
 </ul>
-<h2 id="class-variant">class Variant</h2>
+<h2 id="class-variant">class Variant<a class="headerlink" href="#class-variant" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#record">Record</a></p>
 <p><strong>Attributes</strong></p>
 <ul>
@@ -1418,7 +1499,7 @@
 <li>germline (<code>bool</code>)</li>
 <li>displayName (<code>str</code>)</li>
 </ul>
-<h2 id="class-positionalvariant">class PositionalVariant</h2>
+<h2 id="class-positionalvariant">class PositionalVariant<a class="headerlink" href="#class-positionalvariant" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#class-variant">Variant</a></p>
 <p><strong>Attributes</strong></p>
 <ul>
@@ -1430,7 +1511,7 @@
 <li>untemplatedSeq (<code>Optional[str]</code>)</li>
 <li>untemplatedSeqSize (<code>Optional[int]</code>)</li>
 </ul>
-<h2 id="class-parsedvariant">class ParsedVariant</h2>
+<h2 id="class-parsedvariant">class ParsedVariant<a class="headerlink" href="#class-parsedvariant" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <code>TypedDict</code></p>
 <p><strong>Attributes</strong></p>
 <ul>
@@ -1447,7 +1528,7 @@
 <li>untemplatedSeq (<code>Optional[str]</code>)</li>
 <li>untemplatedSeqSize (<code>Optional[int]</code>)</li>
 </ul>
-<h2 id="class-statement">class Statement</h2>
+<h2 id="class-statement">class Statement<a class="headerlink" href="#class-statement" title="Permanent link">&para;</a></h2>
 <p><strong>inherits</strong> <a href="#record">Record</a></p>
 <p><strong>Attributes</strong></p>
 <ul>

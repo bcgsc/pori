@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../../styles.css">
     
+      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -463,7 +481,19 @@
   
     <li class="md-nav__item">
       <a href="../../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -489,14 +519,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -576,14 +606,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -691,6 +721,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -729,7 +810,7 @@
   
     <li class="md-nav__item">
       <a href="../../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1339,18 +1420,18 @@
                   </a>
                 
                 
-                <h1 id="graphkb">graphkb</h1>
-<h2 id="default_url">DEFAULT_URL</h2>
+                <h1 id="graphkb">graphkb<a class="headerlink" href="#graphkb" title="Permanent link">&para;</a></h1>
+<h2 id="default_url">DEFAULT_URL<a class="headerlink" href="#default_url" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">DEFAULT_URL</span> <span class="o">=</span> <span class="s1">&#39;https://graphkb-api.bcgsc.ca/api&#39;</span>
 </code></pre></div>
-<h2 id="default_limit">DEFAULT_LIMIT</h2>
+<h2 id="default_limit">DEFAULT_LIMIT<a class="headerlink" href="#default_limit" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">DEFAULT_LIMIT</span> <span class="o">=</span> <span class="mi">1000</span>
 </code></pre></div>
-<h2 id="query_cache">QUERY_CACHE</h2>
+<h2 id="query_cache">QUERY_CACHE<a class="headerlink" href="#query_cache" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">QUERY_CACHE</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre></div>
-<h2 id="class-graphkbconnection">class GraphKBConnection</h2>
-<h3 id="graphkbconnectionrequest">GraphKBConnection.request()</h3>
+<h2 id="class-graphkbconnection">class GraphKBConnection<a class="headerlink" href="#class-graphkbconnection" title="Permanent link">&para;</a></h2>
+<h3 id="graphkbconnectionrequest">GraphKBConnection.request()<a class="headerlink" href="#graphkbconnectionrequest" title="Permanent link">&para;</a></h3>
 <p>Request wrapper to handle adding common headers and logging</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 </code></pre></div>
@@ -1363,7 +1444,7 @@
 <ul>
 <li><code>Dict</code>: the json response as a python dict</li>
 </ul>
-<h3 id="graphkbconnectionpost">GraphKBConnection.post()</h3>
+<h3 id="graphkbconnectionpost">GraphKBConnection.post()<a class="headerlink" href="#graphkbconnectionpost" title="Permanent link">&para;</a></h3>
 <p>Convenience method for making post requests</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uri</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="p">{},</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 </code></pre></div>
@@ -1376,7 +1457,7 @@
 <ul>
 <li><code>Dict</code></li>
 </ul>
-<h3 id="graphkbconnectionset_cache_data">GraphKBConnection.set_cache_data()</h3>
+<h3 id="graphkbconnectionset_cache_data">GraphKBConnection.set_cache_data()<a class="headerlink" href="#graphkbconnectionset_cache_data" title="Permanent link">&para;</a></h3>
 <p>Explicitly add a query to the cache</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">set_cache_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request_body</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Record</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </code></pre></div>
@@ -1385,7 +1466,7 @@
 <li>request_body (<code>Dict</code>)</li>
 <li>result (List[<a href="../types/#record">Record</a>])</li>
 </ul>
-<h3 id="graphkbconnectionquery">GraphKBConnection.query()</h3>
+<h3 id="graphkbconnectionquery">GraphKBConnection.query()<a class="headerlink" href="#graphkbconnectionquery" title="Permanent link">&para;</a></h3>
 <p>Query GraphKB</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
@@ -1408,7 +1489,7 @@
 <ul>
 <li>List[<a href="../types/#record">Record</a>]</li>
 </ul>
-<h2 id="join_url">join_url()</h2>
+<h2 id="join_url">join_url()<a class="headerlink" href="#join_url" title="Permanent link">&para;</a></h2>
 <p>Join parts of a URL into a full URL</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">join_url</span><span class="p">(</span><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="n">parts</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </code></pre></div>
@@ -1420,7 +1501,7 @@
 <ul>
 <li><code>str</code></li>
 </ul>
-<h2 id="millis_interval">millis_interval()</h2>
+<h2 id="millis_interval">millis_interval()<a class="headerlink" href="#millis_interval" title="Permanent link">&para;</a></h2>
 <p>start and end are datetime instances</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">millis_interval</span><span class="p">(</span><span class="n">start</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="n">datetime</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </code></pre></div>
@@ -1433,7 +1514,7 @@
 <ul>
 <li><code>int</code></li>
 </ul>
-<h2 id="cache_key">cache_key()</h2>
+<h2 id="cache_key">cache_key()<a class="headerlink" href="#cache_key" title="Permanent link">&para;</a></h2>
 <p>create a cache key for a query request to GraphKB</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cache_key</span><span class="p">(</span><span class="n">request_body</span><span class="p">):</span>
 </code></pre></div>

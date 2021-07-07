@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../styles.css">
     
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -463,7 +481,19 @@
   
     <li class="md-nav__item">
       <a href="../../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -489,14 +519,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -576,14 +606,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -691,6 +721,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -731,7 +812,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1225,7 +1306,7 @@
                   </a>
                 
                 
-                <h1 id="multi-feature-split-notation">Multi-Feature (Split) Notation</h1>
+                <h1 id="multi-feature-split-notation">Multi-Feature (Split) Notation<a class="headerlink" href="#multi-feature-split-notation" title="Permanent link">&para;</a></h1>
 <p>Multi-feature notation is a novel feature of GraphKB-HGVS and not part of standard HGVS. It is
 based on the original form for cytogenetic descriptions of translocations (as previously
 reccommended by HGVS) but this form is generalized to allow other coordinate systems.</p>
@@ -1236,8 +1317,8 @@ following the pattern below</p>
 </code></pre></div>
 <p>Untemplated sequence should only be included for sequence specific coordinate types such as
 genomic, CDS, and protein. Where possible, continuous notation is preferred to multi-feature.</p>
-<h2 id="examples">Examples</h2>
-<h3 id="gene-fusion">Gene Fusion</h3>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="gene-fusion">Gene Fusion<a class="headerlink" href="#gene-fusion" title="Permanent link">&para;</a></h3>
 <p>Using exon coordinates we could describe a gene fusion of exon 4 of EWSR1 to exon 7 of FLI1 as
 follows</p>
 <div class="highlight"><pre><span></span><code>(EWSR1,FLI1):fusion(e.4,e.7)
@@ -1249,7 +1330,7 @@ parentheses (as you would for continuous notation).</p>
 of FLI1</p>
 <div class="highlight"><pre><span></span><code>(ESWR1,FLI1):fusion(e.4_6,e.7_10)
 </code></pre></div>
-<h3 id="genomic-translocation">Genomic Translocation</h3>
+<h3 id="genomic-translocation">Genomic Translocation<a class="headerlink" href="#genomic-translocation" title="Permanent link">&para;</a></h3>
 <p>Multi-feature variants can also be described using the genomic coordinate system (<code>g</code>). For example
 a translocation might be described</p>
 <div class="highlight"><pre><span></span><code>(chr8,chr7):trans(g.1234,g.4567)

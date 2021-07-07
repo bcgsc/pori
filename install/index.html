@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../styles.css">
     
+      <link rel="stylesheet" href="../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
+    
     
       
     
@@ -328,7 +334,7 @@
   
     <li class="md-nav__item">
       <a href="../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -435,8 +441,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -510,7 +528,19 @@
   
     <li class="md-nav__item">
       <a href="../ipr/" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipr/templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -536,14 +566,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -623,14 +653,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -738,6 +768,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -776,7 +857,7 @@
   
     <li class="md-nav__item">
       <a href="../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1197,13 +1278,13 @@
                   </a>
                 
                 
-                <h1 id="install-with-docker">Install with Docker</h1>
+                <h1 id="install-with-docker">Install with Docker<a class="headerlink" href="#install-with-docker" title="Permanent link">&para;</a></h1>
 <p>Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using docker. Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initialling setting up and testing.</p>
 <p>Start by cloning this repository which contains the default docker compose config (docker-compose.yml)</p>
 <div class="highlight"><pre><span></span><code>git clone https://github.com/bcgsc/pori.git
 <span class="nb">cd</span> pori
 </code></pre></div>
-<h2 id="start-the-authentication-server">Start the Authentication Server</h2>
+<h2 id="start-the-authentication-server">Start the Authentication Server<a class="headerlink" href="#start-the-authentication-server" title="Permanent link">&para;</a></h2>
 <p>Before any of the other systems can be set up you will need to start the authenication server. By
 default, PORI authenticates against an instance of KeyCloak. For convenience we have provided a
 docker container with a default configuration of keycloak. This is the authentication server used
@@ -1281,7 +1362,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoteEI/Iu923I4Zqt8prxIx3ljGEecnrI+sWj
 </table>
 <p>Add the above users to keycloak with the IPR and GraphKB roles.</p>
 <p><img alt="adding users" src="../images/keycloak-add-users.png" /></p>
-<h2 id="docker-compose">Docker-Compose</h2>
+<h2 id="docker-compose">Docker-Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
 <p>Now you are ready to start the other services. This will use the <code>docker-compose.yml</code> file to configure the network.</p>
 <p>First create empty directories to mount the database data, this will ensure the databases are not lost when you stop/restart the container</p>
 <div class="highlight"><pre><span></span><code>mkdir -p databases/<span class="o">{</span>postgres,orientdb<span class="o">}</span>/<span class="o">{</span>backup,data<span class="o">}</span>

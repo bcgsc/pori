@@ -38,6 +38,12 @@
     
       <link rel="stylesheet" href="../../styles.css">
     
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
     
       
     
@@ -281,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="../../graphkb/" class="md-nav__link">
-        About
+        About GraphKB
       </a>
     </li>
   
@@ -388,8 +394,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../graphkb/scripting/intro_tutorial/" class="md-nav__link">
-        Matching Tutorial
+      <a href="../../graphkb/scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graphkb/scripting/Intro_Tutorial/" class="md-nav__link">
+        Intro Tutorial
       </a>
     </li>
   
@@ -465,7 +483,19 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        About
+        About IPR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/" class="md-nav__link">
+        Templates
       </a>
     </li>
   
@@ -485,9 +515,80 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Uploading A Report
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Uploading A Report
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-examples" class="md-nav__link">
+    JSON Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-variants" class="md-nav__link">
+    No Variants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-small-mutations" class="md-nav__link">
+    Only Small Mutations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#small-mutations-and-expression" class="md-nav__link">
+    Small Mutations and Expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-fields-reference" class="md-nav__link">
+    Top-Level Fields Reference
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -501,14 +602,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
       
-      <label class="md-nav__link" for="__nav_6_3">
+      <label class="md-nav__link" for="__nav_6_4">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_3">
+        <label class="md-nav__title" for="__nav_6_4">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -588,14 +689,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
       
-      <label class="md-nav__link" for="__nav_6_4">
+      <label class="md-nav__link" for="__nav_6_5">
         Optional Analyses
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_4">
+        <label class="md-nav__title" for="__nav_6_5">
           <span class="md-nav__icon md-icon"></span>
           Optional Analyses
         </label>
@@ -703,6 +804,57 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_6" type="checkbox" id="__nav_6_6" >
+      
+      <label class="md-nav__link" for="__nav_6_6">
+        Scripting Examples
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -741,7 +893,7 @@
   
     <li class="md-nav__item">
       <a href="../../variant_notation/" class="md-nav__link">
-        About
+        About Variant Notation
       </a>
     </li>
   
@@ -1125,6 +1277,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-examples" class="md-nav__link">
+    JSON Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-variants" class="md-nav__link">
+    No Variants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-small-mutations" class="md-nav__link">
+    Only Small Mutations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#small-mutations-and-expression" class="md-nav__link">
+    Small Mutations and Expression
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-level-fields-reference" class="md-nav__link">
+    Top-Level Fields Reference
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1140,7 +1348,8 @@
                   </a>
                 
                 
-                <h1 id="uploading-a-report">Uploading A Report</h1>
+                <h1 id="uploading-a-report">Uploading A Report<a class="headerlink" href="#uploading-a-report" title="Permanent link">&para;</a></h1>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
 <p>Before you can generate and upload reports you will first need to install the package with pip</p>
 <div class="highlight"><pre><span></span><code>pip install ipr
 </code></pre></div>
@@ -1157,7 +1366,12 @@
 </code></pre></div>
 <p>The pre-generated content (ex. variant calls) of the report is passed to this function via a JSON object. The various sections of this object are desribed in the core variants and optional analyses sections.</p>
 <p>The <a href="https://raw.githubusercontent.com/bcgsc/pori_ipr_python/feature/json-only/ipr/content.spec.json">full specification</a> for the upload can be viewed/explored via the JSON schema explorer <a href="https://json-schema.app/view?url=https://raw.githubusercontent.com/bcgsc/pori_ipr_python/master/ipr/content.spec.json">here</a></p>
-<p>Most content is optional with a few top-level elements required</p>
+<p>Most content is optional with a few top-level elements required.</p>
+<h2 id="json-examples">JSON Examples<a class="headerlink" href="#json-examples" title="Permanent link">&para;</a></h2>
+<p>Below are a couple of simplified examples of what the input JSON may look like</p>
+<h3 id="no-variants">No Variants<a class="headerlink" href="#no-variants" title="Permanent link">&para;</a></h3>
+<p>It is possible to load a report where no variants were called. In such cases, only the 4 main
+top-level fields are required</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
     <span class="nt">&quot;patientId&quot;</span><span class="p">:</span> <span class="s2">&quot;PATIENT 0&quot;</span><span class="p">,</span>
@@ -1165,6 +1379,70 @@
     <span class="nt">&quot;kbDiseaseMatch&quot;</span><span class="p">:</span> <span class="s2">&quot;colorectal cancer&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="only-small-mutations">Only Small Mutations<a class="headerlink" href="#only-small-mutations" title="Permanent link">&para;</a></h3>
+<p>To include small mutations in the JSON, simply add the "smallMutations" property. This is a list of objects (dicts if you are more familiar with python). Any number of small mutations can be included.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;patientId&quot;</span><span class="p">:</span> <span class="s2">&quot;PATIENT001&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;kbDiseaseMatch&quot;</span><span class="p">:</span> <span class="s2">&quot;colorectal cancer&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;template&quot;</span><span class="p">:</span> <span class="s2">&quot;genomic&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;smallMutations&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;gene&quot;</span><span class="p">:</span> <span class="s2">&quot;APC&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;proteinChange&quot;</span><span class="p">:</span> <span class="s2">&quot;p.Thr1556fs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;transcript&quot;</span><span class="p">:</span> <span class="s2">&quot;ENST00000457016&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;hgvsGenomic&quot;</span><span class="p">:</span> <span class="s2">&quot;5:g.112175951_112175952insA&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;hgvsProtein&quot;</span><span class="p">:</span> <span class="s2">&quot;APC:p.Thr1556fs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;chromosome&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;startPosition&quot;</span><span class="p">:</span> <span class="mi">112175951</span><span class="p">,</span>
+            <span class="nt">&quot;endPosition&quot;</span><span class="p">:</span> <span class="mi">112175951</span><span class="p">,</span>
+            <span class="nt">&quot;refSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;altSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;GA&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;gene&quot;</span><span class="p">:</span> <span class="s2">&quot;XRCC1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;proteinChange&quot;</span><span class="p">:</span> <span class="s2">&quot;p.Q399R&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;transcript&quot;</span><span class="p">:</span> <span class="s2">&quot;ENST00000543982&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;hgvsGenomic&quot;</span><span class="p">:</span> <span class="s2">&quot;19:g.44051039_44051040delCAinsAG&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;chromosome&quot;</span><span class="p">:</span> <span class="s2">&quot;19&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;startPosition&quot;</span><span class="p">:</span> <span class="mi">44051039</span><span class="p">,</span>
+            <span class="nt">&quot;endPosition&quot;</span><span class="p">:</span> <span class="mi">44051040</span><span class="p">,</span>
+            <span class="nt">&quot;refSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;CAG&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;altSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;AGG&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="small-mutations-and-expression">Small Mutations and Expression<a class="headerlink" href="#small-mutations-and-expression" title="Permanent link">&para;</a></h3>
+<p>Expression variants can be included with or without small mutations.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;patientId&quot;</span><span class="p">:</span> <span class="s2">&quot;PATIENT001&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;kbDiseaseMatch&quot;</span><span class="p">:</span> <span class="s2">&quot;colorectal cancer&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;template&quot;</span><span class="p">:</span> <span class="s2">&quot;genomic&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;smallMutations&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;gene&quot;</span><span class="p">:</span> <span class="s2">&quot;APC&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;proteinChange&quot;</span><span class="p">:</span> <span class="s2">&quot;p.Thr1556fs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;transcript&quot;</span><span class="p">:</span> <span class="s2">&quot;ENST00000457016&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;hgvsGenomic&quot;</span><span class="p">:</span> <span class="s2">&quot;5:g.112175951_112175952insA&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;hgvsProtein&quot;</span><span class="p">:</span> <span class="s2">&quot;APC:p.Thr1556fs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;chromosome&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;startPosition&quot;</span><span class="p">:</span> <span class="mi">112175951</span><span class="p">,</span>
+            <span class="nt">&quot;endPosition&quot;</span><span class="p">:</span> <span class="mi">112175951</span><span class="p">,</span>
+            <span class="nt">&quot;refSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;altSeq&quot;</span><span class="p">:</span> <span class="s2">&quot;GA&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;expressionVariants&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;gene&quot;</span><span class="p">:</span> <span class="s2">&quot;APC&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;kbCategory&quot;</span><span class="p">:</span> <span class="s2">&quot;reduced expression&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="top-level-fields-reference">Top-Level Fields Reference<a class="headerlink" href="#top-level-fields-reference" title="Permanent link">&para;</a></h2>
 <p>All top-level fields are listed in detail below</p>
 <!-- BEGIN INCLUDE ./includes/general.md   -->
 <table>
@@ -1274,7 +1552,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../templates/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1283,7 +1561,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              About
+              Templates
             </div>
           </div>
         </a>
