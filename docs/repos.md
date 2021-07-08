@@ -24,7 +24,7 @@ There are two main web client projects as part of PORI
 
     ![ipr client](./images/pori-ipr-main-report-page.png)
 
-    The IPR client is front-end web application which consumes data from the IPR API. The primary function is the production and management of genomic reports. Case Analysts use the IPR client to curate and review reports prior to presentation to a molecular tumour board or dissemintation.
+    The IPR client is the front-end web application which consumes data from the IPR API. The primary function is the production and management of genomic reports. Case Analysts use the IPR client to curate and review reports prior to presentation to a molecular tumour board or dissemination.
 
 </div>
 
