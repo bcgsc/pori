@@ -46,7 +46,7 @@ Both APIs implement [swagger/openapi](https://swagger.io/specification/) documen
 
     ![ipr api](https://www.bcgsc.ca/gsc-logos/icon/logo-circle.png)
 
-    The Integrated Pipeline Reports (IPR) REST API manages data access to the IPR database. The API is responsible for storing and server all data for reports.
+    The Integrated Pipeline Reports (IPR) REST API manages data access to the IPR database. The API is responsible for storing and serving all data for reports.
 
 </div>
 
