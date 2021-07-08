@@ -62,7 +62,7 @@ def positions_overlap(
 
 #### Javascript / TypeScript
 
-We also use docstrings here. However in contrast to python these are immeadiately outside the function instead of following the function definition. These docstrings follow [JSDoc](https://jsdoc.app/) syntax.
+We also use docstrings here. However in contrast to python these are immediately outside the function instead of following the function definition. These docstrings follow [JSDoc](https://jsdoc.app/) syntax.
 
 If types are included (typescript) in the code then the types can be ommitted from the docstring itself.
 
