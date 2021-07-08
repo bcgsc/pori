@@ -87,7 +87,7 @@ The user documentation should be updated in the [central PORI documentation repo
 
 ## Code Style
 
-In general we try to use automated tools to enforce code style. This helps avoid adding extra work on the developers and also makes the style choices transparent and consistent. For javascript/typescript we use [ESLint](https://eslint.org/) to enforce compliance. For python files we use [Black](https://github.com/psf/black). These checks are generally run and included in the automated builds.
+In general we try to use automated tools to enforce code style. This helps avoid adding extra work for the developers and also makes the style choices transparent and consistent. For javascript/typescript we use [ESLint](https://eslint.org/) to enforce compliance. For python files we use [Black](https://github.com/psf/black). These checks are generally run and included in the automated builds.
 
 ## Branching Model
 
