@@ -64,9 +64,9 @@ The GraphKB project also includes a loaders package which is used to import cont
 
 </div>
 
-## Python Adaptors
+## Python Adapters
 
-The popularity of python in bioinformatics makes it one of the top choices for adaptors. These adaptors are written to help users integrate PORI into their existing bioinformatic workflows. They are published and installed via pip.
+The popularity of python in bioinformatics makes it one of the top choices for adapters. These adapters are written to help users integrate PORI into their existing bioinformatic workflows. They are published and installed via pip.
 
 ```bash
 pip install graphkb ipr
@@ -76,7 +76,7 @@ A developer reference for both packages including the function signatures and pa
 
 <div class='projects' markdown='1'>
 
-- ### [GraphKB Python Adaptor](https://github.com/bcgsc/pori_graphkb_python)
+- ### [GraphKB Python Adapter](https://github.com/bcgsc/pori_graphkb_python)
 
     ![graphkb python](./images/graph-icon_outline.svg)
 
@@ -84,7 +84,7 @@ A developer reference for both packages including the function signatures and pa
     [user manual](../graphkb/python/docs) for instructions on incorporating
     this into custom scripts.
 
-- ### [IPR Python Adaptor](https://github.com/bcgsc/pori_ipr_python)
+- ### [IPR Python Adapter](https://github.com/bcgsc/pori_ipr_python)
 
     ![ipr python](./images/wrench.svg)
 
@@ -94,7 +94,7 @@ A developer reference for both packages including the function signatures and pa
 
     ![pori cbioportal](https://frontend.cbioportal.org/reactapp/images/369b022222badf37b2b0c284f4ae2284.png)
 
-    This python adaptor is intended to demonstrate creating a PORI report using data exported from a cBioportal instance. It uses the expression, copy number, fusion, and small mutation data as well as available metadata to complete the reports.
+    This python adapter is intended to demonstrate creating a PORI report using data exported from a cBioportal instance. It uses the expression, copy number, fusion, and small mutation data as well as available metadata to complete the reports.
 
 </div>
 
