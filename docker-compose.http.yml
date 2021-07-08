@@ -1,3 +1,5 @@
+# This version of the docker-compose sets up the servers using http only for testing locally and
+# therefore does not require the top level apache server to configure the URLs
 version: '3'
 services:
   graphkb_db:
@@ -28,10 +30,9 @@ services:
       GKB_KEYCLOAK_KEY_FILE: /keys/keycloak.key
       KEY_PASSPHRASE: ''
       # customize settings below
-      GKB_CORS_ORIGIN: '^https://pori-demo\.bcgsc\.ca.*$$'
+      GKB_CORS_ORIGIN: '^.*$$'
       GKB_DBS_PASS: root
-      GKB_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token
-      GKB_BASE_PATH: /graphkb-api
+      GKB_KEYCLOAK_URI: http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
     depends_on:
       - graphkb_db
     networks:
@@ -48,9 +49,9 @@ services:
       KEYCLOAK_REALM: PORI
       KEYCLOAK_CLIENT_ID: GraphKB
       # customize settings below
-      API_BASE_URL: https://pori-demo.bcgsc.ca/graphkb-api
-      KEYCLOAK_URL: https://pori-demo.bcgsc.ca/auth
-      PUBLIC_PATH: /graphkb/
+      API_BASE_URL: http://graphkb_api:8080
+      KEYCLOAK_URL: http://localhost:8888/auth
+      PUBLIC_PATH: /
       IS_DEMO: 1 # Remove when non-demo deployment
     ports:
       - 5000:80
@@ -103,8 +104,8 @@ services:
       # customize settings below
       IPR_DATABASE_PASSWORD: root
       IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
-      IPR_GRAPHKB_URI: https://pori-demo.bcgsc.ca/graphkb-api/api
-      IPR_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token
+      IPR_GRAPHKB_URI: http://graphkb_api:8080/api
+      IPR_KEYCLOAK_URI: http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
       IPR_REDIS_HOST: redis
       IPR_REDIS_PORT: 6379
     depends_on:
@@ -123,10 +124,10 @@ services:
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
-      API_BASE_URL: https://pori-demo.bcgsc.ca/ipr-api/api
-      GRAPHKB_URL: https://pori-demo.bcgsc.ca/graphkb
-      KEYCLOAK_URL: https://pori-demo.bcgsc.ca/auth
-      PUBLIC_PATH: /ipr/
+      API_BASE_URL: http://ipr_api:8081/api
+      GRAPHKB_URL: http://graphkb_client:5000
+      KEYCLOAK_URL: http://localhost:8888/auth
+      PUBLIC_PATH: /
       IS_DEMO: 1 # Remove when non-demo deployment
     ports:
       - 3000:80
