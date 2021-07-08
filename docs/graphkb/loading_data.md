@@ -173,3 +173,16 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     This is an external knowledge base which can be imported as statements into GraphKB.
 
 </div>
+
+## Custom Content
+
+If you have your own instance of GraphKB and would like to transform your existing knowledgebase to load it into GraphKB please look at the other knowledgebase loaders for examples. There are some commonly used helper modules and functions available in the code base to make this process simpler. You can see documentation for individual loaders grouped with their loader (See their corresponding README.md).
+
+```text
+src/
+`--loader/
+  |-- index.js
+  `-- README.md
+```
+
+If you have any issues or questions please make an issue in the [loaders repo](https://github.com/bcgsc/pori_graphkb_loader/issues).

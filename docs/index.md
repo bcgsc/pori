@@ -7,12 +7,6 @@ contains central documentation for the platform as well as setup and installatio
 
 ![pori server stack](./images/pori-server-stack.png)
 
-## Demo
-
-A live demo of this is found at: [pori-demo.bcgsc.ca](https://pori-demo.bcgsc.ca). This demo was
-deployed via docker-compose. See the [install section](./install.md) for instructions on setting
-up and deploying a new instance of PORI.
-
 ## Citation
 
 A pre-print of the related manuscript can be found at
