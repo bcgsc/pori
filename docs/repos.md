@@ -72,7 +72,7 @@ The popularity of python in bioinformatics makes it one of the top choices for a
 pip install graphkb ipr
 ```
 
-A developer reference for both packages including the function signatures and package details can be found in the developer reference section [here](../developer_reference).
+A developer reference for these packages including the function signatures and package details can be found in the developer reference section [here](../developer_reference).
 
 <div class='projects' markdown='1'>
 
@@ -100,7 +100,7 @@ A developer reference for both packages including the function signatures and pa
 
 ## Other Supporting Packages
 
-There are a number of packages that are split into separate projects so that they can be re-used across the other PORI projects. For example, the GraphKB parser is used by both the GraphKB API, the GraphKB Client, and the GraphKB data loaders.
+There are a number of packages that are split into separate projects so that they can be re-used across the other PORI projects. For example, the GraphKB parser is used by the GraphKB API, the GraphKB Client, and the GraphKB data loaders.
 
 <div class='projects' markdown='1'>
 
@@ -108,7 +108,7 @@ There are a number of packages that are split into separate projects so that the
 
     ![graphkb parser](./images/graph-icon_outline.svg)
 
-    A package for parsing and recreating HGVS-like variant notation used in GraphKB. This is used by both the API and Client applications. Try it out online with [RunKit](https://runkit.com/creisle/6083062ff39ff0001b93ea6f)
+    A package for parsing and recreating HGVS-like variant notation used in GraphKB. This is used by both the API and client applications. Try it out online with [RunKit](https://runkit.com/creisle/6083062ff39ff0001b93ea6f)
 
 - ### [GraphKB Schema](https://github.com/bcgsc/pori_graphkb_schema)
 
