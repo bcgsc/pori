@@ -15,7 +15,7 @@ Every PORI repository has a corresponding github actions plan. These plans autom
 ### On Push
 
 - tests are run
-- docker containers are built to test they can
+- docker containers are built to test they can build without errors
 - linting / style-checking is performed
 
 ### On Release
