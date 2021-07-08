@@ -119,8 +119,8 @@ In the following running example we are making the release v5.2.0
 
     The PR description should match what the upcoming release notes will be. This gives the reviewers a chance to review the release notes as part of the PR review
 
-4. Once Approved and Merged, Tag a Release on Master (See [Release Notes](#release-notes))
-5. Finally, Make a PR from master to develop. This should just be called something like "master back to dev" and does not require a description
+4. Once approved and merged, tag a release on master (see [Release Notes](#release-notes))
+5. Finally, make a PR from master to develop. This should just be called something like "master back to dev" and does not require a description
 
 ### Versioning
 
