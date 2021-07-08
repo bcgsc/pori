@@ -83,7 +83,7 @@ const breakRepr = (start, end = null, multiFeature = false) => {
 
 ### User Documentation
 
-The user documentation should be updating in the [central PORI documentation repository (this repository)](https://github.com/bcgsc/pori/) when any changes are made which will affect the users. Furthermore all releases should contain a summary of the major and minor changes in their release tag for users who may be following the github page.
+The user documentation should be updated in the [central PORI documentation repository (this repository)](https://github.com/bcgsc/pori/) when any changes are made which will affect the users. Furthermore all releases should contain a summary of the major and minor changes in their release tag for users who may be following the github page.
 
 ## Code Style
 
