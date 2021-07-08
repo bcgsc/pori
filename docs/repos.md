@@ -18,7 +18,7 @@ There are two main web client projects as part of PORI
 
     ![graphkb client](./images/graphkb_graph_view_square.png)
 
-    The GraphKB client is the front-end web client for the GraphKB project. The client is used to explore and manage content within GraphKB. This is the primary way for knowledgebase users to interact with GraphKB. It contains a graph-based view and support for common query operations. It also allows export of results up to 5K rows (larger exports should be done via the API).
+    The GraphKB client is the front-end web client for the GraphKB project. The client is used to explore and manage content within GraphKB. This is the primary way for knowledge base users to interact with GraphKB. It contains a graph-based view and support for common query operations. It also allows export of results up to 5K rows (larger exports should be done via the API).
 
 - ### [IPR client](https://github.com/bcgsc/pori_ipr_client)
 
@@ -60,7 +60,7 @@ The GraphKB project also includes a loaders package which is used to import cont
 
     ![graphkb loaders](./images/graph-icon_outline.svg)
 
-    GraphKB loaders is responsible for all data import into GraphKB. Automatic Import modules are provided for a variety of external ontologies and knowledgebases such as: Ensembl, Entrez Genes, RefSeq, HGNC, Disease Ontology, NCI Thesaurus, CIViC, DoCM, etc.
+    GraphKB loaders is responsible for all data import into GraphKB. Automatic Import modules are provided for a variety of external ontologies and knowledge bases such as: Ensembl, Entrez Genes, RefSeq, HGNC, Disease Ontology, NCI Thesaurus, CIViC, DoCM, etc.
 
 </div>
 
