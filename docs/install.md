@@ -16,7 +16,7 @@ Before any of the other systems can be set up you will need to start the autheni
 default, PORI authenticates against an instance of [KeyCloak](https://www.keycloak.org/). For convenience we have provided a
 docker container with a default configuration of keycloak. This is the authentication server used
 by our [demo instance](https://pori-demo.bcgsc.ca/). If your institution already has a keycloak
-server then we have more [detailed instuctions on setting up through the GUI][https://github.com/bcgsc/pori/blob/master/docs/auth.md]
+server then we have more [detailed instuctions on setting up through the GUI](https://github.com/bcgsc/pori/blob/master/docs/auth.md)
 in this repository.
 
 ```bash
