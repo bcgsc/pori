@@ -8,7 +8,7 @@ A live demo of the platform is found at: [pori-demo.bcgsc.ca](https://pori-demo.
 
 !!! Info "Data in the Demo is Limited"
 
-    The data provided in the demo application is a subset of what you might use in your own production application of PORI. The GraphKB data contains partial copies of various open data sets for demonstrative purposes only. This demo should not be used to annotate your own reports. Instead please see the [install section](./install.md) for instructions on setting up and deploying a your own instance of PORI.
+    The data provided in the demo application is a subset of what you might use in your own production application of PORI. The GraphKB data contains partial copies of various open data sets for demonstrative purposes only. This demo should not be used to annotate your own reports. Instead please see the [install section](./install.md) for instructions on setting up and deploying your own instance of PORI.
 
 ## IPR
 
