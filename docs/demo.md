@@ -25,7 +25,7 @@ Once you are logged in you will be brought to the main report listing page. This
 
 ![report listing](./images/pori-demo-ipr-click-row.png)
 
-By clicking on a row in the above table you will be brought to the corresponding reports main summary page. The different sections of the report can be navigated via the right-hand side bar.
+By clicking on a row in the above table you will be brought to the corresponding reports main summary page. Once in the report view, the different sections of the report can be navigated via the right-hand side bar.
 
 ![report summary](./images/pori-demo-ipr-report-summary.png)
 
