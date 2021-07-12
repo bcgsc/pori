@@ -12,7 +12,7 @@ As GraphKB is able to support matching non-specfic variant notation. A distincti
 
 The ID of the matched statement is included in the upload to facilitate direct linking to the paired GraphKB client instance (this feature is not available in the demo application).
 
-To see the matched annotation in GraphKB with links to and/or information about the original records simply click the "open in new tab" icon under actions
+To see the matched annotation in GraphKB with links to and/or information about the original records click the "open in new tab" icon under actions
 
 ![link to graphkb](./images/ipr_client.kb_matches.graphkb_link_action.png)
 
