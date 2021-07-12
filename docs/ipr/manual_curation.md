@@ -22,7 +22,7 @@ In this section tumour alterations are reviewed and those representing the most 
 
 ![example](./images/ipr_client.therapeutic_targets.example.png)
 
-By clicking "Add row" button will bring the user to a form which auto-completes from the GraphKB API.
+Clicking "Add row" button will bring the user to a form which auto-completes from the GraphKB API.
 
 ![autocomplete](./images/ipr_client.therapeutic_options.graphkb_autocomplete.gif)
 
