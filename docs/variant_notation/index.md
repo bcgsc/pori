@@ -6,6 +6,11 @@ The variant notation is a shorthand to make it faster to enter/display variants.
 
     The notation examples included in this documentation do not necessarily represent actual mutations. While they are all valid syntax, no attempt has been made to check that the sequences given are correct
 
+
+To make this more transparent to end users, we have provided a notation parser view as part of the GraphKB Client where any input notation may be tested to see how it would be decomposed by the GraphKB parser
+
+![variant parser gif](../graphkb/images/graphkb_client.variant_notation.gif)
+
 ## General Notation
 
 ### Prefixes
