@@ -586,18 +586,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ipr/templates/" class="md-nav__link">
-        Templates
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../ipr/upload/" class="md-nav__link">
         Uploading A Report
       </a>
@@ -613,14 +601,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
       
-      <label class="md-nav__link" for="__nav_7_4">
+      <label class="md-nav__link" for="__nav_7_3">
         Core Variant Types
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_4">
+        <label class="md-nav__title" for="__nav_7_3">
           <span class="md-nav__icon md-icon"></span>
           Core Variant Types
         </label>
@@ -688,6 +676,18 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/kb_matches/" class="md-nav__link">
+        KB Matches
+      </a>
     </li>
   
 
@@ -819,18 +819,42 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../ipr/manual_curation/" class="md-nav__link">
+        Manual Curation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" type="checkbox" id="__nav_7_8" >
       
-      <label class="md-nav__link" for="__nav_7_6">
+      <label class="md-nav__link" for="__nav_7_8">
         Scripting Examples
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_6">
+        <label class="md-nav__title" for="__nav_7_8">
           <span class="md-nav__icon md-icon"></span>
           Scripting Examples
         </label>
@@ -1378,10 +1402,8 @@
                 
                 
                 <h1 id="ontology-algorithm">Ontology Algorithm<a class="headerlink" href="#ontology-algorithm" title="Permanent link">&para;</a></h1>
-<p>The matching algorithm implemented by this adaptor heavily uses the Graph Structure of GraphKB
-to resolve aliases, generalisms, etc. The default behaviour of this algorithm is described below
-and shown in the related examples. This is primarily accomplished via the <code>similarTo</code> query type
-provided by the GraphKB API.</p>
+<p>The matching algorithm implemented by this adaptor heavily uses the Graph Structure of GraphKB to resolve aliases, generalisms, etc. The default behaviour of this algorithm is described below and shown in the related examples. This is primarily accomplished via the <code>similarTo</code> query type provided by the GraphKB API. This algorithm can be viewed interactively in GraphKB via the matching section of the about pages</p>
+<p><img alt="matching gif" src="./images/graphkb_client.matching_demo.gif" /></p>
 <h2 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h2>
 <p>The entire knowledge base is defined as the graph, <span class="arithmatex">\(G = (V, E)\)</span>. For any given query let the
 subgraph of <span class="arithmatex">\(G\)</span> containing only vertices of the class type specified in the query (ex. Disease)
