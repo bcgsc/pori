@@ -16,6 +16,6 @@ To see the matched annotation in GraphKB with links to and/or information about 
 
 ![link to graphkb](./images/ipr_client.kb_matches.graphkb_link_action.png)
 
-This will bring you to the corresponing GraphKB page for the matched statement(s).
+This will bring you to the corresponding GraphKB page for the matched statement(s).
 
 ![kb matches link to graphkb](./images/ipr_client.kb_matches.link_to_graphkb.gif)
