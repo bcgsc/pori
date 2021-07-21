@@ -1417,13 +1417,14 @@
 <div class="highlight"><pre><span></span><code>pip install ipr
 </code></pre></div>
 <p>This will require python 3.6 or greater.</p>
-<p>this can now be used as a command line tool</p>
+<p>Use the <code>--help</code>/<code>-h</code> option to see a help menu with full options.</p>
 <div class="highlight"><pre><span></span><code>ipr -h
 </code></pre></div>
+<p>Then this can be used to upload a report from the command line. Users should use the <code>--ipr_url</code> argument to point the loader to their particular instance of IPR. A similar option exists for GraphKB.</p>
+<div class="highlight"><pre><span></span><code>ipr -c /path/to/your/json/input/file.json --ipr_url https://youriprinstance-api.com/api
+</code></pre></div>
 <p>or as part of a script (see the <a href="../../developer_reference/ipr/main/#create_report">developer reference</a>)</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">argparse</span> <span class="kn">import</span> <span class="n">Namespace</span>
-
-<span class="kn">from</span> <span class="nn">ipr.main</span> <span class="kn">import</span> <span class="n">create_report</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipr.main</span> <span class="kn">import</span> <span class="n">create_report</span>
 
 <span class="n">create_report</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 </code></pre></div>
