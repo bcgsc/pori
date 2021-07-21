@@ -36,6 +36,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://www.ebi.ac.uk/chembl](https://www.ebi.ac.uk/chembl/)
 
+    [CC BY-SA 3.0](https://chembl.gitbook.io/chembl-interface-documentation/about#data-licensing)
+
     Drug definitions and relationships can be loaded from ChEMBL via their REST API.
 
 - ![logo](https://disease-ontology.org/media/images/DO-logo-teal.svg)
@@ -44,6 +46,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://disease-ontology.org](https://disease-ontology.org/)
 
+    [CC0 1.0 Universal](https://github.com/DiseaseOntology/HumanDiseaseOntology)
+
     Disease definitions and relationships are loaded from Data files provided by the Disease Ontology.
 
 - ![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Drugbank_logo.svg/720px-Drugbank_logo.svg.png)
@@ -51,6 +55,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### DrugBank
 
     [https://go.drugbank.com](https://go.drugbank.com/)
+
+    [Attribution-NonCommercial 4.0 International](https://dev.drugbank.com/guides/faqs#usage)
 
     Drug Definitions and relationships along with cross references to the FDA drugs list are loaded
     from the XML database dumps of DrugBank
@@ -61,6 +67,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://uswest.ensembl.org/index.html](https://uswest.ensembl.org/index.html)
 
+    [No Restrictions](https://uswest.ensembl.org/info/about/legal/disclaimer.html)
+
     Gene, Transcript, and Protein definitions as well as cross-mappings to RefSeq versions
 
 - ![logo](https://www.ncbi.nlm.nih.gov/corehtml/logo100.gif)
@@ -68,6 +76,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### Entrez API
 
     [https://www.ncbi.nlm.nih.gov/books/NBK25501](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+
+    [No Restrictions](https://www.ncbi.nlm.nih.gov/home/about/policies/)
 
     Module used in other loaders for fetching publications (PubMed, PMC); genes (Entrez gene); RS ISs (snp), etc.
     from the NCBI Entrez API utitlies
@@ -94,6 +104,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://www.genenames.org](https://www.genenames.org/)
 
+    [No Restrictions](https://www.genenames.org/about/)
+
     Gene names and definitions as well as cross-mappings to several other gene resources such as
     ensembl and entrez
 
@@ -102,6 +114,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### NCIt
 
     [https://ncithesaurus.nci.nih.gov/ncitbrowser](https://ncithesaurus.nci.nih.gov/ncitbrowser/)
+
+    [CC BY 4.0](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/ThesaurusTermsofUse.pdf)
 
     NCI Thesaurus which contains therapies, anatomical entities, and disease definitions.
 
@@ -119,6 +133,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://uberon.github.io](https://uberon.github.io/)
 
+    [CC BY 3.0](https://github.com/obophenotype/uberon/issues/1139)
+
     The uberon ontology contains anatomical entity definitions
 
 - ![logo](data:image/png;base64,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)
@@ -126,6 +142,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### Cancer Genome Interpreter
 
     [https://www.cancergenomeinterpreter.org/home](https://www.cancergenomeinterpreter.org/home)
+
+    [CC BY-NC 4.0](https://www.cancergenomeinterpreter.org/faq#q11c)
 
     This is an external knowledge base which can be imported as statements into GraphKB
 
@@ -135,6 +153,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://civicdb.org](https://civicdb.org/)
 
+    [CC0 1.0](https://docs.civicdb.org/en/latest/about/faq.html?highlight=license#how-is-civic-licensed)
+
     This is an external knowledge base which can be imported as statements into GraphKB
 
 - ![logo](https://clinicaltrials.gov/ct2/html/images/ct.gov-nlm-nih-logo.png)
@@ -142,6 +162,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### ClinicalTrials.gov
 
     [https://clinicaltrials.gov/ct2/home](https://clinicaltrials.gov/ct2/home)
+
+    [Attribution](https://clinicaltrials.gov/ct2/about-site/terms-conditions#Use)
 
     Contains details for clinical trials around the world. Where possible the drugs and disease terms
     associated with the trial are matched and linked to the trial when the data is loaded.
@@ -151,6 +173,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### OncoKB
 
     [https://www.oncokb.org](https://www.oncokb.org/)
+
+    [Restricted](https://www.oncokb.org/account/register)
 
     This is a legacy loader. It is written to load the actionability JSON files provided by OncoKB.
     As this is not an open data resource, using this loader will require licensing specific to your
@@ -162,6 +186,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://www.dgidb.org](https://www.dgidb.org/)
 
+    [Open Access](https://www.dgidb.org/faq)
+
     Loads Gene-Drug Interactions into GraphKB. These are used in exploring novel mutation targets
 
 - ![logo](http://docm.info/assets/header_logo-7e7e686fc19f02d7c10932bc7af013b0.png)
@@ -169,6 +195,8 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     ### DoCM
 
     [http://docm.info](http://docm.info/)
+
+    [CC BY 4.0](http://docm.info/about)
 
     This is an external knowledge base which can be imported as statements into GraphKB.
 
