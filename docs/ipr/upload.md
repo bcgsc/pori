@@ -25,8 +25,6 @@ ipr -c /path/to/your/json/input/file.json --ipr_url https://youriprinstance-api.
 or as part of a script (see the [developer reference](../../developer_reference/ipr/main/#create_report))
 
 ```python
-from argparse import Namespace
-
 from ipr.main import create_report
 
 create_report(...)
