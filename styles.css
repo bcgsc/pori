@@ -40,7 +40,7 @@
     display: grid;
     margin: 0;
     gap: 8px;
-    grid-template-areas: "image title" "image source" "image description";
+    grid-template-areas: "image title" "image source" "image license" "image description";
     margin-bottom: 30px;
     grid-auto-rows: max-content auto;
 }
@@ -58,6 +58,18 @@
     grid-area: title;
     padding: 0 8px;
     font-size: large;
+}
+
+.external ul li > :nth-child(3):before {
+    content: 'Source: ';
+    color: #383838;
+    font-weight: 700;
+}
+
+.external ul li > :nth-child(4):not(:last-child):before {
+    content: 'Data License: ';
+    color: #383838;
+    font-weight: 700;
 }
 
 /* image */
