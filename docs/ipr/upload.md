@@ -10,17 +10,21 @@ pip install ipr
 
 This will require python 3.6 or greater.
 
-this can now be used as a command line tool
+Use the `--help`/`-h` option to see a help menu with full options.
 
 ```bash
 ipr -h
 ```
 
+Then this can be used to upload a report from the command line. Users should use the `--ipr_url` argument to point the loader to their particular instance of IPR. A similar option exists for GraphKB.
+
+```bash
+ipr -c /path/to/your/json/input/file.json --ipr_url https://youriprinstance-api.com/api
+```
+
 or as part of a script (see the [developer reference](../../developer_reference/ipr/main/#create_report))
 
 ```python
-from argparse import Namespace
-
 from ipr.main import create_report
 
 create_report(...)
