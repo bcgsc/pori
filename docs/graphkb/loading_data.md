@@ -79,7 +79,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [No Restrictions](https://www.ncbi.nlm.nih.gov/home/about/policies/)
 
-    Module used in other loaders for fetching publications (PubMed, PMC); genes (Entrez gene); RS ISs (snp), etc.
+    Module used in other loaders for fetching publications (PubMed, PMC); genes (Entrez gene); RS IDs (snp), etc.
     from the NCBI Entrez API utitlies
 
 - ![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Food_and_Drug_Administration_logo.svg/1280px-Food_and_Drug_Administration_logo.svg.png)
