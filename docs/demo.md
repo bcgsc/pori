@@ -1,6 +1,6 @@
 # Demo
 
-A live demo of the platform is found at: [pori-demo.bcgsc.ca](https://pori-demo.bcgsc.ca). This demo was deployed via docker-compose.
+A live demo of the platform is found under `pori-demo.bcgsc.ca`. This demo was deployed via docker-compose.
 
 !!! Info "Some Features are Not Available in the Demo Application"
 
