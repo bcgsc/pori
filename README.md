@@ -19,7 +19,7 @@ A pre-print of the related manuscript can be found at [biorxiv](https://www.bior
 
 ## Building the Docs (Developers)
 
-The main PORI site is built from this repo and pull documentation files from the python adaptor repos. The documentation is built using mkdocs. The main website
+The main PORI site is built from this repo and pull documentation files from the python adapter repos. The documentation is built using mkdocs. The main website
 will be updated on merge to the master branch of this repository.
 
 First, set up a virtual environment (Optional but recommended)

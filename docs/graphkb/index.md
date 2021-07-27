@@ -29,8 +29,8 @@ When you setup/install GraphKB you will create a new and empty database. Most us
 want to load some standard content into their newly created instance. We have created scripts and
 modules to simplify this process. See the [data loading page](./loading_data.md) for more information.
 
-## Using the Python Adaptor
+## Using the Python Adapter
 
-The python adaptor to GraphKB is provided for users who would like to incorporate an instance of
-GraphKB into their own scripts and pipelines. Additionally it is used by the IPR python adaptor to
+The python adapter to GraphKB is provided for users who would like to incorporate an instance of
+GraphKB into their own scripts and pipelines. Additionally it is used by the IPR python adapter to
 connect to GraphKB.

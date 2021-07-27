@@ -2,7 +2,7 @@
 
 ## How does Variant Annotation Work?
 
-Variants are annotated using the GraphKB Python Adaptor via the GraphKB REST API. In general this
+Variants are annotated using the GraphKB Python Adapter via the GraphKB REST API. In general this
 consists of the following steps
 
 - Parse HGVS-like notation[^1]

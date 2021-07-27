@@ -11,7 +11,7 @@ The kbCategory field is how IPR knows this row/entry should be treated as a vari
 
 Computing the various expression metrics is largely optional and done prior by the user prior to upload/report-creation. These metrics are displayed to the analyst reviewing the case along with the variant status. The standard fields we provide input for are listed below.
 
-As with the other variants, these should be passed to the IPR python adaptor in the main report content JSON.
+As with the other variants, these should be passed to the IPR python adapter in the main report content JSON.
 
 ```json
 {

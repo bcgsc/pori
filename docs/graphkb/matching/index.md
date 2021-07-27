@@ -1,6 +1,6 @@
 # Ontology Algorithm
 
-The matching algorithm implemented by this adaptor heavily uses the Graph Structure of GraphKB to resolve aliases, generalisms, etc. The default behaviour of this algorithm is described below and shown in the related examples. This is primarily accomplished via the `similarTo` query type provided by the GraphKB API. This algorithm can be viewed interactively in GraphKB via the matching section of the about pages
+The matching algorithm implemented by this adapter heavily uses the Graph Structure of GraphKB to resolve aliases, generalisms, etc. The default behaviour of this algorithm is described below and shown in the related examples. This is primarily accomplished via the `similarTo` query type provided by the GraphKB API. This algorithm can be viewed interactively in GraphKB via the matching section of the about pages
 
 ![matching gif](../images/graphkb_client.matching_demo.gif)
 
