@@ -86,3 +86,22 @@
 .md-typeset div.arithmatex {
     overflow: unset !important;
 }
+
+.graphkb__title {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-areas: "logo" "header";
+    margin-bottom: 20px;
+}
+
+.graphkb__title img {
+    max-width: 100px;
+    grid-area: "logo";
+    margin-right: 20px;
+}
+
+.graphkb__title h1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
