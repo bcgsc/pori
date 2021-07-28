@@ -57,6 +57,6 @@ see the IPR and GraphKB demos [here](https://pori-demo.bcgsc.ca)
 
 ## What is Second-Pass Matching?
 
-Second-Pass matching is built-in to the matching done by the IPR python adapter. First variants are matched to statements. A second set of variants is then created using the subject and relevance of these matched statements. These newly created variants are passed back into matching to fetch statements. Any statements which are matched based on this second-pass are labelled in IPR with the "inferred" flag.
+Second-pass matching is built into the matching done by the IPR python adapter. First, variants are matched to statements. A second set of variants is then created using the subject and relevance of these matched statements. These newly created variants are passed back into matching to fetch statements. Any statements which are matched based on this second pass are labelled in IPR with the "inferred" flag.
 
-An example of this might be that a user inputs a variant, KRAS:p.G12D, which matches to a statement with a relevance of "gain of function" and a subject of "KRAS". This then creates the new variant "KRAS gain of function" which matches to a second statement with the subject, "EGRF inhibitor", and relevance, "resistance". An inferred match of EGFR inhibitor resistance will be reported for KRAS:p.G12D.
+An example of this might be that a user inputs a variant, KRAS:p.G12D, which matches to a statement with a relevance of "gain of function" and a subject of "KRAS". This then creates the new variant "KRAS gain of function" which matches to a second statement with the subject "EGFR inhibitor" and relevance "resistance". An inferred match of EGFR inhibitor resistance will be reported for KRAS:p.G12D.
