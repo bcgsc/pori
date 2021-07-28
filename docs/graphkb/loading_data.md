@@ -215,7 +215,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
 ## Custom Content
 
-If you have your own instance of GraphKB and would like to transform your existing knowledgebase to load it into GraphKB please look at the other knowledgebase loaders for examples. There are some commonly used helper modules and functions available in the code base to make this process simpler. You can see documentation for individual loaders grouped with their loader (See their corresponding README.md).
+If you have your own instance of GraphKB and would like to transform your existing knowledge base to load it into GraphKB please look at the other knowledge base loaders for examples. There are some commonly used helper modules and functions available in the code base to make this process simpler. You can see documentation for individual loaders grouped with their loader (See their corresponding README.md).
 
 ```text
 src/
