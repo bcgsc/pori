@@ -10,4 +10,4 @@ This project is modularized across three repositories: [web client](https://gith
 The API and web client are servers and are provided as docker containers. The python adaptor is
 used to build reports and upload them into IPR.
 
-Reports in IPR are divided into a series of sections. These are either: created by the IPR python adaptor (ex. knowledgebase matches section); manually curated post-report creation (ex. analyst comments); or generated beforehand and included in the content passed to IPR via the python adaptor (ex. optional analyses).
+Reports in IPR are divided into a series of sections. These are either: created by the IPR python adaptor (ex. knowledge base matches section); manually curated post-report creation (ex. analyst comments); or generated beforehand and included in the content passed to IPR via the python adaptor (ex. optional analyses).
