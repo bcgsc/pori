@@ -122,7 +122,7 @@ key: `mutationBurden\.density_sv\.(primary|secondary|tertiary|quaternary)`
 ## SV-specific Comparator Overloading
 
 There are special overload comparators for stuctural variants since they often have a different
-comparator dataset from the SNV and Indels. Specifying an SV specific comparator will overload the
+comparator data set from the SNV and Indels. Specifying an SV specific comparator will overload the
 more general comparator for the SV types
 
 - mutation burden SV (primary)
