@@ -38,7 +38,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [CC BY-NC 4.0](https://www.cancergenomeinterpreter.org/faq#q11c)
 
-    This is an external knowledge base which can be imported as statements into GraphKB
+    This is an external knowledge base which can be imported as statements into GraphKB.
 
 - ![logo](https://gblobscdn.gitbook.com/spaces%2F-LEybeKogIn-6VllQQKY%2Favatar.png)
 
@@ -58,7 +58,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [CC0 1.0](https://docs.civicdb.org/en/latest/about/faq.html?highlight=license#how-is-civic-licensed)
 
-    This is an external knowledge base which can be imported as statements into GraphKB
+    This is an external knowledge base which can be imported as statements into GraphKB.
 
 - ![logo](https://clinicaltrials.gov/ct2/html/images/ct.gov-nlm-nih-logo.png)
 
@@ -89,7 +89,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [Open Access](https://www.dgidb.org/faq)
 
-    Loads Gene-Drug Interactions into GraphKB. These are used in exploring novel mutation targets
+    Loads Gene-Drug Interactions into GraphKB. These are used in exploring novel mutation targets.
 
 - ![logo](https://disease-ontology.org/media/images/DO-logo-teal.svg)
 
@@ -121,7 +121,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     [Attribution-NonCommercial 4.0 International](https://dev.drugbank.com/guides/faqs#usage)
 
     Drug Definitions and relationships along with cross references to the FDA drugs list are loaded
-    from the XML database dumps of DrugBank
+    from the XML database dumps of DrugBank.
 
 - ![logo](https://m.ensembl.org/img/ensembl_logo.png)
 
@@ -131,7 +131,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [No Restrictions](https://uswest.ensembl.org/info/about/legal/disclaimer.html)
 
-    Gene, Transcript, and Protein definitions as well as cross-mappings to RefSeq versions
+    Gene, Transcript, and Protein definitions as well as cross-mappings to RefSeq versions.
 
 - ![logo](https://www.ncbi.nlm.nih.gov/corehtml/logo100.gif)
 
@@ -142,7 +142,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     [No Restrictions](https://www.ncbi.nlm.nih.gov/home/about/policies/)
 
     Module used in other loaders for fetching publications (PubMed, PMC); genes (Entrez gene); RS ISs (snp), etc.
-    from the NCBI Entrez API utitlies
+    from the NCBI Entrez API utitlies.
 
 - ![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Food_and_Drug_Administration_logo.svg/1280px-Food_and_Drug_Administration_logo.svg.png)
 
@@ -150,7 +150,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications](https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications)
 
-    Parses Oncology Approval Announcements from the FDA site, stores as evidence items
+    Parses Oncology Approval Announcements from the FDA site, stores as evidence items.
 
 - ![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Food_and_Drug_Administration_logo.svg/1280px-Food_and_Drug_Administration_logo.svg.png)
 
@@ -158,7 +158,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://fdasis.nlm.nih.gov/srs](https://fdasis.nlm.nih.gov/srs/)
 
-    The FDA substance registration system contains drug definitions and names
+    The FDA substance registration system contains drug definitions and names.
 
 - ![logo](../images/graph-icon_outline.svg)
 
@@ -166,7 +166,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://github.com/bcgsc/pori_graphkb_loader/tree/master/src/ontology](https://github.com/bcgsc/pori_graphkb_loader/tree/master/src/ontology)
 
-    This loads a simple JSON format describing a set of ontology terms
+    This loads a simple JSON format describing a set of ontology terms.
 
 - ![logo](https://www.genenames.org/img/hgnc/logo/hgnc-light-bkgrd-no-txt.svg)
 
@@ -177,7 +177,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     [No Restrictions](https://www.genenames.org/about/)
 
     Gene names and definitions as well as cross-mappings to several other gene resources such as
-    ensembl and entrez
+    ensembl and entrez.
 
 - ![logo](https://ncit.nci.nih.gov/ncitbrowser/images/thesaurus_browser_logo.jpg)
 
@@ -209,7 +209,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [CC BY 3.0](https://github.com/obophenotype/uberon/issues/1139)
 
-    The uberon ontology contains anatomical entity definitions
+    The uberon ontology contains anatomical entity definitions.
 
 </div>
 
