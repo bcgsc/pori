@@ -32,7 +32,7 @@ GraphKB was designed with storing fusions and structural variants in mind. Each 
 
 Some examples of the various categorical variants that it is possible to create in GraphKB may be
 
-| Reference1                          | Reference1 | Type                      | Description                                     |
+| Reference1                          | Reference2 | Type                      | Description                                     |
 | ----------------------------------- | ---------- | ------------------------- | ----------------------------------------------- |
 | Homologous Recombination Deficiency | null       | strong signature          | A strong HRD signature                          | null |
 | KRAS                                | null       | gain of function mutation | Any gain of function mutation in the gene, KRAS |
