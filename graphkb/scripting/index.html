@@ -14,7 +14,7 @@
     
     
       
-        <title>User Manual - PORI</title>
+        <title>About the Python Adapter - PORI</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-manual" class="md-skip">
+        <a href="#about-the-python-adapter" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User Manual
+              About the Python Adapter
             
           </span>
         </div>
@@ -411,12 +411,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          User Manual
+          About the Python Adapter
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        User Manual
+        About the Python Adapter
       </a>
       
         
@@ -434,15 +434,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#matching-variants" class="md-nav__link">
-    Matching Variants
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
   </a>
   
 </li>
@@ -460,8 +453,8 @@
   
   
     <li class="md-nav__item">
-      <a href="Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
-        Annotate a VCF with GraphKB
+      <a href="Intro_Tutorial/" class="md-nav__link">
+        Introductory Tutorial
       </a>
     </li>
   
@@ -472,8 +465,20 @@
   
   
     <li class="md-nav__item">
-      <a href="Intro_Tutorial/" class="md-nav__link">
-        Intro Tutorial
+      <a href="Query_Basics/" class="md-nav__link">
+        Query Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
       </a>
     </li>
   
@@ -1315,15 +1320,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#matching-variants" class="md-nav__link">
-    Matching Variants
+  <a href="#tutorials" class="md-nav__link">
+    Tutorials
   </a>
   
 </li>
@@ -1345,57 +1343,20 @@
                   </a>
                 
                 
-                <h1 id="user-manual">User Manual<a class="headerlink" href="#user-manual" title="Permanent link">&para;</a></h1>
+                <h1 id="about-the-python-adapter">About the Python Adapter<a class="headerlink" href="#about-the-python-adapter" title="Permanent link">&para;</a></h1>
 <p>The GraphKB python adapter is a python package to facilitate interacting with the GraphKB API.
-The GraphKB API is a REST API <a href="https://graphkb.bcgsc.ca/api">https://graphkb.bcgsc.ca/api)</a>. The openapi specification
-is hosted here: <a href="https://graphkb-api.bcgsc.ca/api/spec">https://graphkb-api.bcgsc.ca/api/spec</a>.
-The <a href="https://graphkb.bcgsc.ca/about">client</a> also contains documentation on the background and features of GraphKB</p>
+The openapi specification can be found at <a href="https://pori-demo.bcgsc.ca/graphkb-api/api/spec"><code>/api/spec</code></a>.
+The client also contains documentation on the background and features of GraphKB.</p>
 <p>This adapter adds functions for common queries as well as for paginating and authenticating</p>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>Install the python adapter with pip</p>
-<div class="highlight"><pre><span></span><code>pip install graphkb
-</code></pre></div>
-<p>This will require python 3.6 or greater.</p>
-<p>Next, start incorporating graphkb into your own python project/script. The script below gets version
-information from graphkb</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb</span> <span class="kn">import</span> <span class="n">GraphKBConnection</span>
-
-<span class="n">gkb_conn</span> <span class="o">=</span> <span class="n">GraphKBConnection</span><span class="p">()</span>
-
-<span class="c1"># authenticate the current user</span>
-<span class="n">gkb_conn</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;myusername&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>
-
-<span class="c1"># get the version information</span>
-<span class="n">version_metadata</span> <span class="o">=</span> <span class="n">gkb_conn</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;/version&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>Querying GraphKB uses the <code>/query</code> endpoint which takes the query arguments in the request body.
-See the <a href="https://graphkb-api.bcgsc.ca/api/spec">openapi specification</a> for more details on how to
-build this object.</p>
-<h2 id="matching-variants">Matching Variants<a class="headerlink" href="#matching-variants" title="Permanent link">&para;</a></h2>
-<p>There are 2 main matching functions, one of positional variants and one for category variants. Let's
-take a look at a couple of examples</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb</span> <span class="kn">import</span> <span class="n">GraphKBConnection</span>
-<span class="kn">from</span> <span class="nn">graphkb.match</span> <span class="kn">import</span> <span class="n">match_positional_variant</span>
-
-<span class="n">gkb_conn</span> <span class="o">=</span> <span class="n">GraphKBConnection</span><span class="p">()</span>
-<span class="n">gkb_conn</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;myusername&#39;</span><span class="p">,</span> <span class="s1">&#39;mypassword&#39;</span><span class="p">)</span>
-
-<span class="n">variant_matches</span> <span class="o">=</span> <span class="n">match_positional_variant</span><span class="p">(</span><span class="n">gkb_conn</span><span class="p">,</span> <span class="s1">&#39;KRAS:p.G12D&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>This will give you a list of variants from GraphKB that are considered to match the input. We can
-then use this list of variants to fetch related annotations</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb.util</span> <span class="kn">import</span> <span class="n">convert_to_rid_list</span>
-
-<span class="n">annotations</span> <span class="o">=</span> <span class="n">gkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
-    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Statement&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;conditions&#39;</span><span class="p">:</span> <span class="n">convert_to_rid_list</span><span class="p">(</span><span class="n">variant_matches</span><span class="p">),</span>
-        <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSANY&#39;</span>
-    <span class="p">}</span>
-<span class="p">})</span>
-</code></pre></div>
-<p>This will fetch a list of statements where any of the matched variants are conditions for the
-statement</p>
+<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
+<p>There are a number of available tutorials in this space which cover using GraphKB for annotation via the python adapter.</p>
+<ul>
+<li><a href="Intro_Tutorial/">Introductory Tutorial</a></li>
+<li><a href="Query_Basics/">Query Basics</a></li>
+<li><a href="Annotate_a_VCF_with_GraphKB/">Annotate a VCF</a></li>
+<li><a href="snpsift/">Annotate SnpSift Output</a></li>
+<li><a href="variant_strings/">Annotate a List of Variants</a></li>
+</ul>
                 
               
               
@@ -1433,13 +1394,13 @@ statement</p>
         </a>
       
       
-        <a href="Annotate_a_VCF_with_GraphKB/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="Intro_Tutorial/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Annotate a VCF with GraphKB
+              Introductory Tutorial
             </div>
           </div>
           <div class="md-footer__button md-icon">

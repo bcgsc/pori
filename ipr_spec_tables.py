@@ -1,7 +1,7 @@
 """
 Generate the tables describing the various fields
 that can be given as input in the JSON passed to the IPR
-python adaptor
+python adapter
 """
 import json
 import os

@@ -402,7 +402,31 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        User Manual
+        About the Python Adapter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intro_Tutorial/" class="md-nav__link">
+        Introductory Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Query_Basics/" class="md-nav__link">
+        Query Basics
       </a>
     </li>
   
@@ -484,18 +508,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Intro_Tutorial/" class="md-nav__link">
-        Intro Tutorial
-      </a>
     </li>
   
 
@@ -1417,13 +1429,6 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/bcgsc/pori/blob/master/docs/graphkb/scripting/Annotate_a_VCF_with_GraphKB.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="annotate-a-vcf-with-graphkb">Annotate a VCF with GraphKB<a class="headerlink" href="#annotate-a-vcf-with-graphkb" title="Permanent link">&para;</a></h1>
 </div>
 </div>
@@ -1431,7 +1436,8 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A common format for small mutations is the VCF file. There are a number of variants of this format. To help users getting started we have provided this example script of how to convert from a VCF file to the JSON format that the IPR python adaptor expects.</p>
+<p><a href="https://colab.research.google.com/github/bcgsc/pori/blob/feature%2Fcolab-notebooks/docs/graphkb/scripting/Annotate_a_VCF_with_GraphKB.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p>A common format for small mutations is the VCF file. There are a number of variants of this format. To help users getting started we have provided this example script of how to convert from a VCF file to the JSON format that the IPR python adapter expects.</p>
 <p>We expect users to annotate their VCF files with protein and/or cds HGVS notation prior to this.</p>
 </div>
 </div>
@@ -2063,7 +2069,7 @@ example_snvs.varian 100%[===================&gt;] 378.34K  --.-KB/s    in 0.04s
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="annotate">Annotate<a class="headerlink" href="#annotate" title="Permanent link">&para;</a></h2>
 <p>Now we are ready to add GraphKB annotations. First connect to the API. Here we are using the demo credentials. </p>
-<p>If you were uploading to IPR you would skip this step and just input the variants. The IPR python adaptor performs matching against GraphKB prior to uploading the report.</p>
+<p>If you were uploading to IPR you would skip this step and just input the variants. The IPR python adapter performs matching against GraphKB prior to uploading the report.</p>
 <p><strong>NOTE</strong>: The demo server is incomplete. It contains a small subset of the data we would expect in a normal production instance of GraphKB and should be used for demonstration and testing only</p>
 </div>
 </div>
@@ -2396,7 +2402,7 @@ annotated 6 variant matches with 135 statements
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Query_Basics/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2405,19 +2411,19 @@ annotated 6 variant matches with 135 statements
               <span class="md-footer__direction">
                 Previous
               </span>
-              User Manual
+              Query Basics
             </div>
           </div>
         </a>
       
       
-        <a href="../Intro_Tutorial/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../snpsift/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Intro Tutorial
+              Annotate SNPSift Files
             </div>
           </div>
           <div class="md-footer__button md-icon">

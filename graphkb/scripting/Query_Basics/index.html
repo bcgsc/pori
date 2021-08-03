@@ -14,7 +14,7 @@
     
     
       
-        <title>Introductory Tutorial - PORI</title>
+        <title>Query Basics - PORI</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphkb-variant-matching-tutorial" class="md-skip">
+        <a href="#query-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introductory Tutorial
+              Query Basics
             
           </span>
         </div>
@@ -411,6 +411,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../Intro_Tutorial/" class="md-nav__link">
+        Introductory Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -423,12 +435,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introductory Tutorial
+          Query Basics
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Introductory Tutorial
+        Query Basics
       </a>
       
         
@@ -446,23 +458,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#matching-variants" class="md-nav__link">
-    Matching Variants
+  <a href="#important-fields-and-concepts" class="md-nav__link">
+    Important Fields and Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Fields and Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-target" class="md-nav__link">
+    Query Target
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#annotating-variants" class="md-nav__link">
-    Annotating Variants
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subquery-filters" class="md-nav__link">
+    Subquery Filters
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#categorizing-statements" class="md-nav__link">
-    Categorizing Statements
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-properties-fields" class="md-nav__link">
+    Return Properties (Fields)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -470,18 +508,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Query_Basics/" class="md-nav__link">
-        Query Basics
-      </a>
     </li>
   
 
@@ -1334,23 +1360,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#matching-variants" class="md-nav__link">
-    Matching Variants
+  <a href="#important-fields-and-concepts" class="md-nav__link">
+    Important Fields and Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Fields and Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-target" class="md-nav__link">
+    Query Target
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#annotating-variants" class="md-nav__link">
-    Annotating Variants
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subquery-filters" class="md-nav__link">
+    Subquery Filters
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#categorizing-statements" class="md-nav__link">
-    Categorizing Statements
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-properties-fields" class="md-nav__link">
+    Return Properties (Fields)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1366,7 +1418,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/bcgsc/pori/edit/master/docs/graphkb/scripting/Intro_Tutorial.ipynb" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/bcgsc/pori/edit/master/docs/graphkb/scripting/Query_Basics.ipynb" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1401,22 +1453,30 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="graphkb-variant-matching-tutorial">GraphKB Variant Matching Tutorial<a class="headerlink" href="#graphkb-variant-matching-tutorial" title="Permanent link">&para;</a></h1>
-<p><a href="https://colab.research.google.com/github/bcgsc/pori/blob/feature%2Fcolab-notebooks/docs/graphkb/scripting/Intro_Tutorial.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-<p>This tutorial is an interactive notebook which can be run using google colab or a local jupyter server (<strong>recommended</strong> if matching patient data). This tutorial will cover basic matching of variants using the python GraphKB adapter against an instance of the GraphKB API. </p>
-<p>Users must first have login credentials to an instance of GraphKB API (or use the demo server). Note for users using the demo credentials and server, the data is limited and more complete annotations would be expected for a production instance of GraphKB.</p>
-<p>For the purposes of this tutorial we will be matching the known KRAS variant <code>p.G12D</code> to the demo instance of GraphKB. You can adjust the API instance by changing the setup variables below</p>
-<p>To run this locally, download this file and start the server from the command line as follows</p>
-<div class="highlight"><pre><span></span><code>jupyter notebook notebook.ipynb
-</code></pre></div>
-<p>You should now be able to see the notebook by opening <code>http://localhost:8888</code> in your browser</p>
+<h1 id="query-basics">Query Basics<a class="headerlink" href="#query-basics" title="Permanent link">&para;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://colab.research.google.com/github/bcgsc/pori/blob/feature%2Fcolab-notebooks/docs/graphkb/scripting/Query_Basics.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Documentation for the API can be seen via its OpenAPI specification at <a href="https://pori-demo.bcgsc.ca/graphkb-api/api/spec"><code>/api/spec</code></a>. Here we will cover just the query endpoint which is the most commonly used endpoint as it is used for all searches. The <code>/query</code> endpoint accepts a JSON body in a POST request. This is how the user passes filters and other search-related parameters. We will define a few of the important fields and concepts that are used below.</p>
+<p>All the running examples below use the python GraphKB adapter. This assumes the user has aready initialized the connector and logged in as shown below (using the demo database and credentials).</p>
+<p>First install the adapter</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip3</span> <span class="n">install</span> <span class="n">graphkb</span>
+<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">graphkb</span>
 </code></pre></div>
 
 </div>
@@ -1425,20 +1485,27 @@
 <div class="output_area">
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-<code>Looking in indexes: https://pypi.bcgsc.ca/gsc/packages/
-Requirement already satisfied: graphkb in /projects/dat/workspace/creisle/graphkb/graphkb_python (1.5.1)
-Requirement already satisfied: requests&lt;3,&gt;=2.22.0 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from graphkb) (2.22.0)
-Requirement already satisfied: typing_extensions&lt;4,&gt;=3.7.4.2 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from graphkb) (3.7.4.2)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (2020.4.5.1)
-Requirement already satisfied: idna&lt;2.9,&gt;=2.5 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (2.8)
-Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (3.0.4)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /projects/dat/workspace/creisle/graphkb/graphkb_python/venv/lib/python3.8/site-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (1.25.9)
-<span class="ansi-yellow-fg">WARNING: You are using pip version 19.2.3, however version 21.0.1 is available.
-You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.</span>
+<code>Collecting graphkb
+  Downloading graphkb-1.5.4-py3-none-any.whl (33 kB)
+Requirement already satisfied: requests&lt;3,&gt;=2.22.0 in /usr/local/lib/python3.7/dist-packages (from graphkb) (2.23.0)
+Requirement already satisfied: typing-extensions&lt;4,&gt;=3.7.4.2 in /usr/local/lib/python3.7/dist-packages (from graphkb) (3.7.4.3)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (1.24.3)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (2021.5.30)
+Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (3.0.4)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.7/dist-packages (from requests&lt;3,&gt;=2.22.0-&gt;graphkb) (2.10)
+Installing collected packages: graphkb
+Successfully installed graphkb-1.5.4
 </code>
 </pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then set up the connector </p>
 </div>
 </div>
 </div>
@@ -1451,7 +1518,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <span class="n">GKB_USER</span> <span class="o">=</span> <span class="s1">&#39;colab_demo&#39;</span>
 <span class="n">GKB_PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;colab_demo&#39;</span>
 
-<span class="n">graphkb_conn</span> <span class="o">=</span> <span class="n">GraphKBConnection</span><span class="p">(</span><span class="n">GKB_API_URL</span><span class="p">,</span> <span class="n">use_global_cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">graphkb_conn</span> <span class="o">=</span> <span class="n">GraphKBConnection</span><span class="p">(</span><span class="n">GKB_API_URL</span><span class="p">)</span>
 
 <span class="n">graphkb_conn</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">GKB_USER</span><span class="p">,</span> <span class="n">GKB_PASSWORD</span><span class="p">)</span>
 </code></pre></div>
@@ -1461,42 +1528,74 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="matching-variants">Matching Variants<a class="headerlink" href="#matching-variants" title="Permanent link">&para;</a></h2>
-<p>Now you are ready to match variants</p>
+<h2 id="important-fields-and-concepts">Important Fields and Concepts<a class="headerlink" href="#important-fields-and-concepts" title="Permanent link">&para;</a></h2>
+<h3 id="query-target">Query Target<a class="headerlink" href="#query-target" title="Permanent link">&para;</a></h3>
+<p>The target is the class/table that the users wishes to query. If it is at the top level of the request body then it is also the type of record which will be returned. For example to get a list of all publications in GraphKB. We limit this to the first 3 publications for the purposes of this demo</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb.match</span> <span class="kn">import</span> <span class="n">match_positional_variant</span>
-
-<span class="n">variant_name</span> <span class="o">=</span> <span class="s1">&#39;KRAS:p.G12D&#39;</span>
-<span class="n">variant_matches</span> <span class="o">=</span> <span class="n">match_positional_variant</span><span class="p">(</span><span class="n">graphkb_conn</span><span class="p">,</span> <span class="n">variant_name</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">variant_name</span><span class="si">}</span><span class="s1"> matched </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">variant_matches</span><span class="p">)</span><span class="si">}</span><span class="s1"> other variant representations&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">variant_matches</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">variant_name</span><span class="p">,</span> <span class="s1">&#39;will match&#39;</span><span class="p">,</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Publication&#39;</span>
+<span class="p">},</span> <span class="n">paginate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_text output_subarea output_execute_result">
 <pre>
-<code>KRAS:p.G12D matched 7 other variant representations
-
-KRAS:p.G12D will match KRAS:p.(G12_G13)mut
-KRAS:p.G12D will match KRAS:p.G12mut
-KRAS:p.G12D will match KRAS:p.G12D
-KRAS:p.G12D will match chr12:g.25398284C&gt;T
-KRAS:p.G12D will match KRAS:p.G12
-KRAS:p.G12D will match KRAS:p.?12mut
-KRAS:p.G12D will match KRAS mutation
-</code>
+<code>[{&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:0&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612980878029,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:25500544&#39;,
+  &#39;journalName&#39;: &#39;oncogene&#39;,
+  &#39;name&#39;: &#39;the landscape and therapeutic relevance of cancer-associated transcript fusions.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;25500544&#39;,
+  &#39;updatedAt&#39;: 1612980878029,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/25500544&#39;,
+  &#39;uuid&#39;: &#39;1294db97-ee26-4bd4-9b50-d122436905be&#39;,
+  &#39;year&#39;: 2015},
+ {&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:1&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612981149054,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:16081687&#39;,
+  &#39;journalName&#39;: &#39;blood&#39;,
+  &#39;name&#39;: &#39;the jak2v617f activating mutation occurs in chronic myelomonocytic leukemia and acute myeloid leukemia, but not in acute lymphoblastic leukemia or chronic lymphocytic leukemia.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;16081687&#39;,
+  &#39;updatedAt&#39;: 1612981149054,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/16081687&#39;,
+  &#39;uuid&#39;: &#39;52e0d70f-07f8-48b9-b59d-b0258d60b9ae&#39;,
+  &#39;year&#39;: 2005},
+ {&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:2&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612981150038,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:15146165&#39;,
+  &#39;journalName&#39;: &#39;laboratory investigation; a journal of technical methods and pathology&#39;,
+  &#39;name&#39;: &#39;a great majority of gists with pdgfra mutations represent gastric tumors of low or no malignant potential.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;15146165&#39;,
+  &#39;updatedAt&#39;: 1612981150038,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/15146165&#39;,
+  &#39;uuid&#39;: &#39;9e600c55-3247-4e24-bcd8-4a20bb0fb794&#39;,
+  &#39;year&#39;: 2004}]</code>
 </pre>
 </div>
 </div>
@@ -1506,69 +1605,75 @@ KRAS:p.G12D will match KRAS mutation
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see above that the KRAS protein variant has been matched to a number of other less specific mentions (ex. KRAS:p.G12mut) and also genomic equivalents (chr12:g.25398284C&gt;T). Note that the results here will be dependent on the instance of GraphKB you are accessing.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="annotating-variants">Annotating Variants<a class="headerlink" href="#annotating-variants" title="Permanent link">&para;</a></h2>
-<p>Now that we have matched the variant we will fetch the related statements to annotate this variant with its possible relevance</p>
+<h3 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h3>
+<p>Any field that is accessible with the current users permissions level can be queried via this endpoint. Most commonly users want to filter on this like a records name or source ID (ID in the external database it was imported from). Continuing our example from above let's search for publications with the word "cancer"  in them.</p>
+<p><strong>Note</strong>: The current full text index only searches on word and word prefixes. Future iterations will support a full lucene index.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb.constants</span> <span class="kn">import</span> <span class="n">BASE_RETURN_PROPERTIES</span><span class="p">,</span> <span class="n">GENERIC_RETURN_PROPERTIES</span>
-<span class="kn">from</span> <span class="nn">graphkb.util</span> <span class="kn">import</span> <span class="n">convert_to_rid_list</span>
-
-<span class="c1"># return properties should be customized to the users needs</span>
-<span class="n">return_props</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">BASE_RETURN_PROPERTIES</span>
-    <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;sourceId&#39;</span><span class="p">,</span> <span class="s1">&#39;source.name&#39;</span><span class="p">,</span> <span class="s1">&#39;source.displayName&#39;</span><span class="p">]</span>
-    <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;conditions.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
-    <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;subject.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
-    <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;evidence.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
-    <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;relevance.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
-    <span class="o">+</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;evidenceLevel.</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">GENERIC_RETURN_PROPERTIES</span><span class="p">]</span>
-<span class="p">)</span>
-
-<span class="n">statements</span> <span class="o">=</span> <span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Statement&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;conditions&#39;</span><span class="p">:</span> <span class="n">convert_to_rid_list</span><span class="p">(</span><span class="n">variant_matches</span><span class="p">),</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSANY&#39;</span><span class="p">},</span>
-        <span class="s1">&#39;returnProperties&#39;</span><span class="p">:</span> <span class="n">return_props</span><span class="p">,</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;annotated </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">variant_matches</span><span class="p">)</span><span class="si">}</span><span class="s1"> variant matches with </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">statements</span><span class="p">)</span><span class="si">}</span><span class="s1"> statements&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">statement</span> <span class="ow">in</span> <span class="n">statements</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span>
-        <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;conditions&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;@class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;Variant&#39;</span><span class="p">)],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;relevance&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-        <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;evidence&#39;</span><span class="p">]],</span>
-    <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Publication&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">,</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSTEXT&#39;</span><span class="p">}</span>
+<span class="p">},</span> <span class="n">paginate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_text output_subarea output_execute_result">
 <pre>
-<code>annotated 7 variant matches with 96 statements
-
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Gefitinib [c1855] CIViC [&#39;pmid:15696205&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:19603024&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:18316791&#39;]
-</code>
+<code>[{&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:0&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612980878029,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:25500544&#39;,
+  &#39;journalName&#39;: &#39;oncogene&#39;,
+  &#39;name&#39;: &#39;the landscape and therapeutic relevance of cancer-associated transcript fusions.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;25500544&#39;,
+  &#39;updatedAt&#39;: 1612980878029,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/25500544&#39;,
+  &#39;uuid&#39;: &#39;1294db97-ee26-4bd4-9b50-d122436905be&#39;,
+  &#39;year&#39;: 2015},
+ {&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:19&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612981162739,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:24666267&#39;,
+  &#39;journalName&#39;: &#39;acta oncologica (stockholm, sweden)&#39;,
+  &#39;name&#39;: &#39;the predictive value of kras, nras, braf, pik3ca and pten for anti-egfr treatment in metastatic colorectal cancer: a systematic review and meta-analysis.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;24666267&#39;,
+  &#39;updatedAt&#39;: 1612981162739,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/24666267&#39;,
+  &#39;uuid&#39;: &#39;06981f31-59d0-439e-b5cd-71f503f9c50e&#39;,
+  &#39;year&#39;: 2014},
+ {&#39;@class&#39;: &#39;Publication&#39;,
+  &#39;@rid&#39;: &#39;#38:22&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612981164833,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pmid:21030459&#39;,
+  &#39;journalName&#39;: &#39;cancer research&#39;,
+  &#39;name&#39;: &#39;the neuroblastoma-associated f1174l alk mutation causes resistance to an alk kinase inhibitor in alk-translocated cancers.&#39;,
+  &#39;source&#39;: &#39;#17:21&#39;,
+  &#39;sourceId&#39;: &#39;21030459&#39;,
+  &#39;updatedAt&#39;: 1612981164833,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;url&#39;: &#39;https://pubmed.ncbi.nlm.nih.gov/21030459&#39;,
+  &#39;uuid&#39;: &#39;4f088978-1736-4e3e-83fb-6d2c70e88873&#39;,
+  &#39;year&#39;: 2010}]</code>
 </pre>
 </div>
 </div>
@@ -1578,53 +1683,120 @@ KRAS:p.G12D will match KRAS mutation
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="categorizing-statements">Categorizing Statements<a class="headerlink" href="#categorizing-statements" title="Permanent link">&para;</a></h2>
-<p>Something we often want to know is if a statement is therapeutic, or prognostic, etc. The
-naive approach is to base this on a list of known terms or a regex pattern. In GraphKB we can
-leverage the ontology structure instead.</p>
-<p>In this example we will look for all terms that would indicate a therapeutically relevent statement.</p>
-<p>To do this we pick our 'base' terms. These are the terms we consider to be the highest level
-of the ontology tree, the most general term for that category.</p>
+<p>You can also filter on multiple conditions. To do this we nest filters in an object which uses a single AND/OR property with a list of regular conditions. For example if we want to find diseases with the name "cancer" or "carcinoma"  </p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">graphkb.vocab</span> <span class="kn">import</span> <span class="n">get_term_tree</span>
-
-
-<span class="n">BASE_THERAPEUTIC_TERMS</span> <span class="o">=</span> <span class="s1">&#39;therapeutic efficacy&#39;</span>
-
-<span class="n">therapeutic_terms</span> <span class="o">=</span> <span class="n">get_term_tree</span><span class="p">(</span><span class="n">graphkb_conn</span><span class="p">,</span> <span class="n">BASE_THERAPEUTIC_TERMS</span><span class="p">,</span> <span class="n">include_superclasses</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">therapeutic_terms</span><span class="p">)</span><span class="si">}</span><span class="s1"> equivalent terms&#39;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">therapeutic_terms</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">term</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;OR&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;carcinoma&#39;</span><span class="p">},</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+<span class="p">})</span>
 </code></pre></div>
 
 </div>
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_text output_subarea output_execute_result">
 <pre>
-<code>Found 13 equivalent terms
-- therapeutic efficacy
-- targetable
-- response
-- sensitivity
-- likely sensitivity
-- no sensitivity
-- no response
-- resistance
-- reduced sensitivity
-- likely resistance
-- innate resistance
-- acquired resistance
-- no resistance
-</code>
+<code>[{&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:99077&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612926192944,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: True,
+  &#39;displayName&#39;: &#39;carcinoma&#39;,
+  &#39;name&#39;: &#39;carcinoma&#39;,
+  &#39;out_DeprecatedBy&#39;: [&#39;#29:1400&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:2428&#39;,
+  &#39;updatedAt&#39;: 1612926192944,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;2c61fd80-43fb-4cd2-941c-889a020cbbde&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:99076&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612926192912,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: True,
+  &#39;displayName&#39;: &#39;carcinoma&#39;,
+  &#39;name&#39;: &#39;carcinoma&#39;,
+  &#39;out_DeprecatedBy&#39;: [&#39;#29:1399&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:6570&#39;,
+  &#39;updatedAt&#39;: 1612926192912,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;baedee00-47a8-4d78-8ff5-7d9d8fadc03f&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:99072&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612926192816,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;description&#39;: &#39;A cell type cancer that has_material_basis_in abnormally proliferating cells derives_from epithelial cells.&#39;,
+  &#39;displayName&#39;: &#39;carcinoma&#39;,
+  &#39;history&#39;: &#39;#43:107676&#39;,
+  &#39;in_AliasOf&#39;: [&#39;#26:160594&#39;, &#39;#26:160595&#39;, &#39;#26:160596&#39;],
+  &#39;in_DeprecatedBy&#39;: [&#39;#29:1399&#39;, &#39;#29:1400&#39;],
+  &#39;in_SubClassOf&#39;: [],
+  &#39;name&#39;: &#39;carcinoma&#39;,
+  &#39;out_CrossReferenceOf&#39;: [&#39;#28:37788&#39;],
+  &#39;out_SubClassOf&#39;: [&#39;#33:13951&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:305&#39;,
+  &#39;subsets&#39;: [&#39;doid#do_flybase_slim&#39;,
+   &#39;doid#ncithesaurus&#39;,
+   &#39;doid#do_cancer_slim&#39;],
+  &#39;updatedAt&#39;: 1612980618003,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;1775c2a3-b923-49f4-9e28-d5ccfcb32bc3&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:68962&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612863235878,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;cancer [c9305]&#39;,
+  &#39;name&#39;: &#39;cancer&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:137530&#39;],
+  &#39;source&#39;: &#39;#17:0&#39;,
+  &#39;sourceId&#39;: &#39;c9305&#39;,
+  &#39;updatedAt&#39;: 1612863235878,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;ed0fffc2-31ef-435b-ae11-6efd6b193dd3&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:100548&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612926228848,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;description&#39;: &#39;A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.&#39;,
+  &#39;displayName&#39;: &#39;cancer&#39;,
+  &#39;history&#39;: &#39;#43:107678&#39;,
+  &#39;in_AliasOf&#39;: [&#39;#26:161531&#39;, &#39;#26:161532&#39;, &#39;#26:161533&#39;],
+  &#39;in_SubClassOf&#39;: [&#39;#33:5210&#39;, &#39;#33:5268&#39;],
+  &#39;name&#39;: &#39;cancer&#39;,
+  &#39;out_CrossReferenceOf&#39;: [&#39;#28:37957&#39;],
+  &#39;out_ElementOf&#39;: [&#39;#30:82543&#39;],
+  &#39;out_SubClassOf&#39;: [&#39;#33:7594&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:162&#39;,
+  &#39;subsets&#39;: [&#39;doid#do_flybase_slim&#39;,
+   &#39;doid#ncithesaurus&#39;,
+   &#39;doid#do_cancer_slim&#39;,
+   &#39;doid#do_agr_slim&#39;,
+   &#39;doid#do_gxd_slim&#39;],
+  &#39;updatedAt&#39;: 1612980640268,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;6a051270-4611-4af2-a5ff-1b31a872b4e0&#39;}]</code>
 </pre>
 </div>
 </div>
@@ -1634,120 +1806,300 @@ of the ontology tree, the most general term for that category.</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can filter the statements we have already retrieved, or we can add this to our original query
-and filter before we retrive from the API</p>
+<p>The operator can be omitted here since <code>=</code> is the default operator. We can also combine conditions with <code>AND</code></p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">statements</span> <span class="o">=</span> <span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Statement&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s1">&#39;AND&#39;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span><span class="s1">&#39;conditions&#39;</span><span class="p">:</span> <span class="n">convert_to_rid_list</span><span class="p">(</span><span class="n">variant_matches</span><span class="p">),</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSANY&#39;</span><span class="p">},</span>
-                <span class="p">{</span><span class="s1">&#39;relevance&#39;</span><span class="p">:</span> <span class="n">convert_to_rid_list</span><span class="p">(</span><span class="n">therapeutic_terms</span><span class="p">),</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;IN&#39;</span><span class="p">},</span>
-            <span class="p">]</span>
-        <span class="p">},</span>
-        <span class="s1">&#39;returnProperties&#39;</span><span class="p">:</span> <span class="n">return_props</span><span class="p">,</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-
-<span class="k">for</span> <span class="n">statement</span> <span class="ow">in</span> <span class="n">statements</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span>
-        <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;conditions&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">c</span><span class="p">[</span><span class="s1">&#39;@class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;Variant&#39;</span><span class="p">)],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;relevance&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">],</span>
-        <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">][</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-        <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="s1">&#39;displayName&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">statement</span><span class="p">[</span><span class="s1">&#39;evidence&#39;</span><span class="p">]],</span>
-    <span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;AND&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">,</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSTEXT&#39;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;pancreatic&#39;</span><span class="p">,</span> <span class="s1">&#39;operator&#39;</span><span class="p">:</span> <span class="s1">&#39;CONTAINSTEXT&#39;</span><span class="p">},</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+<span class="p">},</span> <span class="n">paginate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_text output_subarea output_execute_result">
 <pre>
-<code>[&#39;KRAS:p.G12mut&#39;] response mek inhibitor [c69145] CGI [&#39;pmid:18701506&#39;]
-[&#39;KRAS:p.G12D&#39;] sensitivity dactolisib + selumetinib CIViC [&#39;pmid:19029981&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Decitabine [c981] CIViC [&#39;pmid:25968887&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Trametinib [c77908] CIViC [&#39;pmid:22169769&#39;]
-[&#39;KRAS:p.G12D&#39;] sensitivity Akt Inhibitor MK2206 [c90581] CIViC [&#39;pmid:22025163&#39;]
-[&#39;KRAS mutation&#39;] sensitivity cetuximab + dasatinib CIViC [&#39;pmid:20956938&#39;]
-[&#39;KRAS mutation&#39;] sensitivity b-raf/vegfr-2 inhibitor raf265 + selumetinib CIViC [&#39;pmid:25199829&#39;]
-[&#39;KRAS mutation&#39;] sensitivity b-raf/vegfr-2 inhibitor raf265 + selumetinib CIViC [&#39;pmid:25199829&#39;]
-[&#39;KRAS mutation&#39;] sensitivity afatinib + trametinib CIViC [&#39;pmid:24685132&#39;]
-[&#39;KRAS mutation&#39;] sensitivity afatinib + trametinib CIViC [&#39;pmid:24685132&#39;]
-[&#39;KRAS mutation&#39;] sensitivity docetaxel + selumetinib CIViC [&#39;pmid:23200175&#39;]
-[&#39;KRAS mutation&#39;] sensitivity selumetinib + teprotumumab CIViC [&#39;pmid:21985784&#39;]
-[&#39;KRAS mutation&#39;] sensitivity MEK Inhibitor GDC-0623 [c95738] CIViC [&#39;pmid:23934108&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Trametinib [c77908] CIViC [&#39;pmid:22805291&#39;]
-[&#39;KRAS mutation&#39;] sensitivity refametinib + sorafenib CIViC [&#39;pmid:25294897&#39;]
-[&#39;KRAS:p.G12D&#39;] sensitivity Therapeutic Tumor Infiltrating Lymphocytes [c28699] CIViC [&#39;pmid:27959684&#39;]
-[&#39;KRAS:p.G12D&#39;] sensitivity dactolisib + selumetinib CIViC [&#39;pmid:22392911&#39;]
-[&#39;KRAS mutation&#39;] sensitivity erlotinib + teprotumumab CIViC [&#39;pmid:22025157&#39;]
-[&#39;KRAS mutation&#39;] sensitivity abemaciclib [c97660] CIViC [&#39;pmid:27217383&#39;]
-[&#39;KRAS mutation&#39;] sensitivity docetaxel + pemetrexed + trametinib CIViC [&#39;pmid:27876675&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Atezolizumab [c106250] CIViC [&#39;pmid:28525386&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Nivolumab [c68814] CIViC [&#39;pmid:28525386&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Immune Checkpoint Inhibitor [c143250] CIViC [&#39;pmid:28259530&#39;]
-[&#39;KRAS mutation&#39;] sensitivity binimetinib + palbociclib CIViC [&#39;pmid:27167191&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Metformin [c61612] CIViC [&#39;pmid:32444490&#39;]
-[&#39;KRAS mutation&#39;] sensitivity Binimetinib [c84865] CIViC [&#39;pmid:32822286&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:18202412&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance cetuximab + chemotherapy CIViC [&#39;pmid:20619739&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Erlotinib [c65530] CIViC [&#39;pmid:15696205&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Gefitinib [c1855] CIViC [&#39;pmid:15696205&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance gemcitabine + trametinib CIViC [&#39;pmid:24915778&#39;]
-[&#39;KRAS mutation&#39;] resistance bevacizumab + chemotherapy CIViC [&#39;pmid:23828442&#39;]
-[&#39;KRAS mutation&#39;] resistance ixazomib [c97940] CIViC [&#39;pmid:26709701&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Vemurafenib [c64768] CIViC [&#39;pmid:26352686&#39;]
-[&#39;KRAS mutation&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:22586653&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:18316791&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:20619739&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:20619739&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:18316791&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Gefitinib [c1855] CIViC [&#39;pmid:17409929&#39;]
-[&#39;KRAS mutation&#39;] resistance Erlotinib [c65530] CIViC [&#39;pmid:22025157&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Melphalan [c633] CIViC [&#39;pmid:19284554&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Melphalan [c633] CIViC [&#39;pmid:11050000&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Melphalan [c633] CIViC [&#39;pmid:12483530&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Melphalan [c633] CIViC [&#39;pmid:16497971&#39;]
-[&#39;KRAS mutation&#39;] resistance Erlotinib [c65530] CIViC [&#39;pmid:21258250&#39;]
-[&#39;KRAS mutation&#39;] resistance Gefitinib [c1855] CIViC [&#39;pmid:21258250&#39;]
-[&#39;KRAS mutation&#39;] resistance docetaxel + selumetinib CIViC [&#39;pmid:28492898&#39;]
-[&#39;KRAS mutation&#39;] resistance cetuximab + chemotherapy CIViC [&#39;pmid:20619739&#39;]
-[&#39;KRAS mutation&#39;] resistance Erlotinib [c65530] CIViC [&#39;pmid:21969500&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Regorafenib [c78204] CIViC [&#39;pmid:26161928&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Vemurafenib [c64768] CIViC [&#39;pmid:24265155&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:22246397&#39;]
-[&#39;KRAS mutation&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:28275037&#39;]
-[&#39;KRAS mutation&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:28275037&#39;]
-[&#39;KRAS mutation&#39;] resistance Vemurafenib [c64768] CIViC [&#39;pmid:24265155&#39;]
-[&#39;KRAS mutation&#39;] resistance Dabrafenib [c82386] CIViC [&#39;pmid:24265155&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:19603024&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.G12D&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Cetuximab [c1723] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.(G12_G13)mut&#39;] resistance Panitumumab [c1857] CIViC [&#39;pmid:19223544&#39;]
-[&#39;KRAS:p.?12mut&#39;] resistance Cetuximab [c1723] CGI [&#39;CGI&#39;]
-[&#39;KRAS:p.?12mut&#39;] resistance Panitumumab [c1857] CGI [&#39;CGI&#39;]
-</code>
+<code>[{&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:1683&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612854000193,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;recurrent pancreatic neuroendocrine cancer [c115433]&#39;,
+  &#39;name&#39;: &#39;recurrent pancreatic neuroendocrine cancer&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:5496&#39;],
+  &#39;source&#39;: &#39;#17:0&#39;,
+  &#39;sourceId&#39;: &#39;c115433&#39;,
+  &#39;updatedAt&#39;: 1612854000193,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;a0831763-7bcb-4c68-a9dc-7aee6b3795c3&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:8254&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612855453528,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;pancreatic cancer by ajcc v6 and v7 stage [c134902]&#39;,
+  &#39;name&#39;: &#39;pancreatic cancer by ajcc v6 and v7 stage&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:18191&#39;],
+  &#39;source&#39;: &#39;#17:0&#39;,
+  &#39;sourceId&#39;: &#39;c134902&#39;,
+  &#39;updatedAt&#39;: 1612855453528,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;21e9a523-1982-4bf0-824d-c50bbe9b11b9&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:8255&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612855453548,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;exocrine and endocrine pancreatic cancer by ajcc v6 and v7 stage [c134902]&#39;,
+  &#39;name&#39;: &#39;exocrine and endocrine pancreatic cancer by ajcc v6 and v7 stage&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:18192&#39;],
+  &#39;source&#39;: &#39;#17:0&#39;,
+  &#39;sourceId&#39;: &#39;c134902&#39;,
+  &#39;updatedAt&#39;: 1612855453548,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;d66fdfc2-578c-49cf-b3d7-cfe693fae104&#39;}]</code>
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The above will look for diseases that have both 'cancer' and 'pancreatic' in the name.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="subquery-filters">Subquery Filters<a class="headerlink" href="#subquery-filters" title="Permanent link">&para;</a></h4>
+<p>Sometimes we would like to filter records on a linked field (essentially a foreign key). We can do this with subquery filters.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Source&#39;</span><span class="p">,</span> <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;disease ontology&#39;</span><span class="p">}}</span>
+    <span class="p">},</span>
+<span class="p">},</span> <span class="n">paginate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_text output_subarea output_execute_result">
+<pre>
+<code>[{&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:72269&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612924874193,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;von reklinghausen disease&#39;,
+  &#39;name&#39;: &#39;von reklinghausen disease&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:145059&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:8712&#39;,
+  &#39;updatedAt&#39;: 1612924874193,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;5647ae2d-8837-48fd-8b46-7669ec046e8e&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:72251&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612924873047,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;other named variants of lymphosarcoma and reticulosarcoma involving lymph nodes of axilla and upper limb&#39;,
+  &#39;name&#39;: &#39;other named variants of lymphosarcoma and reticulosarcoma involving lymph nodes of axilla and upper limb&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:145052&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:8716&#39;,
+  &#39;updatedAt&#39;: 1612924873047,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;9586920c-fc10-4c5d-9cdb-f92d234d7cb3&#39;},
+ {&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:72256&#39;,
+  &#39;alias&#39;: True,
+  &#39;createdAt&#39;: 1612924873474,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;displayName&#39;: &#39;other named variants of lymphosarcoma and reticulosarcoma involving intrapelvic lymph nodes&#39;,
+  &#39;name&#39;: &#39;other named variants of lymphosarcoma and reticulosarcoma involving intrapelvic lymph nodes&#39;,
+  &#39;out_AliasOf&#39;: [&#39;#26:145057&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:8716&#39;,
+  &#39;updatedAt&#39;: 1612924873474,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;e8cf5e88-9624-4900-8986-177e607fd95a&#39;}]</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Above we are only returning disease records that have been imported from the disease ontology.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="return-properties-fields">Return Properties (Fields)<a class="headerlink" href="#return-properties-fields" title="Permanent link">&para;</a></h3>
+<p>The return fields property allows the user to specify what they would like to return. This can mean returning a subset of fields for a large query to improve the speed of the client digesting the data, or it can be used to de-nest fields. By default the query will return only the immediate properties of the class being queries. This means that linked fields will be listed as their record ID. De-nesting these fields allows you to return them without additional queries.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;AND&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Source&#39;</span><span class="p">,</span> <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;disease ontology&#39;</span><span class="p">}}},</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">})</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_text output_subarea output_execute_result">
+<pre>
+<code>[{&#39;@class&#39;: &#39;Disease&#39;,
+  &#39;@rid&#39;: &#39;#43:100548&#39;,
+  &#39;alias&#39;: False,
+  &#39;createdAt&#39;: 1612926228848,
+  &#39;createdBy&#39;: &#39;#14:0&#39;,
+  &#39;deprecated&#39;: False,
+  &#39;description&#39;: &#39;A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.&#39;,
+  &#39;displayName&#39;: &#39;cancer&#39;,
+  &#39;history&#39;: &#39;#43:107678&#39;,
+  &#39;in_AliasOf&#39;: [&#39;#26:161531&#39;, &#39;#26:161532&#39;, &#39;#26:161533&#39;],
+  &#39;in_SubClassOf&#39;: [&#39;#33:5210&#39;, &#39;#33:5268&#39;],
+  &#39;name&#39;: &#39;cancer&#39;,
+  &#39;out_CrossReferenceOf&#39;: [&#39;#28:37957&#39;],
+  &#39;out_ElementOf&#39;: [&#39;#30:82543&#39;],
+  &#39;out_SubClassOf&#39;: [&#39;#33:7594&#39;],
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:162&#39;,
+  &#39;subsets&#39;: [&#39;doid#do_flybase_slim&#39;,
+   &#39;doid#ncithesaurus&#39;,
+   &#39;doid#do_cancer_slim&#39;,
+   &#39;doid#do_agr_slim&#39;,
+   &#39;doid#do_gxd_slim&#39;],
+  &#39;updatedAt&#39;: 1612980640268,
+  &#39;updatedBy&#39;: &#39;#14:0&#39;,
+  &#39;uuid&#39;: &#39;6a051270-4611-4af2-a5ff-1b31a872b4e0&#39;}]</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We probably are not interested in all of these fields so let's pick a few to return.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;AND&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Source&#39;</span><span class="p">,</span> <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;disease ontology&#39;</span><span class="p">}}},</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;returnProperties&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;source&#39;</span><span class="p">,</span> <span class="s1">&#39;sourceId&#39;</span><span class="p">,</span> <span class="s1">&#39;alias&#39;</span><span class="p">,</span> <span class="s1">&#39;deprecated&#39;</span><span class="p">]</span>
+<span class="p">})</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_text output_subarea output_execute_result">
+<pre>
+<code>[{&#39;alias&#39;: False,
+  &#39;deprecated&#39;: False,
+  &#39;name&#39;: &#39;cancer&#39;,
+  &#39;source&#39;: &#39;#17:19&#39;,
+  &#39;sourceId&#39;: &#39;doid:162&#39;}]</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The new return looks much more reasonable. However the source field right now is a seperate record ID. This means with the current query we would have to fetch that record separately if we want to see details about it. This can be done in a single query with the nested return properties. Simply delimit properties and sub-properties with a period.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">graphkb_conn</span><span class="o">.</span><span class="n">query</span><span class="p">({</span>
+    <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Disease&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;AND&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Source&#39;</span><span class="p">,</span> <span class="s1">&#39;filters&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;disease ontology&#39;</span><span class="p">}}},</span>
+            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cancer&#39;</span><span class="p">}</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;returnProperties&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;source.name&#39;</span><span class="p">,</span> <span class="s1">&#39;sourceId&#39;</span><span class="p">,</span> <span class="s1">&#39;alias&#39;</span><span class="p">,</span> <span class="s1">&#39;deprecated&#39;</span><span class="p">]</span>
+<span class="p">})</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_text output_subarea output_execute_result">
+<pre>
+<code>[{&#39;alias&#39;: False,
+  &#39;deprecated&#39;: False,
+  &#39;name&#39;: &#39;cancer&#39;,
+  &#39;source&#39;: {&#39;name&#39;: &#39;disease ontology&#39;},
+  &#39;sourceId&#39;: &#39;doid:162&#39;}]</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
                 
@@ -1772,7 +2124,7 @@ and filter before we retrive from the API</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Intro_Tutorial/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1781,19 +2133,19 @@ and filter before we retrive from the API</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              About the Python Adapter
+              Introductory Tutorial
             </div>
           </div>
         </a>
       
       
-        <a href="../Query_Basics/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../Annotate_a_VCF_with_GraphKB/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Query Basics
+              Annotate a VCF with GraphKB
             </div>
           </div>
           <div class="md-footer__button md-icon">
