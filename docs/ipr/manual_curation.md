@@ -6,7 +6,7 @@ IPR supports manually curating/editing many of the sections in the report.
 
 This a free-text section of the report where the case analyst may summarize the findings of the report.
 
-!!! Info "Optionally Semi-Automated"
+!!! Tip "Optionally Semi-Automated"
 
     Comments can optionally be auto-populated by the report loader
 
@@ -16,9 +16,13 @@ This a free-text section of the report where the case analyst may summarize the 
 
 In this section tumour alterations are reviewed and those representing the most likely potential therapeutic targets are highlighted, with details on the associated therapy or general drug class, level of evidence, and any relevant clinical trials. Potential caveats are also specified. Alterations associated with potential resistance to relevant therapies are also documented.
 
-!!! Info "Optionally Semi-Automated"
+!!! Tip "Optionally Semi-Automated"
 
     Therapeutic options can optionally be auto-populated by the report loader
+
+!!! Tip "Video Demo"
+
+    This section has a video demo on the [demo page](../demo.md)
 
 ![example](./images/ipr_client.therapeutic_targets.example.png)
 

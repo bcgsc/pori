@@ -20,7 +20,7 @@ Every PORI repository has a corresponding github actions plan. These plans autom
 
 ### On Release
 
-- Python Adaptors are published to [PyPI](https://pypi.org/project/pip/)
+- Python Adapters are published to [PyPI](https://pypi.org/project/pip/)
 - Docker containers are published to [DockerHub](https://hub.docker.com/)
 
 ## Documentation

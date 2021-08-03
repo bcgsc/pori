@@ -1,6 +1,6 @@
 # Demo
 
-A live demo of the platform is found at: [pori-demo.bcgsc.ca](https://pori-demo.bcgsc.ca). This demo was deployed via docker-compose.
+A live demo of the platform is found under `pori-demo.bcgsc.ca`. This demo was deployed via docker-compose.
 
 !!! Info "Some Features are Not Available in the Demo Application"
 
@@ -9,6 +9,14 @@ A live demo of the platform is found at: [pori-demo.bcgsc.ca](https://pori-demo.
 !!! Info "Data in the Demo is Limited"
 
     The data provided in the demo application is a subset of what you might use in your own production application of PORI. The GraphKB data contains partial copies of various open data sets for demonstrative purposes only. This demo should not be used to annotate your own reports. Instead please see the [install section](./install.md) for instructions on setting up and deploying your own instance of PORI.
+
+## Videos
+
+We have recorded videos on various sections of IPR from the analysts perspective to help new users in navigating the system.
+
+- [Landing Page](https://vimeo.com/582124704/8559a53557)
+- [Report Summary Page](https://vimeo.com/582124225/0e987a1fcf)
+- [Pathway Analysis](https://vimeo.com/582126313/0653a515c9)
 
 ## IPR
 

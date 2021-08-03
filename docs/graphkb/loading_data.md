@@ -166,7 +166,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     [https://github.com/bcgsc/pori_graphkb_loader/tree/master/src/ontology](https://github.com/bcgsc/pori_graphkb_loader/tree/master/src/ontology)
 
-    This loads a simple JSON format describing a set of ontology terms.
+    This loads a simple JSON format describing a set of ontology terms. We have included some examples and helpful ontology JSON files in the [data folder](https://github.com/bcgsc/pori_graphkb_loader/tree/master/data) of the corresponding repository.
 
 - ![logo](https://www.genenames.org/img/hgnc/logo/hgnc-light-bkgrd-no-txt.svg)
 

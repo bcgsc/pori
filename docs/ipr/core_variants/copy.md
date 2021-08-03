@@ -1,6 +1,6 @@
 # Copy Variants
 
-Copy variants should be passed to the IPR python adaptor in the main report content JSON.
+Copy variants should be passed to the IPR python adapter in the main report content JSON.
 
 ```json
 {

@@ -1,1 +1,7 @@
 title: Scripting Examples
+nav:
+- index.md
+- Introductory Tutorial: Intro_Tutorial.ipynb
+- Query_Basics.ipynb 
+- Annotate_a_VCF_with_GraphKB.ipynb 
+- ...

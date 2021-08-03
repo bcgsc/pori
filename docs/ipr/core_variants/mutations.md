@@ -1,6 +1,6 @@
 # Small Mutations
 
-Small mutations are composed of indels and single nucleotide variants. These should be passed to the IPR python adaptor in the main report content JSON.
+Small mutations are composed of indels and single nucleotide variants. These should be passed to the IPR python adapter in the main report content JSON.
 
 ```json
 {
