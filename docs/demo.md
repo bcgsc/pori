@@ -14,7 +14,6 @@ A live demo of the platform is found under `pori-demo.bcgsc.ca`. This demo was d
 
 We have recorded videos on various sections of IPR from the analysts perspective to help new users in navigating the system.
 
-- [Therapeutic Options Tables](https://vimeo.com/467920834)
 - [Landing Page](https://vimeo.com/582124704/8559a53557)
 - [Report Summary Page](https://vimeo.com/582124225/0e987a1fcf)
 - [Pathway Analysis](https://vimeo.com/582126313/0653a515c9)
