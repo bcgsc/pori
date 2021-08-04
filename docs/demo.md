@@ -16,6 +16,7 @@ We have recorded videos on various sections of IPR from the analysts perspective
 
 - [Landing Page](https://vimeo.com/582124704/8559a53557)
 - [Report Summary Page](https://vimeo.com/582124225/0e987a1fcf)
+- [Therapeutic Options Table](https://vimeo.com/467920834/21997511d0)
 - [Pathway Analysis](https://vimeo.com/582126313/0653a515c9)
 
 ## IPR
