@@ -42,7 +42,7 @@ Run the script to pull the other respository files
 bash docs/build_external.sh
 ```
 
-And finally serve the docuemntation for viewing locally with
+And finally serve the documentation for viewing locally with
 
 ```bash
 mkdocs serve
