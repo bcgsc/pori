@@ -60,7 +60,7 @@ services:
       - app-network
     restart: always
   ipr_db:
-    image: bcgsc/pori-ipr-demodb:v6.2.3
+    image: bcgsc/pori-ipr-demodb:v7.1.1
     restart: always
     environment:
       DATABASE_NAME: ipr_demo
@@ -91,7 +91,7 @@ services:
       - app-network
     restart: always
   ipr_api:
-    image: bcgsc/pori-ipr-api:v6.2.3
+    image: bcgsc/pori-ipr-api:v7.1.1
     ports:
       - 8081:8080
     environment:
@@ -119,7 +119,7 @@ services:
         type: bind
         read_only: true
   ipr_client:
-    image: bcgsc/pori-ipr-client:v6.2.1
+    image: bcgsc/pori-ipr-client:v6.6.2
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
