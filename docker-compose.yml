@@ -60,7 +60,7 @@ services:
       - app-network
     restart: always
   ipr_db:
-    image: bcgsc/pori-ipr-demodb:v7.1.1
+    image: bcgsc/pori-ipr-demodb:v7.1.2
     restart: always
     environment:
       DATABASE_NAME: ipr_demo
