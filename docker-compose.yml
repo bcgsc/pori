@@ -119,7 +119,7 @@ services:
         type: bind
         read_only: true
   ipr_client:
-    image: bcgsc/pori-ipr-client:v6.6.2
+    image: bcgsc/pori-ipr-client:v6.6.3
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
