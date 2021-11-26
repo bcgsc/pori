@@ -1,5 +1,7 @@
 # Platform for Oncogenomic Reporting and Interpretation (PORI)
 
+[![DOI](https://zenodo.org/badge/327692970.svg)](https://zenodo.org/badge/latestdoi/327692970)
+
 The Platform for Oncogenomic Reporting and Interpretation (PORI) is an open source collection of
 software designed to support scaleable precision oncology. The platform has two main components:
 a graph knowledge base (GraphKB) and an integrated pipeline reporting application (IPR).
