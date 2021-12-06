@@ -1359,7 +1359,8 @@ to implement but is not yet supported by the upload</p>
     <span class="n">interactive</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">graphkb_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
     <span class="n">generate_therapeutics</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+    <span class="n">generate_comments</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 </code></pre></div>
 <p><strong>Args</strong></p>
 <ul>
@@ -1374,10 +1375,11 @@ to implement but is not yet supported by the upload</p>
 <li>interactive (<code>bool</code>): progressbars for interactive users</li>
 <li>graphkb_url (<code>str</code>)</li>
 <li>generate_therapeutics (<code>bool</code>): create therapeutic options for upload with the report</li>
+<li>generate_comments (<code>bool</code>): create the analyst comments section for upload with the report</li>
 </ul>
 <p><strong>Returns</strong></p>
 <ul>
-<li><code>Optional[Dict]</code>: ipr_conn.upload_report return dictionary</li>
+<li><code>Dict</code>: ipr_conn.upload_report return dictionary</li>
 </ul>
                 
               
