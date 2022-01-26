@@ -1,7 +1,7 @@
 
 # Install with Docker
 
-Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/). Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initially setting up and testing.
+Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/). Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initially setting up and testing. If you are a developer you may wish to look at the [getting started section](./deverloper_reference/getting_started.md) in the developers guide instead.
 
 Start by cloning this repository which contains the default docker compose config (docker-compose.yml)
 
@@ -58,6 +58,8 @@ CONTAINER ID   IMAGE                  COMMAND                  CREATED          
 16ff3826c976   bcgsc/pori-auth:latest   "/opt/jboss/tools/do…"   About a minute ago   Up About a minute   8443/tcp, 0.0.0.0:8888->8080/tcp   strange_chaum
 ```
 
+### Download the Public Key File
+
 After the container is started you can go to the admin console GUI to add a users and download the realm's public key file. This must be done prior to starting the other containers.
 
 The public key file will need to be passed to the GraphKB API container at run time. Copy it from the Realms > Keys page which should look something like below
@@ -73,6 +75,10 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoteEI/Iu923I4Zqt8prxIx3ljGEecnrI+sWj
 ```
 
 Both the IPR and GraphKB API containers will use this ./keys folder, binding it into the container at run time (See volumes section of docker compose file).
+
+Note that for your convenience this can also be done with the following bash command
+
+### Adding Default Demo Users
 
 You will also want to add a couple of users to make things simpler to test. If you use the non-default demo passwords (RECCOMMENDED!) you will need to change the corresponding fields in the docker compose file. The names of these users can also be changed but it will require also adding them to the application databases.
 
