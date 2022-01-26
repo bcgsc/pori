@@ -1,7 +1,7 @@
 
 # Install with Docker
 
-Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/). Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initially setting up and testing. If you are a developer you may wish to look at the [getting started section](./deverloper_reference/getting_started.md) in the developers guide instead.
+Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/). Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initially setting up and testing. If you are a developer you may wish to look at the [getting started section](./developer_reference/getting_started.md) in the developers guide instead.
 
 Start by cloning this repository which contains the default docker compose config (docker-compose.yml)
 

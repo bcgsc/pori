@@ -14,6 +14,9 @@ markdown_extensions:
   - admonition
   - pymdownx.inlinehilite
   - pymdownx.extra
+  - pymdownx.snippets:
+      check_paths: True
+      base_path: demo
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
