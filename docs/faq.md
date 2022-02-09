@@ -21,7 +21,7 @@ in the demo database it would result in the following matches
 
 ## How do I cite PORI?
 
-Please cite the following pre-print [Reisle, et. al. 2021](https://www.biorxiv.org/content/10.1101/2021.04.13.439667v1).
+Please cite [Reisle, C. et al. A platform for oncogenomic reporting and interpretation. Nat. Commun. 13, 1–11 (2022)](https://www.nature.com/articles/s41467-022-28348-y)
 
 ## How Can I Migrate Our Existing KB to GraphKB?
 

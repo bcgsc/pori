@@ -17,7 +17,7 @@ deployed via docker-compose
 
 ## Citation
 
-A pre-print of the related manuscript can be found at [biorxiv](https://www.biorxiv.org/content/10.1101/2021.04.13.439667v1).
+Please cite [Reisle, C. et al. A platform for oncogenomic reporting and interpretation. Nat. Commun. 13, 1–11 (2022)](https://www.nature.com/articles/s41467-022-28348-y)
 
 ## Building the Docs (Developers)
 
