@@ -9,6 +9,8 @@ jobs:
     name: test docker-compose start
     steps:
       - uses: actions/checkout@v2
+      - run: mkdir -p databases/{postgres,orientdb}/{backup,data}
+      - run: mkdir keys
       - run: docker-compose -f "docker-compose.dev.yml" up -d --build
       - run: bash tests/test-docker-compose.sh
       - run: docker-compose -f "docker-compose.dev.yml" down
