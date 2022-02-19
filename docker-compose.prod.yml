@@ -1,5 +1,33 @@
 version: '3'
 services:
+  keycloak:
+    build:
+      context: .
+      dockerfile: ./demo/Dockerfile.auth
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD}
+      PROXY_ADDRESS_FORWARDING: "true"
+      JAVA_OPTS_APPEND: "-Djboss.socket.binding.port-offset=808"
+      KEYCLOAK_FRONTEND_URL: https://pori-demo.bcgsc.ca/auth
+    ports:
+      - 8888:8888
+    networks:
+      - app-network
+    healthcheck:
+      # test fetching public key from PORI realm
+      test: ["CMD", "bash", "/scripts/kc_setup_keyfile.sh", "http://localhost:8888/auth", "admin", "${KEYCLOAK_PASSWORD}", "PORI", "/keys/keycloak.key"]
+      interval: 45s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
+      - type: bind
+        source: /etc/ssl/certs/current
+        target: /etc/x509/https
+        read_only: true
   graphkb_db:
     image: orientdb:3.0
     environment:
@@ -42,6 +70,11 @@ services:
         target: /keys
         type: bind
         read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://graphkb_api:8080/api/version"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   graphkb_client:
     image: bcgsc/pori-graphkb-client:v4.2.2
     environment:
@@ -118,6 +151,11 @@ services:
         target: /keys
         type: bind
         read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://ipr_api:8080/api/spec.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   ipr_client:
     image: bcgsc/pori-ipr-client:v6.6.3
     environment:

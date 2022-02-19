@@ -2,13 +2,11 @@
 
 For working on most of the PORI-related projects you will need to have a number of the components set up. For example, to work on the GraphKB API you will need both an OrientDB server and a Keycloak server already running.
 
-If your institution regularly works on PORI related projects then we reccommend setting up a development instance of the PORI platform which your developers can point their applications to. If you do not have access to something like this, then the easiest way to get the dependencies for whatever part of the PORI platform you are working on up and running is by running the development version of the docker compose configuration found in this repository: [docker-compose.dev.yml](https://github.com/bcgsc/pori/blob/master/docker-compose.dev.yml).
+If your institution regularly works on PORI related projects then we recommend setting up a development instance of the PORI platform which your developers can point their applications to. If you do not have access to something like this, then the easiest way to get the dependencies for whatever part of the PORI platform you are working on up and running is by running the development version of the docker compose configuration found in this repository: [docker-compose.dev.yml](https://github.com/bcgsc/pori/blob/master/docker-compose.dev.yml).
 
 ```yaml title="docker-compose.dev.yml"
 --8<-- "./docker-compose.dev.yml"
 ```
-
-## The Auth Container
 
 The demo uses a default keycloak setup with a realm "PORI" and two clients: "GraphKB" and "IPR".
 For convenience there are also a number of default users which all have the default password of "secret".
@@ -42,7 +40,6 @@ docker ps
 ```
 
 If any of them show "(health: starting)" then they are not ready yet.
-
 
 ### Viewing Log Files
 

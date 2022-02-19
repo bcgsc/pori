@@ -4,7 +4,7 @@ If you are new to PORI and would like to contribute, writing tests and documenta
 
 ## Tests
 
-When new features are added, corresponding tests should be implemented as well. We use [jest](https://jestjs.io/) for both API and client testing. The client additionally uses [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). Tests for python adpators are written using [pytest](https://docs.pytest.org/en/6.2.x/).
+When new features are added, corresponding tests should be implemented as well. We use [jest](https://jestjs.io/) for both API and client testing. The client additionally uses [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). Tests for python adaptors are written using [pytest](https://docs.pytest.org/en/6.2.x/).
 
 Tests for all repositories will be automatically run as a part of their [GitHub Actions](https://github.com/features/actions) plan. See the next section for more details.
 
