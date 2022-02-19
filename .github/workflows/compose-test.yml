@@ -1,6 +1,7 @@
 name: test-compose
 on:
  - workflow_dispatch
+ - push
 
 jobs:
   docker:
