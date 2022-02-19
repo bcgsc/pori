@@ -2,6 +2,29 @@
 # therefore does not require the top level apache server to configure the URLs
 version: '3'
 services:
+  keycloak:
+    build:
+      context: .
+      dockerfile: ./demo/Dockerfile.auth
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      PROXY_ADDRESS_FORWARDING: "true"
+    ports:
+      - 8443:8334
+      - 8080:8080
+    networks:
+      - app-network
+    healthcheck:
+    # /bin/bash /scripts/kc_setup_keyfile.sh http://localhost:8080/auth admin admin PORI /keys/keycloak.key
+      test: ["CMD", "bash", "/scripts/kc_setup_keyfile.sh", "http://localhost:8080/auth", "admin", "admin", "PORI", "/keys/keycloak.key"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
   graphkb_db:
     image: orientdb:3.0
     environment:
@@ -22,7 +45,7 @@ services:
   graphkb_api:
     image: bcgsc/pori-graphkb-api:latest
     ports:
-      - 8080:8080
+      - 8888:8080
     environment:
       GKB_DB_CREATE: 1
       GKB_DB_HOST: graphkb_db
@@ -32,9 +55,10 @@ services:
       # customize settings below
       GKB_CORS_ORIGIN: '^.*$$'
       GKB_DBS_PASS: root
-      GKB_KEYCLOAK_URI: http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
+      GKB_KEYCLOAK_URI: http://keycloak:8080/auth/realms/PORI/protocol/openid-connect/token
     depends_on:
       - graphkb_db
+      - keycloak
     networks:
       - app-network
     restart: always
@@ -49,8 +73,8 @@ services:
       KEYCLOAK_REALM: PORI
       KEYCLOAK_CLIENT_ID: GraphKB
       # customize settings below
-      API_BASE_URL: http://graphkb_api:8080
-      KEYCLOAK_URL: http://localhost:8888/auth
+      API_BASE_URL: http://graphkb_api:8888
+      KEYCLOAK_URL: http://keycloak:8080/auth
       PUBLIC_PATH: /
     ports:
       - 5000:80
@@ -92,6 +116,7 @@ services:
     restart: always
   ipr_api:
     image: bcgsc/pori-ipr-api:latest
+    command: npm start
     ports:
       - 8081:8080
     environment:
@@ -103,13 +128,14 @@ services:
       # customize settings below
       IPR_DATABASE_PASSWORD: root
       IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
-      IPR_GRAPHKB_URI: http://graphkb_api:8080/api
-      IPR_KEYCLOAK_URI: http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
+      IPR_GRAPHKB_URI: http://graphkb_api:8888/api
+      IPR_KEYCLOAK_URI: http://keycloak:8080/auth/realms/PORI/protocol/openid-connect/token
       IPR_REDIS_HOST: redis
       IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
       - redis
+      - keycloak
     networks:
       - app-network
     restart: always
@@ -125,7 +151,7 @@ services:
       # customize settings below
       API_BASE_URL: http://ipr_api:8081/api
       GRAPHKB_URL: http://graphkb_client:5000
-      KEYCLOAK_URL: http://localhost:8888/auth
+      KEYCLOAK_URL: http://keycloak:8080/auth
       PUBLIC_PATH: /
     ports:
       - 3000:80

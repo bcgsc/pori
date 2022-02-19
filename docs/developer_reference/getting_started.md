@@ -8,50 +8,70 @@ If your institution regularly works on PORI related projects then we reccommend 
 --8<-- "./docker-compose.dev.yml"
 ```
 
-## Start the Authentication Server
+## The Auth Container
 
-First, set up a keycloak instance for development (like the regular set up but you can ignore the https certificates). Since we are not exposing this outside our network and are using it for development and testing only we pass admin/admin as the admin user credentials. You should pick something more secure for non-development or public installations.
+The demo uses a default keycloak setup with a realm "PORI" and two clients: "GraphKB" and "IPR".
+For convenience there are also a number of default users which all have the default password of "secret".
 
-```bash
-docker run \
-    -e KEYCLOAK_USER=admin \
-    -e KEYCLOAK_PASSWORD=admin \
-    -p 8443:8334 \
-    -p 8888:8080 \
-    -d \
-    bcgsc/pori-auth:latest
-```
-
-You should now be able to view the browser-based administrative console by visiting [http://localhost:8888](http://localhost:8888) in your browser.
-
-### Download the Public Key File
-
-After the container is started you can go to the admin console GUI to add a users and download the realm's public key file. This must be done prior to starting the other containers.
-
-You can do this via the GUI as described in the main [install instructions](../install.md) or via a script using the keycloak REST API.
-
-```bash title="kc_setup_keyfile.sh"
---8<-- "./kc_setup_keyfile.sh"
-```
-
-### Create the Default Users
-
-Next, create the users as specified in the main [install instructions](https://bcgsc.github.io/pori/install) or via the script below.
-
-```bash title="kc_setup_default_users.sh"
---8<-- "./kc_setup_default_users.sh"
-```
+![default users](../images/pori-keycloak-default-users.png)
 
 ## Run docker-compose
 
-Once keycloak is set up you will need to create some directories for storing database data (so that is persists when you stop and restart your docker containers)
+First thing you should do is create new/empty directories for the data stored by GraphKB and IPR.
 
 ```bash
 mkdir -p databases/{postgres,orientdb}/{backup,data}
+```
+
+You should also create a new directory for storing the public key from keycloak. This key will be downloaded and store so that it was be used in checking incoming tokens by the GraphKB and IPR APIs. If this directory already exists you should delete and remake it.
+
+```bash
+mkdir keys
 ```
 
 Now you are ready to start up with the dev compose yml
 
 ```bash
 docker-compose -f demo/docker-compose.dev.yml up -d
+```
+
+It will take a minute or two for all of the servers to start. You can check how they look with docker
+
+```bash
+docker ps
+```
+
+If any of them show "(health: starting)" then they are not ready yet.
+
+
+### Viewing Log Files
+
+Sometimes you will need to check the logs from the various servers, this can be done with the docker logs command. First find the container ID (or name) by listing all the running containers with `docker ps` and then run the following
+
+```bash
+docker logs <CONTAINER ID>
+```
+
+### Loading Data into GraphKB
+
+If you are running the GraphKB loader via its docker container you will need to tell it to use the host network so that it is able to find the GraphKB API.
+
+Here is an example of running the GraphKB Loader on the vocabulary terms using the docker container and the docker-compose setup described above.
+
+First download the vocabulary terms data
+
+```bash
+wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/develop/data/vocab.json
+```
+
+Then you can load these terms using the ontology file loader
+
+```bash
+docker run --net host bcgsc/pori-graphkb-loader:latest \
+    -u graphkb_importer \
+    -p secret \
+    -g http://localhost:8888/api \
+    file \
+    ontology \
+    vocab.json
 ```
