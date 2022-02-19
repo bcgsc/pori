@@ -9,7 +9,7 @@ jobs:
     name: test docker-compose start
     steps:
       - uses: actions/checkout@v2
-      - run: docker-compose -f docker-compose.dev.yml -d
+      - run: docker-compose -f "docker-compose.dev.yml" -d --build
       - run: bash tests/test-docker-compose.sh
-      - run: docker-compose -d docker-compose.dev.yml down
+      - run: docker-compose -f "docker-compose.dev.yml" down
         if: always()
