@@ -1,0 +1,14 @@
+name: test-compose
+on:
+ - workflow_dispatch
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    name: test docker-compose start
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker-compose -f docker-compose.dev.yml -d
+      - run: bash tests/test-docker-compose.sh
+      - run: docker-compose -d docker-compose.dev.yml down
+        if: always()
