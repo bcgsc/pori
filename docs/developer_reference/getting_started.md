@@ -32,7 +32,7 @@ mkdir keys
 Now you are ready to start up with the dev compose yml
 
 ```bash
-docker-compose -f demo/docker-compose.dev.yml up -d
+docker-compose -f docker-compose.dev.yml up -d
 ```
 
 It will take a minute or two for all of the servers to start. You can check how they look with docker
