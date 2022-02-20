@@ -106,8 +106,16 @@ docker run --net host bcgsc/pori-graphkb-loader:latest \
     vocab.json
 ```
 
-## HTTPS
+## Production Instances
+
+### HTTPS
 
 For a production instance of PORI you will want to use HTTPS instead of HTTP. The simplest way to accomplish this is with a reverse proxy to pick up the ports. This way you can run the platform as above, with http, when initially setting up and testing.
 
 Once you have your reverse proxy set up and configured you can use the newly bound URLs in place of the http://hostname:port URLs.
+
+An example of what the HTTPs URLs using a reverse proxy may look like is included in the "prod" version of the docker-compose file, however you would need to replace these with your own URLs and mappings
+
+### Keycloak
+
+In the `docker-compose.dev.yml` example, we are using the embedded h2 database with keycloak for simplicity, if you are using this in production you should use an external database with keycloak. Our production version does not include keycloak at all as it is run seperately since it is used for many different applications beyond PORI.
