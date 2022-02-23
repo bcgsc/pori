@@ -35,7 +35,7 @@ For convenience there are also a number of default users which all have the defa
 
 ## Run docker-compose
 
-First thing you should do is create new/empty directories for the data stored by GraphKB and IPR.
+The first thing you should do is create new/empty directories for the data stored by GraphKB and IPR.
 
 ```bash
 mkdir -p databases/{postgres,orientdb}/{backup,data}
