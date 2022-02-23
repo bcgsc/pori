@@ -16,7 +16,7 @@ GraphKB functions both as an aggregate knowledge base as well as a standalone ap
 
 ### Multiple Overlapping Ontologies
 
-GraphKB is unique among other knowledge base projects in its inclusion of ontology relations and subsquent real-time leveraging of their inherent graph structure. The simultaenous loading of multiple overlapping ontologies allows for better coverage of terms when loading data from resources without controlled vocabulary[^1]. It also enables users to match the chosen ontology of the source resource when specified.
+GraphKB is unique among other knowledge base projects in its inclusion of ontology relations and subsequent real-time leveraging of their inherent graph structure. The simultaneous loading of multiple overlapping ontologies allows for better coverage of terms when loading data from resources without controlled vocabulary[^1]. It also enables users to match the chosen ontology of the source resource when specified.
 
 [^1]: [Reisle, C. et al. A Platform for Oncogenomic Reporting and Interpretation. bioRxiv 2021.04.13.439667 (2021) doi:10.1101/2021.04.13.439667](https://www.biorxiv.org/content/10.1101/2021.04.13.439667v1)
 
