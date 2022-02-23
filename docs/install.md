@@ -97,14 +97,20 @@ wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/develop/data/vo
 Then you can load these terms using the ontology file loader
 
 ```bash
-docker run --net host bcgsc/pori-graphkb-loader:latest \
+docker run --net host \
+    --mount src=$(pwd)/vocab.json,dst=/data/vocab.json,type=bind \
+    bcgsc/pori-graphkb-loader:latest \
     -u graphkb_importer \
     -p secret \
-    -g http://localhost:8888/api \
+    -g http://localhost:8080/api \
     file \
     ontology \
-    vocab.json
+    /data/vocab.json
 ```
+
+!!! Note
+
+    Because we are running the loader by itself we need to provide the mount arguments to tell docker that we need access to a file outside of the container itself. When we run this with the snakemake pipeline this is not necessary since snakemake generally takes care of that for you
 
 ## Production Instances
 
