@@ -21,7 +21,7 @@ First thing you should do is create new/empty directories for the data stored by
 mkdir -p databases/{postgres,orientdb}/{backup,data}
 ```
 
-You should also create a new directory for storing the public key from keycloak. This key will be downloaded and store so that it was be used in checking incoming tokens by the GraphKB and IPR APIs. If this directory already exists you should delete and remake it.
+You should also create a new directory for storing the public key from keycloak. This key will be downloaded and stored so that it can be used in checking incoming tokens by the GraphKB and IPR APIs. If this directory already exists you should delete and remake it.
 
 ```bash
 mkdir keys
