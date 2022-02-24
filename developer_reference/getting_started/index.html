@@ -1174,36 +1174,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start-the-authentication-server" class="md-nav__link">
-    Start the Authentication Server
+  <a href="#run-docker-compose" class="md-nav__link">
+    Run docker-compose
   </a>
   
-    <nav class="md-nav" aria-label="Start the Authentication Server">
+    <nav class="md-nav" aria-label="Run docker-compose">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#download-the-public-key-file" class="md-nav__link">
-    Download the Public Key File
+  <a href="#viewing-log-files" class="md-nav__link">
+    Viewing Log Files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-default-users" class="md-nav__link">
-    Create the Default Users
+  <a href="#loading-data-into-graphkb" class="md-nav__link">
+    Loading Data into GraphKB
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-docker-compose" class="md-nav__link">
-    Run docker-compose
-  </a>
   
 </li>
       
@@ -1531,11 +1524,34 @@
 
 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
 <p>For working on most of the PORI-related projects you will need to have a number of the components set up. For example, to work on the GraphKB API you will need both an OrientDB server and a Keycloak server already running.</p>
-<p>If your institution regularly works on PORI related projects then we reccommend setting up a development instance of the PORI platform which your developers can point their applications to. If you do not have access to something like this, then the easiest way to get the dependencies for whatever part of the PORI platform you are working on up and running is by running the development version of the docker compose configuration found in this repository: <a href="https://github.com/bcgsc/pori/blob/master/docker-compose.dev.yml">docker-compose.dev.yml</a>.</p>
+<p>If your institution regularly works on PORI related projects then we recommend setting up a development instance of the PORI platform which your developers can point their applications to. If you do not have access to something like this, then the easiest way to get the dependencies for whatever part of the PORI platform you are working on up and running is by running the development version of the docker compose configuration found in this repository: <a href="https://github.com/bcgsc/pori/blob/master/docker-compose.dev.yml">docker-compose.dev.yml</a>.</p>
 <div class="highlight"><span class="filename">docker-compose.dev.yml</span><pre><span></span><code><span class="c1"># This version of the docker-compose sets up the servers using http only for testing locally and</span><span class="w"></span>
 <span class="c1"># therefore does not require the top level apache server to configure the URLs</span><span class="w"></span>
 <span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3&#39;</span><span class="w"></span>
 <span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">keycloak</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span><span class="w"></span>
+<span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./demo/Dockerfile.auth</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">KEYCLOAK_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span><span class="w"></span>
+<span class="w">      </span><span class="nt">KEYCLOAK_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span><span class="w"></span>
+<span class="w">      </span><span class="nt">PROXY_ADDRESS_FORWARDING</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">JAVA_OPTS_APPEND</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;-Djboss.socket.binding.port-offset=808&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8888:8888</span><span class="w"></span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">app-network</span><span class="w"></span>
+<span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="c1"># test fetching public key from PORI realm</span><span class="w"></span>
+<span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;bash&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;/scripts/kc_setup_keyfile.sh&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://localhost:8888/auth&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;admin&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;admin&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;PORI&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;/keys/keycloak.key&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">45s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./keys</span><span class="w"></span>
+<span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/keys</span><span class="w"></span>
+<span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bind</span><span class="w"></span>
 <span class="w">  </span><span class="nt">graphkb_db</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">orientdb:3.0</span><span class="w"></span>
 <span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
@@ -1566,9 +1582,10 @@
 <span class="w">      </span><span class="c1"># customize settings below</span><span class="w"></span>
 <span class="w">      </span><span class="nt">GKB_CORS_ORIGIN</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;^.*$$&#39;</span><span class="w"></span>
 <span class="w">      </span><span class="nt">GKB_DBS_PASS</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root</span><span class="w"></span>
-<span class="w">      </span><span class="nt">GKB_KEYCLOAK_URI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token</span><span class="w"></span>
+<span class="w">      </span><span class="nt">GKB_KEYCLOAK_URI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://keycloak:8888/auth/realms/PORI/protocol/openid-connect/token</span><span class="w"></span>
 <span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">graphkb_db</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">keycloak</span><span class="w"></span>
 <span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">app-network</span><span class="w"></span>
 <span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
@@ -1577,6 +1594,11 @@
 <span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/keys</span><span class="w"></span>
 <span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bind</span><span class="w"></span>
 <span class="w">        </span><span class="nt">read_only</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;curl&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-f&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://graphkb_api:8080/api/version&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
 <span class="w">  </span><span class="nt">graphkb_client</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bcgsc/pori-graphkb-client:latest</span><span class="w"></span>
 <span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
@@ -1584,7 +1606,7 @@
 <span class="w">      </span><span class="nt">KEYCLOAK_CLIENT_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GraphKB</span><span class="w"></span>
 <span class="w">      </span><span class="c1"># customize settings below</span><span class="w"></span>
 <span class="w">      </span><span class="nt">API_BASE_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://graphkb_api:8080</span><span class="w"></span>
-<span class="w">      </span><span class="nt">KEYCLOAK_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://localhost:8888/auth</span><span class="w"></span>
+<span class="w">      </span><span class="nt">KEYCLOAK_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://keycloak:8888/auth</span><span class="w"></span>
 <span class="w">      </span><span class="nt">PUBLIC_PATH</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/</span><span class="w"></span>
 <span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000:80</span><span class="w"></span>
@@ -1610,6 +1632,11 @@
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5432:5432</span><span class="w"></span>
 <span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">app-network</span><span class="w"></span>
+<span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD-SHELL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;pg_isready&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
 <span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis:6.2-alpine</span><span class="w"></span>
 <span class="w">    </span><span class="c1"># Set health checks to wait until redis has started</span><span class="w"></span>
@@ -1626,6 +1653,7 @@
 <span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
 <span class="w">  </span><span class="nt">ipr_api</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bcgsc/pori-ipr-api:latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm start</span><span class="w"></span>
 <span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8081:8080</span><span class="w"></span>
 <span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
@@ -1638,12 +1666,13 @@
 <span class="w">      </span><span class="nt">IPR_DATABASE_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root</span><span class="w"></span>
 <span class="w">      </span><span class="nt">IPR_GRAPHKB_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ipr_graphkb_link</span><span class="w"></span>
 <span class="w">      </span><span class="nt">IPR_GRAPHKB_URI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://graphkb_api:8080/api</span><span class="w"></span>
-<span class="w">      </span><span class="nt">IPR_KEYCLOAK_URI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token</span><span class="w"></span>
+<span class="w">      </span><span class="nt">IPR_KEYCLOAK_URI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://keycloak:8888/auth/realms/PORI/protocol/openid-connect/token</span><span class="w"></span>
 <span class="w">      </span><span class="nt">IPR_REDIS_HOST</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis</span><span class="w"></span>
 <span class="w">      </span><span class="nt">IPR_REDIS_PORT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6379</span><span class="w"></span>
 <span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ipr_db</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">keycloak</span><span class="w"></span>
 <span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">app-network</span><span class="w"></span>
 <span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span><span class="w"></span>
@@ -1652,6 +1681,11 @@
 <span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/keys</span><span class="w"></span>
 <span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bind</span><span class="w"></span>
 <span class="w">        </span><span class="nt">read_only</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;curl&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-f&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://ipr_api:8080/api/spec.json&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span><span class="w"></span>
+<span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"></span>
 <span class="w">  </span><span class="nt">ipr_client</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bcgsc/pori-ipr-client:latest</span><span class="w"></span>
 <span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
@@ -1659,7 +1693,7 @@
 <span class="w">      </span><span class="c1"># customize settings below</span><span class="w"></span>
 <span class="w">      </span><span class="nt">API_BASE_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://ipr_api:8081/api</span><span class="w"></span>
 <span class="w">      </span><span class="nt">GRAPHKB_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://graphkb_client:5000</span><span class="w"></span>
-<span class="w">      </span><span class="nt">KEYCLOAK_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://localhost:8888/auth</span><span class="w"></span>
+<span class="w">      </span><span class="nt">KEYCLOAK_URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://keycloak:8888/auth</span><span class="w"></span>
 <span class="w">      </span><span class="nt">PUBLIC_PATH</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/</span><span class="w"></span>
 <span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000:80</span><span class="w"></span>
@@ -1672,115 +1706,41 @@
 <span class="w">  </span><span class="nt">app-network</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bridge</span><span class="w"></span>
 </code></pre></div>
-<h2 id="start-the-authentication-server">Start the Authentication Server<a class="headerlink" href="#start-the-authentication-server" title="Permanent link">&para;</a></h2>
-<p>First, set up a keycloak instance for development (like the regular set up but you can ignore the https certificates). Since we are not exposing this outside our network and are using it for development and testing only we pass admin/admin as the admin user credentials. You should pick something more secure for non-development or public installations.</p>
-<div class="highlight"><pre><span></span><code>docker run <span class="se">\</span>
-    -e <span class="nv">KEYCLOAK_USER</span><span class="o">=</span>admin <span class="se">\</span>
-    -e <span class="nv">KEYCLOAK_PASSWORD</span><span class="o">=</span>admin <span class="se">\</span>
-    -p <span class="m">8443</span>:8334 <span class="se">\</span>
-    -p <span class="m">8888</span>:8080 <span class="se">\</span>
-    -d <span class="se">\</span>
-    bcgsc/pori-auth:latest
-</code></pre></div>
-<p>You should now be able to view the browser-based administrative console by visiting <a href="http://localhost:8888">http://localhost:8888</a> in your browser.</p>
-<h3 id="download-the-public-key-file">Download the Public Key File<a class="headerlink" href="#download-the-public-key-file" title="Permanent link">&para;</a></h3>
-<p>After the container is started you can go to the admin console GUI to add a users and download the realm's public key file. This must be done prior to starting the other containers.</p>
-<p>You can do this via the GUI as described in the main <a href="../../install/">install instructions</a> or via a script using the keycloak REST API.</p>
-<div class="highlight"><span class="filename">kc_setup_keyfile.sh</span><pre><span></span><code><span class="nb">export</span> <span class="nv">KEYCLOAK_ADMIN_USER</span><span class="o">=</span>admin
-<span class="nb">export</span> <span class="nv">KEYCLOAK_ADMIN_PASS</span><span class="o">=</span>admin
-<span class="nb">export</span> <span class="nv">KEYCLOAK_REALM</span><span class="o">=</span>PORI
-<span class="nb">export</span> <span class="nv">KEYCLOAK_URL</span><span class="o">=</span>http://localhost:8888/auth
-<span class="nb">export</span> <span class="nv">DEFAULT_PASSWORD</span><span class="o">=</span>secret
-
-<span class="nv">KEYFILE</span><span class="o">=</span>keys/keycloak.key
-
-<span class="c1"># Get the Admin user token</span>
-<span class="nv">auth_resp</span><span class="o">=</span><span class="k">$(</span>curl -X POST <span class="s2">&quot;</span><span class="si">${</span><span class="nv">KEYCLOAK_URL</span><span class="si">}</span><span class="s2">/realms/master/protocol/openid-connect/token&quot;</span> <span class="se">\</span>
-    -H <span class="s2">&quot;Content-Type: application/x-www-form-urlencoded&quot;</span> <span class="se">\</span>
-    -d <span class="s2">&quot;username=</span><span class="si">${</span><span class="nv">KEYCLOAK_ADMIN_USER</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
-    -d <span class="s2">&quot;password=</span><span class="si">${</span><span class="nv">KEYCLOAK_ADMIN_PASS</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
-    -d <span class="s1">&#39;grant_type=password&#39;</span> <span class="se">\</span>
-    -d <span class="s1">&#39;client_id=admin-cli&#39;</span><span class="k">)</span>
-
-<span class="nv">token</span><span class="o">=</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$auth_resp</span> <span class="p">|</span> grep -o <span class="s1">&#39;&quot;access_token&quot;:[^,][^,]*&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/^&quot;access_token&quot;:\s*&quot;//&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/&quot;$//&#39;</span> <span class="k">)</span>
-
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$token</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]</span><span class="p">;</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;FAILED to get authorization token&quot;</span>
-    <span class="nb">exit</span> <span class="m">1</span>
-<span class="k">fi</span>
-
-<span class="c1"># Now fetch the public key file</span>
-<span class="nv">resp</span><span class="o">=</span><span class="k">$(</span>curl -X GET <span class="s2">&quot;</span><span class="si">${</span><span class="nv">KEYCLOAK_URL</span><span class="si">}</span><span class="s2">/admin/realms/</span><span class="si">${</span><span class="nv">KEYCLOAK_REALM</span><span class="si">}</span><span class="s2">/keys&quot;</span> <span class="se">\</span>
-        -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-        -H <span class="s2">&quot;Accept: application/json&quot;</span> <span class="se">\</span>
-        -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$token</span><span class="s2">&quot;</span> <span class="k">)</span>
-<span class="c1"># echo $resp</span>
-
-<span class="nv">key</span><span class="o">=</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$resp</span> <span class="p">|</span> grep -o <span class="s1">&#39;&quot;publicKey&quot;:[^,][^,]*&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/^&quot;publicKey&quot;:\s*&quot;//&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/&quot;$//&#39;</span> <span class="k">)</span>
-
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="s2">&quot;keys&quot;</span> <span class="o">]</span><span class="p">;</span>
-<span class="k">then</span>
-    mkdir keys
-<span class="k">fi</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;writing: </span><span class="nv">$KEYFILE</span><span class="s2">&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;-----BEGIN PUBLIC KEY-----&quot;</span> &gt; <span class="nv">$KEYFILE</span>
-<span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$key</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$KEYFILE</span>
-<span class="nb">echo</span> <span class="s2">&quot;-----END PUBLIC KEY-----&quot;</span> &gt;&gt; <span class="nv">$KEYFILE</span>
-</code></pre></div>
-<h3 id="create-the-default-users">Create the Default Users<a class="headerlink" href="#create-the-default-users" title="Permanent link">&para;</a></h3>
-<p>Next, create the users as specified in the main <a href="https://bcgsc.github.io/pori/install">install instructions</a> or via the script below.</p>
-<div class="highlight"><span class="filename">kc_setup_default_users.sh</span><pre><span></span><code><span class="nb">export</span> <span class="nv">KEYCLOAK_ADMIN_USER</span><span class="o">=</span>admin
-<span class="nb">export</span> <span class="nv">KEYCLOAK_ADMIN_PASS</span><span class="o">=</span>admin
-<span class="nb">export</span> <span class="nv">KEYCLOAK_REALM</span><span class="o">=</span>PORI
-<span class="nb">export</span> <span class="nv">KEYCLOAK_URL</span><span class="o">=</span>http://localhost:8888/auth
-<span class="nb">export</span> <span class="nv">DEFAULT_PASSWORD</span><span class="o">=</span>secret
-
-<span class="nv">KEYFILE</span><span class="o">=</span>keys/keycloak.key
-
-<span class="c1"># Get the Admin user token</span>
-<span class="nv">auth_resp</span><span class="o">=</span><span class="k">$(</span>curl -X POST <span class="s2">&quot;</span><span class="si">${</span><span class="nv">KEYCLOAK_URL</span><span class="si">}</span><span class="s2">/realms/master/protocol/openid-connect/token&quot;</span> <span class="se">\</span>
-    -H <span class="s2">&quot;Content-Type: application/x-www-form-urlencoded&quot;</span> <span class="se">\</span>
-    -d <span class="s2">&quot;username=</span><span class="si">${</span><span class="nv">KEYCLOAK_ADMIN_USER</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
-    -d <span class="s2">&quot;password=</span><span class="si">${</span><span class="nv">KEYCLOAK_ADMIN_PASS</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
-    -d <span class="s1">&#39;grant_type=password&#39;</span> <span class="se">\</span>
-    -d <span class="s1">&#39;client_id=admin-cli&#39;</span><span class="k">)</span>
-
-<span class="nv">token</span><span class="o">=</span><span class="k">$(</span> <span class="nb">echo</span> <span class="nv">$auth_resp</span> <span class="p">|</span> grep -o <span class="s1">&#39;&quot;access_token&quot;:[^,][^,]*&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/^&quot;access_token&quot;:\s*&quot;//&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;s/&quot;$//&#39;</span> <span class="k">)</span>
-
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$token</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="o">]</span><span class="p">;</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;FAILED to get authorization token&quot;</span>
-    <span class="nb">exit</span> <span class="m">1</span>
-<span class="k">fi</span>
-
-<span class="c1"># Add the default users with some generated passwords</span>
-
-<span class="nv">BODY_TEMPLATE</span><span class="o">=</span><span class="s1">&#39;{&quot;username&quot;: &quot;&lt;USERNAME&gt;&quot;, &quot;enabled&quot;: true, &quot;credentials&quot;: [{&quot;type&quot;: &quot;password&quot;, &quot;value&quot;: &quot;&lt;PASSWORD&gt;&quot;, &quot;temporary&quot;: false}], &quot;realmRoles&quot;: [&quot;IPR&quot;, &quot;GraphKB&quot;]}&#39;</span>
-
-<span class="k">for</span> username <span class="k">in</span> graphkb_admin graphkb_importer ipr_graphkb_link iprdemo colab_demo
-<span class="k">do</span>
-    <span class="nb">echo</span> <span class="s2">&quot;Adding user: </span><span class="nv">$username</span><span class="s2">&quot;</span>
-    <span class="nb">echo</span> <span class="s2">&quot;setting user (</span><span class="si">${</span><span class="nv">username</span><span class="si">}</span><span class="s2">) with password (</span><span class="si">${</span><span class="nv">DEFAULT_PASSWORD</span><span class="si">}</span><span class="s2">)&quot;</span>
-    <span class="nv">body</span><span class="o">=</span><span class="si">${</span><span class="nv">BODY_TEMPLATE</span><span class="p">/&lt;USERNAME&gt;/</span><span class="nv">$username</span><span class="si">}</span>
-    <span class="nv">body</span><span class="o">=</span><span class="si">${</span><span class="nv">body</span><span class="p">/&lt;PASSWORD&gt;/</span><span class="nv">$DEFAULT_PASSWORD</span><span class="si">}</span>
-
-    curl -X POST <span class="s2">&quot;</span><span class="si">${</span><span class="nv">KEYCLOAK_URL</span><span class="si">}</span><span class="s2">/admin/realms/</span><span class="si">${</span><span class="nv">KEYCLOAK_REALM</span><span class="si">}</span><span class="s2">/users&quot;</span> <span class="se">\</span>
-        -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-        -H <span class="s2">&quot;Accept: application/json&quot;</span> <span class="se">\</span>
-        -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$token</span><span class="s2">&quot;</span> <span class="se">\</span>
-        -d <span class="s2">&quot;</span><span class="nv">$body</span><span class="s2">&quot;</span>
-<span class="k">done</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-</code></pre></div>
+<p>The demo uses a default keycloak setup with a realm "PORI" and two clients: "GraphKB" and "IPR".
+For convenience there are also a number of default users which all have the default password of "secret".</p>
+<p><img alt="default users" src="./images/pori-keycloak-default-users.png" /></p>
 <h2 id="run-docker-compose">Run docker-compose<a class="headerlink" href="#run-docker-compose" title="Permanent link">&para;</a></h2>
-<p>Once keycloak is set up you will need to create some directories for storing database data (so that is persists when you stop and restart your docker containers)</p>
+<p>First thing you should do is create new/empty directories for the data stored by GraphKB and IPR.</p>
 <div class="highlight"><pre><span></span><code>mkdir -p databases/<span class="o">{</span>postgres,orientdb<span class="o">}</span>/<span class="o">{</span>backup,data<span class="o">}</span>
 </code></pre></div>
+<p>You should also create a new directory for storing the public key from keycloak. This key will be downloaded and stored so that it can be used in checking incoming tokens by the GraphKB and IPR APIs. If this directory already exists you should delete and remake it.</p>
+<div class="highlight"><pre><span></span><code>mkdir keys
+</code></pre></div>
 <p>Now you are ready to start up with the dev compose yml</p>
-<div class="highlight"><pre><span></span><code>docker-compose -f demo/docker-compose.dev.yml up -d
+<div class="highlight"><pre><span></span><code>docker-compose -f docker-compose.dev.yml up -d
+</code></pre></div>
+<p>It will take a minute or two for all of the servers to start. You can check how they look with docker</p>
+<div class="highlight"><pre><span></span><code>docker ps
+</code></pre></div>
+<p>If any of them show "(health: starting)" then they are not ready yet.</p>
+<h3 id="viewing-log-files">Viewing Log Files<a class="headerlink" href="#viewing-log-files" title="Permanent link">&para;</a></h3>
+<p>Sometimes you will need to check the logs from the various servers, this can be done with the docker logs command. First find the container ID (or name) by listing all the running containers with <code>docker ps</code> and then run the following</p>
+<div class="highlight"><pre><span></span><code>docker logs &lt;CONTAINER ID&gt;
+</code></pre></div>
+<h3 id="loading-data-into-graphkb">Loading Data into GraphKB<a class="headerlink" href="#loading-data-into-graphkb" title="Permanent link">&para;</a></h3>
+<p>If you are running the GraphKB loader via its docker container you will need to tell it to use the host network so that it is able to find the GraphKB API.</p>
+<p>Here is an example of running the GraphKB Loader on the vocabulary terms using the docker container and the docker-compose setup described above.</p>
+<p>First download the vocabulary terms data</p>
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/develop/data/vocab.json
+</code></pre></div>
+<p>Then you can load these terms using the ontology file loader</p>
+<div class="highlight"><pre><span></span><code>docker run --net host bcgsc/pori-graphkb-loader:latest <span class="se">\</span>
+    -u graphkb_importer <span class="se">\</span>
+    -p secret <span class="se">\</span>
+    -g http://localhost:8888/api <span class="se">\</span>
+    file <span class="se">\</span>
+    ontology <span class="se">\</span>
+    vocab.json
 </code></pre></div>
 
               
