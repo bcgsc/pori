@@ -1,86 +1,27 @@
 
 # Install with Docker
 
-Since PORI is a production-ready, institution-level, scaleable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/). Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first. The instructions below set up the platform with HTTPS and then use a reverse proxy to pick up the ports. This way you can omit the proxy step and run the platform with http when initially setting up and testing. If you are a developer you may wish to look at the [getting started section](./developer_reference/getting_started.md) in the developers guide instead.
+Since PORI is a production-ready, institution-level, scalable platform, the simplest way to get the entire platform up and running from scratch is using [docker](https://www.docker.com/).  For simplicity the default instructions set up the platform with http.
 
-Start by cloning this repository which contains the default docker compose config (docker-compose.yml)
+Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first.
+
+Start by cloning this repository which contains the default docker compose configs (`docker-compose.yml` and `docker-compose.dev.yml`)
 
 ```bash
 git clone https://github.com/bcgsc/pori.git
 cd pori
 ```
 
-## Start the Authentication Server
+For working on most of the PORI-related projects you will need to have a number of the components set up. For example, to work on the GraphKB API you will need both an OrientDB server and a Keycloak server already running.
 
-Before any of the other systems can be set up you will need to start the authenication server. By
-default, PORI authenticates against an instance of [KeyCloak](https://www.keycloak.org/). For convenience we have provided a
-docker container with a default configuration of keycloak. This is the authentication server used
-by our [demo instance](https://pori-demo.bcgsc.ca/). If your institution already has a keycloak
-server then we have more [detailed instuctions on setting up through the GUI](https://github.com/bcgsc/pori/blob/master/docs/auth.md)
-in this repository.
+If your institution regularly works on PORI related projects then we recommend setting up a development instance of the PORI platform which your developers can point their applications to. If you do not have access to something like this, then the easiest way to get the dependencies for whatever part of the PORI platform you are working on up and running is by running the development version of the docker compose configuration found in this repository: [docker-compose.dev.yml](https://github.com/bcgsc/pori/blob/master/docker-compose.dev.yml).
 
-```bash
-docker run \
-    -e KEYCLOAK_USER=admin \
-    -e KEYCLOAK_PASSWORD=<PASSWORD> \
-    -e KEYCLOAK_FRONTEND_URL=<URL> \
-    -p 8443:8334 \
-    -p 8888:8080 \
-    -d \
-    --mount type=bind,source=/etc/ssl/certs/current,target=/etc/x509/https,readonly \
-    bcgsc/pori-auth:latest
+```yaml title="docker-compose.dev.yml"
+--8<-- "./docker-compose.dev.yml"
 ```
 
-For the demo server (excluding password) this looked like
-
-```bash
-docker run \
-    -e KEYCLOAK_USER=admin \
-    -e KEYCLOAK_PASSWORD=$DEMO_KC_ADMIN \
-    -e KEYCLOAK_FRONTEND_URL=https://pori-demo.bcgsc.ca/auth \
-    -p 8443:8334 \
-    -p 8888:8080 \
-    -d \
-    --mount type=bind,source=/etc/ssl/certs/current,target=/etc/x509/https,readonly \
-    bcgsc/pori-auth:latest
-```
-
-Check that the docker container has started
-
-```bash
-docker ps
-```
-
-You should see something like this
-
-```text
-CONTAINER ID   IMAGE                  COMMAND                  CREATED              STATUS              PORTS                              NAMES
-16ff3826c976   bcgsc/pori-auth:latest   "/opt/jboss/tools/do…"   About a minute ago   Up About a minute   8443/tcp, 0.0.0.0:8888->8080/tcp   strange_chaum
-```
-
-### Download the Public Key File
-
-After the container is started you can go to the admin console GUI to add a users and download the realm's public key file. This must be done prior to starting the other containers.
-
-The public key file will need to be passed to the GraphKB API container at run time. Copy it from the Realms > Keys page which should look something like below
-
-![keycloak realms page](./images/keycloak-get-public-key.png)
-
-For the purposes of this example we have saved it as `keys/keycloak.key` and we will mount the keys directory to the api container in the next step. The content of the file should look something like this
-
-```text
------BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoteEI/Iu923I4Zqt8prxIx3ljGEecnrI+sWjo4U3n14n/nY5NpfCiA+Pg1WQTQKsBHX5/sIm+Fn5FJpcpBzz8/5uEQJyPEOEezEuiP/yYjVbg4S25reOaQNRfsw7yZvdgrMySy3MrfjWw+luLa6Nt4AvZ6ywOqE8Q4SZgVxGQg07acenpR6U+bkNj3AxFFEeYqiktfKPI7iLykVBz/hXANnrs9zd036vcgAYa2IxmWpo38ZOksKTgYL5IDG1zZ5S6VM43mD7hE8jG+kCVbiNVlrYFTXxIkRmaOO9krykPoLux7tjXAFEfTwMji++HQjc724FigsnoJ3xZkUzCSzkTQIDAQAB
------END PUBLIC KEY-----
-```
-
-Both the IPR and GraphKB API containers will use this ./keys folder, binding it into the container at run time (See volumes section of docker compose file).
-
-Note that for your convenience this can also be done with the following bash command
-
-### Adding Default Demo Users
-
-You will also want to add a couple of users to make things simpler to test. If you use the non-default demo passwords (RECCOMMENDED!) you will need to change the corresponding fields in the docker compose file. The names of these users can also be changed but it will require also adding them to the application databases.
+The demo uses a default keycloak setup with a realm "PORI" and two clients: "GraphKB" and "IPR".
+For convenience there are also a number of default users which all have the default password of "secret".
 
 | Name             | Default in DB | Purpose                                                                                                                                              |
 | ---------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -89,24 +30,27 @@ You will also want to add a couple of users to make things simpler to test. If y
 | iprdemo          | IPR           | This is an admin user in the IPR demo db                                                                                                             |
 | graphkb_admin    | GraphKB       | Admin user for managing content/users in the GraphKB web interface                                                                                   |
 
-Add the above users to keycloak with the IPR and GraphKB roles.
 
-![adding users](./images/keycloak-add-users.png)
+![default users](../images/pori-keycloak-default-users.png)
 
-## Docker-Compose
+## Run docker-compose
 
-Now you are ready to start the other services. This will use the `docker-compose.yml` file to configure the network.
-
-First create empty directories to mount the database data, this will ensure the databases are not lost when you stop/restart the container
+The first thing you should do is create new/empty directories for the data stored by GraphKB and IPR.
 
 ```bash
 mkdir -p databases/{postgres,orientdb}/{backup,data}
 ```
 
+You should also create a new directory for storing the public key from keycloak. This key will be downloaded and store so that it was be used in checking incoming tokens by the GraphKB and IPR APIs. If this directory already exists you should delete and remake it.
+
+```bash
+mkdir keys
+```
+
 Next, use docker-compose to start the DB, API, and client servers. The paths/URLs in the docker-compose.yml file should be adjusted to match your deployment. In our demo deployment we have a proxy pass set up from the configured ports to handle the https layer
 
 ```bash
-docker-compose up
+docker-compose -f docker-compose.dev.yml up -d
 ```
 
 This will start the following services
@@ -117,6 +61,67 @@ This will start the following services
 - IPR API server (nodejs)
 - GraphKB client server (nginx)
 - IPR client server (nginx)
+- Keycloak Authentication server
 
 Once the platform is live you can [populate the new GraphKB instance](./graphkb/loading_data.md)
 with external content using the loaders.
+
+It will take a minute or two for all of the servers to start. You can check how they look with docker
+
+```bash
+docker ps
+```
+
+If any of them show "(health: starting)" then they are not ready yet.
+
+### Viewing Log Files
+
+Sometimes you will need to check the logs from the various servers, this can be done with the docker logs command. First find the container ID (or name) by listing all the running containers with `docker ps` and then run the following
+
+```bash
+docker logs <CONTAINER ID>
+```
+
+### Loading Data into GraphKB
+
+If you are running the GraphKB loader via its docker container you will need to tell it to use the host network so that it is able to find the GraphKB API.
+
+Here is an example of running the GraphKB Loader on the vocabulary terms using the docker container and the docker-compose setup described above.
+
+First download the vocabulary terms data
+
+```bash
+wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/develop/data/vocab.json
+```
+
+Then you can load these terms using the ontology file loader
+
+```bash
+docker run --net host \
+    --mount src=$(pwd)/vocab.json,dst=/data/vocab.json,type=bind \
+    bcgsc/pori-graphkb-loader:latest \
+    -u graphkb_importer \
+    -p secret \
+    -g http://localhost:8080/api \
+    file \
+    ontology \
+    /data/vocab.json
+```
+
+!!! Note
+
+    Because we are running the loader by itself we need to provide the mount arguments to tell docker that we need access to a file outside of the container itself. When we run this with the snakemake pipeline this is not necessary since snakemake generally takes care of that for you
+
+## Production Instances
+
+### HTTPS
+
+For a production instance of PORI you will want to use HTTPS instead of HTTP. The simplest way to accomplish this is with a reverse proxy to pick up the ports. This way you can run the platform as above, with http, when initially setting up and testing.
+
+Once you have your reverse proxy set up and configured you can use the newly bound URLs in place of the http://hostname:port URLs.
+
+An example of what the HTTPs URLs using a reverse proxy may look like is included in the "prod" version of the docker-compose file, however you would need to replace these with your own URLs and mappings
+
+### Keycloak
+
+In the `docker-compose.dev.yml` example, we are using the embedded h2 database with keycloak for simplicity, if you are using this in production you should use an external database with keycloak. Our production version does not include keycloak at all as it is run seperately since it is used for many different applications beyond PORI.

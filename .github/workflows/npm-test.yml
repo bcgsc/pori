@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: build the keycloak docker container
         run: |
-          docker build --file Dockerfile.auth --tag bcgsc/pori-auth .
+          docker build --file demo/Dockerfile.auth --tag bcgsc/pori-auth .
   docs:
     name: build docs
     runs-on: ubuntu-latest

@@ -1,17 +1,31 @@
+#!/bin/bash
 
-export KEYCLOAK_ADMIN_USER=admin
-export KEYCLOAK_ADMIN_PASS=admin
-export KEYCLOAK_REALM=PORI
-export KEYCLOAK_URL=http://localhost:8888/auth
-export DEFAULT_PASSWORD=secret
+if [ "$#" -ne 5 ];
+then
+    echo "Given: $@"
+    echo ""
+    echo "Argument Error:"
+    echo "$0 <URL> <USER> <PASS> <REALM> <KEYFILE>"
+    exit 1
+fi
 
-KEYFILE=keys/keycloak.key
+echo "KEYCLOAK_URL=$1"
+KEYCLOAK_URL=$1
+echo "KEYCLOAK_USER=$2"
+KEYCLOAK_USER=$2
+echo "KEYCLOAK_PASSWORD=$3"
+KEYCLOAK_PASSWORD=$3
+echo "KEYCLOAK_REALM=$4"
+KEYCLOAK_REALM=$4
+echo "KEYFILE=$5"
+KEYFILE=$5
 
 # Get the Admin user token
+echo "POST ${KEYCLOAK_URL}/realms/master/protocol/openid-connect/token"
 auth_resp=$(curl -X POST "${KEYCLOAK_URL}/realms/master/protocol/openid-connect/token" \
     -H "Content-Type: application/x-www-form-urlencoded" \
-    -d "username=${KEYCLOAK_ADMIN_USER}" \
-    -d "password=${KEYCLOAK_ADMIN_PASS}" \
+    -d "username=${KEYCLOAK_USER}" \
+    -d "password=${KEYCLOAK_PASSWORD}" \
     -d 'grant_type=password' \
     -d 'client_id=admin-cli')
 
@@ -31,12 +45,6 @@ resp=$(curl -X GET "${KEYCLOAK_URL}/admin/realms/${KEYCLOAK_REALM}/keys" \
 # echo $resp
 
 key=$( echo $resp | grep -o '"publicKey":[^,][^,]*' | sed 's/^"publicKey":\s*"//' | sed 's/"$//' )
-
-if [ ! -d "keys" ];
-then
-    mkdir keys
-fi
-
 echo "writing: $KEYFILE"
 echo "-----BEGIN PUBLIC KEY-----" > $KEYFILE
 echo "$key" >> $KEYFILE

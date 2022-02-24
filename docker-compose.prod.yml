@@ -42,6 +42,11 @@ services:
         target: /keys
         type: bind
         read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://graphkb_api:8080/api/version"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   graphkb_client:
     image: bcgsc/pori-graphkb-client:v4.2.2
     environment:
@@ -118,6 +123,11 @@ services:
         target: /keys
         type: bind
         read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://ipr_api:8080/api/spec.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
   ipr_client:
     image: bcgsc/pori-ipr-client:v6.6.3
     environment:

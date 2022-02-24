@@ -16,7 +16,7 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.snippets:
       check_paths: True
-      base_path: demo
+      base_path: .
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

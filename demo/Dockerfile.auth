@@ -1,4 +1,7 @@
-FROM jboss/keycloak:12.0.2
+FROM jboss/keycloak:16.1.1
+USER root
 RUN mkdir -p /tmp/realm_data/
+COPY demo/kc_setup_keyfile.sh /scripts/kc_setup_keyfile.sh
+RUN chmod a+x /scripts/kc_setup_keyfile.sh
 COPY demo/kc_realm_export.json /tmp/realm_data/kc_realm_export.json
 ENV KEYCLOAK_IMPORT=/tmp/realm_data/kc_realm_export.json
