@@ -78,8 +78,8 @@ services:
       KEYCLOAK_REALM: PORI
       KEYCLOAK_CLIENT_ID: GraphKB
       # customize settings below
-      API_BASE_URL: http://graphkb_api:8080
-      KEYCLOAK_URL: http://keycloak:8888/auth
+      API_BASE_URL: http://localhost:8080
+      KEYCLOAK_URL: http://localhost:8888/auth
       PUBLIC_PATH: /
     ports:
       - 5000:80
@@ -164,9 +164,9 @@ services:
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
-      API_BASE_URL: http://ipr_api:8081/api
-      GRAPHKB_URL: http://graphkb_client:5000
-      KEYCLOAK_URL: http://keycloak:8888/auth
+      API_BASE_URL: http://localhost:8081/api
+      GRAPHKB_URL: http://localhost:5000
+      KEYCLOAK_URL: http://localhost:8888/auth
       PUBLIC_PATH: /
     ports:
       - 3000:80
