@@ -1,28 +1,7 @@
 # Loading Data
 
 We have provided a number of modules to automate loading external resources into GraphKB. Users can
-pick and choose which resources they would like to load or use the snakemake pipeline to load them all.
-
-## Loading All Resources
-
-Loading GraphKB content can be done as an initialization step using snakemake (see instructions [here](https://github.com/bcgsc/pori_graphkb_loader#initializing-graphkb-content)). This will download and load all open-data content by default into your newly created GraphKB instance.
-
-![workflow](https://github.com/bcgsc/pori_graphkb_loader/raw/develop/docs/basic_workflow.png)
-
-## Loading Licensed Content
-
-Both COSMIC and DrugBank have some licensing on their content which will require users to create
-their own accounts with the respective resource. However, including them in the default load is trivial.
-Once you have your credentials, simply include the email/password parameters for the resource you
-would like to load as config arguments.
-
-```bash
-snakemake -j 1 \
-  --config drugbank_email="YOUR EMAIL" \
-  drugbank_password="YOUR PASSWORD" \
-  cosmic_email="YOUR EMAIL" \
-  cosmic_password="YOUR PASSWORD"
-```
+pick and choose which resources they would like to load or use the snakemake pipeline to load them all (see instructions [here](#loading-content)). This will download and load content by default into your newly created GraphKB instance.
 
 ## Popular Resources
 
@@ -225,3 +204,10 @@ src/
 ```
 
 If you have any issues or questions please make an issue in the [loaders repo](https://github.com/bcgsc/pori_graphkb_loader/issues).
+
+## Loading Content
+
+{%
+   include-markdown "./_pori_graphkb_loader/README.md"
+   start="## Initializing GraphKB Content"
+%}
