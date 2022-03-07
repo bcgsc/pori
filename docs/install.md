@@ -30,8 +30,7 @@ For convenience there are also a number of default users which all have the defa
 | iprdemo          | IPR           | This is an admin user in the IPR demo db                                                                                                             |
 | graphkb_admin    | GraphKB       | Admin user for managing content/users in the GraphKB web interface                                                                                   |
 
-
-![default users](../images/pori-keycloak-default-users.png)
+![default users](./images/pori-keycloak-default-users.png)
 
 ## Run docker-compose
 
@@ -82,7 +81,7 @@ Sometimes you will need to check the logs from the various servers, this can be 
 docker logs <CONTAINER ID>
 ```
 
-### Loading Data into GraphKB
+### Test Loading Data into GraphKB
 
 If you are running the GraphKB loader via its docker container you will need to tell it to use the host network so that it is able to find the GraphKB API.
 
@@ -111,6 +110,8 @@ docker run --net host \
 !!! Note
 
     Because we are running the loader by itself we need to provide the mount arguments to tell docker that we need access to a file outside of the container itself. When we run this with the snakemake pipeline this is not necessary since snakemake generally takes care of that for you
+
+Once you have tested that things have been set up correctly and loading is working you are ready to initialize the data in your newly create GraphKB instance. See the [loader documentation](./graphkb/loading_data.md) for further instructions.
 
 ## Production Instances
 

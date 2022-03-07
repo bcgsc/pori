@@ -6,6 +6,7 @@ dist/
 build-docs
 .vscode
 docs/_pori*
+docs/*/_pori*
 docs/*/python_adapter
 docs/developer_reference/ipr
 docs/developer_reference/graphkb
