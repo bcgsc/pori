@@ -1,0 +1,421 @@
+{
+    "class": "Abstract",
+    "sources": {
+        "default": {
+            "displayName": "ASCO",
+            "longName": "American Society of Clinical Oncology",
+            "name": "asco",
+            "url": "https://meetinglibrary.asco.org"
+        }
+    },
+    "records": {
+        "2011 ASCO Annual Meeting Abstract#10006": {
+            "url": "https://meetinglibrary.asco.org/record/62790",
+            "year": "2011",
+            "name": "A phase II study of dasatinib for patients with imatinib-resistant gastrointestinal stromal tumor (GIST).",
+            "abstractNumber": "10006",
+            "meeting": "2011 ASCO Annual Meeting",
+            "displayName": "ASCO 2011 (abstract 10006)"
+        },
+        "2011 ASCO Annual Meeting Abstract#10009": {
+            "url": "https://meetinglibrary.asco.org/record/63320",
+            "year": "2011",
+            "name": "Sorafenib (SOR) in patients (pts) with imatinib (IM) and sunitinib (SU)-resistant (RES) gastrointestinal stromal tumors (GIST): Final results of a University of Chicago Phase II Consortium trial.",
+            "abstractNumber": "10009",
+            "meeting": "2011 ASCO Annual Meeting",
+            "displayName": "ASCO 2011 (abstract 10009)"
+        },
+        "2013 ASCO Annual Meeting Abstract#2500": {
+            "url": "https://meetinglibrary.asco.org/record/82444/abstract",
+            "year": "2013",
+            "name": "A first-in-human phase I study of the CDK4/6 inhibitor, LY2835219, for patients with advanced cancer.",
+            "abstractNumber": "2500",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract 2500)"
+        },
+        "2013 ASCO Annual Meeting Abstract#2532": {
+            "url": "https://meetinglibrary.asco.org/record/85566",
+            "year": "2013",
+            "name": "A pilot study of sirolimus (S) in subjects with Cowden syndrome (CS) with germ-line mutations in PTEN.",
+            "abstractNumber": "2532",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract 2532)"
+        },
+        "2013 ASCO Annual Meeting Abstract#2605": {
+            "url": "https://meetinglibrary.asco.org/record/82827",
+            "year": "2013",
+            "name": "Phase Ib dose-escalation trial of the AKT inhibitor (AKTi) MK2206 in combination with paclitaxel (P) and trastuzumab (H) in patients (pts) with HER2-overexpressing (HER2+) cancer.",
+            "abstractNumber": "2605",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract 2605)"
+        },
+        "2013 ASCO Annual Meeting Abstract#8023": {
+            "url": "https://meetinglibrary.asco.org/record/82496",
+            "year": "2013",
+            "name": "NTRK1 gene fusions as a novel oncogene target in lung cancer.",
+            "abstractNumber": "8023",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract 8023)"
+        },
+        "2013 ASCO Annual Meeting Abstract#9029": {
+            "url": "https://meetinglibrary.asco.org/record/80857",
+            "year": "2013",
+            "name": "Preliminary results from a phase Ib/II, open-label, dose-escalation study of the oral BRAF inhibitor LGX818 in combination with the oral MEK1/2 inhibitor MEK162 in BRAF V600-dependent advanced solid tumors.",
+            "abstractNumber": "9029",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract 9029)"
+        },
+        "2013 ASCO Annual Meeting Abstract#CRA9003": {
+            "url": "https://meetinglibrary.asco.org/record/80820",
+            "year": "2013",
+            "name": "Phase II study of selumetinib (sel) versus temozolomide (TMZ) in gnaq/Gna11 (Gq/11) mutant (mut) uveal melanoma (UM).",
+            "abstractNumber": "CRA9003",
+            "meeting": "2013 ASCO Annual Meeting",
+            "displayName": "ASCO 2013 (abstract CRA9003)"
+        },
+        "2014 ASCO Annual Meeting Abstract#10018": {
+            "url": "https://meetinglibrary.asco.org/record/92029",
+            "year": "2014",
+            "name": "Phase I study of the MEK1/2 inhibitor selumetinib (AZD6244) hydrogen sulfate in children and young adults with neurofibromatosis type 1 (NF1) and inoperable plexiform neurofibromas (PNs).",
+            "abstractNumber": "10018",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 10018)"
+        },
+        "2014 ASCO Annual Meeting Abstract#2514": {
+            "url": "https://meetinglibrary.asco.org/record/94866",
+            "year": "2014",
+            "name": "A phase I/II, first-in-human dose-escalation study of GSK2636771 in patients (pts) with PTEN-deficient advanced tumors.",
+            "abstractNumber": "2514",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 2514)"
+        },
+        "2014 ASCO Annual Meeting Abstract#2528": {
+            "url": "https://meetinglibrary.asco.org/record/94422",
+            "year": "2014",
+            "name": "A phase I study of the single-agent CDK4/6 inhibitor LEE011 in pts with advanced solid tumors and lymphomas.",
+            "abstractNumber": "2528",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 2528)"
+        },
+        "2014 ASCO Annual Meeting Abstract#3515": {
+            "url": "https://meetinglibrary.asco.org/record/94751",
+            "year": "2014",
+            "name": "Efficacy and tolerability in an open-label phase I/II study of MEK inhibitor trametinib (T), BRAF inhibitor dabrafenib (D), and anti-EGFR antibody panitumumab (P) in combination in patients (pts) with BRAF V600E mutated colorectal cancer (CRC).",
+            "abstractNumber": "3515",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 3515)"
+        },
+        "2014 ASCO Annual Meeting Abstract#8001": {
+            "url": "https://meetinglibrary.asco.org/record/92507",
+            "year": "2014",
+            "name": "Efficacy and safety of crizotinib in patients with advanced c-MET-amplified non-small cell lung cancer (NSCLC).",
+            "abstractNumber": "8001",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 8001)"
+        },
+        "2014 ASCO Annual Meeting Abstract#8009": {
+            "url": "https://meetinglibrary.asco.org/record/92346",
+            "year": "2014",
+            "name": "Clinical activity of the mutant-selective EGFR inhibitor AZD9291 in patients (pts) with EGFR inhibitor–resistant non-small cell lung cancer (NSCLC).",
+            "abstractNumber": "8009",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 8009)"
+        },
+        "2014 ASCO Annual Meeting Abstract#8015": {
+            "url": "https://meetinglibrary.asco.org/record/92532",
+            "year": "2014",
+            "name": "Phase II study of the AKT inhibitor MK-2206 plus erlotinib (E) in patients (pts) with advanced non-small cell lung cancer (NSCLC) who progressed on prior erlotinib: A California Cancer Consortium Phase II trial (NCI 8698).",
+            "abstractNumber": "8015",
+            "meeting": "2014 ASCO Annual Meeting",
+            "displayName": "ASCO 2014 (abstract 8015)"
+        },
+        "2015 ASCO Annual Meeting Abstract#1003": {
+            "url": "https://meetinglibrary.asco.org/record/109828",
+            "year": "2015",
+            "name": "Results from a phase 2 study of enzalutamide (ENZA), an androgen receptor (AR) inhibitor, in advanced AR+ triple-negative breast cancer (TNBC).",
+            "abstractNumber": "1003",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 1003)"
+        },
+        "2015 ASCO Annual Meeting Abstract#10517": {
+            "url": "https://meetinglibrary.asco.org/record/112012",
+            "year": "2015",
+            "name": "Detection of KIT mutants in circulating tumor DNA (ctDNA) and their association with ponatinib anti-tumor activity in patients (pts) with advanced gastrointestinal stromal tumors (GIST).",
+            "abstractNumber": "10517",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 10517)"
+        },
+        "2015 ASCO Annual Meeting Abstract#11010": {
+            "url": "https://meetinglibrary.asco.org/record/111857",
+            "year": "2015",
+            "name": "Next-generation sequencing to reveal somatic mutations that confer sensitivity to everolimus.",
+            "abstractNumber": "11010",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 11010)"
+        },
+        "2015 ASCO Annual Meeting Abstract#11075": {
+            "url": "https://meetinglibrary.asco.org/record/111332",
+            "year": "2015",
+            "name": "A phase I, first-in-human dose study of the dual PI3K/mTOR inhibitor LY3023414 (LY) in patients (pts) with advanced cancer.",
+            "abstractNumber": "11075",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 11075)"
+        },
+        "2015 ASCO Annual Meeting Abstract#2500": {
+            "url": "https://meetinglibrary.asco.org/record/109086",
+            "year": "2015",
+            "name": "A Pharmacokinetically and Pharmacodynamically Driven Phase I Trial of the Pan-AKT Inhibitor AZD5363 with Expansion Cohorts in PIK3CA Mutant Breast and Gynecological Cancers",
+            "abstractNumber": "2500",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 2500)"
+        },
+        "2015 ASCO Annual Meeting Abstract#2501": {
+            "url": "https://meetinglibrary.asco.org/record/109089",
+            "year": "2015",
+            "name": "First-in-Human, Phase I, Dose-Escalation Study of Selective PI3Ka Isoform Inhibitor MLN1117 in Patients with Advanced Solid Malignancies",
+            "abstractNumber": "2501",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 2501)"
+        },
+        "2015 ASCO Annual Meeting Abstract#2508": {
+            "url": "https://meetinglibrary.asco.org/record/109100",
+            "year": "2015",
+            "name": "Phase II Multicenter Proof of Concept Study of AZD4547 in FGFR Amplified Tumours",
+            "abstractNumber": "2508",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 2508)"
+        },
+        "2015 ASCO Annual Meeting Abstract#2516": {
+            "url": "https://meetinglibrary.asco.org/record/112038",
+            "year": "2015",
+            "name": "Genomic mutation profiling (GMP) and clinical outcome of patients treated with buparlisib (PI3K inhibitor) in the “Signature” program.",
+            "abstractNumber": "2516",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 2516)"
+        },
+        "2015 ASCO Annual Meeting Abstract#3508": {
+            "url": "https://meetinglibrary.asco.org/record/112091",
+            "year": "2015",
+            "name": "Trastuzumab and lapatinib in HER2-amplified metastatic colorectal cancer patients (mCRC): The HERACLES trial.",
+            "abstractNumber": "3508",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 3508)"
+        },
+        "2015 ASCO Annual Meeting Abstract#4119": {
+            "url": "https://meetinglibrary.asco.org/record/108962",
+            "year": "2015",
+            "name": "SWOG S1115: Randomized phase II trial of selumetinib (AZD6244; ARRY 142886) hydrogen sulfate (NSC-748727) and MK-2206 (NSC-749607) vs. mFOLFOX in pretreated patients (Pts) with metastatic pancreatic cancer.",
+            "abstractNumber": "4119",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 4119)"
+        },
+        "2015 ASCO Annual Meeting Abstract#5508": {
+            "url": "https://meetinglibrary.asco.org/record/109476",
+            "year": "2015",
+            "name": "Results of ARIEL2: a Phase 2 trial to prospectively identify ovarian cancer patients likely to respond to rucaparib using tumor genetic analysis.",
+            "abstractNumber": "5508",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 5508)"
+        },
+        "2015 ASCO Annual Meeting Abstract#e15516": {
+            "url": "https://meetinglibrary.asco.org/record/110379",
+            "year": "2015",
+            "name": "Association of HER2 and ErbB3 molecular alterations with afatinib sensitivity in platinum-refractory metastatic urothelial carcinoma (UC) in a phase II trial.",
+            "abstractNumber": "e15516",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract e15516)"
+        },
+        "2015 ASCO Annual Meeting Abstract#e19028": {
+            "url": "https://meetinglibrary.asco.org/record/114718",
+            "year": "2015",
+            "name": "A Phase II study to evaluate the efficacy of erlotinib in advanced NSCLC patients who have wild-type EGFR and EGFR gene amplification.",
+            "abstractNumber": "e19028",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract e19028)"
+        },
+        "2015 ASCO Annual Meeting Abstract#11091": {
+            "url": "https://meetinglibrary.asco.org/record/111274",
+            "year": "2015",
+            "name": "Investigation of non-V600 BRAF mutations commonly found in NSCLC for their sensitivity to dabrafenib or trametinib.",
+            "abstractNumber": "11091",
+            "meeting": "2015 ASCO Annual Meeting",
+            "displayName": "ASCO 2015 (abstract 11091)"
+        },
+        "2016 ASCO Annual Meeting Abstract#10555": {
+            "url": "https://meetinglibrary.asco.org/record/123089",
+            "year": "2016",
+            "name": "Dose-finding study of vinblastine in combination with nilotinib in children, adolescents and young adults with refractory or recurrent low-grade glioma: Results of the ITCC/SIOPE-Brain VINILO phase I trial (NCT01887522).",
+            "abstractNumber": "10555",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 10555)"
+        },
+        "2016 ASCO Annual Meeting Abstract#11010": {
+            "url": "https://meetinglibrary.asco.org/record/123163",
+            "year": "2016",
+            "name": "Dose escalating study of crenolanib besylate in advanced GIST patients with PDGFRA D842V activating mutations.",
+            "abstractNumber": "11010",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 11010)"
+        },
+        "2016 ASCO Annual Meeting Abstract#11053": {
+            "url": "https://meetinglibrary.asco.org/record/123172",
+            "year": "2016",
+            "name": "SARC016: Phase II study of everolimus in combination with bevacizumab in sporadic and neurofibromatosis type 1 (NF1) related refractory malignant peripheral nerve sheath tumors (MPNST).",
+            "abstractNumber": "11053",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 11053)"
+        },
+        "2016 ASCO Annual Meeting Abstract#2019": {
+            "url": "https://meetinglibrary.asco.org/record/125346",
+            "year": "2016",
+            "name": "Phase II part of EORTC study 26101: The sequence of bevacizumab and lomustine in patients with first recurrence of a glioblastoma.",
+            "abstractNumber": "2019",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 2019)"
+        },
+        "2016 ASCO Annual Meeting Abstract#2558": {
+            "url": "https://meetinglibrary.asco.org/record/125729",
+            "year": "2016",
+            "name": "A phase 1 study of AR-42 in patients with advanced solid tumors, including nervous system tumors.",
+            "abstractNumber": "2558",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 2558)"
+        },
+        "2016 ASCO Annual Meeting Abstract#9067": {
+            "url": "https://meetinglibrary.asco.org/record/123470",
+            "year": "2016",
+            "name": "Phase (Ph) I study of the safety and efficacy of the cMET inhibitor capmatinib (INC280) in patients (pts) with advanced cMET+ non-small cell lung cancer (NSCLC).",
+            "abstractNumber": "9067",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 9067)"
+        },
+        "2016 ASCO Annual Meeting Abstract#2581": {
+            "url": "https://meetinglibrary.asco.org/record/125736",
+            "year": "2016",
+            "name": "A phase 1 study of the MDM2 inhibitor DS-3032b in patients (pts) with advanced solid tumors and lymphomas.",
+            "abstractNumber": "2581",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 2581)"
+        },
+        "2016 ASCO Annual Meeting Abstract#520": {
+            "url": "https://meetinglibrary.asco.org/record/124326",
+            "year": "2016",
+            "name": "A phase II study of the PI3K inhibitor taselisib (GDC-0032) combined with fulvestrant (F) in patients (pts) with HER2-negative (HER2-), hormone receptor-positive (HR+) advanced breast cancer (BC).",
+            "abstractNumber": "520",
+            "meeting": "2016 ASCO Annual Meeting",
+            "displayName": "ASCO 2016 (abstract 520)"
+        },
+        "2017 ASCO Annual Meeting Abstract#2500": {
+            "url": "https://meetinglibrary.asco.org/record/144575",
+            "year": "2017",
+            "name": "Debio 1347, an oral FGFR inhibitor: Results from a first-in-human, phase I dose-escalation study in patients with FGFR genomically activated advanced solid tumors.",
+            "abstractNumber": "2500",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 2500)"
+        },
+        "2017 ASCO Annual Meeting Abstract#2508": {
+            "url": "https://meetinglibrary.asco.org/record/144577",
+            "year": "2017",
+            "name": "First-in-class oral ERK1/2 inhibitor Ulixertinib (BVD-523) in patients with advanced solid tumors: Final results of a phase I dose escalation and expansion study.",
+            "abstractNumber": "2508",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 2508)"
+        },
+        "2017 ASCO Annual Meeting Abstract#2572": {
+            "url": "https://meetinglibrary.asco.org/record/149359",
+            "year": "2017",
+            "name": "Investigating novel resistance mechanisms to third generation EGFR TKI osimertinib in non-small cell lung cancer patients using next generation sequencing.",
+            "abstractNumber": "2572",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 2572)"
+        },
+        "2017 ASCO Annual Meeting Abstract#8510": {
+            "url": "https://meetinglibrary.asco.org/record/145463",
+            "year": "2017",
+            "name": "Ado-trastuzumab emtansine in patients with HER2 mutant lung cancers: Results from a phase II basket trial.",
+            "abstractNumber": "8510",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 8510)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9054": {
+            "url": "https://meetinglibrary.asco.org/record/152443",
+            "year": "2017",
+            "name": "A phase II study of GDC-0032 (taselisib) for previously treated PI3K positive patients with stage IV squamous cell lung cancer (SqNSCLC): LUNG-MAP sub-study SWOG S1400B.",
+            "abstractNumber": "9054",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9054)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9056": {
+            "url": "https://meetinglibrary.asco.org/record/145758",
+            "year": "2017",
+            "name": "A phase II study of palbociclib (P) for previously treated cell cycle gene alteration positive patients (pts) with stage IV squamous cell lung cancer (SCC): Lung-MAP sub-study SWOG S1400C.",
+            "abstractNumber": "9056",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9056)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9062": {
+            "url": "https://meetinglibrary.asco.org/record/152621",
+            "year": "2017",
+            "name": "Response of germline and somatic smoothened (SMO) mutations in non-small cell lung cancer (NSCLC) to hedgehog inhibitor vismodegib.",
+            "abstractNumber": "9062",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9062)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9065": {
+            "url": "https://meetinglibrary.asco.org/record/145774",
+            "year": "2017",
+            "name": "Activity of brigatinib (BRG) in crizotinib (CRZ)-resistant ALK+ NSCLC patients (pts) according to ALK plasma mutation status.",
+            "abstractNumber": "9065",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9065)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9072": {
+            "url": "https://meetinglibrary.asco.org/record/145735",
+            "year": "2017",
+            "name": "BRAF fusions in clinically advanced non-small cell lung cancer: An emerging target for anti-BRAF therapies.",
+            "abstractNumber": "9072",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9072)"
+        },
+        "2017 ASCO Annual Meeting Abstract#e23150": {
+            "url": "https://meetinglibrary.asco.org/record/146441",
+            "year": "2017",
+            "name": "In vitro functional analysis of HER2 variants in lung cancers to evaluate their oncogenic activity and predict clinical response to HER2 targeted therapies.",
+            "abstractNumber": "e23150",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract e23150)"
+        },
+        "2017 ASCO Annual Meeting Abstract#9519": {
+            "url": "https://meetinglibrary.asco.org/record/147511",
+            "year": "2017",
+            "name": "Phase 1b/2 trial of ribociclib+binimetinib in metastatic NRAS-mutant melanoma: Safety, efficacy, and recommended phase 2 dose (RP2D).",
+            "abstractNumber": "9519",
+            "meeting": "2017 ASCO Annual Meeting",
+            "displayName": "ASCO 2017 (abstract 9519)"
+        },
+        "2018 ASCO Annual Meeting Abstract#4503": {
+            "url": "https://meetinglibrary.asco.org/record/160559",
+            "year": "2018",
+            "name": "First results from the primary analysis population of the phase 2 study of erdafitinib (ERDA; JNJ-42756493) in patients (pts) with metastatic or unresectable urothelial carcinoma (mUC) and FGFR alterations (FGFRalt).",
+            "abstractNumber": "4503",
+            "meeting": "2018 ASCO Annual Meeting",
+            "displayName": "ASCO 2018 (abstract 4503)"
+        },
+        "2018 ASCO Annual Meeting Abstract#102": {
+            "url": "https://meetinglibrary.asco.org/record/161573",
+            "year": "2018",
+            "name": "A phase 1 study of LOXO-292, a potent and highly selective RET inhibitor, in patients with RET-altered cancers.",
+            "abstractNumber": "102",
+            "meeting": "2018 ASCO Annual Meeting",
+            "displayName": "ASCO 2018 (abstract 102)"
+        },
+        "2018 ASCO Annual Meeting Abstract#TPS7081": {
+            "url": "https://meetinglibrary.asco.org/record/165501",
+            "year": "2018",
+            "name": "Clinical development of asciminib (ABL001) in chronic myeloid leukemia (CML): A randomized phase 3 study vs. bosutinib.",
+            "abstractNumber": "TPS7081",
+            "meeting": "2018 ASCO Annual Meeting",
+            "displayName": "ASCO 2018 (abstract TPS7081)"
+        }
+    }
+}

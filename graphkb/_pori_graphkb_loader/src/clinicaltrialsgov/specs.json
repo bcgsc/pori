@@ -1,0 +1,304 @@
+{
+    "api": {
+        "properties": {
+            "clinical_study": {
+                "properties": {
+                    "brief_title": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "completion_date": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "properties": {
+                                        "_": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "_"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "condition": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "id_info": {
+                        "items": {
+                            "properties": {
+                                "nct_id": {
+                                    "items": {
+                                        "pattern": "^NCT\\d+$"
+                                    },
+                                    "maxItems": 1,
+                                    "minItems": 1,
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "nct_id"
+                            ],
+                            "type": "object"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "intervention": {
+                        "items": {
+                            "properties": {
+                                "intervention_name": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "maxItems": 1,
+                                    "minItems": 1,
+                                    "type": "array"
+                                },
+                                "intervention_type": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "maxItems": 1,
+                                    "minItems": 1,
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "intervention_type",
+                                "intervention_name"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "last_update_posted": {
+                        "items": {
+                            "properties": {
+                                "_": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "_"
+                            ],
+                            "type": "object"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "location": {
+                        "items": {
+                            "properties": {
+                                "facility": {
+                                    "items": {
+                                        "properties": {
+                                            "address": {
+                                                "items": {
+                                                    "properties": {
+                                                        "city": {
+                                                            "items": {
+                                                                "type": "string"
+                                                            },
+                                                            "maxItems": 1,
+                                                            "minItems": 1,
+                                                            "type": "array"
+                                                        },
+                                                        "country": {
+                                                            "items": {
+                                                                "type": "string"
+                                                            },
+                                                            "maxItems": 1,
+                                                            "minItems": 1,
+                                                            "type": "array"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "city",
+                                                        "country"
+                                                    ],
+                                                    "type": "object"
+                                                },
+                                                "maxItems": 1,
+                                                "minItems": 1,
+                                                "type": "array"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "maxItems": 1,
+                                    "minItems": 1,
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "facility"
+                            ],
+                            "type": "object"
+                        },
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "official_title": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "overall_status": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "phase": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "required_header": {
+                        "items": {
+                            "properties": {
+                                "url": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "maxItems": 1,
+                                    "minItems": 1,
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "url"
+                            ],
+                            "type": "object"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    },
+                    "start_date": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "properties": {
+                                        "_": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "_"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "id_info",
+                    "brief_title",
+                    "phase",
+                    "condition",
+                    "intervention",
+                    "last_update_posted",
+                    "required_header",
+                    "overall_status"
+                ],
+                "type": "object"
+            }
+        },
+        "required": [
+            "clinical_study"
+        ],
+        "type": "object"
+    },
+    "rss": {
+        "properties": {
+            "rss": {
+                "properties": {
+                    "channel": {
+                        "items": {
+                            "properties": {
+                                "item": {
+                                    "items": {
+                                        "properties": {
+                                            "guid": {
+                                                "items": {
+                                                    "properties": {
+                                                        "_": {
+                                                            "pattern": "^NCT\\d+$",
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "_"
+                                                    ],
+                                                    "type": "object"
+                                                },
+                                                "maxItems": 1,
+                                                "minItems": 1,
+                                                "type": "array"
+                                            }
+                                        },
+                                        "required": [
+                                            "guid"
+                                        ],
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "item"
+                            ],
+                            "type": "object"
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "channel"
+                ],
+                "type": "object"
+            }
+        },
+        "required": [
+            "rss"
+        ],
+        "type": "object"
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "record": {
+        "properties": {
+            "amino_acid": {
+                "pattern": "^p\\..*",
+                "type": "string"
+            },
+            "chromosome": {
+                "type": "string"
+            },
+            "gene": {
+                "type": "string"
+            },
+            "hgvs": {
+                "type": "string"
+            },
+            "meta": {
+                "items": {
+                    "properties": {
+                        "Drug Interaction Data": {
+                            "properties": {
+                                "fields": {
+                                    "items": [
+                                        {
+                                            "enum": [
+                                                "Therapeutic Context"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Pathway"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Effect"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Association"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Status"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Evidence"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        {
+                                            "enum": [
+                                                "Source"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "type": "array"
+                                },
+                                "rows": {
+                                    "items": {
+                                        "items": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "maxItems": 7,
+                                        "minItems": 7,
+                                        "type": "array"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "fields",
+                                "rows"
+                            ],
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "Drug Interaction Data"
+                    ],
+                    "type": "object"
+                },
+                "type": "array"
+            },
+            "reference": {
+                "pattern": "^([ATGC]*|-)$",
+                "type": "string"
+            },
+            "reference_version": {
+                "type": "string"
+            },
+            "start": {
+                "min": 1,
+                "type": "number"
+            },
+            "stop": {
+                "min": 1,
+                "type": "number"
+            },
+            "variant": {
+                "pattern": "^([ATGC]*|-)$",
+                "type": "string"
+            },
+            "variant_type": {
+                "enum": [
+                    "SNV",
+                    "DEL",
+                    "INS",
+                    "DNV"
+                ],
+                "type": "string"
+            }
+        },
+        "required": [
+            "reference_version",
+            "hgvs",
+            "gene",
+            "reference",
+            "variant",
+            "start",
+            "stop",
+            "variant_type"
+        ],
+        "type": "object"
+    },
+    "variant": {
+        "properties": {
+            "hgvs": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "hgvs"
+        ],
+        "type": "object"
+    }
+}

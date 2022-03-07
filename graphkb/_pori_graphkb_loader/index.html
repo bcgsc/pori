@@ -1,0 +1,1688 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+    
+    
+      
+        <title>GraphKB Loader - PORI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles.css">
+    
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#graphkb-loader" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PORI" class="md-header__button md-logo" aria-label="PORI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PORI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GraphKB Loader
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bcgsc/pori/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PORI" class="md-nav__button md-logo" aria-label="PORI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    PORI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bcgsc/pori/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/" class="md-nav__link">
+        Demo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/" class="md-nav__link">
+        Install with Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repos/" class="md-nav__link">
+        All PORI Repositories
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          GraphKB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GraphKB" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          GraphKB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        About GraphKB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loading_data/" class="md-nav__link">
+        Loading Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          How Matching Works
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How Matching Works" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          How Matching Works
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matching/" class="md-nav__link">
+        Ontology Algorithm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matching/gene/" class="md-nav__link">
+        Gene Example
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Scripting Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/" class="md-nav__link">
+        About the Python Adapter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/Intro_Tutorial/" class="md-nav__link">
+        Introductory Tutorial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/Query_Basics/" class="md-nav__link">
+        Query Basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/Annotate_a_VCF_with_GraphKB/" class="md-nav__link">
+        Annotate a VCF with GraphKB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/snpsift/" class="md-nav__link">
+        Annotate SNPSift Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripting/variant_strings/" class="md-nav__link">
+        Annotate Variant List
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          IPR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="IPR" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          IPR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/" class="md-nav__link">
+        About IPR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/upload/" class="md-nav__link">
+        Uploading A Report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          Core Variant Types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Core Variant Types" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Core Variant Types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/core_variants/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/core_variants/copy/" class="md-nav__link">
+        Copy Variants
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/core_variants/expression/" class="md-nav__link">
+        Expression Variants
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/core_variants/mutations/" class="md-nav__link">
+        Small Mutations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/core_variants/structural/" class="md-nav__link">
+        Structural Variants
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/kb_matches/" class="md-nav__link">
+        KB Matches
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_5" type="checkbox" id="__nav_7_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_5">
+          Optional Analyses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Optional Analyses" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_5">
+          <span class="md-nav__icon md-icon"></span>
+          Optional Analyses
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/burden/" class="md-nav__link">
+        Mutation Burden
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/circos_plots/" class="md-nav__link">
+        Circos Plots
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/comparators/" class="md-nav__link">
+        Comparators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/expression_correlation/" class="md-nav__link">
+        Expression Correlation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/images/" class="md-nav__link">
+        Images
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/immune/" class="md-nav__link">
+        Immune Profiling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/metadata/" class="md-nav__link">
+        Patient Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/optional_analyses/signature/" class="md-nav__link">
+        Mutation Signatures
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/manual_curation/" class="md-nav__link">
+        Manual Curation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" type="checkbox" id="__nav_7_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_8">
+          Scripting Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Scripting Examples" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_8">
+          <span class="md-nav__icon md-icon"></span>
+          Scripting Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Metrics/" class="md-nav__link">
+        RNA Expression Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ipr/scripting/RNA_Expression_Similarity/" class="md-nav__link">
+        RNA Expression Similarity
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Variant Notation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Variant Notation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Variant Notation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variant_notation/" class="md-nav__link">
+        About Variant Notation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variant_notation/continuous/" class="md-nav__link">
+        Continuous Notation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variant_notation/split/" class="md-nav__link">
+        Multi-Feature (Split) Notation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" type="checkbox" id="__nav_8_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_4">
+          Coordinate Systems
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Coordinate Systems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          Coordinate Systems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variant_notation/coordinate_systems/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variant_notation/coordinate_systems/cytoband/" class="md-nav__link">
+        CytoBand Coordinates
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Developer Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developer Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Developer Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/" class="md-nav__link">
+        About the Developer Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/contributing/" class="md-nav__link">
+        Contributing Guidelines
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_4">
+          Graphkb
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Graphkb" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_4">
+          <span class="md-nav__icon md-icon"></span>
+          Graphkb
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/__init__/" class="md-nav__link">
+        graphkb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/genes/" class="md-nav__link">
+        graphkb.genes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/match/" class="md-nav__link">
+        graphkb.match
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/statement/" class="md-nav__link">
+        graphkb.statement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/types/" class="md-nav__link">
+        graphkb.types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/util/" class="md-nav__link">
+        graphkb.util
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/graphkb/vocab/" class="md-nav__link">
+        graphkb.vocab
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_5">
+          Ipr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ipr" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_5">
+          <span class="md-nav__icon md-icon"></span>
+          Ipr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/annotate/" class="md-nav__link">
+        ipr.annotate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/connection/" class="md-nav__link">
+        ipr.connection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/inputs/" class="md-nav__link">
+        ipr.inputs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/ipr/" class="md-nav__link">
+        ipr.ipr
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/main/" class="md-nav__link">
+        ipr.main
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/summary/" class="md-nav__link">
+        ipr.summary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/therapeutic_options/" class="md-nav__link">
+        ipr.therapeutic_options
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/types/" class="md-nav__link">
+        ipr.types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer_reference/ipr/util/" class="md-nav__link">
+        ipr.util
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/bcgsc/pori/edit/master/docs/graphkb/_pori_graphkb_loader/README.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="graphkb-loader">GraphKB Loader<a class="headerlink" href="#graphkb-loader" title="Permanent link">&para;</a></h1>
+<p><img alt="build" src="https://github.com/bcgsc/pori_graphkb_loader/workflows/build/badge.svg?branch=master" /> <img alt="Docker Image Version (latest semver)" src="https://img.shields.io/docker/v/bcgsc/pori-graphkb-loader?label=docker%20image" /> <img alt="node versions" src="https://img.shields.io/badge/node-12%20%7C%2014-blue" /> <a href="https://doi.org/10.5281/zenodo.5737732"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5737732.svg" /></a></p>
+<p>This repository is part of the <a href="https://github.com/bcgsc/pori">platform for oncogenomic reporting and interpretation</a>.</p>
+<p>This package is used to import content from a variety of sources into GraphKB using the API.</p>
+<ul>
+<li><a href="#loaders">Loaders</a></li>
+<li><a href="#ontologies">Ontologies</a></li>
+<li><a href="#knowledge-bases">Knowledge Bases</a></li>
+<li><a href="#guidelines-for-developers">Guidelines for Developers</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#creating-a-new-loader">Creating a new Loader</a><ul>
+<li><a href="#api-loaders">API Loaders</a></li>
+<li><a href="#file-loaders">File Loaders</a></li>
+</ul>
+</li>
+<li><a href="#initializing-graphkb-content">Initializing GraphKB Content</a></li>
+</ul>
+<p>Automatic Import modules are provided for a variety of input sources. To Start importing external data, first the GraphKB API
+must already be running. Then the command line interface can be used for upload. Get the help menu
+detailing the commands and required inputs as follows</p>
+<div class="highlight"><pre><span></span><code>node bin/load.js -- --help
+</code></pre></div>
+<p>or using docker</p>
+<div class="highlight"><pre><span></span><code>docker run bcgsc/pori-graphkb-loader --help
+</code></pre></div>
+<h2 id="loaders">Loaders<a class="headerlink" href="#loaders" title="Permanent link">&para;</a></h2>
+<h3 id="ontologies">Ontologies<a class="headerlink" href="#ontologies" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./src/chembl">ChEMBL</a></li>
+<li><a href="./src/diseaseOntology">Disease Ontology</a></li>
+<li><a href="./src/drugbank">DrugBank</a></li>
+<li><a href="./src/ensembl">Ensembl</a></li>
+<li><a href="./src/entrez">Entrez Utilities</a></li>
+<li><a href="./src/fdaSrs">FDA SRS</a></li>
+<li><a href="./src/fdaApprovals">FDA Approval Announcements</a></li>
+<li><a href="./src/hgnc">HGNC</a></li>
+<li><a href="./src/ncit">NCIt</a></li>
+<li><a href="./src/oncotree">OncoTree</a></li>
+<li><a href="./src/ontology">GraphKB Ontology JSON</a></li>
+<li><a href="./src/refseq">RefSeq</a></li>
+<li><a href="./src/uberon">Uberon</a></li>
+</ul>
+<h3 id="knowledge-bases">Knowledge Bases<a class="headerlink" href="#knowledge-bases" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./src/cancergenomeinterpreter">Cancer Genome Interpreter</a></li>
+<li><a href="./src/cancerhotspots">Cancer Hotspots</a></li>
+<li><a href="./src/cgl">CGL</a></li>
+<li><a href="./src/civic">CIViC</a></li>
+<li><a href="./src/clinicaltrialsgov">ClinicalTrials.gov</a></li>
+<li><a href="./src/cosmic">COSMIC</a></li>
+<li><a href="./src/dgidb">DGIdb</a></li>
+<li><a href="./src/docm">DoCM</a></li>
+<li><a href="./src/moa">MOAlmanac</a></li>
+<li><a href="./src/oncokb">OncoKB</a></li>
+<li><a href="./src/PMC4468049">PMC4468049</a></li>
+<li><a href="./src/PMC4232638">PMC4232638</a></li>
+</ul>
+<h2 id="guidelines-for-developers">Guidelines for Developers<a class="headerlink" href="#guidelines-for-developers" title="Permanent link">&para;</a></h2>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<p>To write and test the GraphKB loaders you will need the following</p>
+<ul>
+<li>NodeJS version 12 or higher</li>
+<li>An instance of the GraphKB API and its required OrientDB instance</li>
+<li>An instance of keycloak for testing authentication</li>
+</ul>
+<p>If you do not already have access to a development server of the GraphKB API, the easiest way to set this up is with docker. Follow the <a href="https://bcgsc.github.io/pori/developer_reference/getting_started">developers install instructions</a> from the PORI user guide.</p>
+<p>Once you have the GraphKB API and keycloak server running you are ready to start writing and testing loaders.</p>
+<p>clone this repository and install via npm</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/bcgsc/pori_graphkb_loader.git
+<span class="nb">cd</span> por_graphkb_laoder
+npm install
+</code></pre></div>
+<p>The tests can be run with the following command</p>
+<div class="highlight"><pre><span></span><code>npm run <span class="nb">test</span>
+</code></pre></div>
+<p>Run the loader with the <code>-h</code> flag to see the user help menu</p>
+<div class="highlight"><pre><span></span><code>npm start -- -h <span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>the <code>--</code> must be used so that arguments following it are passed to the script being called by the start command and not node itself. You can also run the script directory with <code>node bin/load.js</code></li>
+</ol>
+<p>Now you are ready to test running your first loader against the dev API and keycloak instance you set up earlier. It is simplest to run a loader which does not require any preloaded data such as one of the JSON ontology files included in the data directory.</p>
+<div class="highlight"><pre><span></span><code>npm start -- file ontology data/vocab.json -g http://localhost:8080/api -u graphkb_importer -p password <span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>"password" is the default password, and "graphkb_importer" is one of the default users used when setting up the development environment with docker-compose. Things should be changed to match the keycloak user in whatever instance you are running the loader against.</li>
+</ol>
+<h3 id="creating-a-new-loader">Creating a new Loader<a class="headerlink" href="#creating-a-new-loader" title="Permanent link">&para;</a></h3>
+<p>Loaders should be created with a directory directly under src name after the source of the content
+being loaded. The directory should contain a README.md describing the loader and content and how
+to obtain the data used by the loader.</p>
+<p>There are 2 main patterns used by the loaders</p>
+<h4 id="api-loaders">API Loaders<a class="headerlink" href="#api-loaders" title="Permanent link">&para;</a></h4>
+<p>These loaders do not require a file input and directly access an API (ex. <a href="./src/civic">CIViC</a>).
+Their main module will export a function called <code>upload</code> which has the following signature</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * @param {object} opt options</span>
+<span class="cm"> * @param {ApiConnection} opt.conn the api connection object</span>
+<span class="cm"> */</span>
+<span class="kd">const</span> <span class="nx">upload</span> <span class="o">=</span> <span class="k">async</span> <span class="p">({</span><span class="nx">conn</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</code></pre></div>
+<p><code>conn</code> above will be an <code>ApiConnection</code> instance that has already been authenticated against the
+GraphKB API instance.</p>
+<h4 id="file-loaders">File Loaders<a class="headerlink" href="#file-loaders" title="Permanent link">&para;</a></h4>
+<p>Other loaders which use a file to load content follow a similar pattern except the function they
+export is called <code>uploadFile</code> and accepts an additional argument. For example see the <a href="./src/diseaseOntology">disease ontology</a> loader.</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * @param {object} opt options</span>
+<span class="cm"> * @param {string} opt.filename the path to the input JSON file</span>
+<span class="cm"> * @param {ApiConnection} opt.conn the api connection object</span>
+<span class="cm"> */</span>
+<span class="kd">const</span> <span class="nx">uploadFile</span> <span class="o">=</span> <span class="k">async</span> <span class="p">({</span> <span class="nx">filename</span><span class="p">,</span> <span class="nx">conn</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</code></pre></div>
+<h2 id="initializing-graphkb-content">Initializing GraphKB Content<a class="headerlink" href="#initializing-graphkb-content" title="Permanent link">&para;</a></h2>
+<p>For convenience, a snakemake workflow is included to run all available loaders in an optimal order
+to initialize the content in a new instance of GraphKB. This is done via python snakemake. To set
+up snakemake in a virtual environment run the following</p>
+<div class="highlight"><pre><span></span><code>python3 -m venv venv
+<span class="nb">source</span> venv/bin/activate
+pip install -U pip setuptools wheel
+pip install snakemake
+</code></pre></div>
+<p>Then the workflow can be run as follows (single core by default but can be adjusted depending on
+your server settings)</p>
+<div class="highlight"><pre><span></span><code>snakemake -j <span class="m">1</span>
+</code></pre></div>
+<p><img alt="default workflow" src="docs/basic_workflow.png" /></p>
+<p>You will want to pass snakemake the specific GraphKB instance you are working with as well as the credentials of the user that will be uploading. If you have followed the docker install demo instructions this might looks something like this</p>
+<div class="highlight"><pre><span></span><code>snakemake -j <span class="m">1</span> <span class="se">\</span>
+  --config <span class="nv">gkb_user</span><span class="o">=</span><span class="s1">&#39;graphkb_importer&#39;</span> <span class="se">\</span>
+  <span class="nv">gkb_pass</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span> <span class="se">\</span>
+  <span class="nv">gkb_url</span><span class="o">=</span><span class="s1">&#39;http://localhost:8080/api&#39;</span>
+</code></pre></div>
+<p>The COSMIC and DrugBank options require licensing and are therefore not run by default. If you have
+a license to use them then you can include one or both of them by providing email and password
+as config parameters</p>
+<div class="highlight"><pre><span></span><code>snakemake -j <span class="m">1</span> <span class="se">\</span>
+  --config <span class="nv">drugbank_email</span><span class="o">=</span><span class="s2">&quot;YOUR EMAIL&quot;</span> <span class="se">\</span>
+  <span class="nv">drugbank_password</span><span class="o">=</span><span class="s2">&quot;YOUR PASSWORD&quot;</span> <span class="se">\</span>
+  <span class="nv">cosmic_email</span><span class="o">=</span><span class="s2">&quot;YOUR EMAIL&quot;</span> <span class="se">\</span>
+  <span class="nv">cosmic_password</span><span class="o">=</span><span class="s2">&quot;YOUR PASSWORD&quot;</span>
+</code></pre></div>
+<p><img alt="full workflow" src="docs/full_workflow.png" /></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../loading_data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loading Data" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Loading Data
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="src/PMC4232638/" class="md-footer__link md-footer__link--next" aria-label="Next: Functional Impact Statements" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Functional Impact Statements
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.sections", "navigation.instant", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+        <script src="../../js/mathjax.config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

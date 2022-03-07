@@ -1,0 +1,2259 @@
+{
+    "class": "Vocabulary",
+    "defaultNameToSourceId": true,
+    "records": {
+        "ITD": {
+            "deprecated": true,
+            "displayName": "ITD",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "internal tandem duplication"
+                }
+            ]
+        },
+        "acquired resistance": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "resistance"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "innate resistance"
+                }
+            ]
+        },
+        "activating": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased function"
+                }
+            ]
+        },
+        "activating mutation": {
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "gain of function"
+                }
+            ]
+        },
+        "adverse response": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased toxicity"
+                }
+            ]
+        },
+        "alteration": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "variant"
+                }
+            ]
+        },
+        "amplification": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy gain"
+                }
+            ]
+        },
+        "any expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "expression variant"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "no expression"
+                }
+            ]
+        },
+        "any protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "any expression"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "no protein expression"
+                }
+            ]
+        },
+        "any rna expression": {
+            "displayName": "any RNA expression",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "any expression"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "no rna expression"
+                }
+            ]
+        },
+        "associated with": {
+            "name": "associated with"
+        },
+        "b2 domain mutation": {
+            "displayName": "B2 domain mutation",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "domain mutation"
+                }
+            ]
+        },
+        "benign": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "biallelic inactivation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "biological": {
+            "name": "biological"
+        },
+        "conditional loss of function": {
+            "description": "loss-of-function is predicted or assumed (by the literature) under specific conditions only",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "cooperative polygenic gain of function": {
+            "description": "alterations that have an additive effect together which is not observed with either alteration alone",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "gain of function"
+                }
+            ]
+        },
+        "copy gain": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy variant"
+                }
+            ],
+            "shortName": "copygain"
+        },
+        "copy loss": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy variant"
+                }
+            ],
+            "shortName": "copyloss"
+        },
+        "copy number gain": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "copy gain"
+                }
+            ],
+            "shortName": "copygain"
+        },
+        "copy number loss": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "copy loss"
+                }
+            ],
+            "shortName": "copyloss"
+        },
+        "copy number variant": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "copy variant"
+                }
+            ]
+        },
+        "copy number variation": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "copy variant"
+                }
+            ]
+        },
+        "copy variant": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ]
+        },
+        "copy-neutral loss of heterozygosity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of heterozygosity"
+                }
+            ]
+        },
+        "cytoplasmic expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "cytoplasmic protein expression"
+                }
+            ]
+        },
+        "cytoplasmic protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "any protein expression"
+                }
+            ]
+        },
+        "decreased dosage": {
+            "description": "requires decreased dosage",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "dosage"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "increased dosage"
+                }
+            ]
+        },
+        "decreased metabolism": {
+            "description": "decreased clearance of a drug",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "metabolism"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "increased metabolism"
+                }
+            ]
+        },
+        "decreased toxicity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "toxicity"
+                }
+            ]
+        },
+        "deep deletion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy loss"
+                }
+            ]
+        },
+        "deleterious": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "deleterious mutation": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "loss of function mutation"
+                }
+            ]
+        },
+        "deletion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "indel"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ],
+            "shortName": "del"
+        },
+        "deletion polymorphism": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "polymorphism"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "deletion"
+                }
+            ],
+            "shortName": "del"
+        },
+        "diagnostic indicator": {
+            "description": "evidence is diagnostic for a specific disease type, disease subtype or disease state"
+        },
+        "disruptive fusion": {
+            "description": "fusion disrupts the wild-type functionality of one or more of its fusion partners",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "fusion"
+                }
+            ]
+        },
+        "dna binding domain mutation": {
+            "displayName": "DNA binding domain mutation",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "domain mutation"
+                }
+            ]
+        },
+        "domain duplication": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "duplication"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "domain mutation"
+                }
+            ]
+        },
+        "domain mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ]
+        },
+        "dominant gain of function": {
+            "description": "an event whose product adversely affects the normal product resulting in a gain-of-function phenotype",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "gain of function"
+                }
+            ]
+        },
+        "dominant negative": {
+            "description": "an event whose product adversely affects the normal product resulting in a loss-of-function phenotype",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "dosage": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "pharmacogenomic"
+                }
+            ]
+        },
+        "down-regulated expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced expression"
+                }
+            ]
+        },
+        "down-regulated protein expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced protein expression"
+                }
+            ]
+        },
+        "down-regulated rna expression": {
+            "deprecated": true,
+            "displayName": "down-regulated RNA expression",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced rna expression"
+                }
+            ]
+        },
+        "duplication": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ],
+            "shortName": "dup"
+        },
+        "eligibility": {
+            "name": "eligibility"
+        },
+        "epigenetic modification": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "epigenetic silencing": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "epigenetic modification"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "no rna expression"
+                }
+            ]
+        },
+        "expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "any expression"
+                }
+            ]
+        },
+        "expression variant": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "extension": {
+            "description": "A protein change which extends the open reading frame",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                }
+            ],
+            "shortName": "ext"
+        },
+        "favourable prognosis": {
+            "description": "event imparts a favourable outcome",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "prognostic indicator"
+                }
+            ]
+        },
+        "favours diagnosis": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "diagnostic indicator"
+                }
+            ]
+        },
+        "focal amplification": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "amplification"
+                }
+            ]
+        },
+        "frameshift": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "frameshift mutation"
+                }
+            ],
+            "shortName": "fs"
+        },
+        "frameshift mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                }
+            ],
+            "shortName": "fs"
+        },
+        "frameshift truncation": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "truncating frameshift mutation"
+                }
+            ],
+            "shortName": "fs"
+        },
+        "functional effect": {
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "no functional effect"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "fusion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ],
+            "shortName": "fusion"
+        },
+        "gain of function": {
+            "description": "event imparts an acquired function on the product leading to a specific observable phenotype",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased function"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "gene deletion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy loss"
+                }
+            ]
+        },
+        "haploinsufficient": {
+            "description": "an event leading to loss of function in a product that is dosage dependant such that the incomplete loss of function leads to an observable phenotype when event is in a heterozygous state",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "tumour suppressive"
+                }
+            ]
+        },
+        "high signature": {
+            "deprecated": true,
+            "description": "Alternative to 'strong signature'",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "strong signature"
+                }
+            ]
+        },
+        "highly recurrent": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "recurrent"
+                }
+            ]
+        },
+        "hypermethylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "hypomethylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "in-frame deletion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "deletion"
+                }
+            ],
+            "shortName": "del"
+        },
+        "in-frame fusion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "fusion"
+                }
+            ],
+            "name": "in-frame fusion",
+            "shortName": "fusion"
+        },
+        "in-frame insertion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "insertion"
+                }
+            ],
+            "shortName": "ins"
+        },
+        "inactivating": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced function"
+                }
+            ]
+        },
+        "inactivating mutation": {
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "increased dosage": {
+            "description": "requires increased dosage",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "dosage"
+                }
+            ]
+        },
+        "increased expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "expression variant"
+                }
+            ]
+        },
+        "increased function": {
+            "description": "the efficacy or frequency of the existing functionality is increased",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "functional effect"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "reduced function"
+                }
+            ]
+        },
+        "increased metabolism": {
+            "description": "increased clearance of a drug",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "metabolism"
+                }
+            ]
+        },
+        "increased metastasis": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "unfavourable prognosis"
+                }
+            ]
+        },
+        "increased protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased expression"
+                }
+            ]
+        },
+        "increased rna expression": {
+            "displayName": "increased RNA expression",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased expression"
+                }
+            ]
+        },
+        "increased signature": {
+            "description": "Increased measure is expected with respect to some reference signature element",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "signature present"
+                }
+            ]
+        },
+        "increased survival": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "favourable prognosis"
+                }
+            ]
+        },
+        "increased toxicity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "toxicity"
+                }
+            ]
+        },
+        "increased toxicity (haemolytic anemia)": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased toxicity"
+                }
+            ],
+            "source": "cgi"
+        },
+        "increased toxicity (hyperbilirubinemia)": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased toxicity"
+                }
+            ],
+            "source": "cgi"
+        },
+        "increased toxicity (myelosuppression)": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased toxicity"
+                }
+            ],
+            "source": "cgi"
+        },
+        "increased toxicity (ototoxicity)": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased toxicity"
+                }
+            ],
+            "source": "cgi"
+        },
+        "indel": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                }
+            ],
+            "shortName": "delins"
+        },
+        "innate resistance": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "resistance"
+                }
+            ]
+        },
+        "insertion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "indel"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ],
+            "shortName": "ins"
+        },
+        "intermediate metabolizer": {
+            "description": "intermediate metabolizer: with a genotype carrying one normal function allele plus one no function allele or one decreased function allele, or carrying two decreased function alleles",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "toxicity"
+                }
+            ]
+        },
+        "internal duplication": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "duplication"
+                }
+            ],
+            "source": "civic"
+        },
+        "internal tandem duplication": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "tandem duplication"
+                }
+            ]
+        },
+        "inversion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ],
+            "shortName": "inv"
+        },
+        "inverted translocation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "translocation"
+                }
+            ],
+            "shortName": "itrans"
+        },
+        "is characteristic of": {
+            "description": "a hallmark of this disease type",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "favours diagnosis"
+                }
+            ]
+        },
+        "kinase domain duplication": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "domain duplication"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "kinase domain mutation"
+                }
+            ]
+        },
+        "kinase domain mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "domain mutation"
+                }
+            ]
+        },
+        "knockdown": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ],
+            "source": "moa"
+        },
+        "likely benign": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "benign"
+                }
+            ]
+        },
+        "likely gain of function": {
+            "description": "gain-of-function is predicted or assumed (by the literature) based on an inference of similar events or data",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "gain of function"
+                }
+            ]
+        },
+        "likely loss of function": {
+            "description": "loss-of-function is predicted or assumed (by the literature) based on an inference of similar events or data",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "likely neutral": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "likely no functional effect"
+                }
+            ]
+        },
+        "likely no functional effect": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                }
+            ]
+        },
+        "likely oncogenic": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "oncogenic"
+                }
+            ]
+        },
+        "likely oncogenic mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "oncogenic mutation"
+                }
+            ]
+        },
+        "likely pathogenic": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "pathogenic"
+                }
+            ]
+        },
+        "likely predisposing": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "predisposing"
+                }
+            ]
+        },
+        "likely resistance": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "resistance"
+                }
+            ]
+        },
+        "likely sensitivity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "sensitivity"
+                }
+            ]
+        },
+        "likely switch of function": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "switch of function"
+                }
+            ]
+        },
+        "likely tumour suppressive": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "tumour suppressive"
+                }
+            ]
+        },
+        "loh": {
+            "displayName": "LOH"
+        },
+        "loss": {
+            "deprecated": true,
+            "displayName": "loss of function",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "loss of function"
+                }
+            ],
+            "source": "civic"
+        },
+        "loss of function": {
+            "description": "some normal functionality has been lost",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "reduced function"
+                }
+            ]
+        },
+        "loss of function mutation": {
+            "description": "some normal functionality has been lost as a result of a mutation",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ]
+        },
+        "loss of heterozygosity": {
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "loh"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ]
+        },
+        "low level copy gain": {
+            "description": "A copy gain that is not also considered an amplification",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy gain"
+                }
+            ]
+        },
+        "metabolism": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "pharmacogenomic"
+                }
+            ]
+        },
+        "methylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "methylation variant": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "epigenetic modification"
+                }
+            ]
+        },
+        "missense": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "missense mutation"
+                }
+            ],
+            "shortName": ">"
+        },
+        "missense mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "substitution"
+                }
+            ],
+            "shortName": ">"
+        },
+        "missense variant": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "missense mutation"
+                }
+            ],
+            "shortName": ">",
+            "source": "civic"
+        },
+        "moderate signature": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "signature present"
+                }
+            ]
+        },
+        "mutation": {
+            "description": "generally small mutations or intra-chromosomal rearrangements",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ],
+            "shortName": "mut"
+        },
+        "mutation hotspot": {
+            "description": "the specific residue noted has been observed to be recurrently and commonly mutated at some signifiant frequency above random in numerrous independent observations",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "highly recurrent"
+                }
+            ]
+        },
+        "mutations": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "mutation"
+                }
+            ],
+            "shortName": "mut",
+            "source": "civic"
+        },
+        "n-terminal frame shift": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "frameshift mutation"
+                }
+            ]
+        },
+        "neomorphic": {
+            "deprecated": true,
+            "description": "gain of a novel molecular function that is distinct from wild-type function",
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "switch of function"
+                }
+            ]
+        },
+        "neutral": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "no functional effect"
+                }
+            ]
+        },
+        "no dominant negative": {
+            "description": "does not adversely affect the normal product in a dominant negative manner",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "dominant negative"
+                }
+            ]
+        },
+        "no expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "expression variant"
+                }
+            ]
+        },
+        "no functional effect": {
+            "description": "does not result in altered functionality as compared to the wild-type",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "no gain of function": {
+            "description": "does not result in gain-of-function",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "gain of function"
+                }
+            ]
+        },
+        "no loss of function": {
+            "description": "does not result in loss-of-function",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "loss of function"
+                }
+            ]
+        },
+        "no protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no expression"
+                }
+            ]
+        },
+        "no resistance": {
+            "description": "does not confer increased resistance as compared to wild-type state",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "therapeutic efficacy"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "resistance"
+                }
+            ]
+        },
+        "no response": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no sensitivity"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "response"
+                }
+            ]
+        },
+        "no rna expression": {
+            "displayName": "no RNA expression",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no expression"
+                }
+            ]
+        },
+        "no sensitivity": {
+            "description": "does not confer increased sensitivity as compared to wild-type state",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "therapeutic efficacy"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "sensitivity"
+                }
+            ]
+        },
+        "no switch of function": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "switch of function"
+                }
+            ]
+        },
+        "nonsense": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "nonsense mutation"
+                }
+            ],
+            "shortName": ">"
+        },
+        "nonsense mutation": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "truncating"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "substitution"
+                }
+            ],
+            "shortName": ">"
+        },
+        "nuclear expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "nuclear protein expression"
+                }
+            ]
+        },
+        "nuclear protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "any protein expression"
+                }
+            ]
+        },
+        "oncogenic": {
+            "description": "having the potential to cause a normal cell to become cancerous",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "tumourigenesis"
+                }
+            ]
+        },
+        "oncogenic fusion": {
+            "description": "fusion whose product promotes cancer",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "oncogenic"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "fusion"
+                }
+            ]
+        },
+        "oncogenic mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "oncogenic"
+                }
+            ]
+        },
+        "oncogenic mutations": {
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "oncogenic mutation"
+                }
+            ],
+            "source": "moa"
+        },
+        "opposes diagnosis": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "diagnostic indicator"
+                }
+            ]
+        },
+        "out-of-frame fusion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "fusion"
+                },
+                {
+                    "class": "OppositeOf",
+                    "target": "in-frame fusion"
+                }
+            ],
+            "name": "out-of-frame fusion",
+            "shortName": "fusion"
+        },
+        "overexpression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased expression"
+                }
+            ]
+        },
+        "pathogenic": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "predisposing"
+                }
+            ]
+        },
+        "patient": {
+            "description": "Used in statements (primarily prognostic) to indicate when something applies to a patient (ex. increased survival)"
+        },
+        "pharmacogenomic": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "therapeutic indicator"
+                }
+            ]
+        },
+        "phenotype": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "phenotype absent": {
+            "description": "condition is not associated with a phenotype (ex. condition is not expected to be associated with high mutation burden)",
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "phenotype present"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "phenotype variant"
+                }
+            ]
+        },
+        "phenotype present": {
+            "description": "condition is associated with a phenotype (ex. condition is expected to be associated with high mutation burden)",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "phenotype variant"
+                }
+            ]
+        },
+        "phenotype variant": {
+            "description": "Variation is expected with respect to some reference phenotype element"
+        },
+        "phosphorylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "post-translational modification"
+                }
+            ]
+        },
+        "polymorphism": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ]
+        },
+        "poor metabolizer": {
+            "description": "with a genotype carrying two no function alleles, or carrying one no function plus one decreased function allele",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "toxicity"
+                }
+            ]
+        },
+        "post-translational modification": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "predisposing": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "prognostic indicator": {
+            "name": "prognostic indicator"
+        },
+        "promoter demethylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "promoter variant"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "promoter hypermethylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "promoter variant"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "promoter hypomethylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "promoter variant"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "promoter methylation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "promoter variant"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "methylation variant"
+                }
+            ]
+        },
+        "promoter mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "promoter variant"
+                }
+            ]
+        },
+        "promoter variant": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "variant"
+                }
+            ]
+        },
+        "protective": {
+            "description": "protect against some disease or phenotype. Associated with decreased risk of the disease or phenotype",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "benign"
+                }
+            ]
+        },
+        "protein expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "any protein expression"
+                }
+            ]
+        },
+        "protein overexpression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased protein expression"
+                }
+            ]
+        },
+        "protein underexpression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced protein expression"
+                }
+            ]
+        },
+        "rearrangement": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "structural variant"
+                }
+            ]
+        },
+        "recurrent": {
+            "description": "commonly observed",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "reduced expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "expression variant"
+                }
+            ]
+        },
+        "reduced function": {
+            "description": "the efficacy or frequency of the existing functionality is reduced",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "functional effect"
+                }
+            ]
+        },
+        "reduced protein expression": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "reduced expression"
+                }
+            ]
+        },
+        "reduced rna expression": {
+            "displayName": "reduced RNA expression",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "reduced expression"
+                }
+            ]
+        },
+        "reduced sensitivity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "resistance"
+                }
+            ]
+        },
+        "reduced signature": {
+            "description": "Decreased measure is expected with respect to some reference signature element",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "signature present"
+                }
+            ]
+        },
+        "relapse": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "unfavourable prognosis"
+                }
+            ]
+        },
+        "resistance": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no response"
+                }
+            ]
+        },
+        "response": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no resistance"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "targetable"
+                }
+            ]
+        },
+        "risk factor": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "predisposing"
+                }
+            ]
+        },
+        "rna expression": {
+            "deprecated": true,
+            "displayName": "RNA expression",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "any rna expression"
+                }
+            ]
+        },
+        "rna overexpression": {
+            "deprecated": true,
+            "displayName": "RNA overexpression",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased rna expression"
+                }
+            ]
+        },
+        "rna underexpression": {
+            "deprecated": true,
+            "displayName": "RNA underexpression",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced rna expression"
+                }
+            ]
+        },
+        "sensitivity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "response"
+                }
+            ]
+        },
+        "sh2 domain mutation": {
+            "displayName": "SH2 domain mutation",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "domain mutation"
+                }
+            ]
+        },
+        "shallow deletion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "copy loss"
+                }
+            ]
+        },
+        "signature absent": {
+            "description": "Some signature (ex. mutational signature) is not expected",
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "signature present"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "signature variant"
+                }
+            ]
+        },
+        "signature low": {
+            "deprecated": true,
+            "description": "Alternative to 'weak signature'",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "weak signature"
+                }
+            ]
+        },
+        "signature present": {
+            "description": "Some signature (ex. mutational signature) is expected",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "signature variant"
+                }
+            ]
+        },
+        "signature variant": {
+            "description": "Variation is expected with respect to some reference signature element"
+        },
+        "silencing": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "loss of function"
+                }
+            ],
+            "source": "moa"
+        },
+        "single nucleotide polymorphism": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "substitution"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "polymorphism"
+                }
+            ],
+            "shortName": ">"
+        },
+        "small mutation": {
+            "description": "any substitution, insertion or deletion affecting a small number of base pairs",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ],
+            "shortName": "mut"
+        },
+        "splice acceptor mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "splice-site mutation"
+                },
+                {
+                    "class": "AliasOf",
+                    "target": "splice acceptor variant"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splice acceptor variant": {
+            "shortName": "spl"
+        },
+        "splice donor mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "splice-site mutation"
+                },
+                {
+                    "class": "AliasOf",
+                    "target": "splice donor variant"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splice donor variant": {
+            "shortName": "spl"
+        },
+        "splice site": {
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "splice site mutation"
+                }
+            ],
+            "source": "moa"
+        },
+        "splice site insertion": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "splice-site mutation"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splice site mutation": {
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "splice-site mutation"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splice-site": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "splicing alteration"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splice-site mutation": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "splice-site"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "splicing alteration"
+                }
+            ],
+            "shortName": "spl"
+        },
+        "splicing alteration": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "variant"
+                }
+            ],
+            "source": "civic"
+        },
+        "start gain": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "extension"
+                }
+            ],
+            "shortName": "ext"
+        },
+        "stop loss": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "extension"
+                }
+            ],
+            "shortName": "ext"
+        },
+        "strong phenotype": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "phenotype present"
+                }
+            ]
+        },
+        "strong signature": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "signature present"
+                }
+            ]
+        },
+        "structural variant": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation"
+                }
+            ]
+        },
+        "substitution": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                }
+            ],
+            "shortName": ">"
+        },
+        "switch of function": {
+            "description": "some wild-type/normal functionality is lost and some novel functionality is gained",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "functional effect"
+                }
+            ]
+        },
+        "tandem duplication": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "duplication"
+                }
+            ]
+        },
+        "targetable": {
+            "description": "therapy can be used given some event or combination of event",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "therapeutic efficacy"
+                }
+            ]
+        },
+        "therapeutic efficacy": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "therapeutic indicator"
+                }
+            ]
+        },
+        "therapeutic indicator": {
+            "name": "therapeutic indicator"
+        },
+        "tkd mutation": {
+            "deprecated": true,
+            "displayName": "TKD mutation",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "tyrosine kinase domain mutation"
+                }
+            ],
+            "source": "civic"
+        },
+        "toxicity": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "pharmacogenomic"
+                }
+            ]
+        },
+        "translocation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "structural variant"
+                }
+            ]
+        },
+        "truncating": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "small mutation"
+                }
+            ],
+            "shortName": ">"
+        },
+        "truncating frameshift mutation": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "frameshift mutation"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "truncating"
+                }
+            ],
+            "shortName": "fs"
+        },
+        "truncating mutation": {
+            "deprecated": false,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "truncating"
+                }
+            ],
+            "shortName": ">",
+            "source": "civic"
+        },
+        "tumour suppressive": {
+            "description": "suppresses or blocks the development of cancer",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "tumourigenesis"
+                }
+            ]
+        },
+        "tumourigenesis": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "biological"
+                }
+            ]
+        },
+        "tyrosine kinase domain mutation": {
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "kinase domain mutation"
+                }
+            ]
+        },
+	"unaltered function": {
+            "description": "event is not associated with a change in protein function",
+            "links": [
+                {
+                    "class": "AliasOf",
+                    "target": "no functional effect"
+                }
+            ]
+	},
+        "underexpression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "reduced expression"
+                }
+            ]
+        },
+        "unfavourable prognosis": {
+            "description": "event is associated with a specifed, unfavouable outcome",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "prognostic indicator"
+                }
+            ]
+        },
+        "up-regulated expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased expression"
+                }
+            ]
+        },
+        "up-regulated protein expression": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased protein expression"
+                }
+            ]
+        },
+        "up-regulated rna expression": {
+            "deprecated": true,
+            "displayName": "up-regulated RNA expression",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "increased rna expression"
+                }
+            ]
+        },
+        "variant": {
+            "name": "variant"
+        },
+        "weak phenotype": {
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "strong phenotype"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "phenotype present"
+                }
+            ]
+        },
+        "weak signature": {
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "strong signature"
+                },
+                {
+                    "class": "SubClassOf",
+                    "target": "signature present"
+                }
+            ]
+        },
+        "weakly increased function": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "increased function"
+                }
+            ]
+        },
+        "weakly reduced function": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "reduced function"
+                }
+            ]
+        },
+        "wild type": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "no functional effect"
+                }
+            ]
+        },
+        "wildtype": {
+            "deprecated": true,
+            "description": "alternate spelling of 'wild type'",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "wild type"
+                }
+            ]
+        }
+    },
+    "sources": {
+        "cgi": {
+            "name": "cancer genome interpreter"
+        },
+        "civic": {
+            "name": "civic"
+        },
+        "default": {
+            "displayName": "GraphKB",
+            "longName": "Graph Knowledgebase",
+            "name": "graphkb",
+            "sort": 0,
+            "url": "https://graphkb.bcgsc.ca"
+        },
+        "moa": {
+            "name": "moa"
+        }
+    }
+}

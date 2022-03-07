@@ -1,0 +1,110 @@
+{
+    "edge": {
+        "properties": {
+            "obj": {
+                "pattern": "^http://purl.obolibrary.org/obo/DOID_\\d+$",
+                "type": "string"
+            },
+            "pred": {
+                "type": "string"
+            },
+            "sub": {
+                "pattern": "^http://purl.obolibrary.org/obo/DOID_\\d+$",
+                "type": "string"
+            }
+        },
+        "required": [
+            "sub",
+            "pred",
+            "obj"
+        ],
+        "type": "object"
+    },
+    "node": {
+        "properties": {
+            "id": {
+                "pattern": "^http://purl.obolibrary.org/obo/DOID_\\d+$",
+                "type": "string"
+            },
+            "lbl": {
+                "type": "string"
+            },
+            "meta": {
+                "properties": {
+                    "basicPropertyValues": {
+                        "items": {
+                            "properties": {
+                                "pred": {
+                                    "type": "string"
+                                },
+                                "val": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "val",
+                                "pred"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "definition": {
+                        "properties": {
+                            "val": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "val"
+                        ],
+                        "type": "object"
+                    },
+                    "deprecated": {
+                        "type": "boolean"
+                    },
+                    "subsets": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "synonyms": {
+                        "items": {
+                            "properties": {
+                                "val": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "val"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "xrefs": {
+                        "items": {
+                            "properties": {
+                                "val": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "val"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "required": [
+            "id",
+            "lbl"
+        ],
+        "type": "object"
+    }
+}

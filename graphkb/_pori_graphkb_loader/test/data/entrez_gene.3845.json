@@ -1,0 +1,30 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "uids": [
+            "3845"
+        ],
+        "3845": {
+            "uid": "3845",
+            "name": "KRAS",
+            "description": "KRAS proto-oncogene, GTPase",
+            "status": "",
+            "currentid": "",
+            "chromosome": "12",
+            "geneticsource": "genomic",
+            "maplocation": "12p12.1",
+            "otheraliases": "C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, KI-RAS, KRAS1, KRAS2, NS, NS3, RALD, RASK2, c-Ki-ras2",
+            "otherdesignations": "GTPase KRas|K-Ras 2|K-ras p21 protein|Kirsten rat sarcoma viral oncogene homolog|Kirsten rat sarcoma viral proto-oncogene|PR310 c-K-ras oncogene|c-Ki-ras|c-Kirsten-ras protein|cellular c-Ki-ras2 proto-oncogene|cellular transforming proto-oncogene|oncogene KRAS2|transforming protein p21|v-Ki-ras2 Kirsten rat sarcoma 2 viral oncogene homolog",
+            "nomenclaturesymbol": "KRAS",
+            "nomenclaturename": "KRAS proto-oncogene, GTPase",
+            "nomenclaturestatus": "Official",
+            "geneweight": 252323,
+            "summary": "This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+            "chrsort": "12",
+            "chrstart": 25205245
+        }
+    }
+}

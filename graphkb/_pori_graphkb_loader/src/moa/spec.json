@@ -1,0 +1,465 @@
+{
+    "properties": {
+        "assertion_id": {
+            "type": "number"
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "disease": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "features": {
+            "items": {
+                "properties": {
+                    "attributes": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "properties": {
+                                        "feature_type": {
+                                            "const": "rearrangement"
+                                        },
+                                        "gene1": {
+                                            "type": "string"
+                                        },
+                                        "gene2": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "rearrangement_type": {
+                                            "enum": [
+                                                "Translocation",
+                                                "Fusion"
+                                            ],
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "gene1",
+                                        "feature_type",
+                                        "rearrangement_type"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "alternate_allele": {
+                                            "pattern": "^[ATCG]*$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "cdna_change": {
+                                            "pattern": "^c\\.\\d+.*$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "chromosome": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "exon": {
+                                            "pattern": "^\\d+(\\.\\d+)?$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "feature_type": {
+                                            "const": "somatic_variant"
+                                        },
+                                        "gene": {
+                                            "type": "string"
+                                        },
+                                        "protein_change": {
+                                            "pattern": "^p\\..*",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "reference_allele": {
+                                            "pattern": "^[ATCG]*$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "rsid": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "start_position": {
+                                            "pattern": "^\\d+(\\.\\d+)?$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "variant_annotation": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "alternate_allele",
+                                        "cdna_change",
+                                        "chromosome",
+                                        "end_position",
+                                        "feature_type",
+                                        "gene",
+                                        "protein_change",
+                                        "reference_allele",
+                                        "start_position"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "alternate_allele": {
+                                            "pattern": "^([ATCG]+|-)$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "cdna_change": {
+                                            "pattern": "^c\\.\\d+.*$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "chromosome": {
+                                            "pattern": "^(([1-9]|1[0-9]|2[0-2])(\\.0)?|X|Y|MT)$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "exon": {
+                                            "pattern": "^\\d+(\\.\\d+)?$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "feature_type": {
+                                            "const": "germline_variant"
+                                        },
+                                        "gene": {
+                                            "type": "string"
+                                        },
+                                        "pathogenic": {
+                                            "enum": [
+                                                "1.0",
+                                                null
+                                            ]
+                                        },
+                                        "protein_change": {
+                                            "pattern": "^p\\..*",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "reference_allele": {
+                                            "pattern": "^([ATCG]+|-)$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "rsid": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "start_position": {
+                                            "pattern": "^\\d+(\\.\\d+)?$",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "variant_annotation": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "alternate_allele",
+                                        "cdna_change",
+                                        "chromosome",
+                                        "end_position",
+                                        "feature_type",
+                                        "gene",
+                                        "protein_change",
+                                        "reference_allele",
+                                        "start_position",
+                                        "pathogenic"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "direction": {
+                                            "enum": [
+                                                "Amplification",
+                                                "Deletion"
+                                            ]
+                                        },
+                                        "feature_type": {
+                                            "const": "copy_number"
+                                        },
+                                        "gene": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "feature_type",
+                                        "direction",
+                                        "gene"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "feature_type": {
+                                            "enum": [
+                                                "knockdown",
+                                                "silencing"
+                                            ]
+                                        },
+                                        "gene": {
+                                            "type": "string"
+                                        },
+                                        "technique": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "feature_type",
+                                        "gene"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "feature_type": {
+                                            "const": "microsatellite_stability"
+                                        },
+                                        "status": {
+                                            "const": "MSI-High"
+                                        }
+                                    },
+                                    "required": [
+                                        "feature_type",
+                                        "status"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "cosmic_signature_number": {
+                                            "pattern": "^\\d+$",
+                                            "type": "string"
+                                        },
+                                        "cosmic_signature_version": {
+                                            "enum": [
+                                                "2.0",
+                                                "2"
+                                            ]
+                                        },
+                                        "feature_type": {
+                                            "const": "mutational_signature"
+                                        }
+                                    },
+                                    "required": [
+                                        "feature_type",
+                                        "cosmic_signature_number",
+                                        "cosmic_signature_version"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "classification": {
+                                            "const": "High"
+                                        },
+                                        "feature_type": {
+                                            "const": "mutational_burden"
+                                        }
+                                    },
+                                    "required": [
+                                        "feature_type",
+                                        "classification"
+                                    ],
+                                    "type": "object"
+                                }
+                            ]
+                        },
+                        "maxItems": 1,
+                        "minItems": 1,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "attributes"
+                ],
+                "type": "object"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+        },
+        "last_updated": {
+            "format": "date",
+            "type": "string"
+        },
+        "oncotree_code": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "oncotree_term": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "predictive_implication": {
+            "enum": [
+                "FDA-Approved",
+                "Clinical evidence",
+                "Clinical trial",
+                "Preclinical",
+                "Inferential",
+                "Guideline"
+            ],
+            "type": "string"
+        },
+        "sources": {
+            "items": {
+                "properties": {
+                    "citation": {
+                        "type": "string"
+                    },
+                    "doi": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "nct": {
+                        "pattern": "^(NCT\\d+\\.?|None)\\s*$",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "pmid": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "source_id": {
+                        "type": "number"
+                    },
+                    "source_type": {
+                        "enum": [
+                            "Journal",
+                            "Guideline",
+                            "FDA",
+                            "Abstract"
+                        ],
+                        "type": "string"
+                    },
+                    "url": {
+                        "format": "uri",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "pmid",
+                    "url",
+                    "source_type",
+                    "source_id"
+                ],
+                "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+        },
+        "therapy_name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "therapy_resistance": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "therapy_sensitivity": {
+            "type": [
+                "boolean",
+                "null"
+            ]
+        },
+        "therapy_strategy": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "therapy_type": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "validated": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "assertion_id",
+        "description",
+        "disease",
+        "features",
+        "last_updated",
+        "oncotree_term",
+        "predictive_implication",
+        "sources"
+    ],
+    "type": "object"
+}

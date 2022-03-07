@@ -1,0 +1,3 @@
+{
+    "reporterEnabled": "spec, xunit, mocha-bamboo-reporter"
+}

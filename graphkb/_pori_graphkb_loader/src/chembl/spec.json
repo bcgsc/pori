@@ -1,0 +1,39 @@
+{
+    "properties": {
+        "molecule_chembl_id": {
+            "pattern": "^CHEMBL\\d+$",
+            "type": "string"
+        },
+        "molecule_properties": {
+            "oneOf": [
+                {
+                    "properties": {
+                        "full_molformula": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
+        "pref_name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "usan_stem_definition": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "molecule_chembl_id"
+    ],
+    "type": "object"
+}

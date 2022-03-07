@@ -1,0 +1,1323 @@
+{
+    "class": "Signature",
+    "records": {
+        "DBS1.3": {
+            "description": "Exposure to ultraviolet light",
+            "displayName": "DBS1.3",
+            "name": "DBS1",
+            "source": "cosmic",
+            "sourceId": "DBS1",
+            "sourceIdVersion": "3"
+        },
+        "DBS10.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "DBS10.3",
+            "name": "DBS10",
+            "source": "cosmic",
+            "sourceId": "DBS10",
+            "sourceIdVersion": "3"
+        },
+        "DBS11.3": {
+            "description": "Unknown. Possibly related to APOBEC mutagenesis",
+            "displayName": "DBS11.3",
+            "name": "DBS11",
+            "source": "cosmic",
+            "sourceId": "DBS11",
+            "sourceIdVersion": "3"
+        },
+        "DBS2.3": {
+            "description": "Exposure to tobacco smoking as well as other endogenous and/or exogenous mutagens (eg, acetaldehyde)",
+            "displayName": "DBS2.3",
+            "name": "DBS2",
+            "source": "cosmic",
+            "sourceId": "DBS2",
+            "sourceIdVersion": "3"
+        },
+        "DBS3.3": {
+            "description": "Polymerase epsilon exonuclease domain mutations",
+            "displayName": "DBS3.3",
+            "name": "DBS3",
+            "source": "cosmic",
+            "sourceId": "DBS3",
+            "sourceIdVersion": "3"
+        },
+        "DBS4.3": {
+            "displayName": "DBS4.3",
+            "name": "DBS4",
+            "source": "cosmic",
+            "sourceId": "DBS4",
+            "sourceIdVersion": "3"
+        },
+        "DBS5.3": {
+            "description": "Prior chemotherapy treatment with platinum drugs",
+            "displayName": "DBS5.3",
+            "name": "DBS5",
+            "source": "cosmic",
+            "sourceId": "DBS5",
+            "sourceIdVersion": "3"
+        },
+        "DBS6.3": {
+            "displayName": "DBS6.3",
+            "name": "DBS6",
+            "source": "cosmic",
+            "sourceId": "DBS6",
+            "sourceIdVersion": "3"
+        },
+        "DBS7.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "DBS7.3",
+            "name": "DBS7",
+            "source": "cosmic",
+            "sourceId": "DBS7",
+            "sourceIdVersion": "3"
+        },
+        "DBS8.3": {
+            "displayName": "DBS8.3",
+            "name": "DBS8",
+            "source": "cosmic",
+            "sourceId": "DBS8",
+            "sourceIdVersion": "3"
+        },
+        "DBS9.3": {
+            "displayName": "DBS9.3",
+            "name": "DBS9",
+            "source": "cosmic",
+            "sourceId": "DBS9",
+            "sourceIdVersion": "3"
+        },
+        "ID1.3": {
+            "description": "Slippage during DNA replication of the replicated DNA strand This signature is found in almost all samples, however, substantial number of mutations of this signature in cancers with DNA mismatch repair deficiency",
+            "displayName": "ID1.3",
+            "name": "ID1",
+            "source": "cosmic",
+            "sourceId": "ID1",
+            "sourceIdVersion": "3"
+        },
+        "ID10.3": {
+            "displayName": "ID10.3",
+            "name": "ID10",
+            "source": "cosmic",
+            "sourceId": "ID10",
+            "sourceIdVersion": "3"
+        },
+        "ID11.3": {
+            "displayName": "ID11.3",
+            "name": "ID11",
+            "source": "cosmic",
+            "sourceId": "ID11",
+            "sourceIdVersion": "3"
+        },
+        "ID12.3": {
+            "displayName": "ID12.3",
+            "name": "ID12",
+            "source": "cosmic",
+            "sourceId": "ID12",
+            "sourceIdVersion": "3"
+        },
+        "ID13.3": {
+            "description": "ID13 is found in cancers of the skin from sun exposed areas, therefore, this signature is likely to be due to exposure to ultraviolet light",
+            "displayName": "ID13.3",
+            "name": "ID13",
+            "source": "cosmic",
+            "sourceId": "ID13",
+            "sourceIdVersion": "3"
+        },
+        "ID14.3": {
+            "displayName": "ID14.3",
+            "name": "ID14",
+            "source": "cosmic",
+            "sourceId": "ID14",
+            "sourceIdVersion": "3"
+        },
+        "ID15.3": {
+            "displayName": "ID15.3",
+            "name": "ID15",
+            "source": "cosmic",
+            "sourceId": "ID15",
+            "sourceIdVersion": "3"
+        },
+        "ID16.3": {
+            "displayName": "ID16.3",
+            "name": "ID16",
+            "source": "cosmic",
+            "sourceId": "ID16",
+            "sourceIdVersion": "3"
+        },
+        "ID17.3": {
+            "displayName": "ID17.3",
+            "name": "ID17",
+            "source": "cosmic",
+            "sourceId": "ID17",
+            "sourceIdVersion": "3"
+        },
+        "ID2.3": {
+            "description": "Slippage during DNA replication of the template DNA strand This signature is found in almost all samples, however, substantial number of mutations of this signature in cancers with DNA mismatch repair deficiency",
+            "displayName": "ID2.3",
+            "name": "ID2",
+            "source": "cosmic",
+            "sourceId": "ID2",
+            "sourceIdVersion": "3"
+        },
+        "ID3.3": {
+            "description": "Associated with tobacco smoking",
+            "displayName": "ID3.3",
+            "name": "ID3",
+            "source": "cosmic",
+            "sourceId": "ID3",
+            "sourceIdVersion": "3"
+        },
+        "ID4.3": {
+            "displayName": "ID4.3",
+            "name": "ID4",
+            "source": "cosmic",
+            "sourceId": "ID4",
+            "sourceIdVersion": "3"
+        },
+        "ID5.3": {
+            "displayName": "ID5.3",
+            "name": "ID5",
+            "source": "cosmic",
+            "sourceId": "ID5",
+            "sourceIdVersion": "3"
+        },
+        "ID6.3": {
+            "description": "Defective homologous recombination-based DNA damage repair, often due to inactivating BRCA1 or BRCA2 mutations, leading to non-homologous DNA end-joining activity",
+            "displayName": "ID6.3",
+            "name": "ID6",
+            "source": "cosmic",
+            "sourceId": "ID6",
+            "sourceIdVersion": "3"
+        },
+        "ID7.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "ID7.3",
+            "name": "ID7",
+            "source": "cosmic",
+            "sourceId": "ID7",
+            "sourceIdVersion": "3"
+        },
+        "ID8.3": {
+            "description": "Unknown. Repair of DNA double strand breaks by non-homologous DNA end-joining mechanisms The DSB could, in principle, be radiation induced and the features of ID8 mutations have some similarities to those of radiation induced mutations",
+            "displayName": "ID8.3",
+            "name": "ID8",
+            "source": "cosmic",
+            "sourceId": "ID8",
+            "sourceIdVersion": "3"
+        },
+        "ID9.3": {
+            "displayName": "ID9.3",
+            "name": "ID9",
+            "source": "cosmic",
+            "sourceId": "ID9",
+            "sourceIdVersion": "3"
+        },
+        "SBS1.2": {
+            "displayName": "SBS1.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS1.3"
+                }
+            ],
+            "name": "SBS1",
+            "source": "cosmic",
+            "sourceId": "SBS1",
+            "sourceIdVersion": "2"
+        },
+        "SBS1.3": {
+            "description": "An endogenous mutational process initiated by spontaneous or enzymatic deamination of 5-methylcytosine to thymine which generates G:T mismatches in double stranded DNA Failure to detect and remove these mismatches prior to DNA replication results in fixation of the T substitution for C",
+            "displayName": "SBS1.3",
+            "name": "SBS1",
+            "source": "cosmic",
+            "sourceId": "SBS1",
+            "sourceIdVersion": "3"
+        },
+        "SBS10.2": {
+            "displayName": "SBS10.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS10a.3"
+                },
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS10b.3"
+                }
+            ],
+            "name": "SBS10",
+            "source": "cosmic",
+            "sourceId": "SBS10",
+            "sourceIdVersion": "2"
+        },
+        "SBS10a.3": {
+            "description": "Polymerase epsilon exonuclease domain mutations",
+            "displayName": "SBS10a.3",
+            "name": "SBS10a",
+            "source": "cosmic",
+            "sourceId": "SBS10a",
+            "sourceIdVersion": "3"
+        },
+        "SBS10b.3": {
+            "description": "Polymerase epsilon exonuclease domain mutations",
+            "displayName": "SBS10b.3",
+            "name": "SBS10b",
+            "source": "cosmic",
+            "sourceId": "SBS10b",
+            "sourceIdVersion": "3"
+        },
+        "SBS11.2": {
+            "displayName": "SBS11.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS11.3"
+                }
+            ],
+            "name": "SBS11",
+            "source": "cosmic",
+            "sourceId": "SBS11",
+            "sourceIdVersion": "2"
+        },
+        "SBS11.3": {
+            "description": "SBS11 exhibits a mutational pattern resembling that of alkylating agents Patient histories indicate an association between previous treatment with the alkylating agent temozolomide and SBS11 mutations",
+            "displayName": "SBS11.3",
+            "name": "SBS11",
+            "source": "cosmic",
+            "sourceId": "SBS11",
+            "sourceIdVersion": "3"
+        },
+        "SBS12.2": {
+            "displayName": "SBS12.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS12.3"
+                }
+            ],
+            "name": "SBS12",
+            "source": "cosmic",
+            "sourceId": "SBS12",
+            "sourceIdVersion": "2"
+        },
+        "SBS12.3": {
+            "displayName": "SBS12.3",
+            "name": "SBS12",
+            "source": "cosmic",
+            "sourceId": "SBS12",
+            "sourceIdVersion": "3"
+        },
+        "SBS13.2": {
+            "displayName": "SBS13.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS13.3"
+                }
+            ],
+            "name": "SBS13",
+            "source": "cosmic",
+            "sourceId": "SBS13",
+            "sourceIdVersion": "2"
+        },
+        "SBS13.3": {
+            "description": "Attributed to activity of the AID/APOBEC family of cytidine deaminases on the basis of similarities in the sequence context of cytosine mutations caused by APOBEC enzymes in experimental systems APOBEC3A is probably responsible for most mutations in human cancer, although APOBEC3B may also contribute (these differ in the sequence context two bases 5’ to the mutated cytosine, see 1536 mutation classification signature extraction) SBS13 mutations are likely generated by error prone polymerases (such as REV1) replicating across abasic sites generated by base excision repair removal of uracil",
+            "displayName": "SBS13.3",
+            "name": "SBS13",
+            "source": "cosmic",
+            "sourceId": "SBS13",
+            "sourceIdVersion": "3"
+        },
+        "SBS14.2": {
+            "displayName": "SBS14.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS14.3"
+                }
+            ],
+            "name": "SBS14",
+            "source": "cosmic",
+            "sourceId": "SBS14",
+            "sourceIdVersion": "2"
+        },
+        "SBS14.3": {
+            "description": "Concurrent polymerase epsilon mutation and defective DNA mismatch repair",
+            "displayName": "SBS14.3",
+            "name": "SBS14",
+            "source": "cosmic",
+            "sourceId": "SBS14",
+            "sourceIdVersion": "3"
+        },
+        "SBS15.2": {
+            "displayName": "SBS15.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS15.3"
+                }
+            ],
+            "name": "SBS15",
+            "source": "cosmic",
+            "sourceId": "SBS15",
+            "sourceIdVersion": "2"
+        },
+        "SBS15.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "SBS15.3",
+            "name": "SBS15",
+            "source": "cosmic",
+            "sourceId": "SBS15",
+            "sourceIdVersion": "3"
+        },
+        "SBS16.2": {
+            "displayName": "SBS16.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS16.3"
+                }
+            ],
+            "name": "SBS16",
+            "source": "cosmic",
+            "sourceId": "SBS16",
+            "sourceIdVersion": "2"
+        },
+        "SBS16.3": {
+            "displayName": "SBS16.3",
+            "name": "SBS16",
+            "source": "cosmic",
+            "sourceId": "SBS16",
+            "sourceIdVersion": "3"
+        },
+        "SBS17.2": {
+            "displayName": "SBS17.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS17a.3"
+                },
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS17b.3"
+                }
+            ],
+            "name": "SBS17",
+            "source": "cosmic",
+            "sourceId": "SBS17",
+            "sourceIdVersion": "2"
+        },
+        "SBS17a.3": {
+            "displayName": "SBS17a.3",
+            "name": "SBS17a",
+            "source": "cosmic",
+            "sourceId": "SBS17a",
+            "sourceIdVersion": "3"
+        },
+        "SBS17b.3": {
+            "displayName": "SBS17b.3",
+            "name": "SBS17b",
+            "source": "cosmic",
+            "sourceId": "SBS17b",
+            "sourceIdVersion": "3"
+        },
+        "SBS18.2": {
+            "description": "Possibly damage by reactive oxygen species",
+            "displayName": "SBS18.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS18.3"
+                }
+            ],
+            "name": "SBS18",
+            "source": "cosmic",
+            "sourceId": "SBS18",
+            "sourceIdVersion": "2"
+        },
+        "SBS18.3": {
+            "displayName": "SBS18.3",
+            "name": "SBS18",
+            "source": "cosmic",
+            "sourceId": "SBS18",
+            "sourceIdVersion": "3"
+        },
+        "SBS19.2": {
+            "displayName": "SBS19.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS19.3"
+                }
+            ],
+            "name": "SBS19",
+            "source": "cosmic",
+            "sourceId": "SBS19",
+            "sourceIdVersion": "2"
+        },
+        "SBS19.3": {
+            "displayName": "SBS19.3",
+            "name": "SBS19",
+            "source": "cosmic",
+            "sourceId": "SBS19",
+            "sourceIdVersion": "3"
+        },
+        "SBS2.2": {
+            "displayName": "SBS2.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS2.3"
+                }
+            ],
+            "name": "SBS2",
+            "source": "cosmic",
+            "sourceId": "SBS2",
+            "sourceIdVersion": "2"
+        },
+        "SBS2.3": {
+            "description": "Attributed to activity of the AID/APOBEC family of cytidine deaminases on the basis of similarities in the sequence context of cytosine mutations caused by APOBEC enzymes in experimental systems APOBEC3A is probably responsible for most mutations in human cancer, although APOBEC3B may also contribute (these differ in the sequence context two bases 5’ to the mutated cytosine, see 1,536 mutation classification signature extraction) SBS2 mutations may be generated directly by DNA replication across uracil or by error prone polymerases replicating across abasic sites generated by base excision repair removal of uracil",
+            "displayName": "SBS2.3",
+            "name": "SBS2",
+            "source": "cosmic",
+            "sourceId": "SBS2",
+            "sourceIdVersion": "3"
+        },
+        "SBS20.2": {
+            "displayName": "SBS20.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS20.3"
+                }
+            ],
+            "name": "SBS20",
+            "source": "cosmic",
+            "sourceId": "SBS20",
+            "sourceIdVersion": "2"
+        },
+        "SBS20.3": {
+            "description": "Concurrent POLD1 mutations and defective DNA mismatch repair",
+            "displayName": "SBS20.3",
+            "name": "SBS20",
+            "source": "cosmic",
+            "sourceId": "SBS20",
+            "sourceIdVersion": "3"
+        },
+        "SBS21.2": {
+            "displayName": "SBS21.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS21.3"
+                }
+            ],
+            "name": "SBS21",
+            "source": "cosmic",
+            "sourceId": "SBS21",
+            "sourceIdVersion": "2"
+        },
+        "SBS21.3": {
+            "description": "DNA mismatch repair deficiency",
+            "displayName": "SBS21.3",
+            "name": "SBS21",
+            "source": "cosmic",
+            "sourceId": "SBS21",
+            "sourceIdVersion": "3"
+        },
+        "SBS22.2": {
+            "displayName": "SBS22.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS22.3"
+                }
+            ],
+            "name": "SBS22",
+            "source": "cosmic",
+            "sourceId": "SBS22",
+            "sourceIdVersion": "2"
+        },
+        "SBS22.3": {
+            "description": "Aristolochic acid exposure Found in cancer samples with known exposures to aristolochic acid and the pattern of mutations exhibited by the signature is consistent with that observed in experimental systems of aristolochic acid exposure",
+            "displayName": "SBS22.3",
+            "name": "SBS22",
+            "source": "cosmic",
+            "sourceId": "SBS22",
+            "sourceIdVersion": "3"
+        },
+        "SBS23.2": {
+            "displayName": "SBS23.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS23.3"
+                }
+            ],
+            "name": "SBS23",
+            "source": "cosmic",
+            "sourceId": "SBS23",
+            "sourceIdVersion": "2"
+        },
+        "SBS23.3": {
+            "displayName": "SBS23.3",
+            "name": "SBS23",
+            "source": "cosmic",
+            "sourceId": "SBS23",
+            "sourceIdVersion": "3"
+        },
+        "SBS24.2": {
+            "displayName": "SBS24.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS24.3"
+                }
+            ],
+            "name": "SBS24",
+            "source": "cosmic",
+            "sourceId": "SBS24",
+            "sourceIdVersion": "2"
+        },
+        "SBS24.3": {
+            "description": "Aflatoxin exposure SBS24 has been found in cancer samples with known exposures to aflatoxin and the pattern of mutations exhibited by the signature is consistent with that observed in experimental systems exposed to aflatoxin",
+            "displayName": "SBS24.3",
+            "name": "SBS24",
+            "source": "cosmic",
+            "sourceId": "SBS24",
+            "sourceIdVersion": "3"
+        },
+        "SBS25.2": {
+            "displayName": "SBS25.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS25.3"
+                }
+            ],
+            "name": "SBS25",
+            "source": "cosmic",
+            "sourceId": "SBS25",
+            "sourceIdVersion": "2"
+        },
+        "SBS25.3": {
+            "description": "Unknown. However, some Hodgkin’s cell line samples in which the signature has been found were from patients exposed to chemotherapy and it is possible that SBS25 is due to chemotherapy treatment",
+            "displayName": "SBS25.3",
+            "name": "SBS25",
+            "source": "cosmic",
+            "sourceId": "SBS25",
+            "sourceIdVersion": "3"
+        },
+        "SBS26.2": {
+            "displayName": "SBS26.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS26.3"
+                }
+            ],
+            "name": "SBS26",
+            "source": "cosmic",
+            "sourceId": "SBS26",
+            "sourceIdVersion": "2"
+        },
+        "SBS26.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "SBS26.3",
+            "name": "SBS26",
+            "source": "cosmic",
+            "sourceId": "SBS26",
+            "sourceIdVersion": "3"
+        },
+        "SBS27.2": {
+            "displayName": "SBS27.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS27.3"
+                }
+            ],
+            "name": "SBS27",
+            "source": "cosmic",
+            "sourceId": "SBS27",
+            "sourceIdVersion": "2"
+        },
+        "SBS27.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS27.3",
+            "name": "SBS27",
+            "source": "cosmic",
+            "sourceId": "SBS27",
+            "sourceIdVersion": "3"
+        },
+        "SBS28.2": {
+            "displayName": "SBS28.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS28.3"
+                }
+            ],
+            "name": "SBS28",
+            "source": "cosmic",
+            "sourceId": "SBS28",
+            "sourceIdVersion": "2"
+        },
+        "SBS28.3": {
+            "displayName": "SBS28.3",
+            "name": "SBS28",
+            "source": "cosmic",
+            "sourceId": "SBS28",
+            "sourceIdVersion": "3"
+        },
+        "SBS29.2": {
+            "displayName": "SBS29.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS29.3"
+                }
+            ],
+            "name": "SBS29",
+            "source": "cosmic",
+            "sourceId": "SBS29",
+            "sourceIdVersion": "2"
+        },
+        "SBS29.3": {
+            "description": "SBS29 has been found in cancer samples from individuals with a tobacco chewing habit",
+            "displayName": "SBS29.3",
+            "name": "SBS29",
+            "source": "cosmic",
+            "sourceId": "SBS29",
+            "sourceIdVersion": "3"
+        },
+        "SBS3.2": {
+            "displayName": "SBS3.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS3.3"
+                }
+            ],
+            "name": "SBS3",
+            "source": "cosmic",
+            "sourceId": "SBS3",
+            "sourceIdVersion": "2"
+        },
+        "SBS3.3": {
+            "description": "Defective homologous recombination-based DNA damage repair which manifests predominantly as small indels and genome rearrangements due to abnormal double strand break repair but also in the form of this base substitution signature",
+            "displayName": "SBS3.3",
+            "name": "SBS3",
+            "source": "cosmic",
+            "sourceId": "SBS3",
+            "sourceIdVersion": "3"
+        },
+        "SBS30.2": {
+            "displayName": "SBS30.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS30.3"
+                }
+            ],
+            "name": "SBS30",
+            "source": "cosmic",
+            "sourceId": "SBS30",
+            "sourceIdVersion": "2"
+        },
+        "SBS30.3": {
+            "description": "SBS30 is due to deficiency in base excision repair due to inactivating mutations in NTHL1",
+            "displayName": "SBS30.3",
+            "name": "SBS30",
+            "source": "cosmic",
+            "sourceId": "SBS30",
+            "sourceIdVersion": "3"
+        },
+        "SBS31.3": {
+            "description": "Prior chemotherapy treatment with platinum drugs",
+            "displayName": "SBS31.3",
+            "name": "SBS31",
+            "source": "cosmic",
+            "sourceId": "SBS31",
+            "sourceIdVersion": "3"
+        },
+        "SBS32.3": {
+            "description": "Prior treatment with azathioprine to induce immunosuppression Associated mutation classes and signatures",
+            "displayName": "SBS32.3",
+            "name": "SBS32",
+            "source": "cosmic",
+            "sourceId": "SBS32",
+            "sourceIdVersion": "3"
+        },
+        "SBS33.3": {
+            "displayName": "SBS33.3",
+            "name": "SBS33",
+            "source": "cosmic",
+            "sourceId": "SBS33",
+            "sourceIdVersion": "3"
+        },
+        "SBS34.3": {
+            "displayName": "SBS34.3",
+            "name": "SBS34",
+            "source": "cosmic",
+            "sourceId": "SBS34",
+            "sourceIdVersion": "3"
+        },
+        "SBS35.3": {
+            "description": "Prior chemotherapy treatment with platinum drugs",
+            "displayName": "SBS35.3",
+            "name": "SBS35",
+            "source": "cosmic",
+            "sourceId": "SBS35",
+            "sourceIdVersion": "3"
+        },
+        "SBS36.3": {
+            "description": "Defective base excision repair, including DNA damage due to reactive oxygen species, due to biallelic germline or somatic MUTYH mutations",
+            "displayName": "SBS36.3",
+            "name": "SBS36",
+            "source": "cosmic",
+            "sourceId": "SBS36",
+            "sourceIdVersion": "3"
+        },
+        "SBS37.3": {
+            "displayName": "SBS37.3",
+            "name": "SBS37",
+            "source": "cosmic",
+            "sourceId": "SBS37",
+            "sourceIdVersion": "3"
+        },
+        "SBS38.3": {
+            "description": "Unknown. Found only in ultraviolet light associated melanomas suggesting potential indirect damage from UV-light",
+            "displayName": "SBS38.3",
+            "name": "SBS38",
+            "source": "cosmic",
+            "sourceId": "SBS38",
+            "sourceIdVersion": "3"
+        },
+        "SBS39.3": {
+            "displayName": "SBS39.3",
+            "name": "SBS39",
+            "source": "cosmic",
+            "sourceId": "SBS39",
+            "sourceIdVersion": "3"
+        },
+        "SBS4.2": {
+            "displayName": "SBS4.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS4.3"
+                }
+            ],
+            "name": "SBS4",
+            "source": "cosmic",
+            "sourceId": "SBS4",
+            "sourceIdVersion": "2"
+        },
+        "SBS4.3": {
+            "description": "Associated with tobacco smoking Its profile is similar to the mutational spectrum observed in experimental systems exposed to tobacco carcinogens such as benzo[a]pyrene SBS4 is, therefore, likely due to direct DNA damage by tobacco smoke mutagens",
+            "displayName": "SBS4.3",
+            "name": "SBS4",
+            "source": "cosmic",
+            "sourceId": "SBS4",
+            "sourceIdVersion": "3"
+        },
+        "SBS40.3": {
+            "displayName": "SBS40.3",
+            "name": "SBS40",
+            "source": "cosmic",
+            "sourceId": "SBS40",
+            "sourceIdVersion": "3"
+        },
+        "SBS41.3": {
+            "displayName": "SBS41.3",
+            "name": "SBS41",
+            "source": "cosmic",
+            "sourceId": "SBS41",
+            "sourceIdVersion": "3"
+        },
+        "SBS42.3": {
+            "description": "Occupational exposure to haloalkanes",
+            "displayName": "SBS42.3",
+            "name": "SBS42",
+            "source": "cosmic",
+            "sourceId": "SBS42",
+            "sourceIdVersion": "3"
+        },
+        "SBS43.3": {
+            "description": "Unknown. Possible sequencing artefact",
+            "displayName": "SBS43.3",
+            "name": "SBS43",
+            "source": "cosmic",
+            "sourceId": "SBS43",
+            "sourceIdVersion": "3"
+        },
+        "SBS44.3": {
+            "description": "Defective DNA mismatch repair",
+            "displayName": "SBS44.3",
+            "name": "SBS44",
+            "source": "cosmic",
+            "sourceId": "SBS44",
+            "sourceIdVersion": "3"
+        },
+        "SBS45.3": {
+            "description": "Possible artefact due to 8-oxo-guanine introduced during sequencing",
+            "displayName": "SBS45.3",
+            "name": "SBS45",
+            "source": "cosmic",
+            "sourceId": "SBS45",
+            "sourceIdVersion": "3"
+        },
+        "SBS46.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS46.3",
+            "name": "SBS46",
+            "source": "cosmic",
+            "sourceId": "SBS46",
+            "sourceIdVersion": "3"
+        },
+        "SBS47.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS47.3",
+            "name": "SBS47",
+            "source": "cosmic",
+            "sourceId": "SBS47",
+            "sourceIdVersion": "3"
+        },
+        "SBS48.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS48.3",
+            "name": "SBS48",
+            "source": "cosmic",
+            "sourceId": "SBS48",
+            "sourceIdVersion": "3"
+        },
+        "SBS49.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS49.3",
+            "name": "SBS49",
+            "source": "cosmic",
+            "sourceId": "SBS49",
+            "sourceIdVersion": "3"
+        },
+        "SBS5.2": {
+            "displayName": "SBS5.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS5.3"
+                }
+            ],
+            "name": "SBS5",
+            "source": "cosmic",
+            "sourceId": "SBS5",
+            "sourceIdVersion": "2"
+        },
+        "SBS5.3": {
+            "description": "Unknown. SBS5 mutational burden is increased in bladder cancer samples with ERCC2 mutations and in many cancer types due to tobacco smoking",
+            "displayName": "SBS5.3",
+            "name": "SBS5",
+            "source": "cosmic",
+            "sourceId": "SBS5",
+            "sourceIdVersion": "3"
+        },
+        "SBS50.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS50.3",
+            "name": "SBS50",
+            "source": "cosmic",
+            "sourceId": "SBS50",
+            "sourceIdVersion": "3"
+        },
+        "SBS51.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS51.3",
+            "name": "SBS51",
+            "source": "cosmic",
+            "sourceId": "SBS51",
+            "sourceIdVersion": "3"
+        },
+        "SBS52.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS52.3",
+            "name": "SBS52",
+            "source": "cosmic",
+            "sourceId": "SBS52",
+            "sourceIdVersion": "3"
+        },
+        "SBS53.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS53.3",
+            "name": "SBS53",
+            "source": "cosmic",
+            "sourceId": "SBS53",
+            "sourceIdVersion": "3"
+        },
+        "SBS54.3": {
+            "description": "Possible sequencing artefact Possible contamination with germline variants",
+            "displayName": "SBS54.3",
+            "name": "SBS54",
+            "source": "cosmic",
+            "sourceId": "SBS54",
+            "sourceIdVersion": "3"
+        },
+        "SBS55.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS55.3",
+            "name": "SBS55",
+            "source": "cosmic",
+            "sourceId": "SBS55",
+            "sourceIdVersion": "3"
+        },
+        "SBS56.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS56.3",
+            "name": "SBS56",
+            "source": "cosmic",
+            "sourceId": "SBS56",
+            "sourceIdVersion": "3"
+        },
+        "SBS57.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS57.3",
+            "name": "SBS57",
+            "source": "cosmic",
+            "sourceId": "SBS57",
+            "sourceIdVersion": "3"
+        },
+        "SBS58.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS58.3",
+            "name": "SBS58",
+            "source": "cosmic",
+            "sourceId": "SBS58",
+            "sourceIdVersion": "3"
+        },
+        "SBS59.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS59.3",
+            "name": "SBS59",
+            "source": "cosmic",
+            "sourceId": "SBS59",
+            "sourceIdVersion": "3"
+        },
+        "SBS6.2": {
+            "displayName": "SBS6.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS6.3"
+                }
+            ],
+            "name": "SBS6",
+            "source": "cosmic",
+            "sourceId": "SBS6",
+            "sourceIdVersion": "2"
+        },
+        "SBS6.3": {
+            "description": "SBS6 is associated with defective DNA mismatch repair and is found in microsatellite unstable tumours",
+            "displayName": "SBS6.3",
+            "name": "SBS6",
+            "source": "cosmic",
+            "sourceId": "SBS6",
+            "sourceIdVersion": "3"
+        },
+        "SBS60.3": {
+            "description": "Possible sequencing artefact",
+            "displayName": "SBS60.3",
+            "name": "SBS60",
+            "source": "cosmic",
+            "sourceId": "SBS60",
+            "sourceIdVersion": "3"
+        },
+        "SBS7.2": {
+            "displayName": "SBS7.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS7a.3"
+                },
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS7b.3"
+                },
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS7c.3"
+                },
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS7d.3"
+                }
+            ],
+            "name": "SBS7",
+            "source": "cosmic",
+            "sourceId": "SBS7",
+            "sourceIdVersion": "2"
+        },
+        "SBS7a.3": {
+            "description": "SBS7a/SBS7b/SBS7c/SBS7d are found in cancers of the skin from sun exposed areas and are thus likely to be due to exposure to ultraviolet light SBS7a may possibly be the consequence of just one of the two major known UV photoproducts, cyclobutane pyrimidine dimers or 6-4 photoproducts However, there is currently no evidence for this hypothesis and it is unclear which of these photoproducts may be responsible for SBS7a",
+            "displayName": "SBS7a.3",
+            "name": "SBS7a",
+            "source": "cosmic",
+            "sourceId": "SBS7a",
+            "sourceIdVersion": "3"
+        },
+        "SBS7b.3": {
+            "description": "SBS7a/SBS7b/SBS7c/SBS7d are found in cancers of the skin from sun exposed areas and are thus likely to be due to exposure to ultraviolet light SBS7a may possibly be the consequence of just one of the two major known UV photoproducts, cyclobutane pyrimidine dimers or 6-4 photoproducts However, there is currently no evidence for this hypothesis and it is unclear which of these photoproducts may be responsible for SBS7a",
+            "displayName": "SBS7b.3",
+            "name": "SBS7b",
+            "source": "cosmic",
+            "sourceId": "SBS7b",
+            "sourceIdVersion": "3"
+        },
+        "SBS7c.3": {
+            "description": "SBS7a/SBS7b/SBS7c/SBS7d are found in cancers of the skin from sun exposed areas and are thus likely to be due to exposure to ultraviolet light SBS7a may possibly be the consequence of just one of the two major known UV photoproducts, cyclobutane pyrimidine dimers or 6-4 photoproducts However, there is currently no evidence for this hypothesis and it is unclear which of these photoproducts may be responsible for SBS7a",
+            "displayName": "SBS7c.3",
+            "name": "SBS7c",
+            "source": "cosmic",
+            "sourceId": "SBS7c",
+            "sourceIdVersion": "3"
+        },
+        "SBS7d.3": {
+            "description": "SBS7a/SBS7b/SBS7c/SBS7d are found in cancers of the skin from sun exposed areas and are thus likely to be due to exposure to ultraviolet light SBS7a may possibly be the consequence of just one of the two major known UV photoproducts, cyclobutane pyrimidine dimers or 6-4 photoproducts However, there is currently no evidence for this hypothesis and it is unclear which of these photoproducts may be responsible for SBS7a",
+            "displayName": "SBS7d.3",
+            "name": "SBS7d",
+            "source": "cosmic",
+            "sourceId": "SBS7d",
+            "sourceIdVersion": "3"
+        },
+        "SBS8.2": {
+            "displayName": "SBS8.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS8.3"
+                }
+            ],
+            "name": "SBS8",
+            "source": "cosmic",
+            "sourceId": "SBS8",
+            "sourceIdVersion": "2"
+        },
+        "SBS8.3": {
+            "displayName": "SBS8.3",
+            "name": "SBS8",
+            "source": "cosmic",
+            "sourceId": "SBS8",
+            "sourceIdVersion": "3"
+        },
+        "SBS84.3": {
+            "description": "Activity of activation-induced cytidine deaminase (AID)",
+            "displayName": "SBS84.3",
+            "name": "SBS84",
+            "source": "cosmic",
+            "sourceId": "SBS84",
+            "sourceIdVersion": "3"
+        },
+        "SBS85.3": {
+            "description": "Indirect effects of activation-induced cytidine deaminase (AID) induced somatic mutagenesis in lymphoid cells",
+            "displayName": "SBS85.3",
+            "name": "SBS85",
+            "source": "cosmic",
+            "sourceId": "SBS85",
+            "sourceIdVersion": "3"
+        },
+        "SBS9.2": {
+            "displayName": "SBS9.2",
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "source": "cosmic",
+                    "target": "SBS9.3"
+                }
+            ],
+            "name": "SBS9",
+            "source": "cosmic",
+            "sourceId": "SBS9",
+            "sourceIdVersion": "2"
+        },
+        "SBS9.3": {
+            "description": "May be due in part to mutations induced during replication by polymerase eta as part of somatic hypermutation in lymphoid cells",
+            "displayName": "SBS9.3",
+            "name": "SBS9",
+            "source": "cosmic",
+            "sourceId": "SBS9",
+            "sourceIdVersion": "3"
+        },
+        "cd8+ cell infiltration": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "immune infiltration"
+                }
+            ],
+            "name": "cd8+ cell infiltration"
+        },
+        "erv load": {
+            "description": "endogenous retroviruses (ERV) expression due to epigenetic derepression",
+            "name": "erv load"
+        },
+        "genomic instability": {
+            "description": "increased frequency of mutations and genomic alterations"
+        },
+        "genomic stability": {
+            "links": [
+                {
+                    "class": "OppositeOf",
+                    "target": "genomic instability"
+                }
+            ]
+        },
+        "hla genotype": {
+            "description": "homo- or heterozygosity in HLA class I locus (HLA-A, HLA-B or HLA-C)",
+            "name": "hla genotype"
+        },
+        "homologous recombination deficiency": {
+            "description": "genetic instability due to genomic alterations in the homologous recombination (HR) DNA repair pathway",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "genomic instability"
+                }
+            ],
+            "name": "homologous recombination deficiency"
+        },
+        "homologous recombination proficiency": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "genomic stability"
+                }
+            ]
+        },
+        "hrd": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "homologous recombination deficiency"
+                }
+            ],
+            "name": "hrd"
+        },
+        "immune infiltration": {
+            "description": "proportion of immune/inflammatory cells in the tumour microenvironment",
+            "name": "immune infiltration"
+        },
+        "microsatellite instability": {
+            "description": "genetic instability in short nucleotide repeats (microsatellites) due to a high mutation rate as a result of abnormal DNA mismatch repair",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "microsatellite phenotype"
+                }
+            ],
+            "name": "microsatellite instability"
+        },
+        "microsatellite phenotype": {
+            "name": "microsatellite phenotype"
+        },
+        "microsatellite stable": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "microsatellite phenotype"
+                }
+            ],
+            "name": "microsatellite stable"
+        },
+        "mismatch repair deficiency": {
+            "description": "deficiency of the DNA mismatch repair pathway",
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "mutation burden"
+                }
+            ]
+        },
+        "msi": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "microsatellite instability"
+                }
+            ],
+            "name": "msi"
+        },
+        "mss": {
+            "deprecated": true,
+            "links": [
+                {
+                    "class": "DeprecatedBy",
+                    "target": "microsatellite stable"
+                }
+            ],
+            "name": "mss"
+        },
+        "mutation burden": {
+            "description": "total number of somatic mutations normalized to the genome size",
+            "name": "mutation burden"
+        },
+        "neoantigen load": {
+            "description": "expression of antigens that are entirely absent from the normal human genome and the results of mutations acquired during carcinogenesis and progression",
+            "name": "neoantigen load"
+        },
+        "t cell infiltration": {
+            "links": [
+                {
+                    "class": "SubClassOf",
+                    "target": "immune infiltration"
+                }
+            ],
+            "name": "t cell infiltration"
+        }
+    },
+    "sources": {
+        "cosmic": {
+            "displayName": "COSMIC",
+            "name": "cosmic"
+        },
+        "default": {
+            "displayName": "GraphKB",
+            "longName": "Graph Knowledgebase",
+            "name": "graphkb",
+            "sort": 0,
+            "url": "https://graphkb.bcgsc.ca"
+        }
+    }
+}

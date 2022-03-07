@@ -1,0 +1,253 @@
+{
+    "evidence": {
+        "properties": {
+            "clinical_significance": {
+                "enum": [
+                    "Sensitivity",
+                    "Adverse Response",
+                    "Resistance",
+                    "Sensitivity/Response",
+                    "Reduced Sensitivity",
+                    "Positive",
+                    "Negative",
+                    "Poor Outcome",
+                    "Better Outcome",
+                    "Uncertain Significance",
+                    "Pathogenic",
+                    "Likely Pathogenic",
+                    "N/A",
+                    "Gain of Function",
+                    "Loss of Function",
+                    "Neomorphic",
+                    "Dominant Negative",
+                    "Unaltered Function",
+                    null
+                ]
+            },
+            "description": {
+                "type": "string"
+            },
+            "disease": {
+                "oneOf": [
+                    {
+                        "doid": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "drug_interaction_type": {
+                "enum": [
+                    "Combination",
+                    "Substitutes",
+                    "Sequential",
+                    null
+                ]
+            },
+            "drugs": {
+                "items": {
+                    "properties": {
+                        "id": {
+                            "type": "number"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "ncit_id": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "pubchem_id": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "ncit_id"
+                    ],
+                    "type": "object"
+                },
+                "type": "array"
+            },
+            "evidence_direction": {
+                "enum": [
+                    "Supports",
+                    "N/A",
+                    "Does Not Support",
+                    null
+                ]
+            },
+            "evidence_level": {
+                "type": "string"
+            },
+            "evidence_type": {
+                "enum": [
+                    "Predictive",
+                    "Diagnostic",
+                    "Prognostic",
+                    "Predisposing",
+                    "Functional"
+                ]
+            },
+            "id": {
+                "type": "number"
+            },
+            "rating": {
+                "type": [
+                    "number",
+                    "null"
+                ]
+            },
+            "source": {
+                "properties": {
+                    "citation_id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "source_type": {
+                        "enum": [
+                            "ASCO",
+                            "PubMed"
+                        ]
+                    }
+                }
+            },
+            "status": {
+                "type": "string"
+            },
+            "variant_id": {
+                "type": "number"
+            }
+        },
+        "type": "object"
+    },
+    "variant": {
+        "properties": {
+            "civic_actionability_score": {
+                "type": "number"
+            },
+            "coordinates": {
+                "properties": {
+                    "chromosome": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "chromosome2": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ensembl_version": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "reference_bases": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "reference_build": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "representative_transcript": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "representative_transcript2": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "start": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "start2": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "stop": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "stop2": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "variant_bases": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "type": "object"
+            },
+            "description": {
+                "type": "string"
+            },
+            "entrez_id": {
+                "type": "number"
+            },
+            "entrez_name": {
+                "type": "string"
+            },
+            "id": {
+                "type": "number"
+            },
+            "name": {
+                "type": "string"
+            },
+            "variant_types": {
+                "items": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "so_id": {
+                        "type": "string"
+                    },
+                    "type": "object"
+                },
+                "type": "array"
+            }
+        },
+        "type": "object"
+    }
+}

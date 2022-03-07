@@ -1,0 +1,50 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "568815595": {
+            "uid": "568815595",
+            "caption": "NC_000003",
+            "title": "Homo sapiens chromosome 3, GRCh38.p13 Primary Assembly",
+            "extra": "gi|568815595|gnl|ASM:GCF_000001305|3|ref|NC_000003.12||gpp|GPC_000001295.1||gnl|NCBI_GENOMES|3",
+            "gi": 568815595,
+            "createdate": "2002/08/29",
+            "updatedate": "2019/06/14",
+            "flags": 544,
+            "taxid": 9606,
+            "slen": 198295559,
+            "biomol": "genomic",
+            "moltype": "dna",
+            "topology": "linear",
+            "sourcedb": "refseq",
+            "segsetsize": "",
+            "projectid": "168",
+            "genome": "chromosome",
+            "subtype": "chromosome",
+            "subname": "3",
+            "assemblygi": 568336021,
+            "assemblyacc": "CM000665.2",
+            "tech": "",
+            "completeness": "",
+            "geneticcode": "1",
+            "strand": "",
+            "organism": "human",
+            "strain": "",
+            "biosample": "",
+            "properties": {
+                "na": "1",
+                "value": "1"
+            },
+            "oslt": {
+                "indexed": true,
+                "value": "NC_000003.12"
+            },
+            "accessionversion": "NC_000003.12"
+        },
+        "uids": [
+            "568815595"
+        ]
+    }
+}

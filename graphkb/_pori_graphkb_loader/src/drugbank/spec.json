@@ -1,0 +1,358 @@
+{
+    "properties": {
+        "$": {
+            "properties": {
+                "updated": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "updated"
+            ],
+            "type": "object"
+        },
+        "atc-codes": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "atc-code": {
+                            "oneOf": [
+                                {
+                                    "maxLength": 0,
+                                    "type": "string"
+                                },
+                                {
+                                    "properties": {
+                                        "level": {
+                                            "items": {
+                                                "properties": {
+                                                    "$": {
+                                                        "properties": {
+                                                            "code": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "code"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "$text": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "$text",
+                                                    "$"
+                                                ],
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "required": [
+                                        "level"
+                                    ],
+                                    "type": [
+                                        "object",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "atc-code"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "calculated-properties": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "property": {
+                            "items": {
+                                "properties": {
+                                    "kind": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "kind",
+                                    "value"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "property"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "categories": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "category": {
+                            "items": {
+                                "properties": {
+                                    "category": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "category"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "category"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "drugbank-id": {
+            "items": [
+                {
+                    "properties": {
+                        "$text": {
+                            "pattern": "^DB\\d+$",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            ],
+            "minItems": 1,
+            "type": "array"
+        },
+        "external-identifiers": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "external-identifier": {
+                            "items": {
+                                "properties": {
+                                    "identifier": {
+                                        "type": "string"
+                                    },
+                                    "resource": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "resource",
+                                    "identifier"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "external-identifier"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "mechanism-of-action": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "products": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "product": {
+                            "items": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "name"
+                                ],
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [
+                        "product"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "targets": {
+            "oneOf": [
+                {
+                    "maxLength": 0,
+                    "type": "string"
+                },
+                {
+                    "properties": {
+                        "target": {
+                            "properties": {
+                                "actions": {
+                                    "oneOf": [
+                                        {
+                                            "maxLength": 0,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "properties": {
+                                                "action": {
+                                                    "items": {
+                                                        "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                }
+                                            },
+                                            "required": [
+                                                "action"
+                                            ],
+                                            "type": [
+                                                "object",
+                                                "null"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "polypeptide": {
+                                    "items": {
+                                        "properties": {
+                                            "external-identifiers": {
+                                                "oneOf": [
+                                                    {
+                                                        "maxLength": 0,
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "properties": {
+                                                            "external-identifier": {
+                                                                "items": {
+                                                                    "properties": {
+                                                                        "identifier": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "resource": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    },
+                                                                    "required": [
+                                                                        "resource",
+                                                                        "identifier"
+                                                                    ],
+                                                                    "type": "object"
+                                                                },
+                                                                "type": "array"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "external-identifier"
+                                                        ],
+                                                        "type": [
+                                                            "object",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "actions"
+                            ],
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "target"
+                    ],
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            ]
+        },
+        "unii": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "drugbank-id",
+        "name",
+        "$"
+    ],
+    "type": "object"
+}

@@ -1,0 +1,3 @@
+#tax_id	GeneID	Symbol	RSG	LRG	RNA	t	Protein	p	Category
+9606	3845	KRAS	NG_007524.1		NM_004985.4		NP_004976.2		reference standard
+9606	3845	KRAS	NG_007524.1		NM_033360.3		NP_203524.1		reference standard

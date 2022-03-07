@@ -290,8 +290,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#loading-data-into-graphkb" class="md-nav__link">
-    Loading Data into GraphKB
+  <a href="#test-loading-data-into-graphkb" class="md-nav__link">
+    Test Loading Data into GraphKB
   </a>
   
 </li>
@@ -1801,7 +1801,7 @@ with external content using the loaders.</p>
 <p>Sometimes you will need to check the logs from the various servers, this can be done with the docker logs command. First find the container ID (or name) by listing all the running containers with <code>docker ps</code> and then run the following</p>
 <div class="highlight"><pre><span></span><code>docker logs &lt;CONTAINER ID&gt;
 </code></pre></div>
-<h3 id="loading-data-into-graphkb">Loading Data into GraphKB<a class="headerlink" href="#loading-data-into-graphkb" title="Permanent link">&para;</a></h3>
+<h3 id="test-loading-data-into-graphkb">Test Loading Data into GraphKB<a class="headerlink" href="#test-loading-data-into-graphkb" title="Permanent link">&para;</a></h3>
 <p>If you are running the GraphKB loader via its docker container you will need to tell it to use the host network so that it is able to find the GraphKB API.</p>
 <p>Here is an example of running the GraphKB Loader on the vocabulary terms using the docker container and the docker-compose setup described above.</p>
 <p>First download the vocabulary terms data</p>
@@ -1822,6 +1822,7 @@ with external content using the loaders.</p>
 <p class="admonition-title">Note</p>
 <p>Because we are running the loader by itself we need to provide the mount arguments to tell docker that we need access to a file outside of the container itself. When we run this with the snakemake pipeline this is not necessary since snakemake generally takes care of that for you</p>
 </div>
+<p>Once you have tested that things have been set up correctly and loading is working you are ready to initialize the data in your newly create GraphKB instance. See the <a href="../graphkb/loading_data/">loader documentation</a> for further instructions.</p>
 <h2 id="production-instances">Production Instances<a class="headerlink" href="#production-instances" title="Permanent link">&para;</a></h2>
 <h3 id="https">HTTPS<a class="headerlink" href="#https" title="Permanent link">&para;</a></h3>
 <p>For a production instance of PORI you will want to use HTTPS instead of HTTP. The simplest way to accomplish this is with a reverse proxy to pick up the ports. This way you can run the platform as above, with http, when initially setting up and testing.</p>

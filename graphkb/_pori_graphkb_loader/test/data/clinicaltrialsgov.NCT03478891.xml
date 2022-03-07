@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinical_study>
+  <!-- This xml conforms to an XML Schema at:
+    https://clinicaltrials.gov/ct2/html/images/info/public.xsd -->
+  <required_header>
+    <download_date>ClinicalTrials.gov processed this data on July 24, 2019</download_date>
+    <link_text>Link to the current ClinicalTrials.gov record.</link_text>
+    <url>https://clinicaltrials.gov/show/NCT03478891</url>
+  </required_header>
+  <id_info>
+    <org_study_id>180069</org_study_id>
+    <secondary_id>18-I-0069</secondary_id>
+    <nct_id>NCT03478891</nct_id>
+  </id_info>
+  <brief_title>Safety and Pharmacokinetics of a Human Monoclonal Antibody, VRC-EBOMAB092-00-AB (MAb114), Administered Intravenously to Healthy Adults</brief_title>
+  <official_title>VRC 608: A Phase I, Open-Label, Dose-Escalation Study of the Safety and Pharmacokinetics of a Human Monoclonal Antibody, VRC-EBOMAB092-00-AB (MAb114), Administered Intravenously to Healthy Adults</official_title>
+  <sponsors>
+    <lead_sponsor>
+      <agency>National Institute of Allergy and Infectious Diseases (NIAID)</agency>
+      <agency_class>NIH</agency_class>
+    </lead_sponsor>
+    <collaborator>
+      <agency>The Emmes Company, LLC</agency>
+      <agency_class>Industry</agency_class>
+    </collaborator>
+  </sponsors>
+  <source>National Institutes of Health Clinical Center (CC)</source>
+  <oversight_info>
+    <has_dmc>No</has_dmc>
+    <is_fda_regulated_drug>Yes</is_fda_regulated_drug>
+    <is_fda_regulated_device>No</is_fda_regulated_device>
+  </oversight_info>
+  <brief_summary>
+    <textblock>
+      Background:
+
+      Ebola is a virus that has infected and killed people mostly in West Africa. There is no
+      treatment or prevention for it, but several drugs are being studied. Researchers want to test
+      the drug MAb114 in healthy people not exposed to Ebola to see whether it can be used for
+      Ebola treatment in people who are infected in the future. This trial will not expose
+      volunteers to the Ebola virus.
+
+      Objectives:
+
+      To see if MAb114 is safe and how a person's body responds to it.
+
+      Eligibility:
+
+      Healthy adults ages 18-60 who weigh 220.5 pounds or less
+
+      Design:
+
+      Participants will be screened under protocol NIH 11-I-0164 with:
+
+        -  Medical history
+
+        -  Physical exam
+
+        -  Blood or urine tests
+
+      Participants will have a first 8- to10-hour visit. They will get MAb114 by IV infusion. For
+      this, a thin tube will be placed in an arm vein. They may get an IV line in their other arm
+      to collect blood. Blood will be taken many times before and after the infusion. Participants
+      may have a urine test.
+
+      Participants will get a thermometer to check their temperature for 3 days after they get
+      MAb114. They will record their highest temperature and any symptoms.
+
+      Participants will have about 14 more study visits over 6 months. At each visit, they will
+      have blood taken and be checked for any health changes. They will talk about how they are
+      feeling and if they have taken any medications.
+
+      At the end of the 6 months, participants may be invited to take part in another study for
+      follow-up sample collection.
+    </textblock>
+  </brief_summary>
+  <detailed_description>
+    <textblock>
+      VRC 608: A Phase I, Open-Label, Dose-Escalation Study of the Safety and Pharmacokinetics of a
+      Human Monoclonal Antibody, VRC-EBOMAB092-00-AB (MAb114), Administered Intravenously to
+      Healthy Adults
+
+      Study Design: VRC 608 is the first-in-human Phase I study to examine safety, tolerability and
+      pharmacokinetics of the monoclonal antibody (MAb), VRC-EBOMAB092-00-AB (MAb114). MAb114 will
+      be administered as a single dose. The hypotheses are: 1) MAb114 administration to healthy
+      adults will be safe by the intravenous (IV) route; and 2) MAb114 will be detectable in human
+      sera with a definable half-life. The primary objectives are to evaluate the safety and
+      tolerability of MAb114 in healthy adults. Secondary objectives will evaluate the
+      pharmacokinetics of MAb114 and the potential to detect an anti-drug antibody response to
+      MAb114.
+
+      Product Description: MAb114 is a human IgG1 MAb targeted to the Zaire ebolavirus (EBOV)
+      glycoprotein (GP). It was developed by the VRC/NIAID/NIH and manufactured at Cook Pharmica
+      LLC d.b.a. Catalent Indiana, LLC (Bloomington, IN) under current Good Manufacturing Practice
+      (cGMP) regulations. MAb114 is supplied as a lyophilized product in a glass vial at 400 mg per
+      vial with target overfill to 425 mg per vial.
+
+      Subjects: Up to 30 healthy adults, 18-60 years of age.
+
+      Study Plan: This is an open-label, dose-escalation study of MAb114 administered by IV
+      infusion at dosages of 5, 25 and 50 mg/kg (Groups 1-3). Enrollment will begin with the lowest
+      dose group. Following the first product administration in each group, the study team will
+      wait at least 3 days before administering MAb114 to a second subject within the same group.
+      Dose-escalation evaluations will occur to ensure the safety data support proceeding to the
+      higher doses. Solicited reactogenicity following product administration will be evaluated
+      using a 3-day diary. Assessment of safety will include clinical observation and monitoring of
+      serum hematological and chemical parameters at defined timepoints throughout the study.
+
+        -  Group 1: 3 subjects; 5 mg/kg IV
+
+        -  Group 2: 5 subjects; 25 mg/kg IV
+
+        -  Group 3: 10 subjects; 50 mg/kg IV
+
+        -  Total* 18 subjects
+
+             -  A minimum of 18 subjects will be enrolled. Enrollment up to a total of 30 subjects
+                is permitted if additional subjects are necessary for safety or pharmacokinetic
+                (PK) evaluations.
+
+      Study Duration: Subjects will be followed for 24 weeks after the study product
+      administration.
+    </textblock>
+  </detailed_description>
+  <overall_status>Completed</overall_status>
+  <start_date type="Actual">May 16, 2018</start_date>
+  <completion_date type="Actual">March 20, 2019</completion_date>
+  <primary_completion_date type="Actual">March 20, 2019</primary_completion_date>
+  <phase>Phase 1</phase>
+  <study_type>Interventional</study_type>
+  <has_expanded_access>Yes</has_expanded_access>
+  <study_design_info>
+    <allocation>Non-Randomized</allocation>
+    <intervention_model>Sequential Assignment</intervention_model>
+    <primary_purpose>Treatment</primary_purpose>
+    <masking>None (Open Label)</masking>
+  </study_design_info>
+  <primary_outcome>
+    <measure>Number of Subjects Experiencing Infusion Reaction During Product Administration</measure>
+    <time_frame>About 30 minutes of product administration</time_frame>
+    <description>Possible infusion reaction symptoms: unusually tired/feeling unwell, muscles aches, headache, chills, rigors, nausea, fever, joint pain, urticaria/rash, and pruritus. Also information was collected if administration was slowed down or stopped for reactogenicity reasons.</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Subjects Reporting Systemic Reactogenicity Signs and Symptoms Within 3 Days of Product Administration</measure>
+    <time_frame>3 days after product administration</time_frame>
+    <description>Subjects recorded 3-day systemic reactogenicity symptoms in a diary after study product administration. Solicited systemic symptoms include: unusually tired/feeling unwell, muscles aches, headache, chills, nausea, fever and joint pain. Subjects recorded highest measured temperature daily. Clinicians reviewed the diary with the subject and collected resolution information for any symptoms that were not resolved within 3 days. Subjects were counted once for each symptom at the worst severity if they indicated experiencing the symptom at any severity during the reporting period. The number reported for &quot;Any Systemic Symptom&quot; is the number of subjects experiencing any systemic symptom as reported at the worst severity. Solicited reactogenicity was recorded without an attribution assessment. Grading was done by Division of AIDS Table for Grading the Severity of Adult and Pediatric Adverse Events Version 2.1.</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Subjects Reporting Local Reactogenicity Signs and Symptoms Within 7 Days of Product Administration</measure>
+    <time_frame>7 days after product administration</time_frame>
+    <description>Local reactogenicity symptoms were assessed and recorded by clinicians. Solicited local symptoms include pain/tenderness, swelling, redness, bruising, and pruritus (itchiness) at the product administration site. Clinicians assessed the study product administration site for local symptoms on the day of product administration after completion of the administration and on Days 1, 2 and 7 post administration. Subjects were counted once for each symptom at the worst severity if they experienced the symptom at any severity during the reporting period. If symptoms were experienced, clinicians collected resolution information for any symptom that wasn't resolved within 7 days. The number reported for &quot;Any Local Symptom&quot; is the number of subjects reporting any local symptom as reported at the worst severity. Solicited reactogenicity was recorded without attribution assessment. Grading was done by Division of AIDS Table for Grading the Severity of Adult and Pediatric Adverse Events Version 2.1.</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Subjects Reporting 1 or More Unsolicited Non-Serious Adverse Events</measure>
+    <time_frame>Through 24 weeks after product administration</time_frame>
+    <description>Unsolicited adverse events (AEs) collected during the period from study product administration at Day 0 through 28 days after product administration. After the indicated time period through the last expected study visit at 24 weeks after product administration, only new chronic medical conditions collected as unsolicited AEs.
+The number reported is the number of subjects who experienced at least one AE in the reporting period. A subject with multiple experiences of the same event is counted once using the event of worst severity. The relationship between an AE and the product was assessed by the investigator on the basis of his or her clinical judgment and the protocol-specific definitions of Related - There is a reasonable possibility that the AE may be related to the study product and Not Related - There is not a reasonable possibility that the AE is related to the study product.</description>
+  </primary_outcome>
+  <primary_outcome>
+    <measure>Number of Subjects Reporting Serious Adverse Events</measure>
+    <time_frame>Through 24 weeks after product administration</time_frame>
+    <description>Serious adverse events (SAEs) collected during the period from study product administration at Day 0 through 24 weeks after product administration. Grading done by Division of AIDS Table for Grading the Severity of Adult and Pediatric Adverse Events Version 2.1. The relationship between a SAE and the product was assessed by the investigator on the basis of his or her clinical judgment and the protocol-specific definitions of Related - There is a reasonable possibility that the SAE may be related to the study product and Not Related - There is not a reasonable possibility that the SAE is related to the study product.</description>
+  </primary_outcome>
+  <secondary_outcome>
+    <measure>Maximum Observed Serum Concentration (Cmax) of MAb114</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>Cmax is the peak serum concentration that MAb114 achieves after it has been administered; it is determined as a maximum value on the summary pharmacokinetic (PK) curve for each study group.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Time to Reach Maximum Observed Serum Concentration (Tmax) of MAb114</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>Tmax is the time it takes to reach Cmax of MAb114 after it has been administered; it is determined based on the summary PK curve for each study group.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Mean Serum Concentration of MAb114</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>The mean of individual subject MAb114 serum concentrations by administered dose group</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Overall IV Half-life (T1/2) of MAb114</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-56 days post-infusion</time_frame>
+    <description>Half-life (T1/2) is the time required for half of the drug to be eliminated from the serum.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Area Under the Curve (AUC0-28D)</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>The AUC0-28D represents the total drug exposure in 28 days after MAb114 administration; it is determined based on the summary PK curve for each group.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Volume of Distribution (Vd) at Steady-state</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>Theoretical volume that would be necessary to contain the total amount of administered drug at the same concentration as observed in plasma. It represents the degree to which a drug is distributed in body tissue rather than the plasma and calculated based in the PK curve for each study group.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>MAb114 Clearance Rate</measure>
+    <time_frame>Pre-infusion (baseline), end of infusion (0h), 1 hr, 3 hr, 6 hr, 24 hr, 48 hr and 7-28 days post-infusion</time_frame>
+    <description>Rate of MAb114 elimination divided by the plasma MAb114 concentration; determined based on the summary PK curve for each study group.</description>
+  </secondary_outcome>
+  <secondary_outcome>
+    <measure>Number of Subjects Who Produced Anti-drug Antibodies to MAb114</measure>
+    <time_frame>Days 28 and 56 post-infusion</time_frame>
+    <description>Serum samples collected 28 days and 56 days after MAb114 administration</description>
+  </secondary_outcome>
+  <number_of_arms>3</number_of_arms>
+  <enrollment type="Actual">19</enrollment>
+  <condition>Healthy Adult Immune Responses to Vaccine</condition>
+  <arm_group>
+    <arm_group_label>Group 1: 5 mg/kg IV</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Group 1 subjects received a single IV infusion of a Human Monoclonal Antibody (MAb), VRC-EBOMAB092-00-AB (MAb114), on Day 0 at a dose of 5 mg/kg.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Group 2: 25 mg/kg IV</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Group 2 subjects received a single IV infusion of a Human Monoclonal Antibody (MAb), VRC-EBOMAB092-00-AB (MAb114), on Day 0 at a dose of 25 mg/kg.</description>
+  </arm_group>
+  <arm_group>
+    <arm_group_label>Group 3: 50 mg/kg IV</arm_group_label>
+    <arm_group_type>Experimental</arm_group_type>
+    <description>Group 3 subjects received a single IV infusion of a Human Monoclonal Antibody (MAb), VRC-EBOMAB092-00-AB (MAb114), on Day 0 at a dose of 50 mg/kg.</description>
+  </arm_group>
+  <intervention>
+    <intervention_type>Biological</intervention_type>
+    <intervention_name>VRC-EBOMAB092-00-AB (MAb114)</intervention_name>
+    <description>VRC-EBOMAB092-00-AB (MAb114) is a human immunoglobulin (IgG1) monoclonal antibody (MAb) targeted to the Zaire ebolavirus (EBOV) glycoprotein (GP).</description>
+    <arm_group_label>Group 1: 5 mg/kg IV</arm_group_label>
+    <arm_group_label>Group 2: 25 mg/kg IV</arm_group_label>
+    <arm_group_label>Group 3: 50 mg/kg IV</arm_group_label>
+  </intervention>
+  <eligibility>
+    <criteria>
+      <textblock>
+        INCLUSION CRITERIA:
+
+        A volunteer must meet all of the following criteria:
+
+          -  Able and willing to complete the informed consent process.
+
+          -  Available for clinical follow-up through the last study visit.
+
+          -  18 to 60 years of age.
+
+          -  In good general health without clinically significant medical history.
+
+          -  Willing to have blood samples collected, stored indefinitely, and used for research
+             purposes.
+
+          -  Able to provide proof of identity to the satisfaction of the study clinician
+             completing the enrollment process.
+
+          -  Physical examination without clinically significant findings within the 84 days prior
+             to enrollment.
+
+          -  Have screening laboratory values within 84 days prior to enrollment that meet the
+             following criteria:
+
+               -  White Blood Cell (WBC) 2,500-12,000/mm^3
+
+               -  WBC differential either within institutional normal range or accompanied by the
+                  Principal Investigator (PI) or designee approval
+
+               -  Platelets = 125,000 - 400,000/mm^3
+
+               -  Hemoglobin within institutional normal range or accompanied by the PI or designee
+                  approval
+
+               -  Creatinine less than or equal to 1.1 x upper limit of normal (ULN)
+
+               -  Alanine aminotransferase (ALT) less than or equal to 1.25 x ULN
+
+               -  Negative for human immunodeficiency virus (HIV) infection by a Food and Drug
+                  Administration (FDA) approved method of detection
+
+               -  Negative for Hepatitis B core antibody (HBcAb) and Hepatitis C virus antibody
+                  (HCV Ab)
+
+          -  Criteria applicable to women of childbearing potential:
+
+               -  If a woman is of reproductive potential and sexually active with a male partner,
+                  then she agrees to use an effective means of birth control from the time of study
+                  enrollment until the last study visit, or to be monogamous with a partner who has
+                  had a vasectomy.
+
+               -  Negative human chorionic gonadotropin (beta-HCG) pregnancy test (urine or serum)
+                  on day of enrollment and product administration.
+
+        EXCLUSION CRITERIA:
+
+        A volunteer will be excluded from study participation if one or more of the following
+        conditions apply:
+
+          -  Previous receipt of a licensed or investigational monoclonal antibody or Ebola
+             vaccine.
+
+          -  Weight &gt;100 kg.
+
+          -  Any history of a severe allergic reaction with generalized urticaria, angioedema or
+             anaphylaxis prior to enrollment that has a reasonable risk of recurrence during the
+             study.
+
+          -  Hypertension that is not well controlled.
+
+          -  Woman who is breast-feeding, or planning to become pregnant during study
+             participation.
+
+          -  Receipt of any investigational study product within 28 days prior to enrollment.
+
+          -  Any other chronic or clinically significant medical condition that in the opinion of
+             the investigator would jeopardize the safety or rights of the volunteer, including but
+             not limited to: diabetes mellitus type I, chronic hepatitis; OR clinically significant
+             forms of: drug or alcohol abuse, asthma, autoimmune disease, psychiatric disorders,
+             heart disease, or cancer.
+
+          -  Bleeding disorder diagnosed by a doctor (e.g. factor deficiency, coagulopathy, or
+             platelet disorder requiring special precautions) or significant bruising or bleeding
+             difficulties with intramuscular (IM) injections or blood draws.
+
+          -  Use of angiotensin-converting enzyme (ACE) inhibitors or other potential nephrotoxins.
+      </textblock>
+    </criteria>
+    <gender>All</gender>
+    <minimum_age>18 Years</minimum_age>
+    <maximum_age>60 Years</maximum_age>
+    <healthy_volunteers>Accepts Healthy Volunteers</healthy_volunteers>
+  </eligibility>
+  <overall_official>
+    <last_name>Martin R Gaudinski, M.D.</last_name>
+    <role>Principal Investigator</role>
+    <affiliation>National Institute of Allergy and Infectious Diseases (NIAID)</affiliation>
+  </overall_official>
+  <location>
+    <facility>
+      <name>National Institutes of Health Clinical Center</name>
+      <address>
+        <city>Bethesda</city>
+        <state>Maryland</state>
+        <zip>20892</zip>
+        <country>United States</country>
+      </address>
+    </facility>
+  </location>
+  <location_countries>
+    <country>United States</country>
+  </location_countries>
+  <link>
+    <url>https://clinicalstudies.info.nih.gov/cgi/detail.cgi?A_2018-I-0069.html</url>
+    <description>NIH Clinical Center Detailed Web Page</description>
+  </link>
+  <link>
+    <url>https://www.nih.gov/news-events/news-releases/investigational-monoclonal-antibody-treat-ebola-safe-adults</url>
+    <description>NIH Press Release</description>
+  </link>
+  <reference>
+    <citation>Corti D, Misasi J, Mulangu S, Stanley DA, Kanekiyo M, Wollen S, Ploquin A, Doria-Rose NA, Staupe RP, Bailey M, Shi W, Choe M, Marcus H, Thompson EA, Cagigi A, Silacci C, Fernandez-Rodriguez B, Perez L, Sallusto F, Vanzetta F, Agatic G, Cameroni E, Kisalu N, Gordon I, Ledgerwood JE, Mascola JR, Graham BS, Muyembe-Tamfun JJ, Trefry JC, Lanzavecchia A, Sullivan NJ. Protective monotherapy against lethal Ebola virus infection by a potently neutralizing antibody. Science. 2016 Mar 18;351(6279):1339-42. doi: 10.1126/science.aad5224. Epub 2016 Feb 25.</citation>
+    <PMID>26917593</PMID>
+  </reference>
+  <reference>
+    <citation>Misasi J, Gilman MS, Kanekiyo M, Gui M, Cagigi A, Mulangu S, Corti D, Ledgerwood JE, Lanzavecchia A, Cunningham J, Muyembe-Tamfun JJ, Baxa U, Graham BS, Xiang Y, Sullivan NJ, McLellan JS. Structural and molecular basis for Ebola virus neutralization by protective human antibodies. Science. 2016 Mar 18;351(6279):1343-6. doi: 10.1126/science.aad6117. Epub 2016 Feb 25.</citation>
+    <PMID>26917592</PMID>
+  </reference>
+  <results_reference>
+    <citation>Gaudinski MR, Coates EE, Novik L, Widge A, Houser KV, Burch E, Holman LA, Gordon IJ, Chen GL, Carter C, Nason M, Sitar S, Yamshchikov G, Berkowitz N, Andrews C, Vazquez S, Laurencot C, Misasi J, Arnold F, Carlton K, Lawlor H, Gall J, Bailer RT, McDermott A, Capparelli E, Koup RA, Mascola JR, Graham BS, Sullivan NJ, Ledgerwood JE; VRC 608 Study team. Safety, tolerability, pharmacokinetics, and immunogenicity of the therapeutic monoclonal antibody mAb114 targeting Ebola virus glycoprotein (VRC 608): an open-label phase 1 study. Lancet. 2019 Mar 2;393(10174):889-898. doi: 10.1016/S0140-6736(19)30036-4. Epub 2019 Jan 24.</citation>
+    <PMID>30686586</PMID>
+  </results_reference>
+  <verification_date>June 2019</verification_date>
+  <study_first_submitted>March 21, 2018</study_first_submitted>
+  <study_first_submitted_qc>March 24, 2018</study_first_submitted_qc>
+  <study_first_posted type="Actual">March 27, 2018</study_first_posted>
+  <results_first_submitted>October 9, 2018</results_first_submitted>
+  <results_first_submitted_qc>October 9, 2018</results_first_submitted_qc>
+  <results_first_posted type="Actual">October 11, 2018</results_first_posted>
+  <last_update_submitted>June 26, 2019</last_update_submitted>
+  <last_update_submitted_qc>June 26, 2019</last_update_submitted_qc>
+  <last_update_posted type="Actual">July 15, 2019</last_update_posted>
+  <responsible_party>
+    <responsible_party_type>Sponsor</responsible_party_type>
+  </responsible_party>
+  <keyword>Ebola Virus</keyword>
+  <keyword>Immune Response</keyword>
+  <keyword>Filovirus</keyword>
+  <keyword>Ebola Hemorrhagic Fever</keyword>
+  <keyword>First in Human</keyword>
+  <intervention_browse>
+    <!-- CAUTION:  The following MeSH terms are assigned with an imperfect algorithm            -->
+    <mesh_term>Antibodies</mesh_term>
+    <mesh_term>Immunoglobulins</mesh_term>
+    <mesh_term>Antibodies, Monoclonal</mesh_term>
+    <mesh_term>Antineoplastic Agents, Immunological</mesh_term>
+  </intervention_browse>
+  <patient_data>
+    <sharing_ipd>No</sharing_ipd>
+  </patient_data>
+  <provided_document_section>
+    <provided_document>
+      <document_type>Study Protocol, Statistical Analysis Plan, and Informed Consent Form</document_type>
+      <document_has_protocol>Yes</document_has_protocol>
+      <document_has_icf>Yes</document_has_icf>
+      <document_has_sap>Yes</document_has_sap>
+      <document_date>January 14, 2019</document_date>
+      <document_url>https://ClinicalTrials.gov/ProvidedDocs/91/NCT03478891/Prot_SAP_ICF_001.pdf</document_url>
+    </provided_document>
+  </provided_document_section>
+  <!-- Results are available for this study                                                     -->
+</clinical_study>

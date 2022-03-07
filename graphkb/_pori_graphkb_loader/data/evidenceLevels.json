@@ -1,0 +1,862 @@
+{
+    "class": "EvidenceLevel",
+    "records": {
+        "amp-3": {
+            "description": "Not observed at a significant allele frequency in the general or specific subpopulation databases, or pan-cancer or tumour-specific variant databases. No convincing published evidence of cancer association",
+            "source": "amp",
+            "sourceId": "Tier III (Variant of Unknown Clinical Significance)"
+        },
+        "amp-4": {
+            "description": "Observed at significant allele frequency in the general or specific subpopulation databases. No existing published evidence of cancer association",
+            "source": "amp",
+            "sourceId": "Tier IV (Benign or Likely Benign Variants)"
+        },
+        "amp-a1": {
+            "description": "Evidence from professional guidelines or FDA-approved therapies relating to a biomarker and disease",
+            "displayName": "AMP Level A (Tier I)",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-r1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-2a"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "profyle-t1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-a1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-a2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-a3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-a4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-a5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "ipr-a"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-cpic guidelines"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-european leukemianet guidelines"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-fda guidelines"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-nccn guidelines"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-nccn/cap guidelines"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "moa-fda-approved"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "moa-guideline"
+                }
+            ],
+            "source": "amp",
+            "sourceId": "Level A (Tier I)"
+        },
+        "amp-b2": {
+            "description": "Evidence from clinical trials or other well-powered studies in clinical populations, with expert consensus",
+            "displayName": "AMP Level B (Tier II)",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "profyle-t2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-3a"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-b1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-b2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-b3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-b4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-b5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "ipr-b"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-late trials"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "moa-clinical evidence"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "moa-clinical trial"
+                }
+            ],
+            "source": "amp",
+            "sourceId": "Level B (Tier II)"
+        },
+        "amp-c2": {
+            "description": "Evidence for therapeutic predictive markers from case studies, or other biomarkers from several small studies. Also, evidence for biomarker therapeutic predictions for established drugs for different indications",
+            "displayName": "AMP Level C (Tier II)",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-2b"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-3b"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "profyle-t3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "ipr-c"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-early trials"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-case report"
+                }
+            ],
+            "source": "amp",
+            "sourceId": "Level C (Tier II)"
+        },
+        "amp-d2": {
+            "description": "Preclinical findings or case studies of prognostic or diagnostic biomarkers. Also includes indirect findings",
+            "displayName": "AMP Level D (Tier II)",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "oncokb-4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "profyle-t4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "ipr-d"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "cgi-pre-clinical"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-d1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-d2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-d3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-d4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "vicc",
+                    "target": "civic-d5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "moa-preclinical"
+                }
+            ],
+            "source": "amp",
+            "sourceId": "Level D (Tier II)"
+        },
+        "cgi-case report": {
+            "displayName": "CGI Case report",
+            "source": "cgi",
+            "sourceId": "case report"
+        },
+        "cgi-cpic guidelines": {
+            "displayName": "CGI CPIC guidelines",
+            "source": "cgi",
+            "sourceId": "cpic guidelines"
+        },
+        "cgi-early trials": {
+            "displayName": "CGI Early trials",
+            "source": "cgi",
+            "sourceId": "early trials"
+        },
+        "cgi-european leukemianet guidelines": {
+            "displayName": "CGI European LeukemiaNet guidelines",
+            "source": "cgi",
+            "sourceId": "european leukemianet guidelines"
+        },
+        "cgi-fda guidelines": {
+            "displayName": "CGI FDA guidelines",
+            "source": "cgi",
+            "sourceId": "fda guidelines"
+        },
+        "cgi-late trials": {
+            "displayName": "CGI Late trials",
+            "source": "cgi",
+            "sourceId": "late trials"
+        },
+        "cgi-nccn guidelines": {
+            "displayName": "CGI NCCN guidelines",
+            "source": "cgi",
+            "sourceId": "nccn guidelines"
+        },
+        "cgi-nccn/cap guidelines": {
+            "displayName": "CGI NCCN/CAP guidelines",
+            "source": "cgi",
+            "sourceId": "nccn/cap guidelines"
+        },
+        "cgi-pre-clinical": {
+            "displayName": "CGI Pre-clinical",
+            "source": "cgi",
+            "sourceId": "pre-clinical"
+        },
+        "civic-a1": {
+            "description": "Trusted association in clinical medicine that routinely informs treatment, including large scale metaanalyses, standard of care associations, and organizational recommendations. Evidence likely does not belong in CIViC. Claim is not supported well by experimental evidence. Results are not reproducible, or have very small sample size. No follow-up is done to validate novel claims.",
+            "displayName": "CIViC A1",
+            "name": "a1",
+            "source": "civic",
+            "sourceId": "a1",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-a2": {
+            "description": "Trusted association in clinical medicine that routinely informs treatment, including large scale metaanalyses, standard of care associations, and organizational recommendations. Evidence is not well supported by experimental data, and little follow-up data is available. Publication is from a journal with low academic impact. Experiments may lack proper controls, have small sample size, or are not statistically convincing.",
+            "displayName": "CIViC A2",
+            "name": "a2",
+            "source": "civic",
+            "sourceId": "a2",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-a3": {
+            "description": "Trusted association in clinical medicine that routinely informs treatment, including large scale metaanalyses, standard of care associations, and organizational recommendations. Evidence is convincing, but not supported by a breadth of experiments. May be smaller scale projects, or novel results without many follow-up experiments. Discrepancies from expected results are explained and not concerning.",
+            "displayName": "CIViC A3",
+            "name": "a3",
+            "source": "civic",
+            "sourceId": "a3",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-a4": {
+            "description": "Trusted association in clinical medicine that routinely informs treatment, including large scale metaanalyses, standard of care associations, and organizational recommendations. Strong, well supported evidence. Experiments are well controlled, and results are convincing. Any discrepancies from expected results are well-explained and not concerning.",
+            "displayName": "CIViC A4",
+            "name": "a4",
+            "source": "civic",
+            "sourceId": "a4",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-a5": {
+            "description": "Trusted association in clinical medicine that routinely informs treatment, including large scale metaanalyses, standard of care associations, and organizational recommendations. Strong, well supported evidence from a lab or journal with respected academic standing. Experiments are well controlled, and results are clean and reproducible across multiple replicates. Evidence confirmed using separate methods.",
+            "displayName": "CIViC A5",
+            "name": "a5",
+            "source": "civic",
+            "sourceId": "a5",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-b1": {
+            "description": "Clinical evidence from clinical trials and other primary tumor data. Evidence likely does not belong in CIViC. Claim is not supported well by experimental evidence. Results are not reproducible, or have very small sample size. No follow-up is done to validate novel claims.",
+            "displayName": "CIViC B1",
+            "name": "b1",
+            "source": "civic",
+            "sourceId": "b1",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-b2": {
+            "description": "Clinical evidence from clinical trials and other primary tumor data. Evidence is not well supported by experimental data, and little follow-up data is available. Publication is from a journal with low academic impact. Experiments may lack proper controls, have small sample size, or are not statistically convincing.",
+            "displayName": "CIViC B2",
+            "name": "b2",
+            "source": "civic",
+            "sourceId": "b2",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-b3": {
+            "description": "Clinical evidence from clinical trials and other primary tumor data. Evidence is convincing, but not supported by a breadth of experiments. May be smaller scale projects, or novel results without many follow-up experiments. Discrepancies from expected results are explained and not concerning.",
+            "displayName": "CIViC B3",
+            "name": "b3",
+            "source": "civic",
+            "sourceId": "b3",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-b4": {
+            "description": "Clinical evidence from clinical trials and other primary tumor data. Strong, well supported evidence. Experiments are well controlled, and results are convincing. Any discrepancies from expected results are well-explained and not concerning.",
+            "displayName": "CIViC B4",
+            "name": "b4",
+            "source": "civic",
+            "sourceId": "b4",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-b5": {
+            "description": "Clinical evidence from clinical trials and other primary tumor data. Strong, well supported evidence from a lab or journal with respected academic standing. Experiments are well controlled, and results are clean and reproducible across multiple replicates. Evidence confirmed using separate methods.",
+            "displayName": "CIViC B5",
+            "name": "b5",
+            "source": "civic",
+            "sourceId": "b5",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-c1": {
+            "description": "Case study evidence from individual case reports in peer reviewed journals. Evidence likely does not belong in CIViC. Claim is not supported well by experimental evidence. Results are not reproducible, or have very small sample size. No follow-up is done to validate novel claims.",
+            "displayName": "CIViC C1",
+            "name": "c1",
+            "source": "civic",
+            "sourceId": "c1",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-c2": {
+            "description": "Case study evidence from individual case reports in peer reviewed journals. Evidence is not well supported by experimental data, and little follow-up data is available. Publication is from a journal with low academic impact. Experiments may lack proper controls, have small sample size, or are not statistically convincing.",
+            "displayName": "CIViC C2",
+            "name": "c2",
+            "source": "civic",
+            "sourceId": "c2",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-c3": {
+            "description": "Case study evidence from individual case reports in peer reviewed journals. Evidence is convincing, but not supported by a breadth of experiments. May be smaller scale projects, or novel results without many follow-up experiments. Discrepancies from expected results are explained and not concerning.",
+            "displayName": "CIViC C3",
+            "name": "c3",
+            "source": "civic",
+            "sourceId": "c3",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-c4": {
+            "description": "Case study evidence from individual case reports in peer reviewed journals. Strong, well supported evidence. Experiments are well controlled, and results are convincing. Any discrepancies from expected results are well-explained and not concerning.",
+            "displayName": "CIViC C4",
+            "name": "c4",
+            "source": "civic",
+            "sourceId": "c4",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-c5": {
+            "description": "Case study evidence from individual case reports in peer reviewed journals. Strong, well supported evidence from a lab or journal with respected academic standing. Experiments are well controlled, and results are clean and reproducible across multiple replicates. Evidence confirmed using separate methods.",
+            "displayName": "CIViC C5",
+            "name": "c5",
+            "source": "civic",
+            "sourceId": "c5",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-d1": {
+            "description": "Preclinical evidence from cell line studies, mouse models, and other in vitro or in vivo models. Evidence likely does not belong in CIViC. Claim is not supported well by experimental evidence. Results are not reproducible, or have very small sample size. No follow-up is done to validate novel claims.",
+            "displayName": "CIViC D1",
+            "name": "d1",
+            "source": "civic",
+            "sourceId": "d1",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-d2": {
+            "description": "Preclinical evidence from cell line studies, mouse models, and other in vitro or in vivo models. Evidence is not well supported by experimental data, and little follow-up data is available. Publication is from a journal with low academic impact. Experiments may lack proper controls, have small sample size, or are not statistically convincing.",
+            "displayName": "CIViC D2",
+            "name": "d2",
+            "source": "civic",
+            "sourceId": "d2",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-d3": {
+            "description": "Preclinical evidence from cell line studies, mouse models, and other in vitro or in vivo models. Evidence is convincing, but not supported by a breadth of experiments. May be smaller scale projects, or novel results without many follow-up experiments. Discrepancies from expected results are explained and not concerning.",
+            "displayName": "CIViC D3",
+            "name": "d3",
+            "source": "civic",
+            "sourceId": "d3",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-d4": {
+            "description": "Preclinical evidence from cell line studies, mouse models, and other in vitro or in vivo models. Strong, well supported evidence. Experiments are well controlled, and results are convincing. Any discrepancies from expected results are well-explained and not concerning.",
+            "displayName": "CIViC D4",
+            "name": "d4",
+            "source": "civic",
+            "sourceId": "d4",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-d5": {
+            "description": "Preclinical evidence from cell line studies, mouse models, and other in vitro or in vivo models. Strong, well supported evidence from a lab or journal with respected academic standing. Experiments are well controlled, and results are clean and reproducible across multiple replicates. Evidence confirmed using separate methods.",
+            "displayName": "CIViC D5",
+            "name": "d5",
+            "source": "civic",
+            "sourceId": "d5",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-e1": {
+            "description": "Inferential association made from experimental data. Evidence likely does not belong in CIViC. Claim is not supported well by experimental evidence. Results are not reproducible, or have very small sample size. No follow-up is done to validate novel claims.",
+            "displayName": "CIViC E1",
+            "name": "e1",
+            "source": "civic",
+            "sourceId": "e1",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-e2": {
+            "description": "Inferential association made from experimental data. Evidence is not well supported by experimental data, and little follow-up data is available. Publication is from a journal with low academic impact. Experiments may lack proper controls, have small sample size, or are not statistically convincing.",
+            "displayName": "CIViC E2",
+            "name": "e2",
+            "source": "civic",
+            "sourceId": "e2",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-e3": {
+            "description": "Inferential association made from experimental data. Evidence is convincing, but not supported by a breadth of experiments. May be smaller scale projects, or novel results without many follow-up experiments. Discrepancies from expected results are explained and not concerning.",
+            "displayName": "CIViC E3",
+            "name": "e3",
+            "source": "civic",
+            "sourceId": "e3",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-e4": {
+            "description": "Inferential association made from experimental data. Strong, well supported evidence. Experiments are well controlled, and results are convincing. Any discrepancies from expected results are well-explained and not concerning.",
+            "displayName": "CIViC E4",
+            "name": "e4",
+            "source": "civic",
+            "sourceId": "e4",
+            "url": "https://civicdb.org/glossary"
+        },
+        "civic-e5": {
+            "description": "Inferential association made from experimental data. Strong, well supported evidence from a lab or journal with respected academic standing. Experiments are well controlled, and results are clean and reproducible across multiple replicates. Evidence confirmed using separate methods.",
+            "displayName": "CIViC E5",
+            "name": "e5",
+            "source": "civic",
+            "sourceId": "e5",
+            "url": "https://civicdb.org/glossary"
+        },
+        "cosmic-1": {
+            "description": "Approved marketed drug with demonstrated efficacy at the mutation",
+            "displayName": "COSMIC-1",
+            "source": "cosmic",
+            "sourceId": "1"
+        },
+        "cosmic-2": {
+            "description": "Phase 2/3 clinical results meet primary outcome measures",
+            "displayName": "COSMIC-2",
+            "source": "cosmic",
+            "sourceId": "2"
+        },
+        "cosmic-3": {
+            "description": "Drug in ongoing clinical trials",
+            "displayName": "COSMIC-3",
+            "source": "cosmic",
+            "sourceId": "3"
+        },
+        "cosmic-4": {
+            "description": "Case studies",
+            "displayName": "COSMIC-4",
+            "source": "cosmic",
+            "sourceId": "4"
+        },
+        "cosmic-6": {
+            "description": "Use dependent on test for another mutation",
+            "displayName": "COSMIC-6",
+            "source": "cosmic",
+            "sourceId": "6"
+        },
+        "cosmic-7": {
+            "description": "Trial results all negative",
+            "displayName": "COSMIC-7",
+            "source": "cosmic",
+            "sourceId": "7"
+        },
+        "ipr-a": {
+            "description": "Evidence pertaining to biomarkers associated with FDA-approved therapies or professional guidelines for this tumour type",
+            "displayName": "IPR-A",
+            "source": "ipr",
+            "sourceId": "a"
+        },
+        "ipr-b": {
+            "description": "Evidence for biomarkers that predict response or resistance to therapies for this tumour type based on well-powered clinical trials with expert consensus.",
+            "displayName": "IPR-B",
+            "source": "ipr",
+            "sourceId": "b"
+        },
+        "ipr-c": {
+            "description": "Evidence that a biomarker predicts response or resistance to a drug based on case studies or small scale clinical trials, is an inclusion criteria for a clinical trial, or predicts response or resistance to FDA-approved or investigational drugs in another tumour type.",
+            "displayName": "IPR-C",
+            "source": "ipr",
+            "sourceId": "c"
+        },
+        "ipr-d": {
+            "description": "Evidence that demonstrates plausible therapeutic significance associated with the biomarker based on preclinical studies.",
+            "displayName": "IPR-D",
+            "source": "ipr",
+            "sourceId": "d"
+        },
+        "ipr-e": {
+            "description": "Inferred therapeutic association based on a variant of uncertain significance including copy variants and outlier expression of targetable genes without direct preclinical or clinical evidence.",
+            "displayName": "IPR-E",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "civic-e1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "civic-e2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "civic-e3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "civic-e4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "civic-e5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "source": "ipr",
+                    "target": "profyle-t5"
+                }
+            ],
+            "source": "ipr",
+            "sourceId": "e"
+        },
+        "moa-clinical evidence": {
+            "displayName": "Clinical evidence (MOA)",
+            "name": "Clinical evidence",
+            "source": "moa",
+            "sourceId": "Clinical evidence"
+        },
+        "moa-clinical trial": {
+            "displayName": "MOAlmanac Clinical trial",
+            "name": "Clinical trial",
+            "source": "moa",
+            "sourceId": "Clinical trial"
+        },
+        "moa-fda-approved": {
+            "displayName": "MOAlmanac FDA-Approved",
+            "name": "FDA-Approved",
+            "source": "moa",
+            "sourceId": "FDA-Approved"
+        },
+        "moa-guideline": {
+            "displayName": "MOAlmanac Guideline",
+            "name": "Guideline",
+            "source": "moa",
+            "sourceId": "Guideline"
+        },
+        "moa-inferential": {
+            "displayName": "MOAlmanac Inferential",
+            "links": [
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "civic-e1"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "civic-e2"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "civic-e3"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "civic-e4"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "civic-e5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "profyle-t5"
+                },
+                {
+                    "class": "CrossReferenceOf",
+                    "target": "ipr-e"
+                }
+            ],
+            "name": "Inferential",
+            "source": "moa",
+            "sourceId": "Inferential"
+        },
+        "moa-preclinical": {
+            "displayName": "MOAlmanac Preclinical",
+            "name": "Preclinical",
+            "source": "moa",
+            "sourceId": "Preclinical"
+        },
+        "oncokb-1": {
+            "description": "FDA-recognized biomarker predictive of response to an FDA-approved drug in this indication",
+            "displayName": "OncoKB 1",
+            "name": "1",
+            "source": "oncokb",
+            "sourceId": "1",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-2a": {
+            "description": "Standard care biomarker predictive of response to an FDA-approved drug in this indication",
+            "displayName": "OncoKB 2A",
+            "name": "2a",
+            "source": "oncokb",
+            "sourceId": "2a",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-2b": {
+            "description": "Standard care biomarker predictive of response to an FDA-approved drug in another indication but not standard care for this indication",
+            "displayName": "OncoKB 2B",
+            "name": "2b",
+            "source": "oncokb",
+            "sourceId": "2b",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-3a": {
+            "description": "Compelling clinical evidence supports the biomarker as being predictive of response to a drug in this indication",
+            "displayName": "OncoKB 3A",
+            "name": "3a",
+            "source": "oncokb",
+            "sourceId": "3a",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-3b": {
+            "description": "Compelling clinical evidence supports the biomarker as being predictive of response to a drug in another indication",
+            "displayName": "OncoKB 3B",
+            "name": "3b",
+            "source": "oncokb",
+            "sourceId": "3b",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-4": {
+            "description": "Compelling biological evidence supports the biomarker as being predictive of response to a drug",
+            "displayName": "OncoKB 4",
+            "name": "4",
+            "source": "oncokb",
+            "sourceId": "4",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-r1": {
+            "description": "Standard care biomarker predictive of resistance to an FDA-approved drug in this indication",
+            "displayName": "OncoKB R1",
+            "name": "r1",
+            "source": "oncokb",
+            "sourceId": "r1",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "oncokb-r2": {
+            "description": "Compelling clinical evidence supports the biomarker as being predictive of resistance to a drug",
+            "displayName": "OncoKB R2",
+            "name": "r2",
+            "source": "oncokb",
+            "sourceId": "r2",
+            "url": "http://oncokb.org/api/v1/levels"
+        },
+        "profyle-d1": {
+            "description": "Biomarkers included in professional guidelines as diagnostic for a specific type of tumor",
+            "displayName": "PROFYLE D1",
+            "name": "PROFYLE Diagnostic Level 1",
+            "source": "profyle",
+            "sourceId": "D1"
+        },
+        "profyle-d2": {
+            "description": "Biomarkers of diagnostic significance for a specific type of tumor based on well-powered studies with consensus from experts in the field",
+            "displayName": "PROFYLE D2",
+            "name": "PROFYLE Diagnostic Level 2",
+            "source": "profyle",
+            "sourceId": "D2"
+        },
+        "profyle-d3": {
+            "description": "Biomarkers of diagnostic significance based on the results of multiple small studies",
+            "displayName": "PROFYLE D3",
+            "name": "PROFYLE Diagnostic Level 3",
+            "source": "profyle",
+            "sourceId": "D3"
+        },
+        "profyle-d4": {
+            "description": "Biomarkers that may assist in disease diagnosis themselves or along with other biomarkers based on small studies or a few case reports",
+            "displayName": "PROFYLE D4",
+            "name": "PROFYLE Diagnostic Level 4",
+            "source": "profyle",
+            "sourceId": "D4"
+        },
+        "profyle-p1": {
+            "description": "Biomarkers included in professional guidelines as prognostic for a specific type of tumor",
+            "displayName": "PROFYLE P1",
+            "name": "PROFYLE Prognostic Level 1",
+            "source": "profyle",
+            "sourceId": "P1"
+        },
+        "profyle-p2": {
+            "description": "Biomarkers of prognostic significance for a specific type of tumor based on well-powered studies with consensus from experts in the field",
+            "displayName": "PROFYLE P2",
+            "name": "PROFYLE Prognostic Level 2",
+            "source": "profyle",
+            "sourceId": "P2"
+        },
+        "profyle-p3": {
+            "description": "Biomarkers of prognostic significance based on the results of multiple small studies",
+            "displayName": "PROFYLE P3",
+            "name": "PROFYLE Prognostic Level 3",
+            "source": "profyle",
+            "sourceId": "P3"
+        },
+        "profyle-p4": {
+            "description": "Biomarkers that may assist in disease prognosis themselves or along with other biomarkers based on small studies or a few case reports",
+            "displayName": "PROFYLE P4",
+            "name": "PROFYLE Prognostic Level 4",
+            "source": "profyle",
+            "sourceId": "P4"
+        },
+        "profyle-t1": {
+            "description": "Biomarkers that predict response or resistance to FDA/HC-approved therapies",
+            "displayName": "PROFYLE T1",
+            "name": "PROFYLE Therapeutic Level 1",
+            "source": "profyle",
+            "sourceId": "T1"
+        },
+        "profyle-t2": {
+            "description": "Biomarkers that predict response or resistance to therapies based on well-powered clinical trials",
+            "displayName": "PROFYLE T2",
+            "name": "PROFYLE Therapeutic Level 2",
+            "source": "profyle",
+            "sourceId": "T2"
+        },
+        "profyle-t3": {
+            "description": "Biomarkers that predict response or resistance to therapies based on small series, case-reports, or that serve as inclusion criteria for a clinical trial",
+            "displayName": "PROFYLE T3",
+            "name": "PROFYLE Therapeutic Level 3",
+            "source": "profyle",
+            "sourceId": "T3"
+        },
+        "profyle-t4": {
+            "description": "Biomarkers that show plausible therapeutic significance based on preclinical studies",
+            "displayName": "PROFYLE T4",
+            "name": "PROFYLE Therapeutic Level 4",
+            "source": "profyle",
+            "sourceId": "T4"
+        },
+        "profyle-t5": {
+            "description": "Novel biomarkers predicted to be oncogenic in therapeutically actionable genes, or evidence of activation of a therapeutically actionable pathway",
+            "displayName": "PROFYLE T5",
+            "name": "PROFYLE Therapeutic Level 5",
+            "source": "profyle",
+            "sourceId": "T5"
+        }
+    },
+    "sources": {
+        "amp": {
+            "name": "amp"
+        },
+        "cgi": {
+            "name": "cancer genome interpreter"
+        },
+        "civic": {
+            "name": "civic"
+        },
+        "cosmic": {
+
+            "name": "cosmic"
+        },
+        "cpic": {
+            "name": "cpic"
+        },
+        "vicc": {
+            "name": "Variant Interpretation for Cancer Consortium"
+        },
+        "default": {
+            "name": "graphkb"
+        },
+        "ipr": {
+            "name": "ipr"
+        },
+        "moa": {
+            "name": "moa"
+        },
+        "oncokb": {
+            "name": "oncokb"
+        },
+        "profyle": {
+            "name": "profyle"
+        }
+    }
+}

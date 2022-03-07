@@ -1,0 +1,61 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "224589815": {
+            "uid": "224589815",
+            "caption": "NC_000003",
+            "accessionversion": "NC_000003.11",
+            "sourcedb": "refseq",
+            "title": "Homo sapiens chromosome 3, GRCh37.p13 Primary Assembly",
+            "extra": "gi|224589815|gnl|ASM:GCF_000001305|3|ref|NC_000003.11||gpp|GPC_000000027.1||gnl|NCBI_GENOMES|3",
+            "gi": 224589815,
+            "createdate": "2002/08/29",
+            "updatedate": "2013/08/13",
+            "genome": "chromosome",
+            "organism": "Homo sapiens",
+            "taxid": 9606,
+            "geneticcode": "1",
+            "subtype": "chromosome",
+            "subname": "3",
+            "slen": 198022430,
+            "moltype": "dna",
+            "topology": "linear",
+            "properties": {
+                "na": "1",
+                "value": "1"
+            },
+            "biomol": "genomic",
+            "assemblyacc": "CM000665.1",
+            "assemblygi": 224384766,
+            "projectid": "PRJNA168",
+            "biosample": "",
+            "comment": "This sequence has been updated.",
+            "status": "replaced",
+            "replacedby": "NC_000003.12",
+            "flags": 544,
+            "oslt": {
+                "indexed": false,
+                "value": "NC_000003.11"
+            },
+            "idgiclass": {
+                "mol": "1",
+                "repr": "8",
+                "gi_state": "0",
+                "sat": "18",
+                "sat_key": "1915309",
+                "owner": "27",
+                "sat_name": "OLD13",
+                "owner_name": "NCBI-LegRefSeq",
+                "defdiv": "CGR",
+                "length": "198022430",
+                "extfeatmask": "0"
+            }
+        },
+        "uids": [
+            "224589815"
+        ]
+    }
+}

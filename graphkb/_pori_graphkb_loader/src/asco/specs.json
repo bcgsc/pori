@@ -1,0 +1,48 @@
+{
+    "details": {
+        "properties": {
+            "DOI": {
+                "type": "string"
+            },
+            "SiteCitation": {
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "main": {
+        "properties": {
+            "AbstID": {
+                "type": "string"
+            },
+            "AuthorString": {
+                "type": "string"
+            },
+            "Meeting": {
+                "type": "string"
+            },
+            "Title": {
+                "type": "string"
+            },
+            "Year": {
+                "pattern": "\\d+",
+                "type": "string"
+            },
+            "id": {
+                "type": "string"
+            },
+            "url": {
+                "format": "url",
+                "type": "string"
+            }
+        },
+        "required": [
+            "AbstID",
+            "Title",
+            "Meeting",
+            "url",
+            "id"
+        ],
+        "type": "object"
+    }
+}

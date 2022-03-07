@@ -1,0 +1,50 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "1519245592": {
+            "uid": "1519245592",
+            "caption": "NM_005228",
+            "title": "Homo sapiens epidermal growth factor receptor (EGFR), transcript variant 1, mRNA",
+            "extra": "gi|1519245592|ref|NM_005228.5|",
+            "gi": 1519245592,
+            "createdate": "1999/05/24",
+            "updatedate": "2019/07/06",
+            "flags": 512,
+            "taxid": 9606,
+            "slen": 9905,
+            "biomol": "mRNA",
+            "moltype": "rna",
+            "topology": "linear",
+            "sourcedb": "refseq",
+            "segsetsize": "",
+            "projectid": "0",
+            "genome": "genomic",
+            "subtype": "chromosome|map",
+            "subname": "7|7p11.2",
+            "assemblygi": "",
+            "assemblyacc": "AW450657.1",
+            "tech": "",
+            "completeness": "complete",
+            "geneticcode": "1",
+            "strand": "",
+            "organism": "human",
+            "strain": "",
+            "biosample": "",
+            "properties": {
+                "na": "1",
+                "value": "1"
+            },
+            "oslt": {
+                "indexed": true,
+                "value": "NM_005228.5"
+            },
+            "accessionversion": "NM_005228.5"
+        },
+        "uids": [
+            "1519245592"
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "id": 86,
+    "entrez_name": "NPM1",
+    "entrez_id": 4869,
+    "name": "EXON 12 MUTATION",
+    "description": "NPM1 exon 12 mutations are frequently identified in patients with cytogenetically normal acute myeloid leukemia (AML) and often co-occur with FLT3-ITD. FLT3 status should also be evaluated as co-occurence with FLT3-ITD may impact prognosis. Exon 12 mutations have been identified as a predictor of good prognostic outcomes in the absence of FLT3-ITD. Due to their high frequency, NPM1 mutations have been retrospectively analyzed in the context of a number of therapies including variable results following ATRA treatment as well as improved response to high-dose daunorubicin or valproic acid. Additionally, multiple groups have shown increased surface expression of CD33 associated with NPM1 mutation, suggesting these patients may respond to anti-CD33 therapy. Cytoplasmic sequestration of NPM1 (NPM1c) is associated with a good response to induction therapy.",
+    "gene_id": 35,
+    "type": "variant",
+    "variant_types": [
+        {
+            "id": 99,
+            "name": "exon_variant",
+            "display_name": "Exon Variant",
+            "so_id": "SO:0001791",
+            "description": "A sequence variant that changes exon sequence.",
+            "url": "http://www.sequenceontology.org/browser/current_svn/term/SO:0001791"
+        }
+    ],
+    "civic_actionability_score": 454.0,
+    "coordinates": {
+        "chromosome": "5",
+        "start": 170837531,
+        "stop": 170837569,
+        "reference_bases": null,
+        "variant_bases": null,
+        "representative_transcript": "ENST00000517671.1",
+        "chromosome2": null,
+        "start2": null,
+        "stop2": null,
+        "representative_transcript2": null,
+        "ensembl_version": 75,
+        "reference_build": "GRCh37"
+    },
+    "assertions": [],
+    "variant_aliases": [],
+    "hgvs_expressions": [],
+    "clinvar_entries": [
+        "N/A"
+    ],
+    "sources": [],
+    "allele_registry_id": null,
+    "provisional_values": {},
+    "errors": {}
+}

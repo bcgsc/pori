@@ -1,0 +1,57 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "5901912": {
+            "uid": "5901912",
+            "caption": "NP_008819",
+            "accessionversion": "NP_008819.1",
+            "sourcedb": "refseq",
+            "title": "calmodulin-1 isoform 2 [Homo sapiens]",
+            "extra": "gi|5901912|ref|NP_008819.1|",
+            "gi": 5901912,
+            "createdate": "1999/09/16",
+            "updatedate": "2019/07/02",
+            "genome": "genomic",
+            "organism": "Homo sapiens",
+            "taxid": 9606,
+            "geneticcode": "1",
+            "subtype": "chromosome|map",
+            "subname": "14|14q32.11",
+            "slen": 149,
+            "moltype": "aa",
+            "topology": "linear",
+            "properties": {
+                "aa": "2",
+                "value": "2"
+            },
+            "biomol": "peptide",
+            "assemblyacc": "AI651063.1",
+            "biosample": "",
+            "flags": 512,
+            "oslt": {
+                "indexed": false,
+                "value": "NP_008819.1"
+            },
+            "comment": "",
+            "idgiclass": {
+                "mol": "3",
+                "repr": "2",
+                "gi_state": "10",
+                "sat": "4",
+                "sat_key": "338370135",
+                "owner": "20",
+                "sat_name": "NCBI",
+                "owner_name": "NCBI-Genomes",
+                "defdiv": "GNM",
+                "length": "149",
+                "extfeatmask": "9"
+            }
+        },
+        "uids": [
+            "5901912"
+        ]
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "uids": [
+            "30016509"
+        ],
+        "30016509": {
+            "uid": "30016509",
+            "pubdate": "2019 Feb 1",
+            "epubdate": "",
+            "source": "Bioinformatics",
+            "authors": [
+                {
+                    "name": "Reisle C",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Mungall KL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Choo C",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Paulino D",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Bleile DW",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Muhammadzadeh A",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Mungall AJ",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Moore RA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Shlafman I",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Coope R",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Pleasance S",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Ma Y",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Jones SJM",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Jones SJM",
+            "title": "MAVIS: merging, annotation, validation, and illustration of structural variants.",
+            "sorttitle": "mavis merging annotation validation and illustration of structural variants",
+            "volume": "35",
+            "issue": "3",
+            "pages": "515-517",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9808944",
+            "issn": "1367-4803",
+            "essn": "1367-4811",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - in process",
+            "pubstatus": "4",
+            "articleids": [
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "30016509"
+                },
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "5055126"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1093/bioinformatics/bty621"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "30016509"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "30016509"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "received",
+                    "date": "2018/02/02 00:00"
+                },
+                {
+                    "pubstatus": "accepted",
+                    "date": "2018/07/12 00:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2018/07/18 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2018/07/18 06:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2018/07/18 06:00"
+                }
+            ],
+            "references": [],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 1,
+            "fulljournalname": "Bioinformatics (Oxford, England)",
+            "elocationid": "doi: 10.1093/bioinformatics/bty621",
+            "doctype": "citation",
+            "srccontriblist": [],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2019/02/01 00:00",
+            "sortfirstauthor": "Reisle C",
+            "vernaculartitle": ""
+        }
+    }
+}

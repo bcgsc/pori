@@ -1,0 +1,234 @@
+{
+  "graphs": [
+    {
+      "id": "http://purl.obolibrary.org/obo/doid.owl",
+      "meta": {
+        "subsets": [],
+        "xrefs": [],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/description",
+            "val": "The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts."
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/title",
+            "val": "Human Disease Ontology"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "https://creativecommons.org/publicdomain/zero/1.0/"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#date",
+            "val": "13:05:2019 09:58"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
+            "val": "disease_ontology"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+            "val": "1.2"
+          },
+          {
+            "pred": "http://www.geneontology.org/formats/oboInOwl#saved-by",
+            "val": "lschriml"
+          },
+          {
+            "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "val": "The Disease Ontology content is available via the Creative Commons Public Domain Dedication CC0 1.0 Universal license (https://creativecommons.org/publicdomain/zero/1.0/)."
+          }
+        ],
+        "version": "http://purl.obolibrary.org/obo/doid/releases/2019-05-13/doid.owl"
+      },
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/DOID_8718",
+          "meta": {
+            "definition": {
+              "val": "A carcinoma in situ that is characterized by the spread of cancer in the respiratory system and the lack of invasion of surrounding tissues.",
+              "xrefs": [
+                "url:http://en.wikipedia.org/wiki/Carcinoma_in_situ"
+              ]
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "carcinoma in situ of respiratory tract (disorder)",
+                "xrefs": [
+                  "SNOMEDCT_2005_07_31:92698005"
+                ]
+              }
+            ],
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "DOID:8965"
+              },
+              {
+                "pred": "http://www.w3.org/2002/07/owl#deprecated",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "disease_ontology"
+              }
+            ]
+          },
+          "type": "CLASS",
+          "lbl": "obsolete carcinoma in situ of respiratory system"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/DOID_8717",
+          "meta": {
+            "definition": {
+              "val": "Decubitus ulcer is a chronic ulcer of skin where the ulcer is an ulceration of tissue deprived of adequate blood supply by prolonged pressure.",
+              "xrefs": [
+                "url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=bedsore"
+              ]
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/doid#NCIthesaurus"
+            ],
+            "xrefs": [
+              {
+                "val": "ICD9CM:707.00"
+              },
+              {
+                "val": "NCI:C50706"
+              },
+              {
+                "val": "SNOMEDCT_US_2018_03_01:28103007"
+              },
+              {
+                "val": "ICD10CM:L89.9"
+              },
+              {
+                "val": "MTHICD9_2006:707.0"
+              },
+              {
+                "val": "MESH:D003668"
+              },
+              {
+                "val": "MTH:U000022"
+              },
+              {
+                "val": "SNOMEDCT_US_2018_03_01:90144002"
+              },
+              {
+                "val": "ICD9CM:707.0"
+              },
+              {
+                "val": "CSP2005:2718-0434"
+              },
+              {
+                "val": "UMLS_CUI:C0011127"
+              },
+              {
+                "val": "ICD10CM:L89"
+              }
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer any site",
+                "xrefs": [
+                  "MTHICD9_2006:707.0"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer, lower back",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "pressure sores",
+                "xrefs": [
+                  "MTH:U000022"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer, elbow",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer, upper back",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus (pressure) ulcer",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "pressure ulcer",
+                "xrefs": [
+                  "CSP2005:2718-0434"
+                ]
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "Decubitus ulcer, other site",
+                "xrefs": []
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "bedsore",
+                "xrefs": []
+              }
+            ],
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "DOID:8808"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "DOID:9129"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "disease_ontology"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "DOID:9029"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "DOID:9002"
+              }
+            ]
+          },
+          "type": "CLASS",
+          "lbl": "decubitus ulcer"
+        }
+      ],
+      "edges": [
+        {
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_51959",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_51958"
+        },
+        {
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_17334",
+          "pred": "is_a",
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_25865"
+        }
+      ],
+      "equivalentNodesSets": [],
+      "logicalDefinitionAxioms": [],
+      "domainRangeAxioms": [],
+      "propertyChainAxioms": []
+    }
+  ]
+}

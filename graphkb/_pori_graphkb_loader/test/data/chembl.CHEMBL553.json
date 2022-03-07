@@ -1,0 +1,174 @@
+{
+    "atc_classifications": [
+        "L01XE03"
+    ],
+    "availability_type": "1",
+    "biotherapeutic": null,
+    "black_box_warning": "0",
+    "chebi_par_id": 114785,
+    "chirality": "2",
+    "cross_references": [
+        {
+            "xref_id": "erlotinib%20hydrochloride",
+            "xref_name": "erlotinib hydrochloride",
+            "xref_src": "DailyMed"
+        },
+        {
+            "xref_id": "103905339",
+            "xref_name": "SID: 103905339",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "124893165",
+            "xref_name": "SID: 124893165",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "124893166",
+            "xref_name": "SID: 124893166",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "144205755",
+            "xref_name": "SID: 144205755",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "170465434",
+            "xref_name": "SID: 170465434",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "26757996",
+            "xref_name": "SID: 26757996",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "50100099",
+            "xref_name": "SID: 50100099",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "85267493",
+            "xref_name": "SID: 85267493",
+            "xref_src": "PubChem"
+        },
+        {
+            "xref_id": "Erlotinib",
+            "xref_name": null,
+            "xref_src": "Wikipedia"
+        }
+    ],
+    "dosed_ingredient": true,
+    "first_approval": 2004,
+    "first_in_class": "0",
+    "helm_notation": null,
+    "indication_class": null,
+    "inorganic_flag": "0",
+    "max_phase": 4,
+    "molecule_chembl_id": "CHEMBL553",
+    "molecule_hierarchy": {
+        "molecule_chembl_id": "CHEMBL553",
+        "parent_chembl_id": "CHEMBL553"
+    },
+    "molecule_properties": {
+        "acd_logd": "3.03",
+        "acd_logp": "3.03",
+        "acd_most_apka": null,
+        "acd_most_bpka": "5.32",
+        "alogp": "3.41",
+        "aromatic_rings": 3,
+        "full_molformula": "C22H23N3O4",
+        "full_mwt": "393.44",
+        "hba": 7,
+        "hba_lipinski": 7,
+        "hbd": 1,
+        "hbd_lipinski": 1,
+        "heavy_atoms": 29,
+        "molecular_species": "NEUTRAL",
+        "mw_freebase": "393.44",
+        "mw_monoisotopic": "393.1689",
+        "num_lipinski_ro5_violations": 0,
+        "num_ro5_violations": 0,
+        "psa": "74.73",
+        "qed_weighted": "0.42",
+        "ro3_pass": "N",
+        "rtb": 10
+    },
+    "molecule_structures": {
+        "canonical_smiles": "COCCOc1cc2ncnc(Nc3cccc(c3)C#C)c2cc1OCCOC",
+        "standard_inchi": "InChI=1S/C22H23N3O4/c1-4-16-6-5-7-17(12-16)25-22-18-13-20(28-10-8-26-2)21(29-11-9-27-3)14-19(18)23-15-24-22/h1,5-7,12-15H,8-11H2,2-3H3,(H,23,24,25)",
+        "standard_inchi_key": "AAKJLRGGTJKAMG-UHFFFAOYSA-N"
+    },
+    "molecule_synonyms": [
+        {
+            "molecule_synonym": "CP-358774",
+            "syn_type": "RESEARCH_CODE",
+            "synonyms": "CP-358774"
+        },
+        {
+            "molecule_synonym": "Erlotinib",
+            "syn_type": "ATC",
+            "synonyms": "ERLOTINIB"
+        },
+        {
+            "molecule_synonym": "Erlotinib",
+            "syn_type": "BNF",
+            "synonyms": "ERLOTINIB"
+        },
+        {
+            "molecule_synonym": "Erlotinib",
+            "syn_type": "INN",
+            "synonyms": "ERLOTINIB"
+        },
+        {
+            "molecule_synonym": "Erlotinib",
+            "syn_type": "FDA",
+            "synonyms": "Erlotinib"
+        },
+        {
+            "molecule_synonym": "OSI-774",
+            "syn_type": "RESEARCH_CODE",
+            "synonyms": "OSI-774"
+        },
+        {
+            "molecule_synonym": "R-1415",
+            "syn_type": "RESEARCH_CODE",
+            "synonyms": "R-1415"
+        },
+        {
+            "molecule_synonym": "RG-1415",
+            "syn_type": "RESEARCH_CODE",
+            "synonyms": "RG-1415"
+        },
+        {
+            "molecule_synonym": "Ro-508231",
+            "syn_type": "RESEARCH_CODE",
+            "synonyms": "Ro-508231"
+        },
+        {
+            "molecule_synonym": "Tarceva",
+            "syn_type": "TRADE_NAME",
+            "synonyms": "TARCEVA"
+        }
+    ],
+    "molecule_type": "Small molecule",
+    "natural_product": "0",
+    "oral": true,
+    "parenteral": false,
+    "polymer_flag": false,
+    "pref_name": "ERLOTINIB",
+    "prodrug": "0",
+    "structure_type": "MOL",
+    "therapeutic_flag": true,
+    "topical": false,
+    "usan_stem": "-tinib",
+    "usan_stem_definition": "tyrosine kinase inhibitors",
+    "usan_substem": "-tinib",
+    "usan_year": 2001,
+    "withdrawn_class": null,
+    "withdrawn_country": null,
+    "withdrawn_flag": false,
+    "withdrawn_reason": null,
+    "withdrawn_year": null
+}

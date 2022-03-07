@@ -1,0 +1,29 @@
+h4.name {
+    background: #111955;
+    color:  #FED766;
+    box-shadow: none;
+}
+
+.signature {
+    color: #EFF1F3;
+}
+
+.type-signature {
+    color: #EFF1F3;
+}
+
+.param-type {
+    color: #009FB7 !important;
+}
+
+.signature-attributes {
+
+}
+
+a {
+    color: #111955 !important;
+}
+
+img {
+    max-height: 85vh !important;
+}

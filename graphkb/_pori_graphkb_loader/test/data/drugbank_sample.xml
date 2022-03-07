@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drugbank xmlns="http://www.drugbank.ca" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.drugbank.ca http://www.drugbank.ca/docs/drugbank.xsd" version="5.1" exported-on="2018-07-03">
+  <drug type="small molecule" created="2005-06-13" updated="2019-07-02">
+    <drugbank-id primary="true">DB00530</drugbank-id>
+    <drugbank-id>APRD00951</drugbank-id>
+    <name>Erlotinib</name>
+    <description>Erlotinib is an inhibitor of the epidermal growth factor receptor (EGFR) tyrosine kinase that is used in the treatment of non-small cell lung cancer, pancreatic cancer and several other types of cancer. It is typically marketed under the trade name Tarceva. Erlotinib binds to the epidermal growth factor receptor (EGFR) tyrosine kinase in a reversible fashion at the adenosine triphosphate (ATP) binding site of the receptor. Recent studies demonstrate that erlotinib is also a potent inhibitor of JAK2V617F, which is a mutant form of tyrosine kinase JAK2 found in most patients with polycythemia vera (PV) and a substantial proportion of patients with idiopathic myelofibrosis or essential thrombocythemia. This finding introduces the potential use of erlotinib in the treatment of JAK2V617F-positive PV and other myeloproliferative disorders.</description>
+    <cas-number>183321-74-6</cas-number>
+    <unii>J4T82NDH7E</unii>
+    <average-mass>393.4357</average-mass>
+    <monoisotopic-mass>393.168856239</monoisotopic-mass>
+    <state>solid</state>
+    <groups>
+      <group>approved</group>
+      <group>investigational</group>
+    </groups>
+    <synthesis-reference/>
+    <pharmacodynamics/>
+    <mechanism-of-action>The mechanism of clinical antitumor action of erlotinib is not fully characterized. Erlotinib inhibits the intracellular phosphorylation of tyrosine kinase associated with the epidermal growth factor receptor (EGFR). Specificity of inhibition with regard to other tyrosine kinase receptors has not been fully characterized. EGFR is expressed on the cell surface of normal cells and cancer cells.</mechanism-of-action>
+    <toxicity>Symptoms of overdose include diarrhea, rash, and liver transaminase elevation. The most common adverse reactions (&gt;50%) in NSCLC are rash, diarrhea, anorexia and fatigue. The most common adverse reactions (&gt;50%) in pancreatic cancer are fatigue, rash, nausea and anorexia. </toxicity>
+    <metabolism>Metabolism occurs in the liver. In vitro assays of cytochrome P450 metabolism showed that erlotinib is metabolized primarily by CYP3A4 and to a lesser extent by CYP1A2, and the extrahepatic isoform CYP1A1.</metabolism>
+    <absorption>Erlotinib is about 60% absorbed after oral administration and its bioavailability is substantially increased by food to almost 100%. Peak plasma levels occur 4 hours after dosing. The solubility of erlotinib is pH dependent. Solubility decreases pH increases. Smoking also decrease the exposure of erlotinib. </absorption>
+    <half-life>Median half-life of 36.2 hours.</half-life>
+    <protein-binding>93% protein bound to albumin and alpha-1 acid glycoprotein (AAG)</protein-binding>
+    <route-of-elimination>Following a 100 mg oral dose, 91% of the dose was recovered in which 83% was in feces (1% of the dose as unchanged parent compound) and 8% in urine (0.3% of the dose as unchanged parent compound). </route-of-elimination>
+    <volume-of-distribution>Apparent volume of distribution = 232 L </volume-of-distribution>
+    <clearance>Smokers have a 24% higher rate of erlotinib clearance. </clearance>
+    <classification>
+      <description>This compound belongs to the class of organic compounds known as quinazolinamines. These are heterocyclic aromatic compounds containing a quianazoline moiety substituted by one or more amine groups.</description>
+      <direct-parent>Quinazolinamines</direct-parent>
+      <kingdom>Organic compounds</kingdom>
+      <superclass>Organoheterocyclic compounds</superclass>
+      <class>Diazanaphthalenes</class>
+      <subclass>Benzodiazines</subclass>
+      <alternative-parent>Acetylides</alternative-parent>
+      <alternative-parent>Alkyl aryl ethers</alternative-parent>
+      <alternative-parent>Aminopyrimidines and derivatives</alternative-parent>
+      <alternative-parent>Aniline and substituted anilines</alternative-parent>
+      <alternative-parent>Azacyclic compounds</alternative-parent>
+      <alternative-parent>Dialkyl ethers</alternative-parent>
+      <alternative-parent>Heteroaromatic compounds</alternative-parent>
+      <alternative-parent>Hydrocarbon derivatives</alternative-parent>
+      <alternative-parent>Imidolactams</alternative-parent>
+      <alternative-parent>Organopnictogen compounds</alternative-parent>
+      <alternative-parent>Secondary amines</alternative-parent>
+      <substituent>Acetylide</substituent>
+      <substituent>Alkyl aryl ether</substituent>
+      <substituent>Amine</substituent>
+      <substituent>Aminopyrimidine</substituent>
+      <substituent>Aniline or substituted anilines</substituent>
+      <substituent>Aromatic heteropolycyclic compound</substituent>
+      <substituent>Azacycle</substituent>
+      <substituent>Benzenoid</substituent>
+      <substituent>Dialkyl ether</substituent>
+      <substituent>Ether</substituent>
+      <substituent>Heteroaromatic compound</substituent>
+      <substituent>Hydrocarbon derivative</substituent>
+      <substituent>Imidolactam</substituent>
+      <substituent>Monocyclic benzene moiety</substituent>
+      <substituent>Organic nitrogen compound</substituent>
+      <substituent>Organic oxygen compound</substituent>
+      <substituent>Organonitrogen compound</substituent>
+      <substituent>Organooxygen compound</substituent>
+      <substituent>Organopnictogen compound</substituent>
+      <substituent>Pyrimidine</substituent>
+      <substituent>Quinazolinamine</substituent>
+      <substituent>Secondary amine</substituent>
+    </classification>
+    <synonyms>
+      <synonym language="english" coder="">[6,7-Bis-(2-methoxy-ethoxy)-quinazolin-4-yl]-(3-ethynyl-phenyl)-amine</synonym>
+      <synonym language="english" coder="inn">Erlotinib</synonym>
+    </synonyms>
+    <products>
+      <product>
+        <name>Apo-erlotinib</name>
+        <labeller>Apotex Corporation</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02461862</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2017-08-22</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Apo-erlotinib</name>
+        <labeller>Apotex Corporation</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02461870</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2017-08-22</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Apo-erlotinib</name>
+        <labeller>Apotex Corporation</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02461889</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2017-08-22</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Erlotinib</name>
+        <labeller>Teva Pharmaceuticals USA, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>0093-7663</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-09</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091059</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib</name>
+        <labeller>Teva Pharmaceuticals USA, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>0093-7664</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-09</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>150 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091059</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Pharmaceuticals Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>0378-7131</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-09</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>25 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Pharmaceuticals Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>0378-7132</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-09</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Pharmaceuticals Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>0378-7133</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-09</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>150 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Institutional Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>42292-051</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-28</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>25 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Institutional Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>42292-052</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-28</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Erlotinib Hydrochloride</name>
+        <labeller>Mylan Institutional Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>42292-053</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2019-05-28</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>150 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>ANDA091002</fda-application-number>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Nat-erlotinib</name>
+        <labeller>Natco Pharma Limited</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02483912</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on/>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Nat-erlotinib</name>
+        <labeller>Natco Pharma Limited</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02483920</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on/>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Nat-erlotinib</name>
+        <labeller>Natco Pharma Limited</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02483939</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on/>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>PMS-erlotinib</name>
+        <labeller>Pharmascience Inc</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02454394</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2016-07-28</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>PMS-erlotinib</name>
+        <labeller>Pharmascience Inc</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02454386</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2016-07-28</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Hoffmann La Roche</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02269007</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2007-01-05</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Hoffmann La Roche</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02269015</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-07-19</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Hoffmann La Roche</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02269023</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-07-19</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Roche Registration Gmb H</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id/>
+        <ema-product-code>EMEA/H/C/000618</ema-product-code>
+        <ema-ma-number>EU/1/05/311/001</ema-ma-number>
+        <started-marketing-on>2005-09-19</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>25 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>EU</country>
+        <source>EMA</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Roche Registration Gmb H</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id/>
+        <ema-product-code>EMEA/H/C/000618</ema-product-code>
+        <ema-ma-number>EU/1/05/311/002</ema-ma-number>
+        <started-marketing-on>2005-09-19</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>EU</country>
+        <source>EMA</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Roche Registration Gmb H</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id/>
+        <ema-product-code>EMEA/H/C/000618</ema-product-code>
+        <ema-ma-number>EU/1/05/311/003</ema-ma-number>
+        <started-marketing-on>2005-09-19</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet, film coated</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>EU</country>
+        <source>EMA</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Physicians Total Care, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>54868-5290</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-07-01</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Physicians Total Care, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>54868-5474</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-11-21</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Physicians Total Care, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>54868-5447</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-10-13</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Avera McKennan Hospital</labeller>
+        <ndc-id/>
+        <ndc-product-code>69189-0063</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2015-04-01</started-marketing-on>
+        <ended-marketing-on>2018-05-21</ended-marketing-on>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Genentech, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>50242-062</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-04-30</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Genentech, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>50242-063</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-04-30</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Tarceva</name>
+        <labeller>Genentech, Inc.</labeller>
+        <ndc-id/>
+        <ndc-product-code>50242-064</ndc-product-code>
+        <dpd-id/>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2005-04-30</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg/1</strength>
+        <route>Oral</route>
+        <fda-application-number>NDA021743</fda-application-number>
+        <generic>false</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>US</country>
+        <source>FDA NDC</source>
+      </product>
+      <product>
+        <name>Teva-erlotinib</name>
+        <labeller>Teva</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02377691</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2014-12-08</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>25 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Teva-erlotinib</name>
+        <labeller>Teva</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02377705</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2014-12-08</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>100 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+      <product>
+        <name>Teva-erlotinib</name>
+        <labeller>Teva</labeller>
+        <ndc-id/>
+        <ndc-product-code/>
+        <dpd-id>02377713</dpd-id>
+        <ema-product-code/>
+        <ema-ma-number/>
+        <started-marketing-on>2014-12-08</started-marketing-on>
+        <ended-marketing-on/>
+        <dosage-form>Tablet</dosage-form>
+        <strength>150 mg</strength>
+        <route>Oral</route>
+        <fda-application-number/>
+        <generic>true</generic>
+        <over-the-counter>false</over-the-counter>
+        <approved>true</approved>
+        <country>Canada</country>
+        <source>DPD</source>
+      </product>
+    </products>
+    <international-brands/>
+    <mixtures>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>PMS-erlotinib</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>PMS-erlotinib</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Tarceva</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Erlotinib</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Erlotinib</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+      <mixture>
+        <name>Erlotinib Hydrochloride</name>
+        <ingredients>Erlotinib</ingredients>
+      </mixture>
+    </mixtures>
+    <manufacturers>
+      <manufacturer generic="false" url="">Osi pharmaceuticals inc</manufacturer>
+    </manufacturers>
+    <prices>
+      <price>
+        <description>Tarceva 25 mg tablet</description>
+        <cost currency="USD">52.78</cost>
+        <unit>tablet</unit>
+      </price>
+      <price>
+        <description>Tarceva 100 mg tablet</description>
+        <cost currency="USD">144.98</cost>
+        <unit>tablet</unit>
+      </price>
+      <price>
+        <description>Tarceva 150 mg tablet</description>
+        <cost currency="USD">163.98</cost>
+        <unit>tablet</unit>
+      </price>
+    </prices>
+    <categories>
+      <category>
+        <category>Antineoplastic Agents</category>
+        <mesh-id>D000970</mesh-id>
+      </category>
+      <category>
+        <category>Antineoplastic and Immunomodulating Agents</category>
+        <mesh-id/>
+      </category>
+    </categories>
+    <affected-organisms>
+      <affected-organism>Humans and other mammals</affected-organism>
+    </affected-organisms>
+    <dosages>
+      <dosage>
+        <form>Tablet, film coated</form>
+        <route>Oral</route>
+        <strength>100 mg/1</strength>
+      </dosage>
+    </dosages>
+    <atc-codes>
+      <atc-code code="L01XE03">
+        <level code="L01XE">Protein kinase inhibitors</level>
+        <level code="L01X">OTHER ANTINEOPLASTIC AGENTS</level>
+        <level code="L01">ANTINEOPLASTIC AGENTS</level>
+        <level code="L">ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS</level>
+      </atc-code>
+    </atc-codes>
+    <ahfs-codes>
+      <ahfs-code>10:00.00</ahfs-code>
+    </ahfs-codes>
+    <pdb-entries>
+      <pdb-entry>1m17</pdb-entry>
+      <pdb-entry>4hjo</pdb-entry>
+      <pdb-entry>6dwn</pdb-entry>
+    </pdb-entries>
+    <fda-label>//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB00530.pdf?1554242002</fda-label>
+    <msds>//s3-us-west-2.amazonaws.com/drugbank/msds/DB00530.pdf?1374102999</msds>
+    <food-interactions>
+      <food-interaction>Take at least 1 hour before or 2 hours after any food.</food-interaction>
+      <food-interaction>Take with a glass of water.</food-interaction>
+    </food-interactions>
+    <drug-interactions>
+      <drug-interaction>
+        <drugbank-id>DB08916</drugbank-id>
+        <name>Afatinib</name>
+        <description>The serum concentration of Afatinib can be increased when it is combined with Erlotinib.</description>
+      </drug-interaction>
+    </drug-interactions>
+    <calculated-properties>
+      <property>
+        <kind>logP</kind>
+        <value>3.13</value>
+        <source>ALOGPS</source>
+      </property>
+      <property>
+        <kind>logS</kind>
+        <value>-4.6</value>
+        <source>ALOGPS</source>
+      </property>
+      <property>
+        <kind>Water Solubility</kind>
+        <value>8.91e-03 g/l</value>
+        <source>ALOGPS</source>
+      </property>
+      <property>
+        <kind>logP</kind>
+        <value>3.2</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>IUPAC Name</kind>
+        <value>N-(3-ethynylphenyl)-6,7-bis(2-methoxyethoxy)quinazolin-4-amine</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Traditional IUPAC Name</kind>
+        <value>erlotinib</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Molecular Weight</kind>
+        <value>393.4357</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Monoisotopic Weight</kind>
+        <value>393.168856239</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>SMILES</kind>
+        <value>COCCOC1=CC2=C(C=C1OCCOC)C(NC1=CC(=CC=C1)C#C)=NC=N2</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Molecular Formula</kind>
+        <value>C22H23N3O4</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>InChI</kind>
+        <value>InChI=1S/C22H23N3O4/c1-4-16-6-5-7-17(12-16)25-22-18-13-20(28-10-8-26-2)21(29-11-9-27-3)14-19(18)23-15-24-22/h1,5-7,12-15H,8-11H2,2-3H3,(H,23,24,25)</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>InChIKey</kind>
+        <value>AAKJLRGGTJKAMG-UHFFFAOYSA-N</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Polar Surface Area (PSA)</kind>
+        <value>74.73</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Refractivity</kind>
+        <value>107.79</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Polarizability</kind>
+        <value>43.48</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Rotatable Bond Count</kind>
+        <value>10</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>H Bond Acceptor Count</kind>
+        <value>7</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>H Bond Donor Count</kind>
+        <value>1</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>pKa (strongest acidic)</kind>
+        <value>16.14</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>pKa (strongest basic)</kind>
+        <value>4.62</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Physiological Charge</kind>
+        <value>0</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Number of Rings</kind>
+        <value>3</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Bioavailability</kind>
+        <value>1</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Rule of Five</kind>
+        <value>1</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>Ghose Filter</kind>
+        <value>1</value>
+        <source>ChemAxon</source>
+      </property>
+      <property>
+        <kind>MDDR-Like Rule</kind>
+        <value>1</value>
+        <source>ChemAxon</source>
+      </property>
+    </calculated-properties>
+    <external-identifiers>
+      <external-identifier>
+        <resource>Drugs Product Database (DPD)</resource>
+        <identifier>12481</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>ChEBI</resource>
+        <identifier>114785</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>PubChem Compound</resource>
+        <identifier>176870</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>PubChem Substance</resource>
+        <identifier>46508021</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>KEGG Drug</resource>
+        <identifier>D07907</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>ChemSpider</resource>
+        <identifier>154044</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>BindingDB</resource>
+        <identifier>5446</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>PharmGKB</resource>
+        <identifier>PA134687924</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>PDB</resource>
+        <identifier>AQ4</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>Therapeutic Targets Database</resource>
+        <identifier>DAP001010</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>Wikipedia</resource>
+        <identifier>Erlotinib</identifier>
+      </external-identifier>
+      <external-identifier>
+        <resource>ChEMBL</resource>
+        <identifier>CHEMBL553</identifier>
+      </external-identifier>
+    </external-identifiers>
+    <snp-adverse-drug-reactions/>
+    <targets>
+      <target>
+        <id>BE0000767</id>
+        <name>Epidermal growth factor receptor</name>
+        <organism>Humans</organism>
+        <actions>
+          <action>antagonist</action>
+        </actions>
+        <known-action>yes</known-action>
+        <polypeptide id="P00533" source="Swiss-Prot">
+          <name>Epidermal growth factor receptor</name>
+          <general-function>Ubiquitin protein ligase binding</general-function>
+          <specific-function>Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses. Known ligands include EGF, TGFA/TGF-alpha, amphiregulin, epigen/EPGN, BTC/betacellulin, epiregulin/EREG and HBEGF/heparin-binding EGF. Ligand binding triggers receptor homo- and/or heterodimerization and autophosphorylation on key cytoplasmic residues. The phosphorylated receptor recruits adapter proteins like GRB2 which in turn activates complex downstream signaling cascades. Activates at least 4 major downstream signaling cascades including the RAS-RAF-MEK-ERK, PI3 kinase-AKT, PLCgamma-PKC and STATs modules. May also activate the NF-kappa-B signaling cascade. Also directly phosphorylates other proteins like RGS16, activating its GTPase activity and probably coupling the EGF receptor signaling to the G protein-coupled receptor signaling. Also phosphorylates MUC1 and increases its interaction with SRC and CTNNB1/beta-catenin.Isoform 2 may act as an antagonist of EGF action.</specific-function>
+          <gene-name>EGFR</gene-name>
+          <locus>7p12</locus>
+          <cellular-location>Cell membrane</cellular-location>
+          <transmembrane-regions>646-668</transmembrane-regions>
+          <signal-regions>1-24</signal-regions>
+          <theoretical-pi>6.67</theoretical-pi>
+          <molecular-weight>134276.185</molecular-weight>
+          <chromosome-location>7</chromosome-location>
+          <organism ncbi-taxonomy-id="9606">Humans</organism>
+          <external-identifiers>
+            <external-identifier>
+              <resource>HUGO Gene Nomenclature Committee (HGNC)</resource>
+              <identifier>HGNC:3236</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>GenAtlas</resource>
+              <identifier>EGFR</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>GenBank Gene Database</resource>
+              <identifier>X00588</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>GenBank Protein Database</resource>
+              <identifier>757924</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>Guide to Pharmacology</resource>
+              <identifier>1797</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>UniProtKB</resource>
+              <identifier>P00533</identifier>
+            </external-identifier>
+            <external-identifier>
+              <resource>UniProt Accession</resource>
+              <identifier>EGFR_HUMAN</identifier>
+            </external-identifier>
+          </external-identifiers>
+          <synonyms>
+            <synonym>2.7.10.1</synonym>
+            <synonym>ERBB</synonym>
+            <synonym>ERBB1</synonym>
+            <synonym>HER1</synonym>
+            <synonym>Proto-oncogene c-ErbB-1</synonym>
+            <synonym>Receptor tyrosine-protein kinase erbB-1</synonym>
+          </synonyms>
+          <pfams>
+            <pfam>
+              <identifier>PF07714</identifier>
+              <name>Pkinase_Tyr</name>
+            </pfam>
+            <pfam>
+              <identifier>PF00757</identifier>
+              <name>Furin-like</name>
+            </pfam>
+            <pfam>
+              <identifier>PF01030</identifier>
+              <name>Recep_L_domain</name>
+            </pfam>
+            <pfam>
+              <identifier>PF14843</identifier>
+              <name>GF_recep_IV</name>
+            </pfam>
+          </pfams>
+        </polypeptide>
+      </target>
+    </targets>
+  </drug>
+</drugbank>

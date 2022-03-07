@@ -1,0 +1,112 @@
+{
+    "class": "Feature",
+    "records": {
+        "1": {
+            "biotype": "chromosome",
+            "name": "chr1"
+        },
+        "2": {
+            "biotype": "chromosome",
+            "name": "chr2"
+        },
+        "3": {
+            "biotype": "chromosome",
+            "name": "chr3"
+        },
+        "4": {
+            "biotype": "chromosome",
+            "name": "chr4"
+        },
+        "5": {
+            "biotype": "chromosome",
+            "name": "chr5"
+        },
+        "6": {
+            "biotype": "chromosome",
+            "name": "chr6"
+        },
+        "7": {
+            "biotype": "chromosome",
+            "name": "chr7"
+        },
+        "8": {
+            "biotype": "chromosome",
+            "name": "chr8"
+        },
+        "9": {
+            "biotype": "chromosome",
+            "name": "chr9"
+        },
+        "10": {
+            "biotype": "chromosome",
+            "name": "chr10"
+        },
+        "11": {
+            "biotype": "chromosome",
+            "name": "chr11"
+        },
+        "12": {
+            "biotype": "chromosome",
+            "name": "chr12"
+        },
+        "13": {
+            "biotype": "chromosome",
+            "name": "chr13"
+        },
+        "14": {
+            "biotype": "chromosome",
+            "name": "chr14"
+        },
+        "15": {
+            "biotype": "chromosome",
+            "name": "chr15"
+        },
+        "16": {
+            "biotype": "chromosome",
+            "name": "chr16"
+        },
+        "17": {
+            "biotype": "chromosome",
+            "name": "chr17"
+        },
+        "18": {
+            "biotype": "chromosome",
+            "name": "chr18"
+        },
+        "19": {
+            "biotype": "chromosome",
+            "name": "chr19"
+        },
+        "20": {
+            "biotype": "chromosome",
+            "name": "chr20"
+        },
+        "21": {
+            "biotype": "chromosome",
+            "name": "chr21"
+        },
+        "22": {
+            "biotype": "chromosome",
+            "name": "chr22"
+        },
+        "MT": {
+            "biotype": "chromosome",
+            "name": "chrMT"
+        },
+        "X": {
+            "biotype": "chromosome",
+            "name": "chrX"
+        },
+        "Y": {
+            "biotype": "chromosome",
+            "name": "chrY"
+        }
+    },
+    "sources": {
+        "default": {
+            "displayName": "GRCh",
+            "name": "GRCh",
+            "sort": 0
+        }
+    }
+}
