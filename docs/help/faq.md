@@ -1,4 +1,4 @@
-# FAQ
+# General FAQ
 
 ## How does Variant Annotation Work?
 
@@ -12,12 +12,12 @@ consists of the following steps
 - Follows inferences (ex. g. -> p.)
 - Pull statements for these variant records
 
-[^1]: Only applicable to postional variants, these steps are skipped when matching category variants.
+[^1]: Only applicable to positional variants, these steps are skipped when matching category variants.
 
-This allows an input like `KRAS:p.G12D` to match to all eqiuvalent forms of this variant. For example,
+This allows an input like `KRAS:p.G12D` to match to all equivalent forms of this variant. For example,
 in the demo database it would result in the following matches
 
-![kras matching](./images/kras_variant_matching.png)
+![kras matching](../images/kras_variant_matching.png)
 
 ## How do I cite PORI?
 
@@ -48,7 +48,7 @@ We welcome and encourage community contributions! If you have a feature request,
 If you are a developer and would like to directly add and work on features, please submit a ticket
 for any new features and indicate that you would like to complete it or comment on an existing ticket.
 Following discussion with the main developers you should fork the repository and then submit a pull request
-from your forked version to the main repository. Please see the developer contributing guidelines [here](./developer_reference/contributing.md)
+from your forked version to the main repository. Please see the developer contributing guidelines [here](../developer_reference/contributing.md)
 
 ## How Can I Try This Out?
 

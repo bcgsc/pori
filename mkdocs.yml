@@ -50,8 +50,8 @@ nav:
   - demo.md
   - install.md
   - repos.md
-  - faq.md
   - ... | graphkb/**
   - ... | ipr/**
   - ... | variant_notation/**
+  - ... | help/**
   - ... | developer_reference/**
