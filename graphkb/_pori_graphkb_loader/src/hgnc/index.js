@@ -127,7 +127,7 @@ const uploadRecord = async ({
         const { sourceId, biotype } = currentRecord;
 
         try {
-            const aliasRecord = await this.addRecord({
+            const aliasRecord = await conn.addRecord({
                 content: {
                     biotype,
                     dependency: rid(currentRecord),

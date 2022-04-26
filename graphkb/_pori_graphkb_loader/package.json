@@ -1,7 +1,7 @@
 {
   "name": "@bcgsc-pori/graphkb-loader",
   "main": "src/index.js",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/bcgsc/pori_graphkb_loader.git"
@@ -30,15 +30,13 @@
     "p-limit": "^3.1.0",
     "parse5": "^5.1.1",
     "rdflib": "^2.2.15",
-    "read-excel-file": "^4.0.1",
+    "read-excel-file": "^5.2.28",
     "sleep-promise": "^8.0.1",
     "winston": "^3.2.1",
     "xml-stream": "^0.4.5",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.2.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb": "^19.0.1",
     "eslint-plugin-import": "^2.25.3",
@@ -47,6 +45,8 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "fetch-mock": "^9.11.0",
+    "fetch-mock-jest": "^1.5.1",
     "jest": "^27.3.1",
     "jest-circus": "^27.3.1",
     "jest-junit": "^13.0.0"
@@ -61,12 +61,6 @@
     "start:oncotree": "node bin/load.js api oncotree",
     "start:civic": "node bin/load.js civic",
     "start:signatures": "node bin/load.js file ontology data/signatures.json",
-    "start:vocabulary": "node bin/load.js file ontology data/vocab.json",
-    "commit": "git-cz"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "start:vocabulary": "node bin/load.js file ontology data/vocab.json"
   }
 }

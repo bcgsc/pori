@@ -145,8 +145,8 @@ const normalizeVariantRecord = ({
             reference1: { ...referenceGene },
             variant: `${prefix}.${match[2]}${break2}${type}`,
         }];
-    } if (match = /^([A-Z][^-\s]*)-([A-Z][^-\s]*)\s*(\S+)?$/i.exec(name)) {
-        const [, gene1, gene2, tail] = match;
+    } if (match = /^([A-Z][^-\s]*)(-|::)([A-Z][^-\s]*)\s*(\S+)?$/i.exec(name)) {
+        const [, gene1, , gene2, tail] = match;
         let rest = { type: 'fusion' };
 
         if (tail) {

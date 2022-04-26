@@ -127,6 +127,31 @@ describe('normalizeVariantRecord', () => {
         ]);
     });
 
+    test('fusion with multiple variants (colon sep)', () => {
+        const variants = normalizeVariantRecord({
+            entrezId: 1,
+            entrezName: 'NTRK1',
+            name: 'LMNA::NTRK1 G595R AND G667C',
+        });
+        expect(variants).toEqual([
+            {
+                reference1: { name: 'lmna' },
+                reference2: { name: 'ntrk1', sourceId: '1' },
+                type: 'fusion',
+            },
+            {
+                positional: true,
+                reference1: { name: 'ntrk1', sourceId: '1' },
+                variant: 'p.g595r',
+            },
+            {
+                positional: true,
+                reference1: { name: 'ntrk1', sourceId: '1' },
+                variant: 'p.g667c',
+            },
+        ]);
+    });
+
     test('corrects deprecated indel syntax', () => {
         // S111C (c.330CA>TT)
         const variants = normalizeVariantRecord({

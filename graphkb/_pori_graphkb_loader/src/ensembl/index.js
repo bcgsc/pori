@@ -50,6 +50,7 @@ const generalize = async (conn, record) => {
  */
 const linkFeatureToParent = async (conn, transcript, parentBiotype = 'gene') => {
     const { Parent: geneId } = await requestWithRetry({
+        json: true,
         method: 'GET',
         uri: `${BASE_URL}/lookup/id/${transcript.sourceId}`,
     });

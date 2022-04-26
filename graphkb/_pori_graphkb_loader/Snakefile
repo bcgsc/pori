@@ -1,7 +1,7 @@
 import os
 from textwrap import dedent
 
-CONTAINER = 'docker://bcgsc/pori-graphkb-loader:v6.0.0'
+CONTAINER = 'docker://bcgsc/pori-graphkb-loader:v6.2.0'
 DATA_DIR = 'snakemake_data'
 LOGS_DIR = 'snakemake_logs'
 

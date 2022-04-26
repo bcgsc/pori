@@ -1,0 +1,333 @@
+{
+  "http://rest.ensembl.org/lookup/id/ENSG00000133703": {
+    "assembly_name": "GRCh38",
+    "biotype": "protein_coding",
+    "canonical_transcript": "ENST00000311936.8",
+    "db_type": "core",
+    "description": "KRAS proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:6407]",
+    "display_name": "KRAS",
+    "end": 25250936,
+    "id": "ENSG00000133703",
+    "logic_name": "ensembl_havana_gene_homo_sapiens",
+    "object_type": "Gene",
+    "seq_region_name": "12",
+    "source": "ensembl_havana",
+    "species": "homo_sapiens",
+    "start": 25205246,
+    "strand": -1,
+    "version": 14
+  },
+  "http://rest.ensembl.org/lookup/id/ENSP00000256078": {
+    "Parent": "ENST00000256078",
+    "db_type": "core",
+    "end": 25245384,
+    "id": "ENSP00000256078",
+    "length": 189,
+    "object_type": "Translation",
+    "species": "homo_sapiens",
+    "start": 25215441,
+    "version": 5
+  },
+  "http://rest.ensembl.org/lookup/id/ENSP00000308495": {
+    "Parent": "ENST00000311936",
+    "db_type": "core",
+    "end": 25245384,
+    "id": "ENSP00000308495",
+    "length": 188,
+    "object_type": "Translation",
+    "species": "homo_sapiens",
+    "start": 25209795,
+    "version": 3
+  },
+  "http://rest.ensembl.org/lookup/id/ENSP00000451856": {
+    "Parent": "ENST00000556131",
+    "db_type": "core",
+    "end": 25245384,
+    "id": "ENSP00000451856",
+    "length": 43,
+    "object_type": "Translation",
+    "species": "homo_sapiens",
+    "start": 25235206,
+    "version": 1
+  },
+  "http://rest.ensembl.org/lookup/id/ENSP00000452512": {
+    "Parent": "ENST00000557334",
+    "db_type": "core",
+    "end": 25245384,
+    "id": "ENSP00000452512",
+    "length": 75,
+    "object_type": "Translation",
+    "species": "homo_sapiens",
+    "start": 25209795,
+    "version": 1
+  },
+  "http://rest.ensembl.org/lookup/id/ENST00000256078": {
+    "Parent": "ENSG00000133703",
+    "assembly_name": "GRCh38",
+    "biotype": "protein_coding",
+    "db_type": "core",
+    "display_name": "KRAS-201",
+    "end": 25250929,
+    "id": "ENST00000256078",
+    "is_canonical": 0,
+    "logic_name": "ensembl_havana_transcript_homo_sapiens",
+    "object_type": "Transcript",
+    "seq_region_name": "12",
+    "source": "ensembl_havana",
+    "species": "homo_sapiens",
+    "start": 25205246,
+    "strand": -1,
+    "version": 10
+  },
+  "http://rest.ensembl.org/lookup/id/ENST00000311936": {
+    "Parent": "ENSG00000133703",
+    "assembly_name": "GRCh38",
+    "biotype": "protein_coding",
+    "db_type": "core",
+    "display_name": "KRAS-202",
+    "end": 25250929,
+    "id": "ENST00000311936",
+    "is_canonical": 1,
+    "logic_name": "ensembl_havana_transcript_homo_sapiens",
+    "object_type": "Transcript",
+    "seq_region_name": "12",
+    "source": "ensembl_havana",
+    "species": "homo_sapiens",
+    "start": 25205246,
+    "strand": -1,
+    "version": 8
+  },
+  "http://rest.ensembl.org/lookup/id/ENST00000556131": {
+    "Parent": "ENSG00000133703",
+    "assembly_name": "GRCh38",
+    "biotype": "protein_coding",
+    "db_type": "core",
+    "display_name": "KRAS-203",
+    "end": 25250929,
+    "id": "ENST00000556131",
+    "is_canonical": 0,
+    "logic_name": "havana_homo_sapiens",
+    "object_type": "Transcript",
+    "seq_region_name": "12",
+    "source": "havana",
+    "species": "homo_sapiens",
+    "start": 25232591,
+    "strand": -1,
+    "version": 2
+  },
+  "http://rest.ensembl.org/lookup/id/ENST00000557334": {
+    "Parent": "ENSG00000133703",
+    "assembly_name": "GRCh38",
+    "biotype": "protein_coding",
+    "db_type": "core",
+    "display_name": "KRAS-204",
+    "end": 25250936,
+    "id": "ENST00000557334",
+    "is_canonical": 0,
+    "logic_name": "havana_homo_sapiens",
+    "object_type": "Transcript",
+    "seq_region_name": "12",
+    "source": "havana",
+    "species": "homo_sapiens",
+    "start": 25209178,
+    "strand": -1,
+    "version": 6
+  },
+  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?retmode=json&rettype=docsum&db=gene&term=KRAS%5BPreferred+Symbol%5D+AND+human%5BORGN%5D+AND+alive%5Bprop%5D": {
+    "esearchresult": {
+      "count": "1",
+      "idlist": [
+        "3845"
+      ],
+      "querytranslation": "KRAS[Preferred Symbol] AND \"Homo sapiens\"[Organism] AND alive[prop]",
+      "retmax": "1",
+      "retstart": "0",
+      "translationset": [
+        {
+          "from": "human[ORGN]",
+          "to": "\"Homo sapiens\"[Organism]"
+        }
+      ],
+      "translationstack": [
+        {
+          "count": "420",
+          "explode": "N",
+          "field": "Preferred Symbol",
+          "term": "KRAS[Preferred Symbol]"
+        },
+        {
+          "count": "230092",
+          "explode": "Y",
+          "field": "Organism",
+          "term": "\"Homo sapiens\"[Organism]"
+        },
+        "AND",
+        {
+          "count": "36617930",
+          "explode": "N",
+          "field": "prop",
+          "term": "alive[prop]"
+        },
+        "AND"
+      ]
+    },
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    }
+  },
+  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?retmode=json&rettype=docsum&db=gene&id=3845": {
+    "header": {
+      "type": "esummary",
+      "version": "0.3"
+    },
+    "result": {
+      "3845": {
+        "chromosome": "12",
+        "chrsort": "12",
+        "chrstart": 25205245,
+        "currentid": "",
+        "description": "KRAS proto-oncogene, GTPase",
+        "geneticsource": "genomic",
+        "geneweight": 267797,
+        "genomicinfo": [
+          {
+            "chraccver": "NC_000012.12",
+            "chrloc": "12",
+            "chrstart": 25250928,
+            "chrstop": 25205245,
+            "exoncount": 6
+          }
+        ],
+        "locationhist": [
+          {
+            "annotationrelease": "109.20211119",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20210514",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20210226",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20201120",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20200815",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20200522",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20200228",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20191205",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20190905",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109.20190607",
+            "assemblyaccver": "GCF_000001405.39",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25250928,
+            "chrstop": 25205245
+          },
+          {
+            "annotationrelease": "109",
+            "assemblyaccver": "GCF_000001405.38",
+            "chraccver": "NC_000012.12",
+            "chrstart": 25251002,
+            "chrstop": 25204788
+          },
+          {
+            "annotationrelease": "105.20201022",
+            "assemblyaccver": "GCF_000001405.25",
+            "chraccver": "NC_000012.11",
+            "chrstart": 25403862,
+            "chrstop": 25358179
+          },
+          {
+            "annotationrelease": "105",
+            "assemblyaccver": "GCF_000001405.25",
+            "chraccver": "NC_000012.11",
+            "chrstart": 25403869,
+            "chrstop": 25358179
+          },
+          {
+            "annotationrelease": "105",
+            "assemblyaccver": "GCF_000002125.1",
+            "chraccver": "AC_000144.1",
+            "chrstart": 25174492,
+            "chrstop": 25128894
+          },
+          {
+            "annotationrelease": "105",
+            "assemblyaccver": "GCF_000306695.2",
+            "chraccver": "NC_018923.2",
+            "chrstart": 25368978,
+            "chrstop": 25323335
+          }
+        ],
+        "maplocation": "12p12.1",
+        "mim": [
+          "190070"
+        ],
+        "name": "KRAS",
+        "nomenclaturename": "KRAS proto-oncogene, GTPase",
+        "nomenclaturestatus": "Official",
+        "nomenclaturesymbol": "KRAS",
+        "organism": {
+          "commonname": "human",
+          "scientificname": "Homo sapiens",
+          "taxid": 9606
+        },
+        "otheraliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+        "otherdesignations": "GTPase KRas|K-ras p21 protein|Kirsten rat sarcoma viral oncogene homolog|Kirsten rat sarcoma viral proto-oncogene|PR310 c-K-ras oncogene|c-Kirsten-ras protein|cellular c-Ki-ras2 proto-oncogene|cellular transforming proto-oncogene|oncogene KRAS2|proto-oncogene GTPase|transforming protein p21|v-Ki-ras2 Kirsten rat sarcoma 2 viral oncogene homolog",
+        "status": "",
+        "summary": "This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+        "uid": "3845"
+      },
+      "uids": [
+        "3845"
+      ]
+    }
+  }
+}

@@ -141,6 +141,7 @@ const request = async ({
         method,
     });
 
+
     if (resp.ok) {
         if (json) {
             const result = await resp.json();

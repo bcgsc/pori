@@ -1,0 +1,2480 @@
+{
+  "class": "Disease",
+  "defaultNameToSourceId": true,
+  "records": {
+    "all solid tumors": {
+      "name": "all solid tumors"
+    },
+    "phc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pheochromocytoma",
+      "source": "oncotree",
+      "sourceId": "phc"
+    },
+    "chol": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cholangiocarcinoma",
+      "source": "oncotree",
+      "sourceId": "chol"
+    },
+    "blca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "bladder urothelial carcinoma",
+      "source": "oncotree",
+      "sourceId": "blca"
+    },
+    "srcbc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "plasmacytoid/signet ring cell bladder carcinoma",
+      "source": "oncotree",
+      "sourceId": "srcbc"
+    },
+    "urca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "urachal carcinoma",
+      "source": "oncotree",
+      "sourceId": "urca"
+    },
+    "chbl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "chondroblastoma",
+      "source": "oncotree",
+      "sourceId": "chbl"
+    },
+    "gctb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "giant cell tumor of bone",
+      "source": "oncotree",
+      "sourceId": "gctb"
+    },
+    "armm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "anorectal mucosal melanoma",
+      "source": "oncotree",
+      "sourceId": "armm"
+    },
+    "c42598": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "low-grade appendiceal mucinous neoplasm",
+      "source": "ncit",
+      "sourceId": "c42598"
+    },
+    "tac": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "tubular adenoma of the colon",
+      "source": "oncotree",
+      "sourceId": "tac"
+    },
+    "lcis": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "breast lobular carcinoma in situ",
+      "source": "oncotree",
+      "sourceId": "lcis"
+    },
+    "brca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "invasive breast carcinoma",
+      "source": "oncotree",
+      "sourceId": "brca"
+    },
+    "difg": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "diffuse glioma",
+      "source": "oncotree",
+      "sourceId": "difg"
+    },
+    "bgct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "germ cell tumor, brain",
+      "source": "oncotree",
+      "sourceId": "bgct"
+    },
+    "pint": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pineal tumor",
+      "source": "oncotree",
+      "sourceId": "pint"
+    },
+    "ceais": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical adenocarcinoma in situ",
+      "source": "oncotree",
+      "sourceId": "ceais"
+    },
+    "celi": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical leiomyosarcoma",
+      "source": "oncotree",
+      "sourceId": "celi"
+    },
+    "cegcc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "glassy cell carcinoma of the cervix",
+      "source": "oncotree",
+      "sourceId": "cegcc"
+    },
+    "epdca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "esophageal poorly differentiated carcinoma",
+      "source": "oncotree",
+      "sourceId": "epdca"
+    },
+    "esmm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "mucosal melanoma of the esophagus",
+      "source": "oncotree",
+      "sourceId": "esmm"
+    },
+    "rbl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "retinoblastoma",
+      "source": "oncotree",
+      "sourceId": "rbl"
+    },
+    "npc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "nasopharyngeal carcinoma",
+      "source": "oncotree",
+      "sourceId": "npc"
+    },
+    "ccsk": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "clear cell sarcoma of kidney",
+      "source": "oncotree",
+      "sourceId": "ccsk"
+    },
+    "wt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "wilms' tumor",
+      "source": "oncotree",
+      "sourceId": "wt"
+    },
+    "hcc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hepatocellular carcinoma",
+      "source": "oncotree",
+      "sourceId": "hcc"
+    },
+    "mrtl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "malignant rhabdoid tumor of the liver",
+      "source": "oncotree",
+      "sourceId": "mrtl"
+    },
+    "lais": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "lung adenocarcinoma in situ",
+      "source": "oncotree",
+      "sourceId": "lais"
+    },
+    "ppb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pleuropulmonary blastoma",
+      "source": "oncotree",
+      "sourceId": "ppb"
+    },
+    "cup": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cancer of unknown primary",
+      "source": "oncotree",
+      "sourceId": "cup"
+    },
+    "ogct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ovarian germ cell tumor",
+      "source": "oncotree",
+      "sourceId": "ogct"
+    },
+    "pact": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cystic tumor of the pancreas",
+      "source": "oncotree",
+      "sourceId": "pact"
+    },
+    "spn": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "solid pseudopapillary neoplasm of the pancreas",
+      "source": "oncotree",
+      "sourceId": "spn"
+    },
+    "gn": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ganglioneuroma",
+      "source": "oncotree",
+      "sourceId": "gn"
+    },
+    "psec": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "peritoneal serous carcinoma",
+      "source": "oncotree",
+      "sourceId": "psec"
+    },
+    "prscc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "prostate small cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "prscc"
+    },
+    "an": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "atypical nevus",
+      "source": "oncotree",
+      "sourceId": "an"
+    },
+    "dfsp": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "dermatofibrosarcoma protuberans",
+      "source": "oncotree",
+      "sourceId": "dfsp"
+    },
+    "mel": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "melanoma",
+      "source": "oncotree",
+      "sourceId": "mel"
+    },
+    "poro": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "poroma/acrospiroma",
+      "source": "oncotree",
+      "sourceId": "poro"
+    },
+    "skac": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "skin adnexal carcinoma",
+      "source": "oncotree",
+      "sourceId": "skac"
+    },
+    "aa": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "aggressive angiomyxoma",
+      "source": "oncotree",
+      "sourceId": "aa"
+    },
+    "alt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "atypical lipomatous tumor",
+      "source": "oncotree",
+      "sourceId": "alt"
+    },
+    "dsrct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "desmoplastic small-round-cell tumor",
+      "source": "oncotree",
+      "sourceId": "dsrct"
+    },
+    "fibs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "fibrosarcoma",
+      "source": "oncotree",
+      "sourceId": "fibs"
+    },
+    "ifs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "infantile fibrosarcoma",
+      "source": "oncotree",
+      "sourceId": "ifs"
+    },
+    "lms": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "leiomyosarcoma",
+      "source": "oncotree",
+      "sourceId": "lms"
+    },
+    "mf": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "myofibroma",
+      "source": "oncotree",
+      "sourceId": "mf"
+    },
+    "myxo": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "myxoma",
+      "source": "oncotree",
+      "sourceId": "myxo"
+    },
+    "ras": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "radiation-associated sarcoma",
+      "source": "oncotree",
+      "sourceId": "ras"
+    },
+    "sft": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "solitary fibrous tumor/hemangiopericytoma",
+      "source": "oncotree",
+      "sourceId": "sft"
+    },
+    "nsgct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "non-seminomatous germ cell tumor",
+      "source": "oncotree",
+      "sourceId": "nsgct"
+    },
+    "tmeso": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "testicular mesothelioma",
+      "source": "oncotree",
+      "sourceId": "tmeso"
+    },
+    "thhc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hurthle cell thyroid cancer",
+      "source": "oncotree",
+      "sourceId": "thhc"
+    },
+    "thpd": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "poorly differentiated thyroid cancer",
+      "source": "oncotree",
+      "sourceId": "thpd"
+    },
+    "outt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "other uterine tumor",
+      "source": "oncotree",
+      "sourceId": "outt"
+    },
+    "vmm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "mucosal melanoma of the vulva/vagina",
+      "source": "oncotree",
+      "sourceId": "vmm"
+    },
+    "acc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adrenocortical carcinoma",
+      "source": "oncotree",
+      "sourceId": "acc"
+    },
+    "gbc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "gallbladder cancer",
+      "source": "oncotree",
+      "sourceId": "gbc"
+    },
+    "imtb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "inflammatory myofibroblastic bladder tumor",
+      "source": "oncotree",
+      "sourceId": "imtb"
+    },
+    "scb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sarcomatoid carcinoma of the urinary bladder",
+      "source": "oncotree",
+      "sourceId": "scb"
+    },
+    "uca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "urethral cancer",
+      "source": "oncotree",
+      "sourceId": "uca"
+    },
+    "chs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "chondrosarcoma",
+      "source": "oncotree",
+      "sourceId": "chs"
+    },
+    "os": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "osteosarcoma",
+      "source": "oncotree",
+      "sourceId": "os"
+    },
+    "apad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "appendiceal adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "apad"
+    },
+    "cmc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "medullary carcinoma of the colon",
+      "source": "oncotree",
+      "sourceId": "cmc"
+    },
+    "brame": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adenomyoepithelioma of the breast",
+      "source": "oncotree",
+      "sourceId": "brame"
+    },
+    "bnnos": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "breast neoplasm, nos",
+      "source": "oncotree",
+      "sourceId": "bnnos"
+    },
+    "jscb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "juvenile secretory carcinoma of the breast",
+      "source": "oncotree",
+      "sourceId": "jscb"
+    },
+    "embt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "embryonal tumor",
+      "source": "oncotree",
+      "sourceId": "embt"
+    },
+    "mngt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "meningothelial tumor",
+      "source": "oncotree",
+      "sourceId": "mngt"
+    },
+    "pcnsmt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "primary cns melanocytic tumors",
+      "source": "oncotree",
+      "sourceId": "pcnsmt"
+    },
+    "cabc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical adenoid basal carcinoma",
+      "source": "oncotree",
+      "sourceId": "cabc"
+    },
+    "cene": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical neuroendocrine tumor",
+      "source": "oncotree",
+      "sourceId": "cene"
+    },
+    "mcce": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "mixed cervical carcinoma",
+      "source": "oncotree",
+      "sourceId": "mcce"
+    },
+    "escc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "esophageal squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "escc"
+    },
+    "smn": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "smooth muscle neoplasm, nos",
+      "source": "oncotree",
+      "sourceId": "smn"
+    },
+    "ohnca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "head and neck carcinoma, other",
+      "source": "oncotree",
+      "sourceId": "ohnca"
+    },
+    "pth": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "parathyroid cancer",
+      "source": "oncotree",
+      "sourceId": "pth"
+    },
+    "rcc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "renal cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "rcc"
+    },
+    "flc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "fibrolamellar carcinoma",
+      "source": "oncotree",
+      "sourceId": "flc"
+    },
+    "hccihch": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hepatocellular carcinoma plus intrahepatic cholangiocarcinoma",
+      "source": "oncotree",
+      "sourceId": "hccihch"
+    },
+    "uesl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "undifferentiated embryonal sarcoma of the liver",
+      "source": "oncotree",
+      "sourceId": "uesl"
+    },
+    "lnet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "lung neuroendocrine tumor",
+      "source": "oncotree",
+      "sourceId": "lnet"
+    },
+    "lam": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pulmonary lymphangiomyomatosis",
+      "source": "oncotree",
+      "sourceId": "lam"
+    },
+    "egct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "extra gonadal germ cell tumor",
+      "source": "oncotree",
+      "sourceId": "egct"
+    },
+    "scst": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sex cord stromal tumor",
+      "source": "oncotree",
+      "sourceId": "scst"
+    },
+    "paad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pancreatic adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "paad"
+    },
+    "ucp": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "undifferentiated carcinoma of the pancreas",
+      "source": "oncotree",
+      "sourceId": "ucp"
+    },
+    "nst": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "nerve sheath tumor",
+      "source": "oncotree",
+      "sourceId": "nst"
+    },
+    "plmeso": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pleural mesothelioma",
+      "source": "oncotree",
+      "sourceId": "plmeso"
+    },
+    "prsc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "prostate sqamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "prsc"
+    },
+    "bcc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "basal cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "bcc"
+    },
+    "dte": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "desmoplastic trichoepithelioma",
+      "source": "oncotree",
+      "sourceId": "dte"
+    },
+    "mcc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "merkel cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "mcc"
+    },
+    "pct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "porphyria cutania tarda",
+      "source": "oncotree",
+      "sourceId": "pct"
+    },
+    "spir": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "spiroma/spiradenoma",
+      "source": "oncotree",
+      "sourceId": "spir"
+    },
+    "asps": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "alveolar soft part sarcoma",
+      "source": "oncotree",
+      "sourceId": "asps"
+    },
+    "ccs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "clear cell sarcoma",
+      "source": "oncotree",
+      "sourceId": "ccs"
+    },
+    "ehae": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "epithelioid hemangioendothelioma",
+      "source": "oncotree",
+      "sourceId": "ehae"
+    },
+    "gist": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "gastrointestinal stromal tumor",
+      "source": "oncotree",
+      "sourceId": "gist"
+    },
+    "imt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "inflammatory myofibroblastic tumor",
+      "source": "oncotree",
+      "sourceId": "imt"
+    },
+    "lipo": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "liposarcoma",
+      "source": "oncotree",
+      "sourceId": "lipo"
+    },
+    "ims": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "myofibromatosis",
+      "source": "oncotree",
+      "sourceId": "ims"
+    },
+    "pgng": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "paraganglioma",
+      "source": "oncotree",
+      "sourceId": "pgng"
+    },
+    "rms": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "rhabdomyosarcoma",
+      "source": "oncotree",
+      "sourceId": "rms"
+    },
+    "syns": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "synovial sarcoma",
+      "source": "oncotree",
+      "sourceId": "syns"
+    },
+    "sem": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "seminoma",
+      "source": "oncotree",
+      "sourceId": "sem"
+    },
+    "tet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "thymic epithelial tumor",
+      "source": "oncotree",
+      "sourceId": "tet"
+    },
+    "htat": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hyalinizing trabecular adenoma of the thyroid",
+      "source": "oncotree",
+      "sourceId": "htat"
+    },
+    "wdtc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "well-differentiated thyroid cancer",
+      "source": "oncotree",
+      "sourceId": "wdtc"
+    },
+    "usarc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "uterine sarcoma/mesenchymal",
+      "source": "oncotree",
+      "sourceId": "usarc"
+    },
+    "vpdc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "poorly differentiated vaginal carcinoma",
+      "source": "oncotree",
+      "sourceId": "vpdc"
+    },
+    "aca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adrenocortical adenoma",
+      "source": "oncotree",
+      "sourceId": "aca"
+    },
+    "blad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "bladder adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "blad"
+    },
+    "iup": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "inverted urothelial papilloma",
+      "source": "oncotree",
+      "sourceId": "iup"
+    },
+    "scbc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "small cell bladder cancer",
+      "source": "oncotree",
+      "sourceId": "scbc"
+    },
+    "upa": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "urothelial papilloma",
+      "source": "oncotree",
+      "sourceId": "upa"
+    },
+    "chdm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "chordoma",
+      "source": "oncotree",
+      "sourceId": "chdm"
+    },
+    "aga": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "anal gland adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "aga"
+    },
+    "coadread": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "colorectal adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "coadread"
+    },
+    "sbc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "small bowel cancer",
+      "source": "oncotree",
+      "sourceId": "sbc"
+    },
+    "dcis": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "breast ductal carcinoma in situ",
+      "source": "oncotree",
+      "sourceId": "dcis"
+    },
+    "pbs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "breast sarcoma",
+      "source": "oncotree",
+      "sourceId": "pbs"
+    },
+    "mbc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "metaplastic breast cancer",
+      "source": "oncotree",
+      "sourceId": "mbc"
+    },
+    "encg": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "encapsulated glioma",
+      "source": "oncotree",
+      "sourceId": "encg"
+    },
+    "mbt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "miscellaneous brain tumor",
+      "source": "oncotree",
+      "sourceId": "mbt"
+    },
+    "selt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sellar tumor",
+      "source": "oncotree",
+      "sourceId": "selt"
+    },
+    "cacc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical adenoid cystic carcinoma",
+      "source": "oncotree",
+      "sourceId": "cacc"
+    },
+    "cerms": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical rhabdomyosarcoma",
+      "source": "oncotree",
+      "sourceId": "cerms"
+    },
+    "scce": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "small cell carcinoma of the cervix",
+      "source": "oncotree",
+      "sourceId": "scce"
+    },
+    "egc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "esophagogastric adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "egc"
+    },
+    "lgt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "lacrimal gland tumor",
+      "source": "oncotree",
+      "sourceId": "lgt"
+    },
+    "hnmucm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "head and neck mucosal melanoma",
+      "source": "oncotree",
+      "sourceId": "hnmucm"
+    },
+    "saca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "salivary carcinoma",
+      "source": "oncotree",
+      "sourceId": "saca"
+    },
+    "rnet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "renal neuroendocrine tumor",
+      "source": "oncotree",
+      "sourceId": "rnet"
+    },
+    "lihb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hepatoblastoma",
+      "source": "oncotree",
+      "sourceId": "lihb"
+    },
+    "lias": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "liver angiosarcoma",
+      "source": "oncotree",
+      "sourceId": "lias"
+    },
+    "csclc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "combined small cell lung carcinoma",
+      "source": "oncotree",
+      "sourceId": "csclc"
+    },
+    "nsclc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "non-small cell lung cancer",
+      "source": "oncotree",
+      "sourceId": "nsclc"
+    },
+    "sarcl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sarcomatoid carcinoma of the lung",
+      "source": "oncotree",
+      "sourceId": "sarcl"
+    },
+    "oovc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ovarian cancer, other",
+      "source": "oncotree",
+      "sourceId": "oovc"
+    },
+    "paac": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "acinar cell carcinoma of the pancreas",
+      "source": "oncotree",
+      "sourceId": "paac"
+    },
+    "panet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pancreatic neuroendocrine tumor",
+      "source": "oncotree",
+      "sourceId": "panet"
+    },
+    "pscc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "penile squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "pscc"
+    },
+    "nbl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "neuroblastoma",
+      "source": "oncotree",
+      "sourceId": "nbl"
+    },
+    "prad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "prostate adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "prad"
+    },
+    "adpa": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "aggressive digital papillary adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "adpa"
+    },
+    "cscc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cutaneous squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "cscc"
+    },
+    "empsgc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "endocrine mucin producing sweat gland carcinoma",
+      "source": "oncotree",
+      "sourceId": "empsgc"
+    },
+    "mac": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "microcystic adnexal carcinoma",
+      "source": "oncotree",
+      "sourceId": "mac"
+    },
+    "ppct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "proliferating pilar cystic tumor",
+      "source": "oncotree",
+      "sourceId": "ppct"
+    },
+    "sgad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sweat gland adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "sgad"
+    },
+    "afh": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "angiomatoid fibrous histiocytoma",
+      "source": "oncotree",
+      "sourceId": "afh"
+    },
+    "dcs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "dendritic cell sarcoma",
+      "source": "oncotree",
+      "sourceId": "dcs"
+    },
+    "epis": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "epithelioid sarcoma",
+      "source": "oncotree",
+      "sourceId": "epis"
+    },
+    "gs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "glomangiosarcoma",
+      "source": "oncotree",
+      "sourceId": "gs"
+    },
+    "ints": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "intimal sarcoma",
+      "source": "oncotree",
+      "sourceId": "ints"
+    },
+    "lgfms": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "low-grade fibromyxoid sarcoma",
+      "source": "oncotree",
+      "sourceId": "lgfms"
+    },
+    "mpc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "myopericytoma",
+      "source": "oncotree",
+      "sourceId": "mpc"
+    },
+    "pecoma": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "perivascular epithelioid cell tumor",
+      "source": "oncotree",
+      "sourceId": "pecoma"
+    },
+    "rcsnos": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "round cell sarcoma, nos",
+      "source": "oncotree",
+      "sourceId": "rcsnos"
+    },
+    "tgct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "tenosynovial giant cell tumor diffuse type",
+      "source": "oncotree",
+      "sourceId": "tgct"
+    },
+    "tscst": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sex cord stromal tumor",
+      "source": "oncotree",
+      "sourceId": "tscst"
+    },
+    "tnet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "thymic neuroendocrine tumor",
+      "source": "oncotree",
+      "sourceId": "tnet"
+    },
+    "thme": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "medullary thyroid cancer",
+      "source": "oncotree",
+      "sourceId": "thme"
+    },
+    "ucec": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "endometrial carcinoma",
+      "source": "oncotree",
+      "sourceId": "ucec"
+    },
+    "vgct": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "germ cell tumor of the vulva",
+      "source": "oncotree",
+      "sourceId": "vgct"
+    },
+    "vsc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "squamous cell carcinoma of the vulva/vagina",
+      "source": "oncotree",
+      "sourceId": "vsc"
+    },
+    "ampca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ampullary carcinoma",
+      "source": "oncotree",
+      "sourceId": "ampca"
+    },
+    "blsc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "bladder squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "blsc"
+    },
+    "urmm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "mucosal melanoma of the urethra",
+      "source": "oncotree",
+      "sourceId": "urmm"
+    },
+    "utuc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "upper tract urothelial carcinoma",
+      "source": "oncotree",
+      "sourceId": "utuc"
+    },
+    "adma": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adamantinoma",
+      "source": "oncotree",
+      "sourceId": "adma"
+    },
+    "es": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ewing sarcoma",
+      "source": "oncotree",
+      "sourceId": "es"
+    },
+    "ansc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "anal squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "ansc"
+    },
+    "ginet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "gastrointestinal neuroendocrine tumors",
+      "source": "oncotree",
+      "sourceId": "ginet"
+    },
+    "sic": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "small intestinal carcinoma",
+      "source": "oncotree",
+      "sourceId": "sic"
+    },
+    "bfn": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "breast fibroepithelial neoplasms",
+      "source": "oncotree",
+      "sourceId": "bfn"
+    },
+    "c4001": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "inflammatory breast cancer",
+      "source": "ncit",
+      "sourceId": "c4001"
+    },
+    "cpt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "choroid plexus tumor",
+      "source": "oncotree",
+      "sourceId": "cpt"
+    },
+    "epmt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ependymomal tumor",
+      "source": "oncotree",
+      "sourceId": "epmt"
+    },
+    "mnet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "miscellaneous neuroepithelial tumor",
+      "source": "oncotree",
+      "sourceId": "mnet"
+    },
+    "cead": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "cead"
+    },
+    "ceas": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical adenosquamous carcinoma",
+      "source": "oncotree",
+      "sourceId": "ceas"
+    },
+    "cesc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "cervical squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "cesc"
+    },
+    "vgce": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "villoglandular adenocarcinoma of the cervix",
+      "source": "oncotree",
+      "sourceId": "vgce"
+    },
+    "ginetes": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "gastrointestinal neuroendocrine tumors of the esophagus/stomach",
+      "source": "oncotree",
+      "sourceId": "ginetes"
+    },
+    "om": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ocular melanoma",
+      "source": "oncotree",
+      "sourceId": "om"
+    },
+    "hnsc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "head and neck squamous cell carcinoma",
+      "source": "oncotree",
+      "sourceId": "hnsc"
+    },
+    "sbl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sialoblastoma",
+      "source": "oncotree",
+      "sourceId": "sbl"
+    },
+    "mrt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "rhabdoid cancer",
+      "source": "oncotree",
+      "sourceId": "mrt"
+    },
+    "liad": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hepatocellular adenoma",
+      "source": "oncotree",
+      "sourceId": "liad"
+    },
+    "limnet": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "malignant nonepithelial tumor of the liver",
+      "source": "oncotree",
+      "sourceId": "limnet"
+    },
+    "imtl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "inflammatory myofibroblastic lung tumor",
+      "source": "oncotree",
+      "sourceId": "imtl"
+    },
+    "ais": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adenocarcinoma in situ",
+      "source": "oncotree",
+      "sourceId": "ais"
+    },
+    "ovt": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ovarian epithelial tumor",
+      "source": "oncotree",
+      "sourceId": "ovt"
+    },
+    "paasc": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "adenosquamous carcinoma of the pancreas",
+      "source": "oncotree",
+      "sourceId": "paasc"
+    },
+    "pb": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pancreatoblastoma",
+      "source": "oncotree",
+      "sourceId": "pb"
+    },
+    "gnbl": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ganglioneuroblastoma",
+      "source": "oncotree",
+      "sourceId": "gnbl"
+    },
+    "pemeso": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "peritoneal mesothelioma",
+      "source": "oncotree",
+      "sourceId": "pemeso"
+    },
+    "prne": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "prostate neuroendocrine carcinoma",
+      "source": "oncotree",
+      "sourceId": "prne"
+    },
+    "afx": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "atypical fibroxanthoma",
+      "source": "oncotree",
+      "sourceId": "afx"
+    },
+    "df": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "dermatofibroma",
+      "source": "oncotree",
+      "sourceId": "df"
+    },
+    "empd": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "extramammary paget disease",
+      "source": "oncotree",
+      "sourceId": "empd"
+    },
+    "poca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "porocarcinoma/spiroadenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "poca"
+    },
+    "seba": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sebaceous carcinoma",
+      "source": "oncotree",
+      "sourceId": "seba"
+    },
+    "aeca": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "sweat gland carcinoma/apocrine eccrine carcinoma",
+      "source": "oncotree",
+      "sourceId": "aeca"
+    },
+    "angs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "angiosarcoma",
+      "source": "oncotree",
+      "sourceId": "angs"
+    },
+    "des": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "desmoid/aggressive fibromatosis",
+      "source": "oncotree",
+      "sourceId": "des"
+    },
+    "esst": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "ewing sarcoma of soft tissue",
+      "source": "oncotree",
+      "sourceId": "esst"
+    },
+    "hema": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "hemangioma",
+      "source": "oncotree",
+      "sourceId": "hema"
+    },
+    "lm": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "leiomyoma",
+      "source": "oncotree",
+      "sourceId": "lm"
+    },
+    "mgst": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "malignant glomus tumor",
+      "source": "oncotree",
+      "sourceId": "mgst"
+    },
+    "mfs": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "myxofibrosarcoma",
+      "source": "oncotree",
+      "sourceId": "mfs"
+    },
+    "pmhe": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "pseudomyogenic hemangioendothelioma",
+      "source": "oncotree",
+      "sourceId": "pmhe"
+    },
+    "stmyec": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "soft tissue myoepithelial carcinoma",
+      "source": "oncotree",
+      "sourceId": "stmyec"
+    },
+    "mfh": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "undifferentiated pleomorphic sarcoma/malignant fibrous histiocytoma/high-grade spindle cell sarcoma",
+      "source": "oncotree",
+      "sourceId": "mfh"
+    },
+    "tlym": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "testicular lymphoma",
+      "source": "oncotree",
+      "sourceId": "tlym"
+    },
+    "thap": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "anaplastic thyroid cancer",
+      "source": "oncotree",
+      "sourceId": "thap"
+    },
+    "oat": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "oncocytic adenoma of the thyroid",
+      "source": "oncotree",
+      "sourceId": "oat"
+    },
+    "gtd": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "gestational trophoblastic disease",
+      "source": "oncotree",
+      "sourceId": "gtd"
+    },
+    "vma": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "mucinous adenocarcinoma of the vulva/vagina",
+      "source": "oncotree",
+      "sourceId": "vma"
+    },
+    "va": {
+      "links": [
+        {
+          "class": "SubClassOf",
+          "target": "all solid tumors"
+        }
+      ],
+      "name": "vaginal adenocarcinoma",
+      "source": "oncotree",
+      "sourceId": "va"
+    }
+  },
+  "sources": {
+    "default": {
+      "displayName": "GraphKB",
+      "longName": "Graph Knowledgebase",
+      "name": "graphkb",
+      "sort": 0,
+      "url": "https://graphkb.bcgsc.ca"
+    },
+    "ncit": {
+      "name": "ncit"
+    },
+    "oncokb": {
+      "name": "oncokb"
+    },
+    "oncotree": {
+      "name": "oncotree"
+    }
+  }
+}
