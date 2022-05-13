@@ -112,7 +112,7 @@ services:
       retries: 5
   migrations:
     image: bcgsc/pori-ipr-api:latest
-    command: npx sequelize-cli db:migrate --url postgres://ipr_ro:root@ipr_db:5432/ipr_demo
+    command: npx sequelize-cli db:migrate --url postgres://ipr_service:root@ipr_db:5432/ipr_demo
     networks:
       - app-network
     deploy:
