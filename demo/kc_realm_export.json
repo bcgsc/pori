@@ -500,7 +500,7 @@
       "id" : "24449f8e-cb4a-47d0-be42-43f0dc8f0f73",
       "type" : "password",
       "createdDate" : 1612556446213,
-      "secretData" : "{\"value\":\"R+juG1x1JJmUPXZMJQGQ2cYFn+pD4IS9qsVRqzDjfFuKGs2XX5PEUNM5H7GYCJmHdi4CK69HKBMGlDWcqCKswg==\",\"salt\":\"GALUISM7zzvRZOZsl48lBA==\"}",
+      "secretData" : "{\"value\":\"CwvQRbm9zgUa0OA6v+L8uEdd/jK7iJNq6kZApvTAcUpOOVaLtTVoAuvc9VzR/7p6lcdts82DNlzHINitpRcA2A==\",\"salt\":\"YkITGCVovcQgZvOlfPXdpw==\",\"additionalParameters\":{}}",
       "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
     } ],
     "disableableCredentialTypes" : [ ],
