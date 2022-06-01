@@ -43,7 +43,9 @@ services:
         target: /orientdb/backup
         type: bind
   graphkb_api:
-    image: bcgsc/pori-graphkb-api:latest
+    build:
+      context: ./../pori_graphkb_api
+      dockerfile: ./../pori_graphkb_api/Dockerfile
     ports:
       - 8080:8080
     environment:
@@ -136,7 +138,9 @@ services:
       - app-network
     restart: always
   ipr_api:
-    image: bcgsc/pori-ipr-api:latest
+    build:
+      context: ./../pori_ipr_api
+      dockerfile: ./../pori_ipr_api/Dockerfile
     command: npm start
     ports:
       - 8081:8080
