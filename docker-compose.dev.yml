@@ -113,7 +113,9 @@ services:
       timeout: 5s
       retries: 5
   migrations:
-    image: bcgsc/pori-ipr-api:latest
+    build:
+      context: ./../pori_ipr_api
+      dockerfile: ./../pori_ipr_api/Dockerfile
     command: npx sequelize-cli db:migrate --url postgres://ipr_service:root@ipr_db:5432/ipr_demo
     networks:
       - app-network
