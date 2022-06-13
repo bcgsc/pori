@@ -49,7 +49,7 @@ Similarly, common names of signatures have been organized and related to allow u
 ### Users
 
 The simplest way to try out GraphKB is via the demo we provide [here](https://pori-demo.bcgsc.ca/).
-simply click on the `/graphkb` link and enter the provided credentials (`graphkb_admin`/`graphkb_admin`).
+simply click on the `/graphkb` link and enter the provided credentials (`pori_admin`/`secret`).
 This will allow you to test out the application before having to set up your own instance. If your
 institution would like to host an instance of GraphKB please see the instructions for developers and
 system administrators in the next section.
