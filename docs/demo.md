@@ -23,8 +23,8 @@ We have recorded videos on various sections of IPR from the analysts perspective
 
 The demo instance of IPR is at [pori-demo.bcgsc.ca/ipr](https://pori-demo.bcgsc.ca/ipr). This will bring you to the login page of the IPR client application. Use the following credentials to log in to the demo application
 
-- username: `pori_admin`
-- password: `secret`
+- username: `iprdemo`
+- password: `iprdemo`
 
 When you first go to the link above it will redirect you to the keycloak login page. Enter the above credentials
 
@@ -42,8 +42,8 @@ By clicking on a row in the above table you will be brought to the corresponding
 
 The demo instance of IPR is at [pori-demo.bcgsc.ca/graphkb](https://pori-demo.bcgsc.ca/graphkb). This will bring you to the login page of the GraphKB client application. The `pori_admin` credentials will also work with GraphKB to demonstrate single sign on.
 
-- username: `pori_admin`
-- password: `secret`
+- username: `graphkb_admin`
+- password: `graphkb_admin`
 
 ## APIs
 
