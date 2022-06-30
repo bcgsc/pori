@@ -30,7 +30,8 @@ For convenience there are also a number of default users which all have the defa
 | Name             | Default in DB | Purpose                                                                                                                                              |
 | ---------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | graphkb_importer | GraphKB       | This is the default user that is created when the new GraphKB DB is created. It is an admin user that can be used to add new users or import content |
-| ipr_graphkb_link | GraphKB       | This is the user used by IPR to pull data from GraphKB                                                                                               |
+| ipr_graphkb_link | GraphKB       | This is the user used by IPR to pull data from GraphKB
+| iprdemo          | IPR           | This is an admin user in the IPR demo db                                                                                               |
 | pori_admin       | GraphKB & IPR | This is an admin user allowing single sign on accross PORI                                                                                           |
 
 ![default users](./images/pori-keycloak-default-users.png)
