@@ -70,6 +70,10 @@ The reference distribution that most closely matches the non-diseased/normal exp
 
 The reference distribution that most closely matches the non-diseased/normal expression of the biopsy site tissue. This is important for metastatic samples where the biopsy site and primary site differ.
 
+### Internal Pancancer
+
+The reference distribution for the entire set of cancers available to the organization.
+
 ## Images
 
 The use can optionally include expression density plots to allow the user to view the relative expression of the current sample compared to a specific distribution.
