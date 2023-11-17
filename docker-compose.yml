@@ -5,7 +5,7 @@ services:
   keycloak:
     build:
       context: .
-      dockerfile: ./demo/Dockerfile.auth
+      dockerfile: ./local/Dockerfile.auth
     environment:
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
@@ -133,13 +133,19 @@ services:
     restart: always
   ipr_api:
     image: bcgsc/pori-ipr-api:latest
-    command: ["/bin/bash", "ipr_api_start.sh"]
+    command: >
+      /bin/bash -c "npm install sequelize-cli
+      && npm install pg pg-hstore
+      &&  [ -f config/config.json ] || ./node_modules/.bin/sequelize-cli init
+      && ./node_modules/.bin/sequelize-cli db:migrate
+      && npm start"
+    # ["/bin/bash", "ipr_api_start.sh"]
     ports:
       - 8081:8080
     environment:
       IPR_DATABASE_HOSTNAME: ipr_db
       IPR_DATABASE_NAME: ipr_demo
-      IPR_DATABASE_USERNAME: ipr_ro
+      IPR_DATABASE_USERNAME: ipr_service
       IPR_GRAPHKB_USERNAME: ipr_graphkb_link
       IPR_KEYCLOAK_KEYFILE: /keys/keycloak.key
       # customize settings below
@@ -157,12 +163,9 @@ services:
       - app-network
     restart: always
     volumes:
-      - source: ./ipr_api_start.sh
-        target: /usr/src/app/ipr_api_start.sh
-        type: bind
-      - source: ./sequelize_config.json
-        target: /usr/src/app/config/config.json
-        type: bind
+      #- source: ./sequelize_config.json
+      #  target: /usr/src/app/config/config.json
+      #  type: bind
       - source: ./keys
         target: /keys
         type: bind
