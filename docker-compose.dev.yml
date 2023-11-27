@@ -110,6 +110,17 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  migrations:
+    image: bcgsc/pori-ipr-api:latest
+    command: npx sequelize-cli db:migrate --url postgres://ipr_service:root@ipr_db:5432/ipr_demo
+    networks:
+      - app-network
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 10
+    depends_on:
+      - ipr_db
   redis:
     image: redis:6.2-alpine
     # Set health checks to wait until redis has started
@@ -132,7 +143,7 @@ services:
     environment:
       IPR_DATABASE_HOSTNAME: ipr_db
       IPR_DATABASE_NAME: ipr_demo
-      IPR_DATABASE_USERNAME: ipr_ro
+      IPR_DATABASE_USERNAME: ipr_service
       IPR_GRAPHKB_USERNAME: ipr_graphkb_link
       IPR_KEYCLOAK_KEYFILE: /keys/keycloak.key
       # customize settings below
@@ -144,6 +155,7 @@ services:
       IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
+      - migrations
       - redis
       - keycloak
     networks:

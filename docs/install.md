@@ -5,6 +5,10 @@ Since PORI is a production-ready, institution-level, scalable platform, the simp
 
 Most of the servers are auto-started together with docker-compose but the keycloak container must be started and configured on its own first.
 
+!!! Note
+
+    If this is not your first time setting up or running these instructions see the [update instructions](#updating-an-existing-demo-install) instead
+
 Start by cloning this repository which contains the default docker compose configs (`docker-compose.yml` and `docker-compose.dev.yml`)
 
 ```bash
@@ -26,9 +30,9 @@ For convenience there are also a number of default users which all have the defa
 | Name             | Default in DB | Purpose                                                                                                                                              |
 | ---------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | graphkb_importer | GraphKB       | This is the default user that is created when the new GraphKB DB is created. It is an admin user that can be used to add new users or import content |
-| ipr_graphkb_link | GraphKB       | This is the user used by IPR to pull data from GraphKB                                                                                               |
-| iprdemo          | IPR           | This is an admin user in the IPR demo db                                                                                                             |
-| graphkb_admin    | GraphKB       | Admin user for managing content/users in the GraphKB web interface                                                                                   |
+| ipr_graphkb_link | GraphKB       | This is the user used by IPR to pull data from GraphKB
+| iprdemo          | IPR           | This is an admin user in the IPR demo db                                                                                               |
+| pori_admin       | GraphKB & IPR | This is an admin user allowing single sign on across PORI                                                                                           |
 
 ![default users](./images/pori-keycloak-default-users.png)
 
@@ -49,7 +53,7 @@ mkdir keys
 Next, use docker-compose to start the DB, API, and client servers. The paths/URLs in the docker-compose.yml file should be adjusted to match your deployment. In our demo deployment we have a proxy pass set up from the configured ports to handle the https layer
 
 ```bash
-docker-compose -f docker-compose.dev.yml up -d
+docker-compose -f docker-compose.dev.yml up -d --build --remove-orphans
 ```
 
 This will start the following services
@@ -58,6 +62,7 @@ This will start the following services
 - OrientDB server for GraphKB with an empty default db
 - GraphKB API server (nodejs)
 - IPR API server (nodejs)
+- IPR API migration task (nodejs)
 - GraphKB client server (nginx)
 - IPR client server (nginx)
 - Keycloak Authentication server
@@ -112,6 +117,29 @@ docker run --net host \
     Because we are running the loader by itself we need to provide the mount arguments to tell docker that we need access to a file outside of the container itself. When we run this with the snakemake pipeline this is not necessary since snakemake generally takes care of that for you
 
 Once you have tested that things have been set up correctly and loading is working you are ready to initialize the data in your newly create GraphKB instance. See the [loader documentation](./graphkb/loading_data.md) for further instructions.
+
+## Updating an Existing Demo Install
+
+If you have previously installed, or partially installed this demo before you should make sure to remove all the previous containers and the database and keys folder prior to re-running the above instructions
+
+For example, to grep and remove all pori-related containers (This is dangerous if you have other docker containers running here that may be caught by grep. In that case you should remove them individually instead)
+
+```bash
+for x in $(docker ps -a | grep pori | cut -f 1 -d' '); do docker stop $x; docker rm $x; done
+```
+
+Next remove the databases and keys folders
+
+```bash
+rm -rf databases keys
+```
+
+Now you are ready to pull the lastest version of master and re-run the install instructions from the top
+
+```bash
+git checkout master
+git pull
+```
 
 ## Production Instances
 

@@ -11,7 +11,7 @@ If your institution regularly works on PORI related projects then we recommend s
 The demo uses a default keycloak setup with a realm "PORI" and two clients: "GraphKB" and "IPR".
 For convenience there are also a number of default users which all have the default password of "secret".
 
-![default users](./images/pori-keycloak-default-users.png)
+![default users](../images/pori-keycloak-default-users.png)
 
 ## Run docker-compose
 

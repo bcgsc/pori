@@ -81,6 +81,17 @@ services:
       - 5432:5432
     networks:
       - app-network
+  migrations:
+    image: bcgsc/pori-ipr-api:latest
+    command: npx sequelize-cli db:migrate --url postgres://ipr_service:root@ipr_db:5432/ipr_demo
+    networks:
+      - app-network
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 10
+    depends_on:
+      - ipr_db
   redis:
     image: redis:6.2-alpine
     # Set health checks to wait until redis has started
@@ -114,6 +125,7 @@ services:
       IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
+      - migrations
       - redis
     networks:
       - app-network
