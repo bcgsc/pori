@@ -5,7 +5,7 @@ services:
   keycloak:
     build:
       context: .
-      dockerfile: ./local/Dockerfile.auth
+      dockerfile: ./demo/Dockerfile.auth
     environment:
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
@@ -89,11 +89,12 @@ services:
       - app-network
     restart: always
   ipr_db:
-    image: bcgsc/pori-ipr-demodb:latest
+    #image: bcgsc/pori-ipr-demodb:latest
+    image: postgres:11-alpine
     restart: always
     environment:
-      DATABASE_NAME: ipr_demo
-      POSTGRES_USER: postgres
+      POSTGRES_DB: ipr_demo
+      POSTGRES_USER: ipr_service
       READONLY_USER: ipr_ro
       SERVICE_USER: ipr_service
       PGDATA: /var/lib/postgresql/data/pgdata
@@ -102,7 +103,7 @@ services:
       READONLY_PASSWORD: root
       SERVICE_PASSWORD: root
     ports:
-      - 5432:5432
+      - 5433:5432
     networks:
       - app-network
     healthcheck:
@@ -132,20 +133,15 @@ services:
       - app-network
     restart: always
   ipr_api:
-    image: bcgsc/pori-ipr-api:latest
-    command: >
-      /bin/bash -c "npm install sequelize-cli
-      && npm install pg pg-hstore
-      &&  [ -f config/config.json ] || ./node_modules/.bin/sequelize-cli init
-      && ./node_modules/.bin/sequelize-cli db:migrate
-      && npm start"
-    # ["/bin/bash", "ipr_api_start.sh"]
-    ports:
-      - 8081:8080
+    #image: bcgsc/pori-ipr-api:latest
+    build:
+      context:
+        /home/eleanor/git/pori_ipr_api/pori_ipr_api
     environment:
       IPR_DATABASE_HOSTNAME: ipr_db
-      IPR_DATABASE_NAME: ipr_demo
+      IPR_DATABASE_NAME: ipr
       IPR_DATABASE_USERNAME: ipr_service
+      IPR_DATABASE_ADMINNAME: ipr_service
       IPR_GRAPHKB_USERNAME: ipr_graphkb_link
       IPR_KEYCLOAK_KEYFILE: /keys/keycloak.key
       # customize settings below
@@ -155,6 +151,11 @@ services:
       IPR_KEYCLOAK_URI: http://localhost:8888/auth/realms/PORI/protocol/openid-connect/token
       IPR_REDIS_HOST: redis
       IPR_REDIS_PORT: 6379
+      SCRIPT_TYPE: create
+    command: >
+      /bin/bash -c "if [ 'create' == 'migration' ]; then ./ipr_api_migrate.sh; else ./ipr_api_create.sh; fi"
+    ports:
+      - 8081:8080
     depends_on:
       - ipr_db
       - redis
@@ -163,9 +164,15 @@ services:
       - app-network
     restart: always
     volumes:
-      #- source: ./sequelize_config.json
-      #  target: /usr/src/app/config/config.json
-      #  type: bind
+      - source: ./sequelize_config.json
+        target: /usr/src/app/config/config.json
+        type: bind
+      - source: ./ipr_api_create.sh
+        target: /usr/src/app/ipr_api_create.sh
+        type: bind
+      - source: ./ipr_api_migrate.sh
+        target: /usr/src/app/ipr_api_migrate.sh
+        type: bind
       - source: ./keys
         target: /keys
         type: bind
