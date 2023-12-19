@@ -1,0 +1,16 @@
+# for keycloak v16, you can use this command to get the entire realm with users and passwords
+# by setting the passwords as you want them to be in the running docker container
+# then running this command
+# docker exec -it kc /opt/jboss/keycloak/bin/standalone.sh \
+# -Djboss.socket.binding.port-offset=100 -Dkeycloak.migration.action=export \
+# -Dkeycloak.migration.provider=singleFile \
+# -Dkeycloak.migration.realmName=PORI \
+# -Dkeycloak.migration.usersExportStrategy=REALM_FILE \
+# -Dkeycloak.migration.file=/keys/PORI.json
+FROM jboss/keycloak:16.1.1
+USER root
+RUN mkdir -p /tmp/realm_data/
+COPY auth/kc_setup_keyfile.sh /scripts/kc_setup_keyfile.sh
+RUN chmod a+x /scripts/kc_setup_keyfile.sh
+COPY auth/PORI.json /tmp/realm_data/PORI.json
+ENV KEYCLOAK_IMPORT=/tmp/realm_data/PORI.json

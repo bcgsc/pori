@@ -1,0 +1,208 @@
+# This version of the docker-compose sets up the servers using http only for testing locally and
+# therefore does not require the top level apache server to configure the URLs
+version: '3.2'
+services:
+  keycloak:
+    build:
+      context: .
+      dockerfile: ./auth/Dockerfile.auth
+    environment:
+      KEYCLOAK_USER: $KEYCLOAK_ADMIN_USER
+      KEYCLOAK_PASSWORD: $KEYCLOAK_ADMIN_PASS
+      PROXY_ADDRESS_FORWARDING: "true"
+      JAVA_OPTS_APPEND: "-Djboss.socket.binding.port-offset=808"
+    ports:
+      - 8888:8888
+    networks:
+      - app-network
+    healthcheck:
+      # test fetching public key from PORI realm
+      test: ["CMD", "bash", "/scripts/kc_setup_keyfile.sh", $KEYCLOAK_AUTH_URL, "admin", $KEYCLOAK_ADMIN_PASS, "PORI", "/keys/keycloak.key"]
+      interval: 45s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
+  graphkb_db:
+    image: orientdb:3.0
+    environment:
+      # customize settings below
+      ORIENTDB_ROOT_PASSWORD: root
+    ports:
+      - 2424:2424
+      - 2480:2480
+    networks:
+      - app-network
+    volumes:
+      - source: $GRAPHKB_DB_DATA
+        target: /orientdb/databases
+        type: bind
+      - source: $GRAPHKB_DB_BACKUP
+        target: /orientdb/backup
+        type: bind
+  graphkb_api:
+    image: bcgsc/pori-graphkb-api:latest
+    ports:
+      - 8080:8080
+    environment:
+      GKB_DB_CREATE: 1
+      GKB_DB_HOST: graphkb_db
+      GKB_DB_NAME: graphkb
+      GKB_KEYCLOAK_KEY_FILE: /keys/keycloak.key
+      KEY_PASSPHRASE: ''
+      # customize settings below
+      GKB_CORS_ORIGIN: '^.*$$'
+      GKB_DBS_PASS: $GKB_DBS_PASS
+      GKB_KEYCLOAK_URI: http://keycloak:8888/auth/realms/PORI/protocol/openid-connect/token #$KEYCLOAK_TOKEN_URI
+    depends_on:
+      - graphkb_db
+      - keycloak
+    networks:
+      - app-network
+    restart: always
+    volumes:
+      - source: ./keys
+        target: /keys
+        type: bind
+        read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/version"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  graphkb_client:
+    image: bcgsc/pori-graphkb-client:latest
+    environment:
+      KEYCLOAK_REALM: PORI
+      KEYCLOAK_CLIENT_ID: GraphKB
+      # customize settings below
+      API_BASE_URL: http://localhost:8080
+      KEYCLOAK_URL: $KEYCLOAK_AUTH_URL 
+      PUBLIC_PATH: /
+    ports:
+      - 5000:80
+    depends_on:
+      - graphkb_api
+    networks:
+      - app-network
+    restart: always
+  ipr_db:
+    #image: bcgsc/pori-ipr-demodb:latest
+    build:
+      context: /home/eleanor/git/pori_ipr_api/pori_ipr_api
+      dockerfile: /home/eleanor/git/pori_ipr_api/pori_ipr_api/Dockerfile.prod.db
+    restart: always
+    environment:
+      POSTGRES_USER: $IPR_POSTGRES_USER
+      SERVICE_USER: $IPR_SERVICE_USER
+      PGDATA: /var/lib/postgresql/data/pgdata
+      # customize settings below
+      POSTGRES_PASSWORD: $IPR_POSTGRES_PASSWORD
+      SERVICE_PASSWORD: $SERVICE_PASSWORD
+    ports:
+      - $IPR_DB_PORT:5432
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    #volumes:
+    # - source: $PSQL_DB_DATA
+    #   target: /var/lib/postgresql/data
+    #   type: bind
+    # - source: $PSQL_DB_BACKUP
+    #   target: /var/lib/postgresql/backup
+    #   type: bind
+  redis:
+    image: redis:6.2-alpine
+    # Set health checks to wait until redis has started
+    healthcheck:
+      test: redis-cli ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      # Maps port 6379 on service container to the host
+      - 6379:6379
+    networks:
+      - app-network
+    restart: always
+  ipr_api:
+    #image: bcgsc/pori-ipr-api:latest
+    build:
+      context:
+        /home/eleanor/git/pori_ipr_api/pori_ipr_api
+    environment:
+      IPR_DATABASE_HOSTNAME: $IPR_DATABASE_HOSTNAME
+      IPR_DATABASE_NAME: $IPR_DATABASE_NAME
+      IPR_DATABASE_USERNAME: $IPR_DATABASE_USERNAME
+      IPR_DATABASE_ADMINNAME: $IPR_DATABASE_ADMINNAME
+      IPR_GRAPHKB_USERNAME: $IPR_GRAPHKB_USERNAME
+      IPR_KEYCLOAK_KEYFILE: $IPR_KEYCLOAK_KEYFILE
+      # customize settings below
+      IPR_DATABASE_PASSWORD: tiesting #$IPR_DATABASE_PASSWORD
+      IPR_SERVICE_PASS: tiesting
+      SERVICE_PASS: tiesting
+      SERVICE_PASSWORD: tiesting
+      IPR_SERVICE_PASSWORD: tiesting
+      IPR_GRAPHKB_PASSWORD: $IPR_GRAPHKB_PASSWORD
+      IPR_GRAPHKB_URI: http://localhost:8080/api
+      IPR_KEYCLOAK_URI: $KEYCLOAK_TOKEN_URI 
+      IPR_REDIS_HOST: redis
+      IPR_REDIS_PORT: 6379
+      IPR_REDIS_QUEUE_PORT: 6380
+      SCRIPT_TYPE: create
+    command: /bin/bash -c "npm start" #>
+    # /bin/bash -c "if [ 'migration' == 'migration' ]; then ./ipr_api_migrate.sh; else ./create_ipr_schema.sh; fi"
+    ports:
+      - 8081:8080
+    depends_on:
+      - ipr_db
+      - redis
+      - keycloak
+    networks:
+      - app-network
+    restart: always
+    tty: true
+    volumes:
+      - source: ./sequelize_config.json
+        target: /usr/src/app/config/config.json
+        type: bind
+      - source: ./create_ipr_schema.sh
+        target: /usr/src/app/create_ipr_schema.sh
+        type: bind
+      - source: ./ipr_api_migrate.sh
+        target: /usr/src/app/ipr_api_migrate.sh
+        type: bind
+      - source: ./keys
+        target: /keys
+        type: bind
+        read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://ipr_api:8080/api/spec.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  ipr_client:
+    image: bcgsc/pori-ipr-client:latest
+    environment:
+      KEYCLOAK_REALM: PORI
+      # customize settings below
+      API_BASE_URL: http://localhost:8081/api
+      GRAPHKB_URL: http://localhost:5000
+      KEYCLOAK_URL: $KEYCLOAK_AUTH_URL
+      PUBLIC_PATH: /
+    ports:
+      - 3000:80
+    depends_on:
+      - ipr_api
+    networks:
+      - app-network
+    restart: always
+networks:
+  app-network:
+    driver: bridge
