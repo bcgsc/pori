@@ -36,13 +36,8 @@ services:
     networks:
       - app-network
     volumes:
-      - source: ./databases/orientdb/data
-        target: /orientdb/databases
-        type: bind
-      - source: ./databases/orientdb/backup
-        target: /orientdb/backup
-        type: bind
-    user: "${UID}:${GID}"
+      - orientdb_data:/orientdb/databases
+      - orientdb_backup:/orientdb/backup
   graphkb_api:
     image: bcgsc/pori-graphkb-api:latest
     ports:
@@ -140,7 +135,7 @@ services:
     image: bcgsc/pori-ipr-api:latest
     command: npm start
     ports:
-      - 8082:8082
+      - 8082:8080
     environment:
       IPR_DATABASE_HOSTNAME: ipr_db
       IPR_DATABASE_NAME: ipr_demo
@@ -191,3 +186,6 @@ services:
 networks:
   app-network:
     driver: bridge
+volumes:
+  orientdb_data:
+  orientdb_backup:
