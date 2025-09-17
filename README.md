@@ -27,7 +27,7 @@ will be updated on merge to the master branch of this repository.
 First, set up a virtual environment (Optional but recommended)
 
 ```bash
-python3 -m venv venv
+python3.8 -m venv venv
 source venv/bin/activate
 pip install -U setuptools pip
 ```
