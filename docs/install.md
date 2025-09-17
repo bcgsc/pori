@@ -9,7 +9,7 @@ Most of the servers are auto-started together with docker-compose but the keyclo
 
     If this is not your first time setting up or running these instructions see the [update instructions](#updating-an-existing-demo-install) instead
 
-Start by cloning this repository which contains the default docker compose configs (`docker-compose.yml` and `docker-compose.dev.yml`)
+Start by cloning this repository which contains the default docker compose configs (`docker-compose.dev.yml`)
 
 ```bash
 git clone https://github.com/bcgsc/pori.git
@@ -53,7 +53,7 @@ mkdir keys
 Next, use docker-compose to start the DB, API, and client servers. The paths/URLs in the docker-compose.yml file should be adjusted to match your deployment. In our demo deployment we have a proxy pass set up from the configured ports to handle the https layer
 
 ```bash
-docker-compose -f docker-compose.dev.yml up -d --build --remove-orphans
+docker compose -f docker-compose.dev.yml up -d --build --remove-orphans
 ```
 
 This will start the following services

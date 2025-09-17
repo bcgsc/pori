@@ -42,6 +42,7 @@ services:
       - source: ./databases/orientdb/backup
         target: /orientdb/backup
         type: bind
+    user: "${UID}:${GID}"
   graphkb_api:
     image: bcgsc/pori-graphkb-api:latest
     ports:
@@ -139,7 +140,7 @@ services:
     image: bcgsc/pori-ipr-api:latest
     command: npm start
     ports:
-      - 8081:8080
+      - 8082:8082
     environment:
       IPR_DATABASE_HOSTNAME: ipr_db
       IPR_DATABASE_NAME: ipr_demo
@@ -176,7 +177,7 @@ services:
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
-      API_BASE_URL: http://localhost:8081/api
+      API_BASE_URL: http://localhost:8082/api
       GRAPHKB_URL: http://localhost:5000
       KEYCLOAK_URL: http://localhost:8888/auth
       PUBLIC_PATH: /
