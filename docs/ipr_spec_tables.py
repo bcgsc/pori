@@ -1,7 +1,6 @@
 """
 Generate the tables describing the various fields
-that can be given as input in the JSON passed to the IPR
-python adapter
+that can be given as input in the JSON passed to the python adapter
 """
 import json
 import os
@@ -79,7 +78,7 @@ def spec_to_md(spec, optional_only=False, ignore_nested=False):
     return result
 
 
-specfile = os.path.join(os.path.dirname(__file__), '_pori_ipr_python/ipr/content.spec.json')
+specfile = os.path.join(os.path.dirname(__file__), '_pori_python/pori_python/ipr/content.spec.json')
 with open(specfile, 'r') as fh:
     spec = json.load(fh)
 

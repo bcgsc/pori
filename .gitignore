@@ -8,6 +8,5 @@ build-docs
 docs/_pori*
 docs/*/_pori*
 docs/*/python_adapter
-docs/developer_reference/ipr
-docs/developer_reference/graphkb
+docs/developer_reference/pori_python
 docs/ipr/includes
