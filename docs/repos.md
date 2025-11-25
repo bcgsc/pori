@@ -1,8 +1,8 @@
 
 # All PORI Repositories
 
-The platform has two main components: a graph knowledge base ([GraphKB](../graphkb)), and a reporting
-application ([IPR](../ipr)). However these are modularized across several repositories listed below.
+The platform has two main components: a graph knowledge base ([GraphKB](graphkb/index.md)), and a reporting
+application ([IPR](ipr/index.md)). However these are modularized across several repositories listed below.
 
 An overview of each project is given below. The projects are grouped by their type of development expertise.
 
@@ -64,43 +64,37 @@ The GraphKB project also includes a loaders package which is used to import cont
 
 </div>
 
-## Python Adapters
+## Python Adapter
 
-The popularity of python in bioinformatics makes it one of the top choices for adapters. These adapters are written to help users integrate PORI into their existing bioinformatic workflows. They are published and installed via pip.
+The popularity of python in bioinformatics makes it one of the top choices for adapters. This adapter is written to help users integrate PORI into their existing bioinformatic workflows. It is published and installed via pip.
 
 ```bash
-pip install graphkb ipr
+pip install pori-python
 ```
 
-A developer reference for these packages including the function signatures and package details can be found in the developer reference section [here](../developer_reference).
+!!! Warning "Deprecation warning"
+
+    Legacy [GraphKB Python Adapter](https://github.com/bcgsc/pori_graphkb_python) and [IPR Python Adapter](https://github.com/bcgsc/pori_ipr_python) are now retired. Both sets of functionalities can now be found in the new [PORI Python Adapter](https://github.com/bcgsc/pori_python)
 
 <div class='projects' markdown='1'>
 
-- ### [GraphKB Python Adapter](https://github.com/bcgsc/pori_graphkb_python)
+- ### [PORI Python Adapter](https://github.com/bcgsc/pori_python)
 
     ![graphkb python](./images/graph-icon_outline.svg)
 
-    Python adapter package for querying the GraphKB API. See the related
-    [user manual](../graphkb/python/docs) for instructions on incorporating
-    this into custom scripts.
+    This package combines two sets of functionalities; GraphKB-related utilities for querying the GraphKB API and matching observed variants, and IPR-related utilities for generating and uploading reports to the IPR API.
 
-- ### [IPR Python Adapter](https://github.com/bcgsc/pori_ipr_python)
+<!-- - ### [PORI cBioportal](https://github.com/bcgsc/pori_cbioportal)
 
-    ![ipr python](./images/wrench.svg)
+    ![pori cbioportal](https://about.cbioportal.org/lovable-uploads/a1c7045f-ba63-47c3-a285-86d6cd769f37.png)
 
-    Python adapter for generating reports uploaded to the IPR API. This python tool takes in variant inputs as tab-delimited files and annotates them using GraphKB. The resulting output is uploaded to IPR as a report. Additional report content such as images and metadata can be passed to be included in the report upload.
-
-- ### [PORI cBioportal](https://github.com/bcgsc/pori_cbioportal)
-
-    ![pori cbioportal](https://frontend.cbioportal.org/reactapp/images/369b022222badf37b2b0c284f4ae2284.png)
-
-    This python adapter is intended to demonstrate creating a PORI report using data exported from a cBioportal instance. It uses the expression, copy number, fusion, and small mutation data as well as available metadata to complete the reports.
+    This python adapter is intended to demonstrate creating a PORI report using data exported from a cBioportal instance. It uses the expression, copy number, fusion, and small mutation data as well as available metadata to complete the reports. -->
 
 </div>
 
 ## Other Supporting Packages
 
-There are a number of packages that are split into separate projects so that they can be re-used across the other PORI projects. For example, the GraphKB parser is used by the GraphKB API, the GraphKB Client, and the GraphKB data loaders.
+There are a number of packages that are split into separate projects so that they can be re-used across the other PORI projects, like the GraphKB API, the GraphKB Client and the GraphKB data loader.
 
 <div class='projects' markdown='1'>
 
@@ -108,12 +102,11 @@ There are a number of packages that are split into separate projects so that the
 
     ![graphkb parser](./images/graph-icon_outline.svg)
 
-    A package for parsing and recreating HGVS-like variant notation used in GraphKB. This is used by both the API and client applications. Try it out online with [RunKit](https://runkit.com/creisle/6083062ff39ff0001b93ea6f)
+    A package for parsing and recreating HGVS-like variant notation used in GraphKB. Try it out online with [PlayCode](https://playcode.io/2586394), or on the Notation tab of the About section of the GraphKB client ([GraphKB client demo](https://pori-demo.bcgsc.ca/graphkb/about/notation); login instructions [here](./demo.md#graphkb)).
 
 - ### [GraphKB Schema](https://github.com/bcgsc/pori_graphkb_schema)
 
     ![graphkb schema](./images/pori-schema-overview.svg)
 
-    The GraphKB Schema package defines the vertex and edge classes in the DB. It is used as a dependency of both the API and client applications.
-
+    The GraphKB Schema package defines the data model, including the vertex and edge classes in the DB.
 </div>
