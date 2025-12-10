@@ -1,6 +1,6 @@
 ipykernel>=6.29,<7.0
 pandas>=2.0,<3.0
-pori_python>=1.2,<2.0
+pori-python>=1.2,<2.0
 Markdown>=3.9,<4.0
 markdown-refdocs>=1.4,<2.0
 mkdocs>=1.6,<2.0
