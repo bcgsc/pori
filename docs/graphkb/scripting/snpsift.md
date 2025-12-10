@@ -1,11 +1,11 @@
-# Annotate SNPSift Files
+# Annotate a tab-deliVariant Files
 
 The script [annotate_snpsift.py](./annotate_snpsift.py) can be used to match variants from input files to an instance of GraphKB. Copy the script locally and install the package dependencies.
 
 !!! note "Must use Python3.6 or higher"
 
 ```bash
-pip3 install graphkb pandas
+pip3 install pori_python pandas
 ```
 
 Then the annotator can be run as follows

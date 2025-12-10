@@ -5,12 +5,12 @@ from typing import Dict, List
 
 import pandas as pd
 
-from graphkb import GraphKBConnection
-from graphkb.constants import BASE_RETURN_PROPERTIES, GENERIC_RETURN_PROPERTIES
-from graphkb.match import match_positional_variant
-from graphkb.types import Statement
-from graphkb.util import FeatureNotFoundError, convert_aa_3to1, convert_to_rid_list
-from graphkb.vocab import get_term_tree
+from pori_python.graphkb import GraphKBConnection
+from pori_python.graphkb.constants import FAILED_REVIEW_STATUS, STATEMENT_RETURN_PROPERTIES
+from pori_python.graphkb.match import match_positional_variant
+from pori_python.graphkb.types import Statement
+from pori_python.graphkb.util import FeatureNotFoundError, convert_aa_3to1, convert_to_rid_list
+from pori_python.graphkb.vocab import get_term_tree
 
 
 def annotate_variant(
@@ -41,18 +41,7 @@ def annotate_variant(
 
     if variant_matches:
         print(f'{variant_name} matches {len(variant_matches)} variant records')
-    # return properties should be customized to the users needs
-    return_props = (
-        BASE_RETURN_PROPERTIES
-        + ['sourceId', 'source.name', 'source.displayName']
-        + [f'conditions.{p}' for p in GENERIC_RETURN_PROPERTIES]
-        + [f'subject.{p}' for p in GENERIC_RETURN_PROPERTIES]
-        + [f'evidence.{p}' for p in GENERIC_RETURN_PROPERTIES]
-        + [f'relevance.{p}' for p in GENERIC_RETURN_PROPERTIES]
-        + [f'evidenceLevel.{p}' for p in GENERIC_RETURN_PROPERTIES]
-        + ['reviewStatus']
-    )
-
+    
     statements = typing.cast(
         Statement,
         graphkb_conn.query(
@@ -62,10 +51,14 @@ def annotate_variant(
                     'conditions': convert_to_rid_list(variant_matches),
                     'operator': 'CONTAINSANY',
                 },
-                'returnProperties': return_props,
+                'returnProperties': STATEMENT_RETURN_PROPERTIES, # should be customized to the users needs
             }
         ),
     )
+
+    # filtering out statements with failed review
+    statements = [s for s in statements if s.get("reviewStatus") != FAILED_REVIEW_STATUS]
+
     if not statements:
         if include_unmatched:
             results.append(
