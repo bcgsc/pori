@@ -39,7 +39,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     This is an external knowledge base which can be imported as statements into GraphKB.
 
-- ![logo](https://clinicaltrials.gov/ct2/html/images/ct.gov-nlm-nih-logo.png)
+- ![logo](https://clinicaltrials.gov/assets/images/ctg-header-logo.svg)
 
     ### ClinicalTrials.gov
 
@@ -60,7 +60,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     Catalogue of Somatic Mutations in Cancer. Loaders are written for importing both the resistance mutations as well as recurrent fusions information.
 
-- ![cosmic logo]()
+- ![dgidb logo]()
 
     ### DGIdb
 
@@ -168,7 +168,7 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
 
     A collection of putative alteration/action relationships identified in clinical, preclinical, and inferential studies.
 
-- ![logo](https://ncit.nci.nih.gov/ncitbrowser/images/thesaurus_browser_logo.jpg)
+- ![logo](https://evsexplore.semantics.cancer.gov/evsexplore/assets/images/NCItTile.png)
 
     ### NCIt
 
@@ -190,13 +190,23 @@ Most popular resources which have pre-built loaders provided for GraphKB are lis
     As this is not an open data resource, using this loader will require licensing specific to your
     user/instance. This is an external knowledge base which can be imported as statements into GraphKB.
 
+- ![logo](https://oncotree.mskcc.org/assets/favicon-CLRaiHsg.svg)
+
+    ### OncoTree
+
+    [https://oncotree.mskcc.org](https://oncotree.mskcc.org/)
+
+    [Attribution](https://oncotree.mskcc.org/about.html#useful-links)
+
+    Classify cancers by both histological and molecular traits.
+
 - ![logo](http://uberon.github.io/images/u-logo.jpg)
 
     ### Uberon
 
-    [https://uberon.github.io](https://uberon.github.io/)
+    [https://obophenotype.github.io/uberon/](https://obophenotype.github.io/uberon/)
 
-    [CC BY 3.0](https://github.com/obophenotype/uberon/issues/1139)
+    [CC BY 3.0](https://github.com/obophenotype/uberon/?tab=License-1-ov-file#readme)
 
     The uberon ontology contains anatomical entity definitions.
 
