@@ -8,7 +8,7 @@ All continuous notation follows a similar pattern that is loosely defined as:
 ```
 
 The `reference feature` would be the gene (chromosome, transcript, etc.)  name that the variant
-occurs on. The prefix denotes the coordinate type (see [prefixes](#prefixes)). The range is the
+occurs on. The prefix denotes the coordinate type (see [prefixes](./coordinate_systems)). The range is the
 position or positions of the variant. For a deletion, this is the range that is deleted. For an
 insertion, this is the two positions the sequence is inserted between. The sequence element will
 depend on the type of variant being described, but often this is the untemplated/inserted sequence.
@@ -23,9 +23,9 @@ specificity.
 
 ### Substitution
 
-[Genomic/CDS substitution variants](http://varnomen.hgvs.org/recommendations/DNA/variant/substitution/)
+[Genomic/CDS substitution variants](https://hgvs-nomenclature.org/stable/recommendations/DNA/substitution/)
 differ from
-[protein substitution variants](http://varnomen.hgvs.org/recommendations/protein/variant/substitution/).
+[protein substitution variants](https://hgvs-nomenclature.org/stable/recommendations/protein/substitution/).
 Therefore examples of both will be given.
 
 A protein missense mutation where G is replaced with D
@@ -42,7 +42,7 @@ chr11:g.1234A>C
 
 ### Indel
 
-A [protein deletion](http://varnomen.hgvs.org/recommendations/protein/variant/deletion/) of amino
+A [protein deletion](https://hgvs-nomenclature.org/stable/recommendations/protein/deletion/) of amino
 acids GH and insertion of three amino acids TTA
 
 ```text
@@ -60,7 +60,7 @@ Insertions must be a range to specify between which two coordinates the insertio
 avoids the problem
 when only a single coordinate is given of which side it is inserted on.
 
-An [protein insertion](http://varnomen.hgvs.org/recommendations/protein/variant/insertion/) of four
+An [protein insertion](https://hgvs-nomenclature.org/stable/recommendations/protein/insertion/) of four
 amino acids between G123 and H124. The sequence element here is optional and can also be described
 as a number if the number of bases inserted is known but the sequence is not given.
 
@@ -95,7 +95,7 @@ EGFR:p.R10_G14dupRSTGG
 
 ### Frameshift
 
-[Frameshifts](http://varnomen.hgvs.org/recommendations/protein/variant/frameshift/) are only
+[Frameshifts](https://hgvs-nomenclature.org/stable/recommendations/protein/frameshift/) are only
 applicable to variants denoted with protein coordinates. Frameshift notation follows the pattern
 below
 

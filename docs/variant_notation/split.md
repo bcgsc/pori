@@ -50,3 +50,21 @@ a translocation might be described
 
 Above we are describing a translocation from chr8:1234 to chr7:4567 where AAT is the untemplated
 sequence inserted between the breakpoints.
+
+
+### Fusion nomenclature using the ```::``` delimiter
+
+As of v2.1.0 of the [pori_graphkb_parser](https://github.com/bcgsc/pori_graphkb_parser), some support has been added for [VICC](https://fusions.cancervariants.org/en/latest/index.html)-like fusion nomenclature using the ```::``` delimiter.
+
+Fusion variants can follow the pattern below
+
+```text
+<feature>:<prefix>.<start_range_pos>_<end_range_pos>::<feature>:<prefix>.<start_range_pos>_<end_range_pos>
+```
+
+Previous example ```(EWSR1,FLI1):fusion(e.4,e.7)``` can be written as:
+```text
+EWSR1:e.?_4::FLI1:e.7_?
+```
+
+Note that positions need to be given as a range. Use '?' when the starting and/or the ending position is unknowned.
