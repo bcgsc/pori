@@ -11,7 +11,7 @@ The kbCategory field is how IPR knows this row/entry should be treated as a vari
 
 Computing the various expression metrics is largely optional and done prior by the user prior to upload/report-creation. These metrics are displayed to the analyst reviewing the case along with the variant status. The standard fields we provide input for are listed below.
 
-As with the other variants, these should be passed to the IPR python adapter in the main report content JSON.
+As with the other variants, these should be passed to the python adapter in the main report content JSON.
 
 ```json
 {
@@ -22,7 +22,7 @@ As with the other variants, these should be passed to the IPR python adapter in 
 }
 ```
 
-Each variant is an object which may contain any of the following fields (in addition to the required fields). Examples of how these fields are calculated can be found in the [scripting examples section](../../scripting/RNA_Expression_Metrics).
+Each variant is an object which may contain any of the following fields (in addition to the required fields). Examples of how these fields are calculated can be found in the [scripting examples section](../scripting/RNA_Expression_Metrics.ipynb).
 
 {%
    include-markdown "../includes/expressionVariants.md"
@@ -80,7 +80,7 @@ The use can optionally include expression density plots to allow the user to vie
 
 !!! Info
 
-    These will be passed to the report upload function via the [images section](../../optional_analyses/images) of the JSON input
+    These will be passed to the report upload function via the [images section](../optional_analyses/images.md) of the JSON input
 
 key: `expDensity\.(\S+)`
 

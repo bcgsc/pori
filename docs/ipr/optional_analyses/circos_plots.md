@@ -4,7 +4,7 @@ There are a number of fields for including circos plots in the report. Circos pl
 
 !!! Info
 
-    These will be passed to the report upload function via the [images section](../images) of the JSON input
+    These will be passed to the report upload function via the [images section](images.md) of the JSON input
 
 ## Copy Number Circos Plot
 

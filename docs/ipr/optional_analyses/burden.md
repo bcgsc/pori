@@ -32,7 +32,7 @@ of samples. The "role" determines with comparator these values are calculated in
 ## Comparators and Roles
 
 The role used by the mutation burden data is linked to the mutation burden images in the report
-that is created by the [comparators input](../comparators).
+that is created by the [comparators input](comparators.md).
 
 The images use the following key: `mutationBurden\.(barplot|density|legend)_(sv|snv|indel)\.(primary|secondary|tertiary|quaternary)`
 

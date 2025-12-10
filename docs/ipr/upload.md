@@ -2,37 +2,36 @@
 
 ## Install
 
-Before you can generate and upload reports you will first need to install the package with pip
+Before you can generate and upload reports you will first need to install the [PORI Python Adapter library](https://pypi.org/project/pori-python/). The package has been tested for python versions from 3.9 to 3.12.
 
 ```bash
-pip install ipr
+pip install pori-python
 ```
 
-This will require python 3.6 or greater.
+The `ipr` command is available as an endpoint to the [command_interface()](../../developer_reference/pori_python/ipr/main/#command_interface) function, which call the [ipr_report()](../../developer_reference/pori_python/ipr/main/#ipr_report) function based on parsed user input. This can be used to upload a report from the command line. Use the `--help`/`-h` option to see a help menu with full options.
 
-Use the `--help`/`-h` option to see a help menu with full options.
 
 ```bash
 ipr -h
 ```
 
-Then this can be used to upload a report from the command line. Users should use the `--ipr_url` argument to point the loader to their particular instance of IPR. A similar option exists for GraphKB.
+Users should use the `--ipr_url` argument to point the loader to their particular instance of IPR. A similar option exists for GraphKB.
 
 ```bash
 ipr -c /path/to/your/json/input/file.json --ipr_url https://youriprinstance-api.com/api
 ```
 
-or as part of a script (see the [developer reference](../../developer_reference/ipr/main/#create_report))
+Report creation and upload can also be done as part of a script (see the [developer reference](../developer_reference/pori_python/ipr/main.md#ipr_report))
 
 ```python
-from ipr.main import create_report
+from ipr.main import ipr_report
 
-create_report(...)
+ipr_report(...)
 ```
 
 The pre-generated content (ex. variant calls) of the report is passed to this function via a JSON object. The various sections of this object are desribed in the core variants and optional analyses sections.
 
-The [full specification](https://raw.githubusercontent.com/bcgsc/pori_ipr_python/master/ipr/content.spec.json) for the upload can be viewed/explored via the JSON schema explorer [here](https://json-schema.app/view?url=https://raw.githubusercontent.com/bcgsc/pori_ipr_python/master/ipr/content.spec.json)
+The [full specification](https://raw.githubusercontent.com/bcgsc/pori_python/main/pori_python/ipr/content.spec.json) for the upload can be viewed/explored via the JSON schema explorer [here](https://json-schema.app/view?url=https://raw.githubusercontent.com/bcgsc/pori_python/main/pori_python/ipr/content.spec.json)
 
 Most content is optional with a few top-level elements required.
 
