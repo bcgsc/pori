@@ -9,7 +9,7 @@ Most of the servers are auto-started together with docker-compose but the keyclo
 
     If this is not your first time setting up or running these instructions see the [update instructions](#updating-an-existing-demo-install) instead
 
-Start by cloning this repository which contains the default docker compose configs (`docker-compose.yml` and `docker-compose.dev.yml`)
+Start by cloning this repository which contains the default docker compose configs (`docker-compose.prod.yml` and `docker-compose.dev.yml`)
 
 ```bash
 git clone https://github.com/bcgsc/pori.git
@@ -95,7 +95,7 @@ Here is an example of running the GraphKB Loader on the vocabulary terms using t
 First download the vocabulary terms data
 
 ```bash
-wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/develop/data/vocab.json
+wget https://raw.githubusercontent.com/bcgsc/pori_graphkb_loader/master/data/vocab.json
 ```
 
 Then you can load these terms using the ontology file loader

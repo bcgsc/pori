@@ -10,6 +10,7 @@ GraphKB is a graph-based implementation of a cancer knowledge base. An overview 
 
 ## Features
 
+
 ### Dual Aggregate and Standalone KB
 
 GraphKB functions both as an aggregate knowledge base as well as a standalone application. Data can be imported from many external sources (see the [data loading page](./loading_data.md)), but it can also be input directly. This also allows users to make manual updates and changes to imported content which is helpful when there may be errors or missing data that needs to be addressed in a time-sensitive manner.
@@ -67,6 +68,4 @@ modules to simplify this process. See the [data loading page](./loading_data.md)
 
 ## Using the Python Adapter
 
-The python adapter to GraphKB is provided for users who would like to incorporate an instance of
-GraphKB into their own scripts and pipelines. Additionally it is used by the IPR python adapter to
-connect to GraphKB.
+The PORI Python Adapter is provided for users who would like to incorporate an instance of GraphKB (and/or IPR) into their own scripts and pipelines.

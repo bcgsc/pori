@@ -40,11 +40,11 @@ The expected variant types are given below. Some types are only applicable to ce
 
 ### Unsupported HGVS Features
 
-There are a few elements of the [HGVS v15.11](http://varnomen.hgvs.org/) notation that are not yet supported ([contributions are welcome!](https://github.com/bcgsc/pori_graphkb_parser)). These include:
+Some elements of the [HGVS v15.11](http://varnomen.hgvs.org/) notation that are not yet supported ([contributions are welcome!](https://github.com/bcgsc/pori_graphkb_parser)). These include, but are not limited to:
 
-- [mosacism](http://varnomen.hgvs.org/recommendations/DNA/variant/complex/)
-- [chimerism](http://varnomen.hgvs.org/recommendations/DNA/variant/complex/)
-- [RNA variants](http://varnomen.hgvs.org/recommendations/RNA/)
+- [methylation](https://hgvs-nomenclature.org/stable/recommendations/DNA/other/?h=methylation)
+- [mosaicism](https://hgvs-nomenclature.org/stable/recommendations/DNA/other/?h=mosaicism)
+- [chimerism](https://hgvs-nomenclature.org/stable/recommendations/DNA/other/?h=chimerism)
 - [conversions](http://varnomen.hgvs.org/recommendations/DNA/variant/conversion/)
 - [alleles](http://varnomen.hgvs.org/recommendations/DNA/variant/alleles/)
 - [v20 Complex Variants](https://varnomen.hgvs.org/recommendations/DNA/variant/complex/)

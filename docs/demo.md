@@ -40,14 +40,14 @@ By clicking on a row in the above table you will be brought to the corresponding
 
 ## GraphKB
 
-The demo instance of IPR is at [pori-demo.bcgsc.ca/graphkb](https://pori-demo.bcgsc.ca/graphkb). This will bring you to the login page of the GraphKB client application. The `iprdemo` credentials will also work with GraphKB to demonstrate single sign on. However, we also provide an admin demo account for GraphKB so that users can explore the admin-only sections of the application. The credentials for the administrative account are
+The demo instance of GraphKB is at [pori-demo.bcgsc.ca/graphkb](https://pori-demo.bcgsc.ca/graphkb). This will bring you to the login page of the GraphKB client application. The `iprdemo` credentials will also work with GraphKB to demonstrate single sign on. However, we also provide an admin demo account for GraphKB so that users can explore the admin-only sections of the application. The credentials for the administrative account are
 
 - username: `graphkb_admin`
 - password: `graphkb_admin`
 
 ## APIs
 
-If you are a developer looking for a demo of the APIs for GraphKB and IPR their documentation can be found here
+If you are a developer looking for a demo of the APIs for GraphKB and IPR, their documentation can be found here
 
-- [IPR OpenAPI Spec](https://pori-demo.bcgsc.ca/ipr-api/api/spec/)
-- [GraphKB OpenAPI Spec](https://pori-demo.bcgsc.ca/graphkb-api/api/spec) ([swagger version](https://pori-demo.bcgsc.ca/graphkb-api/api/spec/swagger))
+- [IPR Specifications](https://pori-demo.bcgsc.ca/ipr-api/api/spec/)
+- [GraphKB Specifications](https://pori-demo.bcgsc.ca/graphkb-api/api/spec)

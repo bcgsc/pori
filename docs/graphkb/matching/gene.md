@@ -1,7 +1,6 @@
 # Gene Example
 
-The [`get_equivalent_features()`](./../reference/graphkb/match/#get_equivalent_features) method is
-used to find genes *equivalent* to the input/target feature.
+The [`get_equivalent_features()`](../../developer_reference/pori_python/graphkb/match.md#get\_equivalent\_features) method is used to find genes *equivalent* to the input/target feature.
 
 ```python
 from graphkb.match import get_equivalent_features

@@ -74,7 +74,7 @@ Example cell type values are
 
 !!! Info
 
-    These will be passed to the report upload function via the [images section](../images) of the JSON input
+    These will be passed to the report upload function via the [images section](images.md) of the JSON input
 
 key: `cibersort.cd8_positive_t-cell_scatter`
 
@@ -88,7 +88,7 @@ key: `cibersort.combined_t-cell_scatter`
 
 !!! Info
 
-    These will be passed to the report upload function via the [images section](../images) of the JSON input
+    These will be passed to the report upload function via the [images section](images.md) of the JSON input
 
 [MiXCR Publication](https://pubmed.ncbi.nlm.nih.gov/25924071/)
 

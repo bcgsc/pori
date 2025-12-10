@@ -6,13 +6,13 @@ keys: `expression.chart`, `expression.legend`
 
 !!! Info
 
-    These will be passed to the report upload function via the [images section](../images) of the JSON input
+    These will be passed to the report upload function via the [images section](images.md) of the JSON input
 
 This plot represents the pairwise correlation of the RNA expression of the current sample against samples from a variety of reference distributions. Often this is used as a *sanity check* of the diagnosis. It is expected that the sample should correlate most highly with other samples within the disease distribution that is most closely related to the diagnosis. It is also expected that samples with a lower tumour content/purity may show correlation with their biopsy site.
 
 ![expression correlation plot](../images/expression_correlation.png)
 
-An example of how this type of plot is created can be found in the scripting examples [here](../../scripting/RNA_Expression_Similarity).
+An example of how this type of plot is created can be found in the scripting examples [here](../scripting/RNA_Expression_Similarity.ipynb).
 
 ## Subtyping Plots
 
