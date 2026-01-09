@@ -5,7 +5,7 @@ that is used to review and curate reports which summarize the interpretation of 
 precision oncology patients.
 
 This project is modularized across three repositories: [web client](https://github.com/bcgsc/pori_ipr_client),
-[REST API](https://github.com/bcgsc/pori_ipr_api), and a [python adapter](https://github.com/bcgsc/pori_ipr_python).
+[REST API](https://github.com/bcgsc/pori_ipr_api), and a [python adapter](https://github.com/bcgsc/pori_python).
 The API and web client are servers and are provided as docker containers. The python adapter is
 used to build reports and upload them into IPR.
 

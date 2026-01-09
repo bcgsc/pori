@@ -4,7 +4,7 @@ The [`get_equivalent_features()`](./../reference/graphkb/match/#get_equivalent_f
 used to find genes *equivalent* to the input/target feature.
 
 ```python
-from graphkb.match import get_equivalent_features
+from pori_python.graphkb.match import get_equivalent_features
 
 genes = get_equivalent_features(graphkb_conn, 'KRAS')
 ```
