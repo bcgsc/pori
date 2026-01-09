@@ -5,7 +5,7 @@
 Before you can generate and upload reports you will first need to install the package with pip
 
 ```bash
-pip install ipr
+pip install pori_python
 ```
 
 This will require python 3.6 or greater.
@@ -25,7 +25,7 @@ ipr -c /path/to/your/json/input/file.json --ipr_url https://youriprinstance-api.
 or as part of a script (see the [developer reference](../../developer_reference/ipr/main/#create_report))
 
 ```python
-from ipr.main import create_report
+from pori_python.ipr.main import create_report
 
 create_report(...)
 ```
