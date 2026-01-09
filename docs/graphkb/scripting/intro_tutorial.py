@@ -1,8 +1,8 @@
-from graphkb import GraphKBConnection
-from graphkb.constants import BASE_RETURN_PROPERTIES, GENERIC_RETURN_PROPERTIES
-from graphkb.match import match_positional_variant
-from graphkb.util import convert_to_rid_list
-from graphkb.vocab import get_term_tree
+from pori_python.graphkb import GraphKBConnection
+from pori_python.graphkb.constants import BASE_RETURN_PROPERTIES, GENERIC_RETURN_PROPERTIES
+from pori_python.graphkb.match import match_positional_variant
+from pori_python.graphkb.util import convert_to_rid_list
+from pori_python.graphkb.vocab import get_term_tree
 
 GKB_API_URL = 'https://pori-demo.bcgsc.ca/graphkb-api/api'
 GKB_USER = 'colab_demo'

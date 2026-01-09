@@ -13,7 +13,7 @@ KRAS:p.G13E
 !!! note "Must use Python3.6 or higher"
 
 ```bash
-pip3 install graphkb pandas
+pip3 install pori_python pandas
 ```
 
 Then the annotator can be run as follows
@@ -31,7 +31,7 @@ list of arguments.
 python annotate_variant_list.py -h
 ```
 
-The output file will contain the variant name and the annotations pulled from GraphKB.
+The output file will contain the variant name and the annotations pulled from pori_python.graphkb.
 
 The names of the variants matched will be included in the output file as "variant_matches", this
 will be a semi-colon delimited list of all the variants which were considered to be present/equivalent

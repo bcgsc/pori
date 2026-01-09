@@ -5,7 +5,7 @@ The script [annotate_snpsift.py](./annotate_snpsift.py) can be used to match var
 !!! note "Must use Python3.6 or higher"
 
 ```bash
-pip3 install graphkb pandas
+pip3 install pori_python pandas
 ```
 
 Then the annotator can be run as follows
@@ -23,4 +23,4 @@ list of arguments.
 python annotate_snpsift.py -h
 ```
 
-The output file will contain the variant name and the annotations pulled from GraphKB.
+The output file will contain the variant name and the annotations pulled from pori_python.graphkb.

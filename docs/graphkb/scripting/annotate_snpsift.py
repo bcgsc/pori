@@ -5,12 +5,12 @@ from typing import Dict, List
 
 import pandas as pd
 
-from graphkb import GraphKBConnection
-from graphkb.constants import BASE_RETURN_PROPERTIES, GENERIC_RETURN_PROPERTIES
-from graphkb.match import match_positional_variant
-from graphkb.types import Statement
-from graphkb.util import FeatureNotFoundError, convert_aa_3to1, convert_to_rid_list
-from graphkb.vocab import get_term_tree
+from pori_python.graphkb import GraphKBConnection
+from pori_python.graphkb.constants import BASE_RETURN_PROPERTIES, GENERIC_RETURN_PROPERTIES
+from pori_python.graphkb.match import match_positional_variant
+from pori_python.graphkb.types import Statement
+from pori_python.graphkb.util import FeatureNotFoundError, convert_aa_3to1, convert_to_rid_list
+from pori_python.graphkb.vocab import get_term_tree
 
 
 def annotate_variant(

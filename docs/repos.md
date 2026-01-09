@@ -69,7 +69,7 @@ The GraphKB project also includes a loaders package which is used to import cont
 The popularity of python in bioinformatics makes it one of the top choices for adapters. These adapters are written to help users integrate PORI into their existing bioinformatic workflows. They are published and installed via pip.
 
 ```bash
-pip install graphkb ipr
+pip install pori_python
 ```
 
 A developer reference for these packages including the function signatures and package details can be found in the developer reference section [here](../developer_reference).
