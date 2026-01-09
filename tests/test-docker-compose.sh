@@ -10,8 +10,8 @@ up_count=-1
 while [ $x -le $RETRY ]
 do
     x=$(( $x + 1 ));
-    healthy_count=$( docker ps | grep pori_ | grep -c '(healthy)' )
-    up_count=$( docker ps | grep pori_ | grep -c '\sUp ' )
+    healthy_count=$( docker ps | grep pori- | grep -c '(healthy)' )
+    up_count=$( docker ps | grep pori- | grep -c '\sUp ' )
 
     if [ $healthy_count -ge $MIN_HEALTHY_EXPECTED ];
     then

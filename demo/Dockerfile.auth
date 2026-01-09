@@ -1,4 +1,4 @@
-FROM jboss/keycloak:16.1.1
+FROM quay.io/keycloak/keycloak:16.1.1
 USER root
 RUN mkdir -p /tmp/realm_data/
 COPY demo/kc_setup_keyfile.sh /scripts/kc_setup_keyfile.sh

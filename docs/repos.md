@@ -76,17 +76,9 @@ A developer reference for these packages including the function signatures and p
 
 <div class='projects' markdown='1'>
 
-- ### [GraphKB Python Adapter](https://github.com/bcgsc/pori_graphkb_python)
+- ### [Pori Python Adapter](https://github.com/bcgsc/pori_python)
 
-    ![graphkb python](./images/graph-icon_outline.svg)
-
-    Python adapter package for querying the GraphKB API. See the related
-    [user manual](../graphkb/python/docs) for instructions on incorporating
-    this into custom scripts.
-
-- ### [IPR Python Adapter](https://github.com/bcgsc/pori_ipr_python)
-
-    ![ipr python](./images/wrench.svg)
+    ![pori python](./images/wrench.svg)
 
     Python adapter for generating reports uploaded to the IPR API. This python tool takes in variant inputs as tab-delimited files and annotates them using GraphKB. The resulting output is uploaded to IPR as a report. Additional report content such as images and metadata can be passed to be included in the report upload.
 
