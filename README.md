@@ -27,7 +27,7 @@ will be updated on merge to the master branch of this repository.
 First, set up a virtual environment (Optional but recommended)
 
 ```bash
-python3.8 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
 pip install -U setuptools pip
 ```
@@ -35,7 +35,8 @@ pip install -U setuptools pip
 Install the python dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install poetry
+poetry install
 ```
 
 Run the script to pull the other respository files
@@ -47,5 +48,5 @@ bash docs/build_external.sh
 And finally serve the documentation for viewing locally with
 
 ```bash
-mkdocs serve
+properdocs serve
 ```
