@@ -26,7 +26,7 @@ else
 fi
 
 # now build the reference python module API files
-markdown_refdocs \
+poetry run markdown_refdocs \
     docs/_pori_python/pori_python/graphkb \
     docs/_pori_python/pori_python/ipr  \
     -o docs/developer_reference \
@@ -34,4 +34,4 @@ markdown_refdocs \
 
 # build the spec tables
 mkdir -p docs/ipr/includes
-python docs/ipr_spec_tables.py
+poetry run python docs/ipr_spec_tables.py
