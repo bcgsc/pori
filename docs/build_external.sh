@@ -1,8 +1,8 @@
 # Pulls the Python adapter documentation from their respective repositories
 # and builds them into the main documentation
 
-# clone the IPR python adapter if it does not exist, otherwise update
-if ! [ -d docs/_pori_ipr_python ];
+# clone the python adapter if it does not exist, otherwise update
+if ! [ -d docs/_pori_python ];
 then
     git clone https://github.com/bcgsc/pori_python.git docs/_pori_python
     echo "hide: true" > docs/_pori_python/.pages
