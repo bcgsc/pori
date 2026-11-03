@@ -1,16 +1,26 @@
 # This version of the docker-compose sets up the servers using http only for testing locally and
 # therefore does not require the top level apache server to configure the URLs
-version: '3'
 services:
   keycloak:
     build:
       context: .
       dockerfile: ./demo/Dockerfile.auth
+    env_file:
+      - .env
     environment:
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
       PROXY_ADDRESS_FORWARDING: "true"
-      JAVA_OPTS_APPEND: "-Djboss.socket.binding.port-offset=808"
+      JAVA_OPTS_APPEND: "-Djboss.socket.binding.port-offset=808 -Djava.net.preferIPv4Stack=true"
+      KC_SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
+      KC_SMTP_PORT: ${SMTP_PORT:-587}
+      KC_SMTP_FROM: ${SMTP_FROM:-your-gmail-address@gmail.com}
+      KC_SMTP_FROM_DISPLAY_NAME: ${SMTP_FROM_DISPLAY_NAME:-PORI}
+      KC_SMTP_STARTTLS: ${SMTP_STARTTLS:-true}
+      KC_SMTP_SSL: ${SMTP_SSL:-false}
+      KC_SMTP_AUTH: ${SMTP_AUTH:-true}
+      KC_SMTP_USER: ${SMTP_USERNAME:-your-gmail-address@gmail.com}
+      KC_SMTP_PASSWORD: ${SMTP_PASSWORD:-your-16-char-app-password}
     ports:
       - 8888:8888
     networks:
@@ -40,6 +50,7 @@ services:
       - orientdb_backup:/orientdb/backup
   graphkb_api:
     image: bcgsc/pori-graphkb-api:latest
+    pull_policy: always
     ports:
       - 8080:8080
     environment:
@@ -70,6 +81,7 @@ services:
       retries: 5
   graphkb_client:
     image: bcgsc/pori-graphkb-client:latest
+    pull_policy: always
     environment:
       KEYCLOAK_REALM: PORI
       KEYCLOAK_CLIENT_ID: GraphKB
@@ -108,14 +120,17 @@ services:
       retries: 5
   migrations:
     image: bcgsc/pori-ipr-api:latest
-    command: npx sequelize-cli db:migrate --url postgres://ipr_service:root@ipr_db:5432/ipr_demo
+    environment:
+      IPR_DATABASE_HOSTNAME: 'ipr_db:5432'
+      IPR_DATABASE_NAME: 'ipr_demo'
+      IPR_DATABASE_USERNAME: 'ipr_service'
+      IPR_DATABASE_PASSWORD: 'root'
+    command: ["/bin/bash", "-lc", "/migrationTools/migratedb.sh"]
     networks:
       - app-network
-    deploy:
-      restart_policy:
-        condition: on-failure
-        max_attempts: 10
+    restart: on-failure
     depends_on:
+      - ipr_api
       - ipr_db
   redis:
     image: redis:6.2-alpine
@@ -133,6 +148,7 @@ services:
     restart: always
   ipr_api:
     image: bcgsc/pori-ipr-api:latest
+    pull_policy: always
     command: npm start
     ports:
       - 8082:8080
@@ -151,7 +167,6 @@ services:
       IPR_REDIS_PORT: 6379
     depends_on:
       - ipr_db
-      - migrations
       - redis
       - keycloak
     networks:
@@ -169,6 +184,7 @@ services:
       retries: 5
   ipr_client:
     image: bcgsc/pori-ipr-client:latest
+    pull_policy: always
     environment:
       KEYCLOAK_REALM: PORI
       # customize settings below
@@ -177,7 +193,7 @@ services:
       KEYCLOAK_URL: http://localhost:8888/auth
       PUBLIC_PATH: /
     ports:
-      - 3000:80
+      - 3001:80
     depends_on:
       - ipr_api
     networks:

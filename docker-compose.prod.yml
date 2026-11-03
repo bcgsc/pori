@@ -1,4 +1,3 @@
-version: '3'
 services:
   graphkb_db:
     image: orientdb:3.0
@@ -11,12 +10,8 @@ services:
     networks:
       - app-network
     volumes:
-      - source: ./databases/orientdb/data
-        target: /orientdb/databases
-        type: bind
-      - source: ./databases/orientdb/backup
-        target: /orientdb/backup
-        type: bind
+      - orientdb_data:/orientdb/databases
+      - orientdb_backup:/orientdb/backup
   graphkb_api:
     image: bcgsc/pori-graphkb-api:v3.15.2
     ports:
@@ -33,7 +28,8 @@ services:
       GKB_KEYCLOAK_URI: https://pori-demo.bcgsc.ca/auth/realms/PORI/protocol/openid-connect/token
       GKB_BASE_PATH: /graphkb-api
     depends_on:
-      - graphkb_db
+      graphkb_db:
+        condition: service_started
     networks:
       - app-network
     restart: always
@@ -60,7 +56,8 @@ services:
     ports:
       - 5000:80
     depends_on:
-      - graphkb_api
+      graphkb_api:
+        condition: service_healthy
     networks:
       - app-network
     restart: always

@@ -53,7 +53,7 @@ mkdir keys
 Next, use docker-compose to start the DB, API, and client servers. The paths/URLs in the docker-compose.yml file should be adjusted to match your deployment. In our demo deployment we have a proxy pass set up from the configured ports to handle the https layer
 
 ```bash
-docker compose -f docker-compose.dev.yml up -d --build --remove-orphans
+docker compose -f docker-compose.dev.yml up -d --build --remove-orphans --force-recreate
 ```
 
 This will start the following services
