@@ -1,0 +1,243 @@
+# Keycloak service is configured for hands-off user management experience.
+# Any local SMTP server can be used for sending password-reset emails.
+# Set up SMTP variables in keycloak/.env.
+# Use compose.sh to load external_deployment_env.sh before Compose interpolates URLs and public paths.
+services:
+  keycloak:
+    build:
+      context: .
+      dockerfile: ./keycloak/Dockerfile.auth
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+      # Keep the Keycloak 16 URL layout: plain HTTP on port 8888 under /auth.
+      KC_HTTP_ENABLED: "true"
+      KC_HTTP_PORT: "8888"
+      KC_HTTP_RELATIVE_PATH: /auth
+      # Equivalent of PROXY_ADDRESS_FORWARDING=true; hostname taken from the request.
+      KC_PROXY_HEADERS: xforwarded
+      KC_HOSTNAME_STRICT: "false"
+      # Embedded file-based H2 database inside the container, as with Keycloak 16.
+      KC_DB: dev-file
+      KC_CACHE: local
+      JAVA_OPTS_APPEND: "-Djava.net.preferIPv4Stack=true"
+      PORI_HOST: ${PORI_HOST:-localhost}
+      IPR_CLIENT_URI: ${IPR_CLIENT_URI:-http://${PORI_HOST:-localhost}:3000}
+      GRAPHKB_CLIENT_URI: ${GRAPHKB_CLIENT_URI:-http://${PORI_HOST:-localhost}:5000}
+      SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_FROM: ${SMTP_FROM:-your-gmail-address@gmail.com}
+      SMTP_FROM_DISPLAY_NAME: ${SMTP_FROM_DISPLAY_NAME:-PORI}
+      SMTP_STARTTLS: ${SMTP_STARTTLS:-true}
+      SMTP_SSL: ${SMTP_SSL:-false}
+      SMTP_AUTH: ${SMTP_AUTH:-true}
+      SMTP_USER: ${SMTP_USERNAME:-your-gmail-address@gmail.com}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-your-16-char-app-password}
+    ports:
+      - 8888:8888
+    networks:
+      - app-network
+    healthcheck:
+      # Probe locally, independent of service DNS, proxies, and external TLS policy.
+      # Only report healthy after the PORI signing key has been written.
+      test: ["CMD", "bash", "/scripts/kc_setup_keyfile.sh", "http://127.0.0.1:8888/auth", "admin", "admin", "PORI", "/keys/keycloak.key"]
+      interval: 45s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    volumes:
+      # Docker-managed storage avoids host bind-mount ownership/ACL restrictions.
+      - source: keycloak_keys
+        target: /keys
+        type: volume
+  graphkb_db:
+    image: orientdb:3.0
+    environment:
+      # customize settings below
+      ORIENTDB_ROOT_PASSWORD: root
+    ports:
+      - 2424:2424
+      - 2480:2480
+    networks:
+      - app-network
+    volumes:
+      - orientdb_data:/orientdb/databases
+      - orientdb_backup:/orientdb/backup
+  graphkb_api:
+    image: bcgsc/pori-graphkb-api:latest
+    pull_policy: always
+    ports:
+      - 8080:8080
+    environment:
+      GKB_DB_CREATE: 1
+      GKB_DB_HOST: graphkb_db
+      GKB_DB_NAME: graphkb
+      GKB_KEYCLOAK_KEY_FILE: /keys/keycloak.key
+      KEY_PASSPHRASE: ''
+      # customize settings below
+      GKB_CORS_ORIGIN: '^.*$$'
+      GKB_DBS_PASS: root
+      GKB_KEYCLOAK_URI: ${GKB_KEYCLOAK_URI:-http://keycloak:8888/auth/realms/PORI/protocol/openid-connect/token}
+    depends_on:
+      graphkb_db:
+        condition: service_started
+      # keycloak is only healthy once its public key is in the shared volume
+      keycloak:
+        condition: service_healthy
+    networks:
+      - app-network
+    restart: always
+    volumes:
+      - source: keycloak_keys
+        target: /keys
+        type: volume
+        read_only: true
+    healthcheck:
+      # the API binds to the container hostname ($HOSTNAME), not 127.0.0.1, so localhost is refused
+      test: ["CMD", "curl", "-f", "${GRAPHKB_HEALTHCHECK_URI:-http://graphkb_api:8080/api/version}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      # first start with GKB_DB_CREATE builds the schema, which can take several minutes
+      start_period: 300s
+  graphkb_client:
+    image: bcgsc/pori-graphkb-client:latest
+    pull_policy: always
+    environment:
+      KEYCLOAK_REALM: PORI
+      KEYCLOAK_CLIENT_ID: GraphKB
+      # customize settings below (browser-facing URLs, must be reachable from the user's browser)
+      API_BASE_URL: ${GRAPHKB_API_BASE_URL:-http://${PORI_HOST:-localhost}:8080}
+      KEYCLOAK_URL: ${KEYCLOAK_BROWSER_URI:-http://${PORI_HOST:-localhost}:8888/auth}
+      PUBLIC_PATH: ${GRAPHKB_PUBLIC_PATH:-/}
+    ports:
+      - 5000:80
+    depends_on:
+      - graphkb_api
+    networks:
+      - app-network
+    restart: always
+  ipr_db:
+    image: bcgsc/pori-ipr-demodb:latest
+    restart: always
+    environment:
+      DATABASE_NAME: ipr_demo
+      POSTGRES_USER: postgres
+      READONLY_USER: ipr_ro
+      SERVICE_USER: ipr_service
+      PGDATA: /var/lib/postgresql/data/pgdata
+      # customize settings below
+      POSTGRES_PASSWORD: root
+      READONLY_PASSWORD: root
+      SERVICE_PASSWORD: root
+    ports:
+      - 5432:5432
+    networks:
+      - app-network
+    healthcheck:
+      # use TCP so the temporary socket-only server during DB init is not reported as ready
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  migrations:
+    image: bcgsc/pori-ipr-api:latest
+    pull_policy: always
+    # migrations live in versioned sub-folders (legacy/, vX.Y.Z/, latest/), so use the repo script
+    # which runs each folder in order. Path is relative to the image WORKDIR (/usr/src/app).
+    working_dir: /usr/src/app
+    environment:
+      IPR_DATABASE_SERVER: ipr_db:5432
+      IPR_DATABASE_NAME: ipr_demo
+      IPR_DATABASE_PASSWORD: root
+      IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
+      IPR_SERVICE_USER: ipr_service
+      IPR_SERVICE_PASS: root
+    command: ["bash", "migrationTools/migratedb.sh"]
+    networks:
+      - app-network
+    restart: on-failure
+    depends_on:
+      - ipr_db
+  redis:
+    image: redis:6.2-alpine
+    # Set health checks to wait until redis has started
+    healthcheck:
+      test: redis-cli ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      # Maps port 6379 on service container to the host
+      - 6379:6379
+    networks:
+      - app-network
+    restart: always
+  ipr_api:
+    image: bcgsc/pori-ipr-api:latest
+    pull_policy: always
+    command: npm run start:docker
+    ports:
+      - 8081:8080
+    environment:
+      IPR_DATABASE_HOSTNAME: ipr_db
+      IPR_DATABASE_NAME: ipr_demo
+      IPR_DATABASE_USERNAME: ipr_service
+      IPR_GRAPHKB_USERNAME: ipr_graphkb_link
+      IPR_KEYCLOAK_KEYFILE: /keys/keycloak.key
+      # customize settings below
+      IPR_DATABASE_PASSWORD: root
+      IPR_GRAPHKB_PASSWORD: ipr_graphkb_link
+      IPR_GRAPHKB_URI: ${IPR_GRAPHKB_URI:-http://graphkb_api:8080/api}
+      IPR_KEYCLOAK_URI: ${IPR_KEYCLOAK_URI:-http://keycloak:8888/auth/realms/PORI/protocol/openid-connect/token}
+      KEYCLOAK_ADMIN_USER: admin
+      KEYCLOAK_ADMIN_PASS: admin
+      IPR_REDIS_HOST: redis
+      IPR_REDIS_PORT: 6379
+    depends_on:
+      ipr_db:
+        condition: service_healthy
+      migrations:
+        condition: service_started
+      redis:
+        condition: service_healthy
+      # keycloak is only healthy once its public key is in the shared volume
+      keycloak:
+        condition: service_healthy
+    networks:
+      - app-network
+    restart: always
+    volumes:
+      - source: keycloak_keys
+        target: /keys
+        type: volume
+        read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "${IPR_HEALTHCHECK_URI:-http://ipr_api:8080/api/spec.json}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  ipr_client:
+    image: bcgsc/pori-ipr-client:latest
+    pull_policy: always
+    environment:
+      KEYCLOAK_REALM: PORI
+      # customize settings below (browser-facing URLs, must be reachable from the user's browser)
+      API_BASE_URL: ${IPR_API_BASE_URL:-http://${PORI_HOST:-localhost}:8081/api}
+      GRAPHKB_URL: ${GRAPHKB_CLIENT_URI:-http://${PORI_HOST:-localhost}:5000}
+      KEYCLOAK_URL: ${KEYCLOAK_BROWSER_URI:-http://${PORI_HOST:-localhost}:8888/auth}
+      PUBLIC_PATH: ${IPR_PUBLIC_PATH:-/}
+    ports:
+      - 3000:80
+    depends_on:
+      - ipr_api
+    networks:
+      - app-network
+    restart: always
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  keycloak_keys:
+  orientdb_data:
+  orientdb_backup:
