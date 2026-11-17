@@ -165,14 +165,9 @@ To access this set of configs, from the pori directory, access the external_depl
 cd external_deployment
 ```
 
-Then create the keys and database directories as described above
-```bash
-mkdir -p databases/{postgres,orientdb}/{backup,data}
-```
+IPR PostgreSQL uses the Docker-managed `ipr_data` volume. It persists across container recreation and `docker compose down`, but `docker compose down -v` deletes it. Keep the Compose project and volume names consistent to reuse the same data. Existing data in `databases/postgres/data` is not migrated automatically; back up and restore it into the new volume before using an existing deployment.
 
-```bash
-mkdir keys
-```
+Keycloak's database uses the Docker-managed `keycloak_data` volume, with the same persistence and deletion behavior as `ipr_data`. Existing data in `databases/keycloak` is not migrated automatically; back up and migrate it before using an existing deployment. Docker also manages the signing-key and OrientDB volumes, so no host database directories need to be created.
 
 Then configure your URIs in the external_deployment_env.sh script, either with a local IP / localhost or configured https proxies for production environment. Set `KC_BOOTSTRAP_ADMIN_USERNAME` and `KC_BOOTSTRAP_ADMIN_PASSWORD` in `auth/.env`, replacing the public demo defaults before deployment. These credentials are shared by Keycloak, its health check, and the IPR API. Bootstrap settings only create the initial admin account; changing them does not update an existing account's credentials. The file is sourced by Bash, so single-quote values containing shell special characters, such as `KC_BOOTSTRAP_ADMIN_PASSWORD='your-password'`. Keep real credentials out of version control.
 

@@ -50,7 +50,7 @@ services:
       - source: keycloak_keys
         target: /keys
         type: volume
-      - ./databases/keycloak:/opt/keycloak/data/h2
+      - keycloak_data:/opt/keycloak/data/h2
   graphkb_db:
     image: orientdb:3.0
     environment:
@@ -134,7 +134,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-       - ./databases/postgres/data:/var/lib/postgresql/data
+      - ipr_data:/var/lib/postgresql/data
     networks:
       - app-network
     healthcheck:
@@ -242,5 +242,7 @@ networks:
     driver: bridge
 volumes:
   keycloak_keys:
+  keycloak_data:
   orientdb_data:
   orientdb_backup:
+  ipr_data:
