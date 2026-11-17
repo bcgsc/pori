@@ -537,47 +537,6 @@
     } ]
   },
   "clients" : [ {
-    "id" : "54b10b5c-dd42-4090-941c-a275e3b9b6b4",
-    "clientId" : "2fa",
-    "baseUrl" : "",
-    "surrogateAuthRequired" : false,
-    "enabled" : true,
-    "alwaysDisplayInConsole" : false,
-    "clientAuthenticatorType" : "client-secret",
-    "secret" : "**********",
-    "redirectUris" : [ "*" ],
-    "webOrigins" : [ "*" ],
-    "notBefore" : 0,
-    "bearerOnly" : false,
-    "consentRequired" : false,
-    "standardFlowEnabled" : true,
-    "implicitFlowEnabled" : false,
-    "directAccessGrantsEnabled" : true,
-    "serviceAccountsEnabled" : false,
-    "publicClient" : true,
-    "frontchannelLogout" : false,
-    "protocol" : "openid-connect",
-    "attributes" : {
-      "saml.assertion.signature" : "false",
-      "saml.force.post.binding" : "false",
-      "saml.multivalued.roles" : "false",
-      "saml.encrypt" : "false",
-      "saml.server.signature" : "false",
-      "saml.server.signature.keyinfo.ext" : "false",
-      "exclude.session.state.from.auth.response" : "false",
-      "saml_force_name_id_format" : "false",
-      "saml.client.signature" : "false",
-      "tls.client.certificate.bound.access.tokens" : "false",
-      "saml.authnstatement" : "false",
-      "display.on.consent.screen" : "false",
-      "saml.onetimeuse.condition" : "false"
-    },
-    "authenticationFlowBindingOverrides" : { },
-    "fullScopeAllowed" : true,
-    "nodeReRegistrationTimeout" : -1,
-    "defaultClientScopes" : [ "web-origins", "profile", "roles", "email" ],
-    "optionalClientScopes" : [ "address", "phone", "offline_access", "microprofile-jwt" ]
-  }, {
     "id" : "c4dfdf5a-ec62-419d-a646-5f35b0f8f680",
     "clientId" : "GraphKB",
     "rootUrl" : "",
@@ -1442,8 +1401,6 @@
       "providerId" : "rsa-generated",
       "subComponents" : { },
       "config" : {
-        "privateKey" : [ "MIIEpAIBAAKCAQEArQHoUyGJa2uiBnpXh9renYNIQlOJVQNbY+rhTa5+HBm9BXH8O9/LYUdh717OQ+naATZ6K8Sc35lxlEzZ0Nw/Xj3+PSNbdEJ7uCxoo82xxbA5wcrMHrJyNnTSMSQd5k9diMJEAJ3PDyqgsTOaNf6N68/QCXu+orj+OXe7emy9IOVsP3ZgaA74iKzJTIHT4nJrPxQ6ip6pYxehwAPP+N1nDZunKxpnMurAn85QR+aqJhfxa3ZtcmRPu2+6/hjRM315yeyyQjYDwlXXKEhi3Rg/62UP9F73yXpff83F0oTEfmdrDAqW6V+6n4a0cUszbSeLhGMBFOg4UsvrfTIptCbkHwIDAQABAoIBAEkaQTy/Mv284R2znEC/bslHq8S635CYdollugXE8WyWQ5SFcXsrORjFvNAUUzvHGGLizgSoc1DX2XI8dt0V84Cy2TakNgSOAxDzUtPEGpXZvM3yDwX5iOERw68X/7pNVsxuqaVJCTDzZir6DvM5uGYnzVP0gbzoRiOqQAGe6Nt44SXNK1MDGO3y2Pl2neNgnX3G34MNlvZUXXPRJOjDFhpNy6l+muqAAR4aSmjBkuOHBUp9otJH9ww9Rtb2Dp6KvcjbSWej2o/nVLqBrC6uH+O+jiIk3wbESBIcWNhPP39f7HwgHdsnCxxpAO2HmkOQBOJSIEUqc6iexK+jAgGHLkECgYEA+d/KD2y7DuIdVLc7h9rqYL2DOGYA86fmXMj1W3JcVQQJX5DU2PXvWUACN+NoYM6m99afZieqGS/ynaAbnLW5CM/SsRHm2p0K6yA/lXweZn6YxFmnNgwQrkdN2vAixxHdQb36OP+1OkCQ45dcimcHwXi/0uU6Yd+Ym4z7pRpNY0kCgYEAsT+z2Xdw8Oz4CigxVhskyJbAZwnoWagByppBElSoWg7cN8hTWD1mFuPjiOOWZkkKBSRAVIpEY2XEmiEdXIh6e18dt/Hg3xSijfEfaHZKgxBLAJG0TpfZc3tjrQODrckjb+7NdHno3NvCsxjwLaKrMWC7vzijvCrGU1Fuc2aypCcCgYEAoWlV3pbvUxLvvYzL0NuycaGaRXFnBf6cya0rCdKbIHQGFgy54hkkbzPw+udUwsxbgVfMCjJvJ+wYPohxrc6Z475ULPwSc3/k0LQ5Prg57x2yU4xSfpBWqi33dgmPfabllZVCMVXFXQbeUZayOdmKYgk9aN+Y0iadL0ZoPGP8P7kCgYAMKkUbvdjgkEMN32hTcpV5tu8Jo2JxFNjaoO+qZGkRlUeEBJnDyqMBGy74rDYcWxL2+1/27W54K/nsYi1ztmJBqWuOvmkipnXprAztzICcsjeTmGx5oG5qQKO8sisNeGqYOhmbzuoujl60kBeb6jg5sVvxad/DAGSQP1yHSxsjrQKBgQCTS6Q8gqMgNGZdboLFH5f22aP1ArHdWNOuqQal14B1aKhzrogfhlqeB0fBzoFtIGC10zoneWh1KknhHGkjEvsv5j5W+KxTX7wZgNVI03jzjLfwLOfBFoUFD80yKCjz7kmRdTK4xhC3Xi7+dHgaGsDbXdc/CIQb28bTaf7SAkkYIw==" ],
-        "certificate" : [ "MIIClzCCAX8CBgF/DqCSBjANBgkqhkiG9w0BAQsFADAPMQ0wCwYDVQQDDARQT1JJMB4XDTIyMDIxODIwNTYxOFoXDTMyMDIxODIwNTc1OFowDzENMAsGA1UEAwwEUE9SSTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK0B6FMhiWtrogZ6V4fa3p2DSEJTiVUDW2Pq4U2ufhwZvQVx/Dvfy2FHYe9ezkPp2gE2eivEnN+ZcZRM2dDcP149/j0jW3RCe7gsaKPNscWwOcHKzB6ycjZ00jEkHeZPXYjCRACdzw8qoLEzmjX+jevP0Al7vqK4/jl3u3psvSDlbD92YGgO+IisyUyB0+Jyaz8UOoqeqWMXocADz/jdZw2bpysaZzLqwJ/OUEfmqiYX8Wt2bXJkT7tvuv4Y0TN9ecnsskI2A8JV1yhIYt0YP+tlD/Re98l6X3/NxdKExH5nawwKlulfup+GtHFLM20ni4RjARToOFLL630yKbQm5B8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEArHZrkAkTY/I33YQ7+PuR0foxvBzVvnL/LvGLp5uQ+IvbuUNNjXx6+fd5aC6CJ+UzwVmU9U73uEDMNFfot4W1eLkxED+2tMdWCuOAr+VuCvkbgTa+mSFGqKTGhh/2Ea7VGsSQH0AZfBP2Z3pGya8Kmq5bUHW0qdKrhKU4trRSgdh7npEZo276KTGiPSAADsAWszE/l3ujKwgflzgba9DQKsuzn+TH7UlmjhDTYMxLCB9dYV5mZxoB4BhNO3Y6XK5nLR+kNxX1/8vi7O/2DYc+yA9xlg00eboXWrjndb1NtTJFxCIlAM5JNRIoKJIqoyFGboqNtaViMHkI6fymKB33wQ==" ],
         "priority" : [ "100" ]
       }
     }, {

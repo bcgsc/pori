@@ -174,9 +174,13 @@ mkdir -p databases/{postgres,orientdb}/{backup,data}
 mkdir keys
 ```
 
-Then configure your URIs in the external_deployment_env.sh script, either with a local IP / localhost or configured https proxies for production environment. In addition, configure your SMTP service variables in the /keycloak/.env file. A free option with monthly email limitation is Gmail (https://dev.to/msnmongare/how-to-configure-gmail-smtp-server-settings-7l6). There are other enterprise-grade services such as Amazon SES or Postmark which provide more security, features, and higher email limits. Check with your Systems team regarding firewall settings to make sure that the configured SMTP service can actually reach the host.
+Then configure your URIs in the external_deployment_env.sh script, either with a local IP / localhost or configured https proxies for production environment. Set `KC_BOOTSTRAP_ADMIN_USERNAME` and `KC_BOOTSTRAP_ADMIN_PASSWORD` in `auth/.env`, replacing the public demo defaults before deployment. These credentials are shared by Keycloak, its health check, and the IPR API. Bootstrap settings only create the initial admin account; changing them does not update an existing account's credentials. The file is sourced by Bash, so single-quote values containing shell special characters, such as `KC_BOOTSTRAP_ADMIN_PASSWORD='your-password'`. Keep real credentials out of version control.
 
-Finally, to run docker compose, use the compose.sh script which will inject SMTP variables and environmental variables before executing compose
+Set `REDIS_HOST_PORT` in `auth/.env` to change Redis's published host port (default `6379`). The IPR API continues to connect to `redis:6379` inside the Docker network.
+
+In addition, configure your SMTP service variables in `auth/.env`. A free option with monthly email limitation is Gmail (https://dev.to/msnmongare/how-to-configure-gmail-smtp-server-settings-7l6). There are other enterprise-grade services such as Amazon SES or Postmark which provide more security, features, and higher email limits. Check with your Systems team regarding firewall settings to make sure that the configured SMTP service can actually reach the host.
+
+Finally, to run docker compose, use the compose.sh script which will inject Keycloak credentials, SMTP variables, and environmental variables before executing compose
 ```bash
 bash compose.sh up -d
 ```

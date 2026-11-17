@@ -16,10 +16,10 @@ RUN mkdir -p /opt/keycloak/data/import
 # Docker initializes the shared key volume from this root-owned directory.
 # Keycloak runs as root; API containers only need read/traverse permission.
 RUN mkdir -p /keys && chmod 755 /keys
-COPY keycloak/kc_setup_keyfile.sh /scripts/kc_setup_keyfile.sh
-COPY keycloak/kc_entrypoint.sh /scripts/kc_entrypoint.sh
+COPY auth/kc_setup_keyfile.sh /scripts/kc_setup_keyfile.sh
+COPY auth/kc_entrypoint.sh /scripts/kc_entrypoint.sh
 RUN chmod a+x /scripts/kc_setup_keyfile.sh /scripts/kc_entrypoint.sh
-COPY keycloak/kc_realm_export.json /opt/keycloak/data/import/PORI-realm.json
+COPY auth/kc_realm_export.json /opt/keycloak/data/import/PORI-realm.json
 ENTRYPOINT ["/scripts/kc_entrypoint.sh"]
 # overriding ENTRYPOINT resets the base image CMD, so restore it
 CMD ["start", "--import-realm"]

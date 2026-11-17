@@ -1,17 +1,17 @@
-# Load SMTP settings from keycloak/.env, relative to this script rather than the working directory.
+# Load Keycloak credentials, Redis host port, and SMTP settings from auth/.env.
 # Export its assignments so Compose can interpolate them; preserve the caller's allexport setting.
-_pori_load_smtp_env() {
-	local smtp_env="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/keycloak/.env"
+_pori_load_auth_env() {
+	local auth_env="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/auth/.env"
 	local restore_allexport=false
 	[[ -o allexport ]] || restore_allexport=true
 	set -a
-	source "${smtp_env}"
+	source "${auth_env}"
 	if [[ "${restore_allexport}" == true ]]; then
 		set +a
 	fi
 }
-_pori_load_smtp_env
-unset -f _pori_load_smtp_env
+_pori_load_auth_env
+unset -f _pori_load_auth_env
 
 # Host/IP that browsers use to reach the PORI services (keycloak, clients, APIs)
 export PORI_HOST='127.0.0.1'
