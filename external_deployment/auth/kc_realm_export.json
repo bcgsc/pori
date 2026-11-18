@@ -1450,8 +1450,6 @@
       "providerId" : "hmac-generated",
       "subComponents" : { },
       "config" : {
-        "kid" : [ "03087aed-654e-4e04-8b0a-50a88d8ab458" ],
-        "secret" : [ "cXobdhu0D-gJph2JKBN4Q2g83agem-XPkITV_nSdFA26MX51PhwogBaLL9tN3JK3Xpkkqy6jgtMCwlpEL5MfoQ" ],
         "priority" : [ "100" ],
         "algorithm" : [ "HS256" ]
       }
@@ -1461,8 +1459,6 @@
       "providerId" : "aes-generated",
       "subComponents" : { },
       "config" : {
-        "kid" : [ "2035a547-b4b7-427d-a21c-86214de43615" ],
-        "secret" : [ "vX6-MCLwyomyrZzz6Xt_Jg" ],
         "priority" : [ "100" ]
       }
     } ]

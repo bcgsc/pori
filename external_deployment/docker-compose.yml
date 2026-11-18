@@ -16,7 +16,8 @@ services:
       KC_HTTP_RELATIVE_PATH: /auth
       # Equivalent of PROXY_ADDRESS_FORWARDING=true; hostname taken from the request.
       KC_PROXY_HEADERS: xforwarded
-      KC_HOSTNAME_STRICT: "false"
+      KC_HOSTNAME: ${KEYCLOAK_BROWSER_URI:-http://${PORI_HOST:-localhost}:8888/auth}
+      KC_HOSTNAME_STRICT: "true"
       # Embedded file-based H2 database inside the container, as with Keycloak 16.
       KC_DB: dev-file
       KC_CACHE: local
@@ -39,8 +40,8 @@ services:
       - app-network
     healthcheck:
       # Probe locally, independent of service DNS, proxies, and external TLS policy.
-      # Only report healthy after the PORI signing key has been written.
-      test: ["CMD-SHELL", "exec bash /scripts/kc_setup_keyfile.sh http://127.0.0.1:8888/auth \"$${KC_BOOTSTRAP_ADMIN_USERNAME}\" \"$${KC_BOOTSTRAP_ADMIN_PASSWORD}\" PORI /keys/keycloak.key"]
+      # Only report healthy after realm reconciliation and signing-key publication.
+      test: ["CMD-SHELL", "test -f /tmp/pori-realm-ready && exec bash /scripts/kc_setup_keyfile.sh http://127.0.0.1:8888/auth \"$${KC_BOOTSTRAP_ADMIN_USERNAME}\" \"$${KC_BOOTSTRAP_ADMIN_PASSWORD}\" PORI /keys/keycloak.key"]
       interval: 45s
       timeout: 10s
       retries: 5
@@ -172,7 +173,7 @@ services:
       retries: 5
     ports:
       # Maps port 6379 on service container to the host
-      - "${REDIS_HOST_PORT:?Set REDIS_HOST_PORT in auth/.env}:6379"
+      - "${REDIS_HOST_PORT:?Set REDIS_HOST_PORT in auth/.env}"
     networks:
       - app-network
     restart: always
