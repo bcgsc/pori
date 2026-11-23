@@ -172,7 +172,7 @@ services:
       timeout: 5s
       retries: 5
     ports:
-      # Maps port 6379 on service container to the host
+      # Maps custom port number on service container to the host
       - "${REDIS_HOST_PORT:?Set REDIS_HOST_PORT in auth/.env}"
     networks:
       - app-network
