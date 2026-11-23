@@ -197,7 +197,7 @@ services:
       KEYCLOAK_ADMIN_USER: ${KC_BOOTSTRAP_ADMIN_USERNAME:?Set KC_BOOTSTRAP_ADMIN_USERNAME in auth/.env}
       KEYCLOAK_ADMIN_PASS: ${KC_BOOTSTRAP_ADMIN_PASSWORD:?Set KC_BOOTSTRAP_ADMIN_PASSWORD in auth/.env}
       IPR_REDIS_HOST: redis
-      IPR_REDIS_PORT: ${REDIS_HOST_PORT:?Set REDIS_HOST_PORT in auth/.env}:6379
+      IPR_REDIS_PORT: ${REDIS_HOST_PORT:?Set REDIS_HOST_PORT in auth/.env}
     depends_on:
       ipr_db:
         condition: service_healthy
