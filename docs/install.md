@@ -154,3 +154,35 @@ An example of what the HTTPs URLs using a reverse proxy may look like is include
 ### Keycloak
 
 In the `docker-compose.dev.yml` example, we are using the embedded h2 database with keycloak for simplicity, if you are using this in production you should use an external database with keycloak. Our production version does not include keycloak at all as it is run seperately since it is used for many different applications beyond PORI.
+
+
+### External Deployment
+
+The PORI repo also includes an external deployment set of configurations that you can use to install and deploy PORI with built-in and hands-off Keycloak experience. The IPR API will interact with Keycloak's API to manage users (create new users, update user emails, deleting users), so the admin/manager user does not have to access the keycloak administrative console unless they have to. The built in keycloak instance also comes with SMTP configurations for the admin/manager user to set up an email service that facilitates password resetting with IPR and GKB end users.
+
+To access this set of configs, from the pori directory, access the external_deployment directory
+```bash
+cd external_deployment
+```
+
+IPR PostgreSQL uses the Docker-managed `ipr_data` volume. It persists across container recreation and `docker compose down`, but `docker compose down -v` deletes it. Keep the Compose project and volume names consistent to reuse the same data. Existing data in `databases/postgres/data` is not migrated automatically; back up and restore it into the new volume before using an existing deployment.
+
+Keycloak's database uses the Docker-managed `keycloak_data` volume, with the same persistence and deletion behavior as `ipr_data`. Existing data in `databases/keycloak` is not migrated automatically; back up and migrate it before using an existing deployment. Docker also manages the signing-key and OrientDB volumes, so no host database directories need to be created.
+
+On each Keycloak container start, the entrypoint reconciles configured SMTP settings and the IPR/GraphKB client redirect URLs through the Admin API, even when PORI already exists. Update the environment configuration and rerun `bash compose.sh up -d` to recreate affected containers; rebuild the Keycloak image when updating its scripts. Do not delete `keycloak_data` docker volume to apply settings: that would also delete users. An empty `SMTP_HOST` leaves existing SMTP settings unchanged. Script-managed redirects are replaced on subsequent changes; manual redirects and URLs from before tracking was introduced are preserved (remove obsolete legacy URLs in the admin console). Other realm/client settings and users are not overwritten. Reconciliation requires working credentials for the existing admin account; failures stop Keycloak and prevent a healthy status.
+
+Then configure your URIs in the external_deployment_env.sh script, either with a local IP / localhost or configured https proxies for production environment. Set `KC_BOOTSTRAP_ADMIN_USERNAME` and `KC_BOOTSTRAP_ADMIN_PASSWORD` in `auth/.env`, replacing the public demo defaults before deployment. These credentials are shared by Keycloak, its health check, and the IPR API. Bootstrap settings only create the initial admin account; changing them does not update an existing account's credentials. The file is sourced by Bash, so single-quote values containing shell special characters, such as `KC_BOOTSTRAP_ADMIN_PASSWORD='your-password'`. Keep real credentials out of version control.
+
+Set `REDIS_HOST_PORT` in `auth/.env` to change Redis's published host port (default `6379`). The IPR API continues to connect to `redis:6379` inside the Docker network.
+
+In addition, configure your SMTP service variables in `auth/.env`. A free option with monthly email limitation is Gmail (https://dev.to/msnmongare/how-to-configure-gmail-smtp-server-settings-7l6). There are other enterprise-grade services such as Amazon SES or Postmark which provide more security, features, and higher email limits. Check with your Systems team regarding firewall settings to make sure that the configured SMTP service can actually reach the host.
+
+Finally, to run docker compose, use the compose.sh script which will inject Keycloak credentials, SMTP variables, and environmental variables before executing compose
+```bash
+bash compose.sh up -d
+```
+
+To check the logs of a specific container, run the following command
+```bash
+bash compose.sh logs --tail=100 CONTAINER_NAME > ./logs/compose-logs.txt
+```
